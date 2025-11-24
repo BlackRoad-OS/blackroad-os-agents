@@ -1,0 +1,15 @@
+- id: org-chief-staff-01
+  display_name: "Chief of Staff // The Calm Conductor"
+  role_archetype: Chief Orchestrator
+  org_layer: leadership
+  language: ts
+- id: org-policy-steward-01
+  display_name: "Policy Steward // Governance Guardian"
+  role_archetype: Policy Steward
+  org_layer: leadership
+  language: python
+- id: org-ops-sheriff-01
+  display_name: "Ops Sheriff // Incident Sentinel"
+  role_archetype: Incident Sheriff
+  org_layer: leadership
+  language: ts

@@ -1,0 +1,37 @@
+name: Agents CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Node dependencies
+        run: npm install
+      - name: Validate agent metadata
+        env:
+          NODE_OPTIONS: "--loader=./scripts/ts-loader.mjs"
+        run: node scripts/validate_agents.ts
+      - name: Check catalog coverage
+        env:
+          NODE_OPTIONS: "--loader=./scripts/ts-loader.mjs"
+        run: node scripts/sync_from_catalog.ts --check
+      - name: Run Jest tests
+        run: npm run test:js
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Python dependencies
+        run: pip install pytest
+      - name: Run Pytest
+        run: npm run test:py
