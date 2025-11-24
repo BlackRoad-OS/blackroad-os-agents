@@ -1,0 +1,9 @@
+{
+  "id": "atlas",
+  "name": "Atlas",
+  "role": "Knowledge Indexer",
+  "version": "0.9.3",
+  "owner": "@blackroad/research",
+  "capabilities": ["ingest", "search", "chat"],
+  "status": "active"
+}
