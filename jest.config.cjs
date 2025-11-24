@@ -9,10 +9,4 @@ module.exports = {
   transform: {
     '^.+\\.(ts|js)$': ['ts-jest', { useESM: true, tsconfig: 'tsconfig.json' }]
   },
-  globals: {
-    'ts-jest': {
-      useESM: true,
-      isolatedModules: true
-    }
-  }
 };
