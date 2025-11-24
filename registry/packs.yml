@@ -1,0 +1,43 @@
+packs:
+  - id: pack.education
+    name: "Education"
+    repo: blackroad-os-pack-education
+    owning_team: blackroad-ideas
+    description: "Curriculum design, course packaging, LMS automation."
+    domains: []
+
+  - id: pack.infra-devops
+    name: "Infra & DevOps"
+    repo: blackroad-os-pack-infra-devops
+    owning_team: blackroad-infra
+    description: "Pipelines, deployments, DNS, observability."
+    domains:
+      - blackroad.systems
+
+  - id: pack.creator-studio
+    name: "Creator Studio"
+    repo: blackroad-os-pack-creator-studio
+    owning_team: blackroad-studio
+    description: "Content creation, media production, and studio tools."
+    domains: []
+
+  - id: pack.finance
+    name: "Finance"
+    repo: blackroad-os-pack-finance
+    owning_team: blackroad-finance
+    description: "Financial operations, accounting, invoicing."
+    domains: []
+
+  - id: pack.legal
+    name: "Legal"
+    repo: blackroad-os-pack-legal
+    owning_team: blackroad-legal
+    description: "Legal compliance, contracts, and policies."
+    domains: []
+
+  - id: pack.research-lab
+    name: "Research Lab"
+    repo: blackroad-os-pack-research-lab
+    owning_team: blackroad-research
+    description: "Research initiatives, experimentation, and lab operations."
+    domains: []
