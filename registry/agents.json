@@ -1,0 +1,41 @@
+{
+  "agents": [
+    {
+      "id": "agent.lucidia.core",
+      "display_name": "Lucidia Core",
+      "pack_id": "pack.research-lab",
+      "role": "Research + orchestration brain",
+      "skills": ["math", "paper_drafting", "agent_coordination"],
+      "repos": [
+        "blackroad-os-research",
+        "blackroad-os-core"
+      ],
+      "environments": ["prod", "lab"],
+      "permissions": {
+        "github": "read",
+        "railway": "read",
+        "cloudflare": "read"
+      },
+      "status": "active"
+    },
+    {
+      "id": "agent.cadillac.operator",
+      "display_name": "Cadillac Operator",
+      "pack_id": "pack.infra-devops",
+      "role": "Pipelines, deployments, health checks.",
+      "skills": ["infra_blueprints", "railway_deploys", "dns_mapping"],
+      "repos": [
+        "blackroad-os-operator",
+        "blackroad-os-infra",
+        "blackroad-os-archive"
+      ],
+      "environments": ["prod"],
+      "permissions": {
+        "github": "write",
+        "railway": "write",
+        "cloudflare": "read"
+      },
+      "status": "active"
+    }
+  ]
+}
