@@ -140,7 +140,7 @@
     },
     "high_risk_marker": {
       "type": "string",
-      "description": "// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED marker if applicable"
+      "description": "Required comment marker for high-risk agents. Should be set to '// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED' when the agent has risk_level 'high' or can access sensitive zones (finance, identity, legal, infrastructure). This marker serves as documentation and audit trail for security-sensitive agents."
     },
     "created_at": {
       "type": "string",

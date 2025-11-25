@@ -41,6 +41,7 @@ high_risk_zones:
     audit_required: true
     allowed_agents: []
     marker: "// HIGH-RISK ZONE – IDENTITY – STRONG GUARDRAILS REQUIRED"
+    note: "⚠️ Currently no agents have identity zone access. This is intentional - identity/auth operations require explicit human-in-the-loop approval. Future agents may be granted limited access after security review."
 
   # ⚖️ Legal & Compliance Zone
   - id: zone.legal
