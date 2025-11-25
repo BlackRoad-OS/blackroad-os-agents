@@ -1,0 +1,94 @@
+# 🚫 BlackRoad OS High-Risk Zones
+# Agents must have explicit permissions and strong guardrails to access these zones
+
+# ⚠️ HIGH-RISK ZONES - Require explicit approval and audit trail
+
+high_risk_zones:
+  # 💰 Finance Zone
+  - id: zone.finance.prod
+    name: "Production Finance Systems"
+    emoji: "💰"
+    description: "Production financial operations, payments, and accounting"
+    required_capabilities:
+      - execute-with-approval
+    required_risk_acknowledgment: true
+    audit_required: true
+    allowed_agents:
+      - agent.finance.controller
+    marker: "// HIGH-RISK ZONE – FINANCE – APPROVAL REQUIRED"
+
+  # ☁️ Production Infrastructure Zone
+  - id: zone.infra.prod
+    name: "Production Infrastructure"
+    emoji: "☁️"
+    description: "Production servers, databases, and critical infrastructure"
+    required_capabilities:
+      - execute-with-approval
+    required_risk_acknowledgment: true
+    audit_required: true
+    allowed_agents:
+      - agent.cadillac.operator
+    marker: "// HIGH-RISK ZONE – PROD INFRA – APPROVAL REQUIRED"
+
+  # 🪪 Identity & Auth Zone
+  - id: zone.identity
+    name: "Identity & Authentication"
+    emoji: "🪪"
+    description: "User identities, authentication, permissions, and access control"
+    required_capabilities:
+      - execute-with-approval
+    required_risk_acknowledgment: true
+    audit_required: true
+    allowed_agents: []
+    marker: "// HIGH-RISK ZONE – IDENTITY – STRONG GUARDRAILS REQUIRED"
+
+  # ⚖️ Legal & Compliance Zone
+  - id: zone.legal
+    name: "Legal & Compliance"
+    emoji: "⚖️"
+    description: "Legal documents, contracts, regulatory compliance"
+    required_capabilities:
+      - execute-with-approval
+    required_risk_acknowledgment: true
+    audit_required: true
+    allowed_agents:
+      - agent.legal.helper
+    marker: "// HIGH-RISK ZONE – LEGAL – APPROVAL REQUIRED"
+
+  # 🔐 Secrets & Credentials Zone
+  - id: zone.secrets
+    name: "Secrets & Credentials"
+    emoji: "🔐"
+    description: "API keys, tokens, passwords, and sensitive credentials"
+    required_capabilities: []
+    required_risk_acknowledgment: true
+    audit_required: true
+    allowed_agents: []
+    marker: "// FORBIDDEN ZONE – NO AGENT ACCESS TO SECRETS"
+    note: "⚠️ No agent should ever have direct access to live secrets or tokens"
+
+# 📋 Zone Access Rules
+access_rules:
+  - rule_id: high-risk-requires-approval
+    description: "High-risk agents must always require approval"
+    condition:
+      agent_risk_level: high
+    requirement:
+      requires_approval: true
+      
+  - rule_id: no-autonomous-in-finance
+    description: "No autonomous execution in finance zone"
+    condition:
+      zone: zone.finance.prod
+    requirement:
+      disallowed_capabilities:
+        - execute-autonomous
+        
+  - rule_id: audit-all-high-risk
+    description: "All actions in high-risk zones must be audited"
+    condition:
+      zone_risk: high
+    requirement:
+      logging:
+        archive: true
+        level: info

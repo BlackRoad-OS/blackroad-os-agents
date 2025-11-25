@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://blackroad.systems/schemas/agent.schema.json",
+  "title": "BlackRoad OS Agent Schema",
+  "description": "🤖🧬 Schema for defining agents in the BlackRoad OS agent swarm",
+  "type": "object",
+  "required": ["id", "display_name", "pack_id", "role", "risk_level", "capabilities", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^agent\\.[a-z0-9-]+\\.[a-z0-9-]+$",
+      "description": "Unique agent identifier (e.g., agent.lucidia.core)"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "Human-readable display name"
+    },
+    "pack_id": {
+      "type": "string",
+      "pattern": "^pack\\.[a-z0-9-]+$",
+      "description": "ID of the owning pack (e.g., pack.finance)"
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "description": "Short description of the agent's role"
+    },
+    "persona": {
+      "type": "string",
+      "maxLength": 2000,
+      "description": "Extended persona/personality description"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"],
+      "description": "⚠️ Risk classification for this agent"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "read-only",
+          "suggest-only",
+          "execute-with-approval",
+          "execute-autonomous",
+          "admin"
+        ]
+      },
+      "minItems": 1,
+      "description": "🧭 List of capability scopes for this agent"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific skills/functions this agent can perform"
+    },
+    "allowed_workflows": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "⚙️ Workflow IDs this agent is allowed to invoke"
+    },
+    "disallowed_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "🚫 Zones/areas this agent must never touch"
+    },
+    "repos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Repositories this agent can access"
+    },
+    "environments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["dev", "staging", "prod", "lab"]
+      },
+      "description": "Environments this agent can operate in"
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["none", "read", "write", "admin"]
+      },
+      "description": "Service-specific permission levels"
+    },
+    "escalation_path": {
+      "type": "string",
+      "description": "Who/what to escalate to when this agent needs help"
+    },
+    "logging": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["debug", "info", "warn", "error"]
+        },
+        "archive": {
+          "type": "boolean",
+          "description": "Whether actions should be archived in blackroad-os-archive"
+        },
+        "alert_channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Channels to notify on important events"
+        }
+      }
+    },
+    "dashboard_views": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "🕹️ Dashboard/view IDs in prism-console"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive", "deprecated", "pending_approval"],
+      "description": "Current operational status"
+    },
+    "requires_approval": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether actions require explicit approval"
+    },
+    "high_risk_marker": {
+      "type": "string",
+      "description": "// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED marker if applicable"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "if": {
+    "properties": {
+      "risk_level": {
+        "const": "high"
+      }
+    }
+  },
+  "then": {
+    "required": ["requires_approval", "escalation_path", "disallowed_zones"],
+    "properties": {
+      "requires_approval": {
+        "const": true
+      }
+    }
+  }
+}
