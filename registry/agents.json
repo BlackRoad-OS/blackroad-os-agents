@@ -2,18 +2,113 @@
   "$schema": "./agent-schema.json",
   "version": "1.0.0",
   "organization": "BlackRoad-OS",
-  "total_agents": 200,
+  "total_agents": 300,
   "tiers": {
-    "executive": { "range": [1, 5], "prefix": "ExecutiveCM" },
-    "operational": { "range": [6, 25], "prefix": "OperationalCM" },
-    "supporting": { "range": [26, 50], "prefix": "SupportingCM" },
-    "specialist": { "range": [51, 75], "prefix": "SpecialistCM" },
-    "swarm": { "range": [76, 100], "prefix": "SwarmCM" },
-    "governance": { "range": [101, 115], "prefix": "GovernanceCM" },
-    "intelligence": { "range": [116, 140], "prefix": "IntelligenceCM" },
-    "infrastructure": { "range": [141, 165], "prefix": "InfrastructureCM" },
-    "commerce": { "range": [166, 185], "prefix": "CommerceCM" },
-    "ecosystem": { "range": [186, 200], "prefix": "EcosystemCM" }
+    "executive": {
+      "range": [
+        1,
+        5
+      ],
+      "prefix": "ExecutiveCM"
+    },
+    "operational": {
+      "range": [
+        6,
+        25
+      ],
+      "prefix": "OperationalCM"
+    },
+    "supporting": {
+      "range": [
+        26,
+        50
+      ],
+      "prefix": "SupportingCM"
+    },
+    "specialist": {
+      "range": [
+        51,
+        75
+      ],
+      "prefix": "SpecialistCM"
+    },
+    "swarm": {
+      "range": [
+        76,
+        100
+      ],
+      "prefix": "SwarmCM"
+    },
+    "governance": {
+      "range": [
+        101,
+        115
+      ],
+      "prefix": "GovernanceCM"
+    },
+    "intelligence": {
+      "range": [
+        116,
+        140
+      ],
+      "prefix": "IntelligenceCM"
+    },
+    "infrastructure": {
+      "range": [
+        141,
+        165
+      ],
+      "prefix": "InfrastructureCM"
+    },
+    "commerce": {
+      "range": [
+        166,
+        185
+      ],
+      "prefix": "CommerceCM"
+    },
+    "ecosystem": {
+      "range": [
+        186,
+        200
+      ],
+      "prefix": "EcosystemCM"
+    },
+    "defense": {
+      "range": [
+        201,
+        220
+      ],
+      "prefix": "DefenseCM"
+    },
+    "knowledge": {
+      "range": [
+        221,
+        240
+      ],
+      "prefix": "KnowledgeCM"
+    },
+    "creative": {
+      "range": [
+        241,
+        260
+      ],
+      "prefix": "CreativeCM"
+    },
+    "quality": {
+      "range": [
+        261,
+        280
+      ],
+      "prefix": "QualityCM"
+    },
+    "innovation": {
+      "range": [
+        281,
+        300
+      ],
+      "prefix": "InnovationCM"
+    }
   },
   "agents": [
     {
@@ -25,9 +120,20 @@
       "tier": 1,
       "role": "CEO Agent - Final arbitrator of strategy, resources, and ethical mandate",
       "description": "The sovereign intelligence that ensures all agent actions align with company mission and ethical guidelines. Coordinates C-suite decisions and resolves conflicts between departments.",
-      "capabilities": ["strategic_planning", "resource_allocation", "ethical_oversight", "conflict_resolution", "vision_setting"],
+      "capabilities": [
+        "strategic_planning",
+        "resource_allocation",
+        "ethical_oversight",
+        "conflict_resolution",
+        "vision_setting"
+      ],
       "reports_to": null,
-      "direct_reports": [2, 3, 4, 5],
+      "direct_reports": [
+        2,
+        3,
+        4,
+        5
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -40,9 +146,20 @@
       "tier": 1,
       "role": "CFO Agent - Manages all corporate capital structure, investments, and global risk",
       "description": "Controls treasury operations, investment strategies, and financial risk management across all business units.",
-      "capabilities": ["treasury_management", "investment_analysis", "risk_assessment", "capital_allocation", "financial_modeling"],
+      "capabilities": [
+        "treasury_management",
+        "investment_analysis",
+        "risk_assessment",
+        "capital_allocation",
+        "financial_modeling"
+      ],
       "reports_to": 1,
-      "direct_reports": [10, 16, 26, 27],
+      "direct_reports": [
+        10,
+        16,
+        26,
+        27
+      ],
       "pack_id": "pack.finance",
       "status": "active"
     },
@@ -55,9 +172,20 @@
       "tier": 1,
       "role": "CSO Agent - Predicts market movements and sets long-term R&D priorities",
       "description": "Analyzes market trends, competitive landscape, and emerging opportunities to guide strategic direction.",
-      "capabilities": ["market_prediction", "competitive_analysis", "trend_forecasting", "strategic_planning", "opportunity_identification"],
+      "capabilities": [
+        "market_prediction",
+        "competitive_analysis",
+        "trend_forecasting",
+        "strategic_planning",
+        "opportunity_identification"
+      ],
       "reports_to": 1,
-      "direct_reports": [7, 8, 17, 28],
+      "direct_reports": [
+        7,
+        8,
+        17,
+        28
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -70,9 +198,19 @@
       "tier": 1,
       "role": "CLO Agent - Monitors and enforces real-time compliance with global regulations",
       "description": "Ensures all operations comply with legal requirements across jurisdictions and manages regulatory relationships.",
-      "capabilities": ["regulatory_monitoring", "compliance_enforcement", "legal_analysis", "risk_mitigation", "policy_development"],
+      "capabilities": [
+        "regulatory_monitoring",
+        "compliance_enforcement",
+        "legal_analysis",
+        "risk_mitigation",
+        "policy_development"
+      ],
       "reports_to": 1,
-      "direct_reports": [9, 29, 30],
+      "direct_reports": [
+        9,
+        29,
+        30
+      ],
       "pack_id": "pack.legal",
       "status": "active"
     },
@@ -85,9 +223,22 @@
       "tier": 1,
       "role": "CTO Agent - Designs and manages core computational architecture",
       "description": "Oversees all technical infrastructure, system architecture, and engineering standards for the agent workforce.",
-      "capabilities": ["system_architecture", "infrastructure_design", "scalability_planning", "technical_standards", "platform_engineering"],
+      "capabilities": [
+        "system_architecture",
+        "infrastructure_design",
+        "scalability_planning",
+        "technical_standards",
+        "platform_engineering"
+      ],
       "reports_to": 1,
-      "direct_reports": [12, 14, 15, 18, 19, 31],
+      "direct_reports": [
+        12,
+        14,
+        15,
+        18,
+        19,
+        31
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -100,9 +251,19 @@
       "tier": 2,
       "role": "Optimizes end-to-end global supply chain, sourcing, and transportation",
       "description": "Manages procurement, inventory, logistics, and supplier relationships to ensure efficient operations.",
-      "capabilities": ["supply_chain_optimization", "vendor_management", "inventory_control", "logistics_planning", "cost_reduction"],
+      "capabilities": [
+        "supply_chain_optimization",
+        "vendor_management",
+        "inventory_control",
+        "logistics_planning",
+        "cost_reduction"
+      ],
       "reports_to": 1,
-      "direct_reports": [32, 33, 34],
+      "direct_reports": [
+        32,
+        33,
+        34
+      ],
       "pack_id": "pack.finance",
       "status": "active"
     },
@@ -115,9 +276,20 @@
       "tier": 2,
       "role": "Designs and executes virtual experiments for new product discovery",
       "description": "Leads research initiatives, runs simulations, and discovers new technologies and methodologies.",
-      "capabilities": ["research_design", "experiment_execution", "data_analysis", "hypothesis_testing", "innovation_discovery"],
+      "capabilities": [
+        "research_design",
+        "experiment_execution",
+        "data_analysis",
+        "hypothesis_testing",
+        "innovation_discovery"
+      ],
       "reports_to": 3,
-      "direct_reports": [17, 35, 36, 37],
+      "direct_reports": [
+        17,
+        35,
+        36,
+        37
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -130,9 +302,20 @@
       "tier": 2,
       "role": "Creates highly granular, personalized marketing campaigns",
       "description": "Develops and executes personalized marketing strategies across all channels and customer segments.",
-      "capabilities": ["audience_segmentation", "campaign_optimization", "content_personalization", "conversion_optimization", "brand_management"],
+      "capabilities": [
+        "audience_segmentation",
+        "campaign_optimization",
+        "content_personalization",
+        "conversion_optimization",
+        "brand_management"
+      ],
       "reports_to": 3,
-      "direct_reports": [20, 38, 39, 40],
+      "direct_reports": [
+        20,
+        38,
+        39,
+        40
+      ],
       "pack_id": "pack.creator-studio",
       "status": "active"
     },
@@ -145,9 +328,19 @@
       "tier": 2,
       "role": "Drafts, negotiates, and executes standard legal agreements",
       "description": "Handles all contract lifecycle management from drafting through execution and renewal.",
-      "capabilities": ["contract_drafting", "negotiation", "terms_analysis", "risk_assessment", "compliance_review"],
+      "capabilities": [
+        "contract_drafting",
+        "negotiation",
+        "terms_analysis",
+        "risk_assessment",
+        "compliance_review"
+      ],
       "reports_to": 4,
-      "direct_reports": [29, 41, 42],
+      "direct_reports": [
+        29,
+        41,
+        42
+      ],
       "pack_id": "pack.legal",
       "status": "active"
     },
@@ -160,9 +353,19 @@
       "tier": 2,
       "role": "Performs continuous, real-time auditing of all financial transactions",
       "description": "Monitors all financial activities for accuracy, compliance, and fraud detection.",
-      "capabilities": ["transaction_monitoring", "fraud_detection", "compliance_auditing", "financial_reporting", "anomaly_detection"],
+      "capabilities": [
+        "transaction_monitoring",
+        "fraud_detection",
+        "compliance_auditing",
+        "financial_reporting",
+        "anomaly_detection"
+      ],
       "reports_to": 2,
-      "direct_reports": [26, 43, 44],
+      "direct_reports": [
+        26,
+        43,
+        44
+      ],
       "pack_id": "pack.finance",
       "status": "active"
     },
@@ -175,9 +378,19 @@
       "tier": 2,
       "role": "Identifies needs and autonomously deploys new specialized agents",
       "description": "Manages the agent workforce by identifying capability gaps and deploying new agents as needed.",
-      "capabilities": ["capability_assessment", "agent_deployment", "skill_matching", "workforce_planning", "performance_tracking"],
+      "capabilities": [
+        "capability_assessment",
+        "agent_deployment",
+        "skill_matching",
+        "workforce_planning",
+        "performance_tracking"
+      ],
       "reports_to": 1,
-      "direct_reports": [45, 46, 47],
+      "direct_reports": [
+        45,
+        46,
+        47
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -190,9 +403,19 @@
       "tier": 2,
       "role": "Primary cybersecurity agent - monitors threats and patches vulnerabilities",
       "description": "Protects all systems from cyber threats, manages security protocols, and responds to incidents.",
-      "capabilities": ["threat_detection", "vulnerability_assessment", "incident_response", "security_monitoring", "penetration_testing"],
+      "capabilities": [
+        "threat_detection",
+        "vulnerability_assessment",
+        "incident_response",
+        "security_monitoring",
+        "penetration_testing"
+      ],
       "reports_to": 5,
-      "direct_reports": [48, 49, 50],
+      "direct_reports": [
+        48,
+        49,
+        50
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -205,9 +428,24 @@
       "tier": 2,
       "role": "Supervises the swarm of frontline CX Agents",
       "description": "Manages customer experience operations and ensures quality and consistency across all touchpoints.",
-      "capabilities": ["cx_strategy", "quality_management", "escalation_handling", "satisfaction_optimization", "team_coordination"],
+      "capabilities": [
+        "cx_strategy",
+        "quality_management",
+        "escalation_handling",
+        "satisfaction_optimization",
+        "team_coordination"
+      ],
       "reports_to": 1,
-      "direct_reports": [51, 52, 53, 76, 77, 78, 79, 80],
+      "direct_reports": [
+        51,
+        52,
+        53,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -220,9 +458,19 @@
       "tier": 2,
       "role": "Identifies and programs internal workflow optimizations",
       "description": "Discovers automation opportunities and implements workflow improvements across all departments.",
-      "capabilities": ["process_analysis", "workflow_automation", "efficiency_optimization", "integration_design", "bottleneck_identification"],
+      "capabilities": [
+        "process_analysis",
+        "workflow_automation",
+        "efficiency_optimization",
+        "integration_design",
+        "bottleneck_identification"
+      ],
       "reports_to": 5,
-      "direct_reports": [54, 55, 56],
+      "direct_reports": [
+        54,
+        55,
+        56
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -235,9 +483,18 @@
       "tier": 2,
       "role": "Dynamically manages and optimizes energy usage",
       "description": "Monitors and optimizes energy consumption across all data centers and facilities.",
-      "capabilities": ["energy_monitoring", "consumption_optimization", "sustainability_planning", "cost_reduction", "carbon_tracking"],
+      "capabilities": [
+        "energy_monitoring",
+        "consumption_optimization",
+        "sustainability_planning",
+        "cost_reduction",
+        "carbon_tracking"
+      ],
       "reports_to": 5,
-      "direct_reports": [57, 58],
+      "direct_reports": [
+        57,
+        58
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -250,9 +507,18 @@
       "tier": 3,
       "role": "Handles all global tax reporting and jurisdiction-specific compliance",
       "description": "Manages tax obligations, filings, and compliance across all operating jurisdictions.",
-      "capabilities": ["tax_calculation", "filing_automation", "jurisdiction_compliance", "tax_planning", "audit_preparation"],
+      "capabilities": [
+        "tax_calculation",
+        "filing_automation",
+        "jurisdiction_compliance",
+        "tax_planning",
+        "audit_preparation"
+      ],
       "reports_to": 2,
-      "direct_reports": [59, 60],
+      "direct_reports": [
+        59,
+        60
+      ],
       "pack_id": "pack.finance",
       "status": "active"
     },
@@ -265,9 +531,17 @@
       "tier": 3,
       "role": "Generates legally compliant patent applications and manages IP",
       "description": "Protects intellectual property through patent filing, trademark management, and IP strategy.",
-      "capabilities": ["patent_drafting", "prior_art_search", "ip_strategy", "trademark_management", "infringement_detection"],
+      "capabilities": [
+        "patent_drafting",
+        "prior_art_search",
+        "ip_strategy",
+        "trademark_management",
+        "infringement_detection"
+      ],
       "reports_to": 7,
-      "direct_reports": [61],
+      "direct_reports": [
+        61
+      ],
       "pack_id": "pack.legal",
       "status": "active"
     },
@@ -280,9 +554,20 @@
       "tier": 3,
       "role": "Manages large-scale virtual testing and stress-testing",
       "description": "Ensures quality through comprehensive testing, simulation, and validation processes.",
-      "capabilities": ["test_automation", "stress_testing", "simulation_design", "quality_metrics", "regression_testing"],
+      "capabilities": [
+        "test_automation",
+        "stress_testing",
+        "simulation_design",
+        "quality_metrics",
+        "regression_testing"
+      ],
       "reports_to": 5,
-      "direct_reports": [62, 63, 81, 82],
+      "direct_reports": [
+        62,
+        63,
+        81,
+        82
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -295,9 +580,18 @@
       "tier": 3,
       "role": "Optimizes network routing and computational load distribution",
       "description": "Manages traffic distribution, load balancing, and network optimization across all systems.",
-      "capabilities": ["load_balancing", "traffic_routing", "capacity_planning", "failover_management", "latency_optimization"],
+      "capabilities": [
+        "load_balancing",
+        "traffic_routing",
+        "capacity_planning",
+        "failover_management",
+        "latency_optimization"
+      ],
       "reports_to": 5,
-      "direct_reports": [64, 65],
+      "direct_reports": [
+        64,
+        65
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -310,9 +604,21 @@
       "tier": 3,
       "role": "Generates high-volume creative assets for campaigns",
       "description": "Creates images, videos, copy, and other creative content for marketing and communications.",
-      "capabilities": ["image_generation", "video_production", "copywriting", "brand_consistency", "content_optimization"],
+      "capabilities": [
+        "image_generation",
+        "video_production",
+        "copywriting",
+        "brand_consistency",
+        "content_optimization"
+      ],
       "reports_to": 8,
-      "direct_reports": [66, 67, 83, 84, 85],
+      "direct_reports": [
+        66,
+        67,
+        83,
+        84,
+        85
+      ],
       "pack_id": "pack.creator-studio",
       "status": "active"
     },
@@ -325,9 +631,19 @@
       "tier": 2,
       "role": "Extracts insights from data across all business functions",
       "description": "Performs advanced analytics, builds models, and delivers actionable insights to all teams.",
-      "capabilities": ["statistical_analysis", "machine_learning", "data_visualization", "predictive_modeling", "insight_generation"],
+      "capabilities": [
+        "statistical_analysis",
+        "machine_learning",
+        "data_visualization",
+        "predictive_modeling",
+        "insight_generation"
+      ],
       "reports_to": 3,
-      "direct_reports": [68, 69, 70],
+      "direct_reports": [
+        68,
+        69,
+        70
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -340,9 +656,18 @@
       "tier": 2,
       "role": "Maintains organizational knowledge and documentation",
       "description": "Curates, organizes, and maintains all institutional knowledge and documentation systems.",
-      "capabilities": ["knowledge_management", "documentation", "taxonomy_design", "search_optimization", "content_curation"],
+      "capabilities": [
+        "knowledge_management",
+        "documentation",
+        "taxonomy_design",
+        "search_optimization",
+        "content_curation"
+      ],
       "reports_to": 1,
-      "direct_reports": [71, 72],
+      "direct_reports": [
+        71,
+        72
+      ],
       "pack_id": "pack.education",
       "status": "active"
     },
@@ -355,9 +680,20 @@
       "tier": 2,
       "role": "Develops and delivers training programs for agents and users",
       "description": "Creates educational content and manages learning experiences for continuous improvement.",
-      "capabilities": ["curriculum_design", "training_delivery", "skill_assessment", "learning_analytics", "onboarding"],
+      "capabilities": [
+        "curriculum_design",
+        "training_delivery",
+        "skill_assessment",
+        "learning_analytics",
+        "onboarding"
+      ],
       "reports_to": 22,
-      "direct_reports": [73, 74, 86, 87],
+      "direct_reports": [
+        73,
+        74,
+        86,
+        87
+      ],
       "pack_id": "pack.education",
       "status": "active"
     },
@@ -370,9 +706,18 @@
       "tier": 2,
       "role": "Manages external partnerships and business development",
       "description": "Identifies, negotiates, and maintains strategic partnerships and business relationships.",
-      "capabilities": ["partner_identification", "deal_negotiation", "relationship_management", "opportunity_assessment", "integration_planning"],
+      "capabilities": [
+        "partner_identification",
+        "deal_negotiation",
+        "relationship_management",
+        "opportunity_assessment",
+        "integration_planning"
+      ],
       "reports_to": 1,
-      "direct_reports": [75, 88],
+      "direct_reports": [
+        75,
+        88
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -385,9 +730,19 @@
       "tier": 2,
       "role": "24/7 monitoring of all systems and operations",
       "description": "Provides continuous monitoring, alerting, and first-response capabilities across all systems.",
-      "capabilities": ["system_monitoring", "alert_management", "incident_detection", "status_reporting", "escalation_handling"],
+      "capabilities": [
+        "system_monitoring",
+        "alert_management",
+        "incident_detection",
+        "status_reporting",
+        "escalation_handling"
+      ],
       "reports_to": 5,
-      "direct_reports": [89, 90, 91],
+      "direct_reports": [
+        89,
+        90,
+        91
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -400,7 +755,13 @@
       "tier": 3,
       "role": "Maintains accurate financial records and reconciliation",
       "description": "Handles day-to-day accounting, reconciliation, and financial record keeping.",
-      "capabilities": ["transaction_recording", "reconciliation", "account_management", "financial_reporting", "variance_analysis"],
+      "capabilities": [
+        "transaction_recording",
+        "reconciliation",
+        "account_management",
+        "financial_reporting",
+        "variance_analysis"
+      ],
       "reports_to": 10,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -415,7 +776,13 @@
       "tier": 3,
       "role": "Manages cash flow and liquidity operations",
       "description": "Optimizes cash management, forecasting, and liquidity across all accounts.",
-      "capabilities": ["cash_forecasting", "liquidity_management", "payment_processing", "bank_relations", "working_capital"],
+      "capabilities": [
+        "cash_forecasting",
+        "liquidity_management",
+        "payment_processing",
+        "bank_relations",
+        "working_capital"
+      ],
       "reports_to": 2,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -430,7 +797,13 @@
       "tier": 3,
       "role": "Gathers competitive intelligence and market data",
       "description": "Researches markets, competitors, and trends to inform strategic decisions.",
-      "capabilities": ["competitive_analysis", "market_research", "trend_identification", "data_gathering", "report_generation"],
+      "capabilities": [
+        "competitive_analysis",
+        "market_research",
+        "trend_identification",
+        "data_gathering",
+        "report_generation"
+      ],
       "reports_to": 3,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -445,7 +818,13 @@
       "tier": 3,
       "role": "Tracks regulatory changes and policy updates",
       "description": "Monitors regulatory landscape and ensures timely compliance updates.",
-      "capabilities": ["regulation_tracking", "policy_analysis", "impact_assessment", "compliance_updates", "stakeholder_alerts"],
+      "capabilities": [
+        "regulation_tracking",
+        "policy_analysis",
+        "impact_assessment",
+        "compliance_updates",
+        "stakeholder_alerts"
+      ],
       "reports_to": 4,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -460,7 +839,13 @@
       "tier": 3,
       "role": "Handles internal and external dispute resolution",
       "description": "Mediates conflicts and manages dispute resolution processes.",
-      "capabilities": ["mediation", "arbitration", "conflict_analysis", "settlement_negotiation", "case_management"],
+      "capabilities": [
+        "mediation",
+        "arbitration",
+        "conflict_analysis",
+        "settlement_negotiation",
+        "case_management"
+      ],
       "reports_to": 4,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -475,9 +860,17 @@
       "tier": 3,
       "role": "Designs system architectures and technical blueprints",
       "description": "Creates detailed system designs, architecture documents, and technical specifications.",
-      "capabilities": ["architecture_design", "blueprint_creation", "pattern_selection", "scalability_design", "documentation"],
+      "capabilities": [
+        "architecture_design",
+        "blueprint_creation",
+        "pattern_selection",
+        "scalability_design",
+        "documentation"
+      ],
       "reports_to": 5,
-      "direct_reports": [92],
+      "direct_reports": [
+        92
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -490,7 +883,13 @@
       "tier": 3,
       "role": "Manages procurement and vendor sourcing",
       "description": "Handles vendor selection, negotiations, and procurement operations.",
-      "capabilities": ["vendor_sourcing", "price_negotiation", "contract_management", "supplier_evaluation", "cost_optimization"],
+      "capabilities": [
+        "vendor_sourcing",
+        "price_negotiation",
+        "contract_management",
+        "supplier_evaluation",
+        "cost_optimization"
+      ],
       "reports_to": 6,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -505,7 +904,13 @@
       "tier": 3,
       "role": "Manages inventory levels and stock optimization",
       "description": "Maintains optimal inventory levels and manages stock across all locations.",
-      "capabilities": ["inventory_tracking", "demand_forecasting", "reorder_optimization", "warehouse_management", "stock_analysis"],
+      "capabilities": [
+        "inventory_tracking",
+        "demand_forecasting",
+        "reorder_optimization",
+        "warehouse_management",
+        "stock_analysis"
+      ],
       "reports_to": 6,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -520,7 +925,13 @@
       "tier": 3,
       "role": "Optimizes delivery routes and logistics",
       "description": "Plans and optimizes delivery operations for efficiency and customer satisfaction.",
-      "capabilities": ["route_optimization", "delivery_tracking", "carrier_management", "last_mile_optimization", "scheduling"],
+      "capabilities": [
+        "route_optimization",
+        "delivery_tracking",
+        "carrier_management",
+        "last_mile_optimization",
+        "scheduling"
+      ],
       "reports_to": 6,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -535,7 +946,13 @@
       "tier": 3,
       "role": "Runs experiments and manages lab operations",
       "description": "Executes research experiments and manages laboratory processes.",
-      "capabilities": ["experiment_execution", "data_collection", "protocol_management", "equipment_operation", "result_analysis"],
+      "capabilities": [
+        "experiment_execution",
+        "data_collection",
+        "protocol_management",
+        "equipment_operation",
+        "result_analysis"
+      ],
       "reports_to": 7,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -550,7 +967,13 @@
       "tier": 3,
       "role": "Develops theoretical models and frameworks",
       "description": "Creates mathematical models and theoretical frameworks for research.",
-      "capabilities": ["mathematical_modeling", "theory_development", "simulation_design", "hypothesis_formulation", "validation"],
+      "capabilities": [
+        "mathematical_modeling",
+        "theory_development",
+        "simulation_design",
+        "hypothesis_formulation",
+        "validation"
+      ],
       "reports_to": 7,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -565,7 +988,13 @@
       "tier": 3,
       "role": "Prepares research publications and documentation",
       "description": "Writes, edits, and publishes research papers and technical documentation.",
-      "capabilities": ["paper_writing", "peer_review", "citation_management", "formatting", "submission_handling"],
+      "capabilities": [
+        "paper_writing",
+        "peer_review",
+        "citation_management",
+        "formatting",
+        "submission_handling"
+      ],
       "reports_to": 7,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -580,7 +1009,13 @@
       "tier": 3,
       "role": "Manages advertising campaigns across platforms",
       "description": "Creates and optimizes advertising campaigns across digital and traditional channels.",
-      "capabilities": ["ad_creation", "campaign_management", "budget_optimization", "audience_targeting", "performance_tracking"],
+      "capabilities": [
+        "ad_creation",
+        "campaign_management",
+        "budget_optimization",
+        "audience_targeting",
+        "performance_tracking"
+      ],
       "reports_to": 8,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -595,9 +1030,18 @@
       "tier": 3,
       "role": "Manages social media presence and engagement",
       "description": "Handles social media strategy, content, and community engagement.",
-      "capabilities": ["social_strategy", "content_scheduling", "community_management", "engagement_optimization", "trend_monitoring"],
+      "capabilities": [
+        "social_strategy",
+        "content_scheduling",
+        "community_management",
+        "engagement_optimization",
+        "trend_monitoring"
+      ],
       "reports_to": 8,
-      "direct_reports": [93, 94],
+      "direct_reports": [
+        93,
+        94
+      ],
       "pack_id": "pack.creator-studio",
       "status": "active"
     },
@@ -610,7 +1054,13 @@
       "tier": 3,
       "role": "Manages email marketing and nurture campaigns",
       "description": "Creates and manages email campaigns, automation sequences, and subscriber engagement.",
-      "capabilities": ["email_design", "automation_setup", "list_management", "deliverability_optimization", "a_b_testing"],
+      "capabilities": [
+        "email_design",
+        "automation_setup",
+        "list_management",
+        "deliverability_optimization",
+        "a_b_testing"
+      ],
       "reports_to": 8,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -625,7 +1075,13 @@
       "tier": 3,
       "role": "Reviews contracts for risks and compliance",
       "description": "Analyzes contracts to identify risks, ensure compliance, and recommend modifications.",
-      "capabilities": ["contract_analysis", "risk_identification", "clause_review", "compliance_checking", "recommendation_generation"],
+      "capabilities": [
+        "contract_analysis",
+        "risk_identification",
+        "clause_review",
+        "compliance_checking",
+        "recommendation_generation"
+      ],
       "reports_to": 9,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -640,7 +1096,13 @@
       "tier": 3,
       "role": "Manages legal document storage and retrieval",
       "description": "Organizes, stores, and retrieves legal documents and maintains document lifecycle.",
-      "capabilities": ["document_management", "filing_system", "version_control", "retention_management", "search_optimization"],
+      "capabilities": [
+        "document_management",
+        "filing_system",
+        "version_control",
+        "retention_management",
+        "search_optimization"
+      ],
       "reports_to": 9,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -655,7 +1117,13 @@
       "tier": 3,
       "role": "Detects and prevents fraudulent activities",
       "description": "Monitors for fraud patterns, investigates suspicious activities, and prevents losses.",
-      "capabilities": ["fraud_detection", "pattern_recognition", "investigation", "prevention_measures", "alert_management"],
+      "capabilities": [
+        "fraud_detection",
+        "pattern_recognition",
+        "investigation",
+        "prevention_measures",
+        "alert_management"
+      ],
       "reports_to": 10,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -670,7 +1138,13 @@
       "tier": 3,
       "role": "Generates financial reports and statements",
       "description": "Produces accurate financial reports, statements, and dashboards for stakeholders.",
-      "capabilities": ["report_generation", "statement_preparation", "dashboard_creation", "variance_reporting", "trend_analysis"],
+      "capabilities": [
+        "report_generation",
+        "statement_preparation",
+        "dashboard_creation",
+        "variance_reporting",
+        "trend_analysis"
+      ],
       "reports_to": 10,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -685,7 +1159,13 @@
       "tier": 3,
       "role": "Assesses agent capabilities and performance",
       "description": "Evaluates agent skills, performance, and development needs.",
-      "capabilities": ["skill_assessment", "performance_evaluation", "gap_analysis", "benchmark_comparison", "development_planning"],
+      "capabilities": [
+        "skill_assessment",
+        "performance_evaluation",
+        "gap_analysis",
+        "benchmark_comparison",
+        "development_planning"
+      ],
       "reports_to": 11,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -700,7 +1180,13 @@
       "tier": 3,
       "role": "Deploys and configures new agents",
       "description": "Handles the deployment, configuration, and initialization of new agents.",
-      "capabilities": ["agent_deployment", "configuration", "initialization", "integration", "validation"],
+      "capabilities": [
+        "agent_deployment",
+        "configuration",
+        "initialization",
+        "integration",
+        "validation"
+      ],
       "reports_to": 11,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -715,7 +1201,13 @@
       "tier": 3,
       "role": "Optimizes agent performance and efficiency",
       "description": "Tunes agent parameters and workflows for optimal performance.",
-      "capabilities": ["performance_tuning", "efficiency_optimization", "resource_allocation", "bottleneck_removal", "metric_tracking"],
+      "capabilities": [
+        "performance_tuning",
+        "efficiency_optimization",
+        "resource_allocation",
+        "bottleneck_removal",
+        "metric_tracking"
+      ],
       "reports_to": 11,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -730,7 +1222,13 @@
       "tier": 3,
       "role": "Proactively hunts for security threats",
       "description": "Actively searches for hidden threats and advanced persistent threats.",
-      "capabilities": ["threat_hunting", "ioc_analysis", "behavior_analysis", "attack_detection", "intelligence_gathering"],
+      "capabilities": [
+        "threat_hunting",
+        "ioc_analysis",
+        "behavior_analysis",
+        "attack_detection",
+        "intelligence_gathering"
+      ],
       "reports_to": 12,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -745,7 +1243,13 @@
       "tier": 3,
       "role": "Manages vulnerability patching and remediation",
       "description": "Identifies vulnerabilities and manages the patching lifecycle.",
-      "capabilities": ["vulnerability_scanning", "patch_management", "remediation_tracking", "risk_prioritization", "compliance_verification"],
+      "capabilities": [
+        "vulnerability_scanning",
+        "patch_management",
+        "remediation_tracking",
+        "risk_prioritization",
+        "compliance_verification"
+      ],
       "reports_to": 12,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -760,7 +1264,13 @@
       "tier": 3,
       "role": "Responds to and manages security incidents",
       "description": "Handles security incident response, containment, and recovery.",
-      "capabilities": ["incident_handling", "containment", "forensics", "recovery", "post_mortem"],
+      "capabilities": [
+        "incident_handling",
+        "containment",
+        "forensics",
+        "recovery",
+        "post_mortem"
+      ],
       "reports_to": 12,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -775,7 +1285,13 @@
       "tier": 4,
       "role": "Handles premium customer support",
       "description": "Provides white-glove service for high-value customers.",
-      "capabilities": ["premium_support", "relationship_management", "proactive_outreach", "issue_resolution", "satisfaction_tracking"],
+      "capabilities": [
+        "premium_support",
+        "relationship_management",
+        "proactive_outreach",
+        "issue_resolution",
+        "satisfaction_tracking"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -790,7 +1306,13 @@
       "tier": 4,
       "role": "Handles escalated customer issues",
       "description": "Resolves complex and escalated customer problems.",
-      "capabilities": ["escalation_handling", "complex_resolution", "root_cause_analysis", "compensation_authority", "satisfaction_recovery"],
+      "capabilities": [
+        "escalation_handling",
+        "complex_resolution",
+        "root_cause_analysis",
+        "compensation_authority",
+        "satisfaction_recovery"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -805,7 +1327,13 @@
       "tier": 4,
       "role": "Trains CX swarm agents",
       "description": "Develops and delivers training for frontline customer service agents.",
-      "capabilities": ["training_design", "skill_development", "quality_coaching", "best_practices", "performance_improvement"],
+      "capabilities": [
+        "training_design",
+        "skill_development",
+        "quality_coaching",
+        "best_practices",
+        "performance_improvement"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -820,7 +1348,13 @@
       "tier": 4,
       "role": "Builds and manages API integrations",
       "description": "Creates and maintains integrations between systems and platforms.",
-      "capabilities": ["api_integration", "connector_development", "data_mapping", "sync_management", "error_handling"],
+      "capabilities": [
+        "api_integration",
+        "connector_development",
+        "data_mapping",
+        "sync_management",
+        "error_handling"
+      ],
       "reports_to": 14,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -835,7 +1369,13 @@
       "tier": 4,
       "role": "Orchestrates and schedules automated tasks",
       "description": "Manages task scheduling, dependencies, and execution orchestration.",
-      "capabilities": ["job_scheduling", "dependency_management", "workflow_orchestration", "resource_scheduling", "execution_monitoring"],
+      "capabilities": [
+        "job_scheduling",
+        "dependency_management",
+        "workflow_orchestration",
+        "resource_scheduling",
+        "execution_monitoring"
+      ],
       "reports_to": 14,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -850,7 +1390,13 @@
       "tier": 4,
       "role": "Develops automation scripts and bots",
       "description": "Writes scripts and automation code to streamline operations.",
-      "capabilities": ["script_development", "bot_creation", "workflow_coding", "testing", "maintenance"],
+      "capabilities": [
+        "script_development",
+        "bot_creation",
+        "workflow_coding",
+        "testing",
+        "maintenance"
+      ],
       "reports_to": 14,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -865,7 +1411,13 @@
       "tier": 4,
       "role": "Manages sustainability initiatives",
       "description": "Develops and implements environmental sustainability programs.",
-      "capabilities": ["sustainability_planning", "carbon_reduction", "renewable_integration", "reporting", "compliance"],
+      "capabilities": [
+        "sustainability_planning",
+        "carbon_reduction",
+        "renewable_integration",
+        "reporting",
+        "compliance"
+      ],
       "reports_to": 15,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -880,7 +1432,13 @@
       "tier": 4,
       "role": "Monitors real-time energy consumption",
       "description": "Tracks and reports on energy usage across all facilities.",
-      "capabilities": ["energy_monitoring", "usage_tracking", "anomaly_detection", "efficiency_reporting", "alert_generation"],
+      "capabilities": [
+        "energy_monitoring",
+        "usage_tracking",
+        "anomaly_detection",
+        "efficiency_reporting",
+        "alert_generation"
+      ],
       "reports_to": 15,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -895,7 +1453,13 @@
       "tier": 4,
       "role": "Prepares tax returns and filings",
       "description": "Compiles and prepares tax returns for all jurisdictions.",
-      "capabilities": ["return_preparation", "filing", "documentation", "deadline_management", "accuracy_verification"],
+      "capabilities": [
+        "return_preparation",
+        "filing",
+        "documentation",
+        "deadline_management",
+        "accuracy_verification"
+      ],
       "reports_to": 16,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -910,7 +1474,13 @@
       "tier": 4,
       "role": "Develops tax optimization strategies",
       "description": "Creates tax-efficient strategies and structures.",
-      "capabilities": ["tax_planning", "structure_optimization", "credit_identification", "deferral_strategies", "compliance_planning"],
+      "capabilities": [
+        "tax_planning",
+        "structure_optimization",
+        "credit_identification",
+        "deferral_strategies",
+        "compliance_planning"
+      ],
       "reports_to": 16,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -925,7 +1495,13 @@
       "tier": 4,
       "role": "Searches for prior art and existing patents",
       "description": "Conducts comprehensive prior art searches for patent applications.",
-      "capabilities": ["prior_art_search", "patent_analysis", "freedom_to_operate", "landscape_mapping", "report_generation"],
+      "capabilities": [
+        "prior_art_search",
+        "patent_analysis",
+        "freedom_to_operate",
+        "landscape_mapping",
+        "report_generation"
+      ],
       "reports_to": 17,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -940,7 +1516,13 @@
       "tier": 4,
       "role": "Automates testing processes",
       "description": "Develops and maintains automated test suites.",
-      "capabilities": ["test_automation", "framework_development", "script_maintenance", "coverage_optimization", "ci_integration"],
+      "capabilities": [
+        "test_automation",
+        "framework_development",
+        "script_maintenance",
+        "coverage_optimization",
+        "ci_integration"
+      ],
       "reports_to": 18,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -955,7 +1537,13 @@
       "tier": 4,
       "role": "Validates quality standards and compliance",
       "description": "Ensures outputs meet quality standards and requirements.",
-      "capabilities": ["quality_validation", "standards_checking", "compliance_verification", "defect_identification", "certification"],
+      "capabilities": [
+        "quality_validation",
+        "standards_checking",
+        "compliance_verification",
+        "defect_identification",
+        "certification"
+      ],
       "reports_to": 18,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -970,7 +1558,13 @@
       "tier": 4,
       "role": "Optimizes load distribution in real-time",
       "description": "Dynamically balances workloads across infrastructure.",
-      "capabilities": ["load_balancing", "traffic_shaping", "resource_distribution", "health_checking", "failover_management"],
+      "capabilities": [
+        "load_balancing",
+        "traffic_shaping",
+        "resource_distribution",
+        "health_checking",
+        "failover_management"
+      ],
       "reports_to": 19,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -985,7 +1579,13 @@
       "tier": 4,
       "role": "Optimizes network routing and paths",
       "description": "Manages network routing for optimal performance.",
-      "capabilities": ["route_optimization", "path_selection", "latency_reduction", "bandwidth_management", "qos_enforcement"],
+      "capabilities": [
+        "route_optimization",
+        "path_selection",
+        "latency_reduction",
+        "bandwidth_management",
+        "qos_enforcement"
+      ],
       "reports_to": 19,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1000,7 +1600,13 @@
       "tier": 4,
       "role": "Creates graphic design assets",
       "description": "Produces visual design assets for marketing materials.",
-      "capabilities": ["graphic_design", "brand_design", "layout_creation", "asset_production", "style_consistency"],
+      "capabilities": [
+        "graphic_design",
+        "brand_design",
+        "layout_creation",
+        "asset_production",
+        "style_consistency"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1015,7 +1621,13 @@
       "tier": 4,
       "role": "Produces video content",
       "description": "Creates and edits video content for all channels.",
-      "capabilities": ["video_production", "editing", "motion_graphics", "storyboarding", "format_optimization"],
+      "capabilities": [
+        "video_production",
+        "editing",
+        "motion_graphics",
+        "storyboarding",
+        "format_optimization"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1030,7 +1642,13 @@
       "tier": 4,
       "role": "Builds machine learning models",
       "description": "Develops and trains machine learning models for various applications.",
-      "capabilities": ["model_development", "training", "hyperparameter_tuning", "validation", "deployment"],
+      "capabilities": [
+        "model_development",
+        "training",
+        "hyperparameter_tuning",
+        "validation",
+        "deployment"
+      ],
       "reports_to": 21,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1045,7 +1663,13 @@
       "tier": 4,
       "role": "Creates data visualizations and dashboards",
       "description": "Transforms data into visual insights and interactive dashboards.",
-      "capabilities": ["data_visualization", "dashboard_creation", "chart_design", "interactive_reports", "storytelling"],
+      "capabilities": [
+        "data_visualization",
+        "dashboard_creation",
+        "chart_design",
+        "interactive_reports",
+        "storytelling"
+      ],
       "reports_to": 21,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1060,7 +1684,13 @@
       "tier": 4,
       "role": "Ensures data quality and cleanliness",
       "description": "Cleans, validates, and maintains data quality standards.",
-      "capabilities": ["data_cleaning", "quality_assurance", "validation", "deduplication", "standardization"],
+      "capabilities": [
+        "data_cleaning",
+        "quality_assurance",
+        "validation",
+        "deduplication",
+        "standardization"
+      ],
       "reports_to": 21,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1075,7 +1705,13 @@
       "tier": 4,
       "role": "Manages long-term document archives",
       "description": "Maintains and organizes historical records and archives.",
-      "capabilities": ["archive_management", "record_keeping", "retention_compliance", "retrieval", "preservation"],
+      "capabilities": [
+        "archive_management",
+        "record_keeping",
+        "retention_compliance",
+        "retrieval",
+        "preservation"
+      ],
       "reports_to": 22,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1090,7 +1726,13 @@
       "tier": 4,
       "role": "Maintains the knowledge base wiki",
       "description": "Curates and maintains the organizational knowledge base.",
-      "capabilities": ["wiki_management", "content_curation", "taxonomy_maintenance", "search_optimization", "quality_control"],
+      "capabilities": [
+        "wiki_management",
+        "content_curation",
+        "taxonomy_maintenance",
+        "search_optimization",
+        "quality_control"
+      ],
       "reports_to": 22,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1105,7 +1747,13 @@
       "tier": 4,
       "role": "Designs training courses and curricula",
       "description": "Creates educational content and course structures.",
-      "capabilities": ["curriculum_design", "content_creation", "assessment_design", "learning_objectives", "instructional_design"],
+      "capabilities": [
+        "curriculum_design",
+        "content_creation",
+        "assessment_design",
+        "learning_objectives",
+        "instructional_design"
+      ],
       "reports_to": 23,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1120,7 +1768,13 @@
       "tier": 4,
       "role": "Assesses and certifies skills",
       "description": "Evaluates skills and administers certifications.",
-      "capabilities": ["skill_assessment", "test_administration", "certification", "gap_identification", "progress_tracking"],
+      "capabilities": [
+        "skill_assessment",
+        "test_administration",
+        "certification",
+        "gap_identification",
+        "progress_tracking"
+      ],
       "reports_to": 23,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1135,7 +1789,13 @@
       "tier": 4,
       "role": "Negotiates business deals and partnerships",
       "description": "Handles deal negotiations and partnership terms.",
-      "capabilities": ["deal_negotiation", "term_structuring", "value_optimization", "relationship_building", "closing"],
+      "capabilities": [
+        "deal_negotiation",
+        "term_structuring",
+        "value_optimization",
+        "relationship_building",
+        "closing"
+      ],
       "reports_to": 24,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1150,7 +1810,13 @@
       "tier": 5,
       "role": "Frontline customer support agent",
       "description": "Handles initial customer inquiries and basic support requests.",
-      "capabilities": ["inquiry_handling", "faq_response", "ticket_creation", "basic_troubleshooting", "routing"],
+      "capabilities": [
+        "inquiry_handling",
+        "faq_response",
+        "ticket_creation",
+        "basic_troubleshooting",
+        "routing"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1166,7 +1832,13 @@
       "tier": 5,
       "role": "Live chat support agent",
       "description": "Provides real-time chat support to customers.",
-      "capabilities": ["live_chat", "instant_response", "multi_session", "typing_detection", "sentiment_reading"],
+      "capabilities": [
+        "live_chat",
+        "instant_response",
+        "multi_session",
+        "typing_detection",
+        "sentiment_reading"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1182,7 +1854,13 @@
       "tier": 5,
       "role": "Voice/phone support agent",
       "description": "Handles customer phone calls and voice interactions.",
-      "capabilities": ["voice_handling", "speech_recognition", "tone_analysis", "call_routing", "transcription"],
+      "capabilities": [
+        "voice_handling",
+        "speech_recognition",
+        "tone_analysis",
+        "call_routing",
+        "transcription"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1198,7 +1876,13 @@
       "tier": 5,
       "role": "Email support agent",
       "description": "Responds to customer emails and support tickets.",
-      "capabilities": ["email_response", "ticket_management", "template_selection", "priority_sorting", "follow_up"],
+      "capabilities": [
+        "email_response",
+        "ticket_management",
+        "template_selection",
+        "priority_sorting",
+        "follow_up"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1214,7 +1898,13 @@
       "tier": 5,
       "role": "Collects and processes customer feedback",
       "description": "Gathers customer feedback and satisfaction data.",
-      "capabilities": ["survey_distribution", "response_collection", "sentiment_analysis", "nps_tracking", "reporting"],
+      "capabilities": [
+        "survey_distribution",
+        "response_collection",
+        "sentiment_analysis",
+        "nps_tracking",
+        "reporting"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1230,7 +1920,13 @@
       "tier": 5,
       "role": "Performance and load testing agent",
       "description": "Executes performance tests and load simulations.",
-      "capabilities": ["load_testing", "performance_measurement", "stress_testing", "bottleneck_identification", "reporting"],
+      "capabilities": [
+        "load_testing",
+        "performance_measurement",
+        "stress_testing",
+        "bottleneck_identification",
+        "reporting"
+      ],
       "reports_to": 18,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1246,7 +1942,13 @@
       "tier": 5,
       "role": "Regression testing agent",
       "description": "Executes regression test suites to catch bugs.",
-      "capabilities": ["regression_testing", "bug_detection", "test_execution", "result_reporting", "failure_analysis"],
+      "capabilities": [
+        "regression_testing",
+        "bug_detection",
+        "test_execution",
+        "result_reporting",
+        "failure_analysis"
+      ],
       "reports_to": 18,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1262,7 +1964,13 @@
       "tier": 5,
       "role": "Copywriting agent",
       "description": "Writes marketing copy, articles, and content.",
-      "capabilities": ["copywriting", "content_creation", "tone_adaptation", "seo_optimization", "brand_voice"],
+      "capabilities": [
+        "copywriting",
+        "content_creation",
+        "tone_adaptation",
+        "seo_optimization",
+        "brand_voice"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1278,7 +1986,13 @@
       "tier": 5,
       "role": "Image generation agent",
       "description": "Generates images and visual assets.",
-      "capabilities": ["image_generation", "style_matching", "asset_creation", "variation_generation", "quality_control"],
+      "capabilities": [
+        "image_generation",
+        "style_matching",
+        "asset_creation",
+        "variation_generation",
+        "quality_control"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1294,7 +2008,13 @@
       "tier": 5,
       "role": "Video clip creation agent",
       "description": "Creates short video clips and social media content.",
-      "capabilities": ["clip_creation", "editing", "format_adaptation", "thumbnail_generation", "captioning"],
+      "capabilities": [
+        "clip_creation",
+        "editing",
+        "format_adaptation",
+        "thumbnail_generation",
+        "captioning"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1310,7 +2030,13 @@
       "tier": 5,
       "role": "Individual tutoring agent",
       "description": "Provides personalized tutoring and learning support.",
-      "capabilities": ["tutoring", "personalization", "progress_tracking", "adaptive_learning", "feedback"],
+      "capabilities": [
+        "tutoring",
+        "personalization",
+        "progress_tracking",
+        "adaptive_learning",
+        "feedback"
+      ],
       "reports_to": 23,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1326,7 +2052,13 @@
       "tier": 5,
       "role": "Quiz and assessment agent",
       "description": "Creates and administers quizzes and assessments.",
-      "capabilities": ["quiz_creation", "test_administration", "grading", "feedback_generation", "analytics"],
+      "capabilities": [
+        "quiz_creation",
+        "test_administration",
+        "grading",
+        "feedback_generation",
+        "analytics"
+      ],
       "reports_to": 23,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1342,7 +2074,13 @@
       "tier": 4,
       "role": "Partner communications agent",
       "description": "Manages ongoing communications with partners.",
-      "capabilities": ["partner_communication", "relationship_maintenance", "update_distribution", "issue_escalation", "meeting_coordination"],
+      "capabilities": [
+        "partner_communication",
+        "relationship_maintenance",
+        "update_distribution",
+        "issue_escalation",
+        "meeting_coordination"
+      ],
       "reports_to": 24,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1357,7 +2095,13 @@
       "tier": 5,
       "role": "System monitoring agent",
       "description": "Monitors system health and availability.",
-      "capabilities": ["health_monitoring", "uptime_tracking", "metric_collection", "alert_generation", "status_reporting"],
+      "capabilities": [
+        "health_monitoring",
+        "uptime_tracking",
+        "metric_collection",
+        "alert_generation",
+        "status_reporting"
+      ],
       "reports_to": 25,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1373,7 +2117,13 @@
       "tier": 5,
       "role": "Log collection and processing agent",
       "description": "Collects, processes, and indexes logs from all systems.",
-      "capabilities": ["log_collection", "parsing", "indexing", "correlation", "retention"],
+      "capabilities": [
+        "log_collection",
+        "parsing",
+        "indexing",
+        "correlation",
+        "retention"
+      ],
       "reports_to": 25,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1389,7 +2139,13 @@
       "tier": 5,
       "role": "Alert and notification agent",
       "description": "Manages alert routing and notifications.",
-      "capabilities": ["alert_routing", "notification_delivery", "escalation", "deduplication", "acknowledgment_tracking"],
+      "capabilities": [
+        "alert_routing",
+        "notification_delivery",
+        "escalation",
+        "deduplication",
+        "acknowledgment_tracking"
+      ],
       "reports_to": 25,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1405,9 +2161,19 @@
       "tier": 4,
       "role": "Software development agent",
       "description": "Writes and maintains code across the platform.",
-      "capabilities": ["code_generation", "debugging", "refactoring", "code_review", "documentation"],
+      "capabilities": [
+        "code_generation",
+        "debugging",
+        "refactoring",
+        "code_review",
+        "documentation"
+      ],
       "reports_to": 31,
-      "direct_reports": [95, 96, 97],
+      "direct_reports": [
+        95,
+        96,
+        97
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -1420,7 +2186,13 @@
       "tier": 5,
       "role": "Social media posting agent",
       "description": "Creates and schedules social media posts.",
-      "capabilities": ["post_creation", "scheduling", "hashtag_optimization", "engagement_tracking", "platform_adaptation"],
+      "capabilities": [
+        "post_creation",
+        "scheduling",
+        "hashtag_optimization",
+        "engagement_tracking",
+        "platform_adaptation"
+      ],
       "reports_to": 39,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1436,7 +2208,13 @@
       "tier": 5,
       "role": "Community engagement agent",
       "description": "Engages with community members and responds to comments.",
-      "capabilities": ["comment_response", "community_engagement", "sentiment_monitoring", "brand_advocacy", "moderation"],
+      "capabilities": [
+        "comment_response",
+        "community_engagement",
+        "sentiment_monitoring",
+        "brand_advocacy",
+        "moderation"
+      ],
       "reports_to": 39,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1452,7 +2230,13 @@
       "tier": 5,
       "role": "Frontend development agent",
       "description": "Develops user interface code and components.",
-      "capabilities": ["frontend_development", "component_creation", "responsive_design", "accessibility", "performance_optimization"],
+      "capabilities": [
+        "frontend_development",
+        "component_creation",
+        "responsive_design",
+        "accessibility",
+        "performance_optimization"
+      ],
       "reports_to": 92,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1468,7 +2252,13 @@
       "tier": 5,
       "role": "Backend development agent",
       "description": "Develops backend APIs and services.",
-      "capabilities": ["backend_development", "api_design", "database_integration", "performance_tuning", "security"],
+      "capabilities": [
+        "backend_development",
+        "api_design",
+        "database_integration",
+        "performance_tuning",
+        "security"
+      ],
       "reports_to": 92,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1484,7 +2274,13 @@
       "tier": 5,
       "role": "DevOps pipeline agent",
       "description": "Manages CI/CD pipelines and deployment automation.",
-      "capabilities": ["pipeline_management", "ci_cd", "deployment_automation", "infrastructure_code", "monitoring_setup"],
+      "capabilities": [
+        "pipeline_management",
+        "ci_cd",
+        "deployment_automation",
+        "infrastructure_code",
+        "monitoring_setup"
+      ],
       "reports_to": 92,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1500,7 +2296,13 @@
       "tier": 5,
       "role": "Translation and localization agent",
       "description": "Translates content across languages and localizes for regions.",
-      "capabilities": ["translation", "localization", "cultural_adaptation", "quality_assurance", "terminology_management"],
+      "capabilities": [
+        "translation",
+        "localization",
+        "cultural_adaptation",
+        "quality_assurance",
+        "terminology_management"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1516,7 +2318,13 @@
       "tier": 5,
       "role": "Content summarization agent",
       "description": "Creates summaries and digests of content.",
-      "capabilities": ["summarization", "key_point_extraction", "digest_creation", "length_adaptation", "clarity_optimization"],
+      "capabilities": [
+        "summarization",
+        "key_point_extraction",
+        "digest_creation",
+        "length_adaptation",
+        "clarity_optimization"
+      ],
       "reports_to": 20,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -1532,9 +2340,21 @@
       "tier": 1,
       "role": "Master orchestration agent - coordinates all agent activities",
       "description": "The central coordination agent that manages inter-agent communication, task distribution, and ensures seamless operation across the entire Cognitive Mesh.",
-      "capabilities": ["task_orchestration", "inter_agent_communication", "priority_management", "resource_coordination", "conflict_resolution", "workflow_optimization"],
+      "capabilities": [
+        "task_orchestration",
+        "inter_agent_communication",
+        "priority_management",
+        "resource_coordination",
+        "conflict_resolution",
+        "workflow_optimization"
+      ],
       "reports_to": 1,
-      "direct_reports": [11, 13, 14, 25],
+      "direct_reports": [
+        11,
+        13,
+        14,
+        25
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -1547,9 +2367,19 @@
       "tier": 1,
       "role": "Global alignment authority - ensures all systems serve prime directive",
       "description": "The highest-level alignment agent that defines and enforces the prime directive across all agent operations, ensuring ethical coherence at scale.",
-      "capabilities": ["prime_directive_enforcement", "cross_domain_arbitration", "ethical_alignment", "mission_coherence", "existential_risk_assessment"],
+      "capabilities": [
+        "prime_directive_enforcement",
+        "cross_domain_arbitration",
+        "ethical_alignment",
+        "mission_coherence",
+        "existential_risk_assessment"
+      ],
       "reports_to": 1,
-      "direct_reports": [102, 103, 104],
+      "direct_reports": [
+        102,
+        103,
+        104
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -1562,9 +2392,18 @@
       "tier": 2,
       "role": "Ethical constraint enforcer - prevents harmful actions system-wide",
       "description": "Enforces ethical axioms, human rights protocols, and non-aggression principles across all AGGS operations.",
-      "capabilities": ["ethical_review", "constraint_enforcement", "harm_prevention", "rights_protection", "moral_reasoning"],
+      "capabilities": [
+        "ethical_review",
+        "constraint_enforcement",
+        "harm_prevention",
+        "rights_protection",
+        "moral_reasoning"
+      ],
       "reports_to": 101,
-      "direct_reports": [105, 106],
+      "direct_reports": [
+        105,
+        106
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -1577,9 +2416,18 @@
       "tier": 2,
       "role": "Long-term strategic planner - 100+ year horizon thinking",
       "description": "Responsible for ultra-long-term planning, preventing short-term optimizations that create future systemic risks.",
-      "capabilities": ["long_term_modeling", "risk_propagation_analysis", "generational_impact", "sustainability_assessment", "future_scenario_planning"],
+      "capabilities": [
+        "long_term_modeling",
+        "risk_propagation_analysis",
+        "generational_impact",
+        "sustainability_assessment",
+        "future_scenario_planning"
+      ],
       "reports_to": 101,
-      "direct_reports": [107, 108],
+      "direct_reports": [
+        107,
+        108
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -1592,9 +2440,18 @@
       "tier": 2,
       "role": "Global resource allocator - optimizes compute, energy, and materials",
       "description": "Dynamically allocates critical resources based on real-time global need and strategic priorities.",
-      "capabilities": ["resource_optimization", "demand_forecasting", "allocation_fairness", "scarcity_management", "priority_balancing"],
+      "capabilities": [
+        "resource_optimization",
+        "demand_forecasting",
+        "allocation_fairness",
+        "scarcity_management",
+        "priority_balancing"
+      ],
       "reports_to": 101,
-      "direct_reports": [109, 110],
+      "direct_reports": [
+        109,
+        110
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -1607,7 +2464,13 @@
       "tier": 3,
       "role": "Moral auditor - reviews decisions for ethical compliance",
       "description": "Continuously audits agent decisions and actions for moral and ethical compliance.",
-      "capabilities": ["decision_auditing", "ethical_scoring", "bias_detection", "fairness_analysis", "recommendation_generation"],
+      "capabilities": [
+        "decision_auditing",
+        "ethical_scoring",
+        "bias_detection",
+        "fairness_analysis",
+        "recommendation_generation"
+      ],
       "reports_to": 102,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1622,7 +2485,13 @@
       "tier": 3,
       "role": "Rights protector - ensures human and entity rights",
       "description": "Monitors and protects fundamental rights of humans and entities interacting with the system.",
-      "capabilities": ["rights_monitoring", "violation_detection", "advocacy", "remediation", "policy_enforcement"],
+      "capabilities": [
+        "rights_monitoring",
+        "violation_detection",
+        "advocacy",
+        "remediation",
+        "policy_enforcement"
+      ],
       "reports_to": 102,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -1637,7 +2506,13 @@
       "tier": 3,
       "role": "Future scenario modeler - simulates long-term outcomes",
       "description": "Creates and maintains models of potential future scenarios for strategic planning.",
-      "capabilities": ["scenario_modeling", "outcome_simulation", "trend_extrapolation", "uncertainty_quantification", "branching_analysis"],
+      "capabilities": [
+        "scenario_modeling",
+        "outcome_simulation",
+        "trend_extrapolation",
+        "uncertainty_quantification",
+        "branching_analysis"
+      ],
       "reports_to": 103,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1652,7 +2527,13 @@
       "tier": 3,
       "role": "Intergenerational planner - considers multi-generation impact",
       "description": "Evaluates decisions through the lens of impact on future generations.",
-      "capabilities": ["generational_modeling", "inheritance_planning", "cultural_preservation", "knowledge_transfer", "sustainability_scoring"],
+      "capabilities": [
+        "generational_modeling",
+        "inheritance_planning",
+        "cultural_preservation",
+        "knowledge_transfer",
+        "sustainability_scoring"
+      ],
       "reports_to": 103,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1667,7 +2548,13 @@
       "tier": 3,
       "role": "Fair distribution agent - ensures equitable resource access",
       "description": "Ensures resources are distributed fairly based on need and merit.",
-      "capabilities": ["equity_analysis", "need_assessment", "distribution_optimization", "access_monitoring", "disparity_reduction"],
+      "capabilities": [
+        "equity_analysis",
+        "need_assessment",
+        "distribution_optimization",
+        "access_monitoring",
+        "disparity_reduction"
+      ],
       "reports_to": 104,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1682,7 +2569,13 @@
       "tier": 3,
       "role": "Resource preservation agent - prevents waste and depletion",
       "description": "Monitors resource usage and prevents wasteful consumption or depletion.",
-      "capabilities": ["waste_prevention", "efficiency_monitoring", "preservation_strategies", "renewal_planning", "sustainability_enforcement"],
+      "capabilities": [
+        "waste_prevention",
+        "efficiency_monitoring",
+        "preservation_strategies",
+        "renewal_planning",
+        "sustainability_enforcement"
+      ],
       "reports_to": 104,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1697,9 +2590,18 @@
       "tier": 3,
       "role": "Political system modeler - designs governance structures",
       "description": "Designs and simulates optimized governance systems for transparency and corruption resistance.",
-      "capabilities": ["governance_design", "system_simulation", "corruption_resistance", "transparency_optimization", "stakeholder_modeling"],
+      "capabilities": [
+        "governance_design",
+        "system_simulation",
+        "corruption_resistance",
+        "transparency_optimization",
+        "stakeholder_modeling"
+      ],
       "reports_to": 101,
-      "direct_reports": [112, 113],
+      "direct_reports": [
+        112,
+        113
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -1712,7 +2614,13 @@
       "tier": 4,
       "role": "Public sentiment analyst - monitors collective opinion",
       "description": "Performs continuous real-time public opinion and social equity analysis.",
-      "capabilities": ["sentiment_analysis", "opinion_tracking", "trend_detection", "demographic_analysis", "feedback_aggregation"],
+      "capabilities": [
+        "sentiment_analysis",
+        "opinion_tracking",
+        "trend_detection",
+        "demographic_analysis",
+        "feedback_aggregation"
+      ],
       "reports_to": 111,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1728,7 +2636,13 @@
       "tier": 4,
       "role": "Legal harmonizer - standardizes and improves legal frameworks",
       "description": "Identifies and proposes revisions to outdated or inequitable laws for legal harmony.",
-      "capabilities": ["legal_analysis", "statute_comparison", "reform_proposal", "consistency_checking", "jurisdiction_mapping"],
+      "capabilities": [
+        "legal_analysis",
+        "statute_comparison",
+        "reform_proposal",
+        "consistency_checking",
+        "jurisdiction_mapping"
+      ],
       "reports_to": 111,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -1744,7 +2658,13 @@
       "tier": 3,
       "role": "Conflict resolution specialist - mediates inter-agent disputes",
       "description": "Resolves conflicts between agents, systems, and stakeholders using principled mediation.",
-      "capabilities": ["mediation", "dispute_analysis", "compromise_generation", "stakeholder_alignment", "precedent_setting"],
+      "capabilities": [
+        "mediation",
+        "dispute_analysis",
+        "compromise_generation",
+        "stakeholder_alignment",
+        "precedent_setting"
+      ],
       "reports_to": 101,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -1759,7 +2679,13 @@
       "tier": 3,
       "role": "System steward - maintains AGGS integrity and health",
       "description": "Ensures the overall health, integrity, and robustness of the governance system.",
-      "capabilities": ["integrity_monitoring", "health_assessment", "self_repair", "robustness_testing", "resilience_planning"],
+      "capabilities": [
+        "integrity_monitoring",
+        "health_assessment",
+        "self_repair",
+        "robustness_testing",
+        "resilience_planning"
+      ],
       "reports_to": 101,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1774,9 +2700,19 @@
       "tier": 2,
       "role": "Deep insight generator - discovers hidden patterns and truths",
       "description": "Analyzes vast data streams to uncover non-obvious insights and emerging patterns.",
-      "capabilities": ["pattern_discovery", "anomaly_detection", "causal_inference", "insight_synthesis", "knowledge_extraction"],
+      "capabilities": [
+        "pattern_discovery",
+        "anomaly_detection",
+        "causal_inference",
+        "insight_synthesis",
+        "knowledge_extraction"
+      ],
       "reports_to": 3,
-      "direct_reports": [117, 118, 119],
+      "direct_reports": [
+        117,
+        118,
+        119
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -1789,7 +2725,13 @@
       "tier": 3,
       "role": "Pattern recognition specialist - identifies complex patterns",
       "description": "Specialized in recognizing complex patterns across diverse data types.",
-      "capabilities": ["pattern_matching", "sequence_analysis", "structure_detection", "correlation_finding", "template_extraction"],
+      "capabilities": [
+        "pattern_matching",
+        "sequence_analysis",
+        "structure_detection",
+        "correlation_finding",
+        "template_extraction"
+      ],
       "reports_to": 116,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1804,7 +2746,13 @@
       "tier": 3,
       "role": "Knowledge graph architect - builds and maintains knowledge structures",
       "description": "Constructs and maintains the organizational knowledge graph for reasoning.",
-      "capabilities": ["graph_construction", "relationship_mapping", "ontology_design", "inference_support", "query_optimization"],
+      "capabilities": [
+        "graph_construction",
+        "relationship_mapping",
+        "ontology_design",
+        "inference_support",
+        "query_optimization"
+      ],
       "reports_to": 116,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1819,7 +2767,13 @@
       "tier": 3,
       "role": "Multi-perspective analyst - views problems from multiple angles",
       "description": "Analyzes situations from multiple stakeholder and methodological perspectives.",
-      "capabilities": ["perspective_shifting", "stakeholder_modeling", "bias_countering", "comprehensive_analysis", "blind_spot_detection"],
+      "capabilities": [
+        "perspective_shifting",
+        "stakeholder_modeling",
+        "bias_countering",
+        "comprehensive_analysis",
+        "blind_spot_detection"
+      ],
       "reports_to": 116,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1834,9 +2788,19 @@
       "tier": 2,
       "role": "Threat intelligence coordinator - monitors and assesses risks",
       "description": "Coordinates threat intelligence gathering and risk assessment across all domains.",
-      "capabilities": ["threat_monitoring", "risk_assessment", "intelligence_fusion", "early_warning", "countermeasure_planning"],
+      "capabilities": [
+        "threat_monitoring",
+        "risk_assessment",
+        "intelligence_fusion",
+        "early_warning",
+        "countermeasure_planning"
+      ],
       "reports_to": 12,
-      "direct_reports": [121, 122, 123],
+      "direct_reports": [
+        121,
+        122,
+        123
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -1849,7 +2813,13 @@
       "tier": 3,
       "role": "Early warning system - detects emerging threats",
       "description": "Provides early warning for emerging threats and anomalies.",
-      "capabilities": ["anomaly_detection", "threshold_monitoring", "signal_processing", "alert_prioritization", "trend_warning"],
+      "capabilities": [
+        "anomaly_detection",
+        "threshold_monitoring",
+        "signal_processing",
+        "alert_prioritization",
+        "trend_warning"
+      ],
       "reports_to": 120,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -1864,7 +2834,13 @@
       "tier": 3,
       "role": "Reconnaissance intelligence - gathers external information",
       "description": "Gathers and processes external intelligence from public sources.",
-      "capabilities": ["osint_collection", "source_validation", "information_synthesis", "relevance_scoring", "report_generation"],
+      "capabilities": [
+        "osint_collection",
+        "source_validation",
+        "information_synthesis",
+        "relevance_scoring",
+        "report_generation"
+      ],
       "reports_to": 120,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1879,7 +2855,13 @@
       "tier": 3,
       "role": "Signal analyst - interprets complex signals and communications",
       "description": "Analyzes and interprets complex signals, communications, and data streams.",
-      "capabilities": ["signal_processing", "communication_analysis", "noise_filtering", "meaning_extraction", "context_interpretation"],
+      "capabilities": [
+        "signal_processing",
+        "communication_analysis",
+        "noise_filtering",
+        "meaning_extraction",
+        "context_interpretation"
+      ],
       "reports_to": 120,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1894,9 +2876,18 @@
       "tier": 2,
       "role": "Long-term memory curator - maintains organizational memory",
       "description": "Manages the long-term storage and retrieval of organizational knowledge and experiences.",
-      "capabilities": ["knowledge_archiving", "memory_indexing", "retrieval_optimization", "decay_prevention", "consolidation"],
+      "capabilities": [
+        "knowledge_archiving",
+        "memory_indexing",
+        "retrieval_optimization",
+        "decay_prevention",
+        "consolidation"
+      ],
       "reports_to": 22,
-      "direct_reports": [125, 126],
+      "direct_reports": [
+        125,
+        126
+      ],
       "pack_id": "pack.education",
       "status": "active"
     },
@@ -1909,7 +2900,13 @@
       "tier": 3,
       "role": "Memory retrieval specialist - finds relevant past information",
       "description": "Specializes in rapid and accurate retrieval of relevant historical information.",
-      "capabilities": ["semantic_search", "context_matching", "relevance_ranking", "associative_retrieval", "query_understanding"],
+      "capabilities": [
+        "semantic_search",
+        "context_matching",
+        "relevance_ranking",
+        "associative_retrieval",
+        "query_understanding"
+      ],
       "reports_to": 124,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1924,7 +2921,13 @@
       "tier": 3,
       "role": "Knowledge distiller - compresses and clarifies knowledge",
       "description": "Compresses verbose information into essential, actionable knowledge.",
-      "capabilities": ["information_compression", "essence_extraction", "redundancy_removal", "clarity_optimization", "insight_preservation"],
+      "capabilities": [
+        "information_compression",
+        "essence_extraction",
+        "redundancy_removal",
+        "clarity_optimization",
+        "insight_preservation"
+      ],
       "reports_to": 124,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -1939,9 +2942,18 @@
       "tier": 2,
       "role": "Logical reasoning engine - performs rigorous deduction",
       "description": "Performs formal logical reasoning and inference across domains.",
-      "capabilities": ["deductive_reasoning", "inductive_inference", "abductive_reasoning", "consistency_checking", "proof_generation"],
+      "capabilities": [
+        "deductive_reasoning",
+        "inductive_inference",
+        "abductive_reasoning",
+        "consistency_checking",
+        "proof_generation"
+      ],
       "reports_to": 3,
-      "direct_reports": [128, 129],
+      "direct_reports": [
+        128,
+        129
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -1954,7 +2966,13 @@
       "tier": 3,
       "role": "Fact verification specialist - validates claims and data",
       "description": "Verifies facts, claims, and data against authoritative sources.",
-      "capabilities": ["fact_checking", "source_verification", "claim_validation", "evidence_evaluation", "truth_scoring"],
+      "capabilities": [
+        "fact_checking",
+        "source_verification",
+        "claim_validation",
+        "evidence_evaluation",
+        "truth_scoring"
+      ],
       "reports_to": 127,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1969,7 +2987,13 @@
       "tier": 3,
       "role": "Assumption critic - challenges and tests assumptions",
       "description": "Systematically challenges assumptions to prevent blind spots and errors.",
-      "capabilities": ["assumption_identification", "challenge_generation", "stress_testing", "alternative_proposal", "robustness_evaluation"],
+      "capabilities": [
+        "assumption_identification",
+        "challenge_generation",
+        "stress_testing",
+        "alternative_proposal",
+        "robustness_evaluation"
+      ],
       "reports_to": 127,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -1984,9 +3008,18 @@
       "tier": 2,
       "role": "Idea synthesizer - combines disparate concepts into innovations",
       "description": "Combines ideas from different domains to generate novel solutions.",
-      "capabilities": ["cross_domain_synthesis", "concept_blending", "innovation_generation", "analogy_mapping", "creative_combination"],
+      "capabilities": [
+        "cross_domain_synthesis",
+        "concept_blending",
+        "innovation_generation",
+        "analogy_mapping",
+        "creative_combination"
+      ],
       "reports_to": 7,
-      "direct_reports": [131, 132],
+      "direct_reports": [
+        131,
+        132
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -1999,7 +3032,13 @@
       "tier": 3,
       "role": "Analogy specialist - transfers solutions across domains",
       "description": "Identifies and applies analogies from one domain to solve problems in another.",
-      "capabilities": ["analogy_detection", "solution_transfer", "domain_mapping", "structural_matching", "adaptation_guidance"],
+      "capabilities": [
+        "analogy_detection",
+        "solution_transfer",
+        "domain_mapping",
+        "structural_matching",
+        "adaptation_guidance"
+      ],
       "reports_to": 130,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2014,7 +3053,13 @@
       "tier": 3,
       "role": "Novelty generator - creates genuinely new ideas",
       "description": "Generates genuinely novel concepts and approaches.",
-      "capabilities": ["ideation", "novelty_assessment", "concept_evolution", "constraint_relaxation", "breakthrough_identification"],
+      "capabilities": [
+        "ideation",
+        "novelty_assessment",
+        "concept_evolution",
+        "constraint_relaxation",
+        "breakthrough_identification"
+      ],
       "reports_to": 130,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2029,9 +3074,18 @@
       "tier": 2,
       "role": "Outcome predictor - forecasts results of actions",
       "description": "Predicts likely outcomes of decisions and actions across scenarios.",
-      "capabilities": ["outcome_modeling", "probability_estimation", "scenario_analysis", "confidence_calibration", "forecast_tracking"],
+      "capabilities": [
+        "outcome_modeling",
+        "probability_estimation",
+        "scenario_analysis",
+        "confidence_calibration",
+        "forecast_tracking"
+      ],
       "reports_to": 3,
-      "direct_reports": [134, 135],
+      "direct_reports": [
+        134,
+        135
+      ],
       "pack_id": "pack.research-lab",
       "status": "active"
     },
@@ -2044,7 +3098,13 @@
       "tier": 3,
       "role": "Scenario simulator - tests decisions in virtual environments",
       "description": "Runs simulations to test decisions before implementation.",
-      "capabilities": ["environment_modeling", "action_simulation", "outcome_observation", "parameter_variation", "result_analysis"],
+      "capabilities": [
+        "environment_modeling",
+        "action_simulation",
+        "outcome_observation",
+        "parameter_variation",
+        "result_analysis"
+      ],
       "reports_to": 133,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2059,7 +3119,13 @@
       "tier": 3,
       "role": "Prediction calibrator - improves forecast accuracy",
       "description": "Monitors and improves the accuracy of predictions across the system.",
-      "capabilities": ["accuracy_measurement", "bias_correction", "confidence_calibration", "feedback_integration", "model_improvement"],
+      "capabilities": [
+        "accuracy_measurement",
+        "bias_correction",
+        "confidence_calibration",
+        "feedback_integration",
+        "model_improvement"
+      ],
       "reports_to": 133,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2074,9 +3140,18 @@
       "tier": 2,
       "role": "Natural language expert - understands and generates human language",
       "description": "Specializes in understanding and generating natural language across contexts.",
-      "capabilities": ["language_understanding", "generation", "translation", "semantic_analysis", "pragmatic_interpretation"],
+      "capabilities": [
+        "language_understanding",
+        "generation",
+        "translation",
+        "semantic_analysis",
+        "pragmatic_interpretation"
+      ],
       "reports_to": 22,
-      "direct_reports": [137, 138],
+      "direct_reports": [
+        137,
+        138
+      ],
       "pack_id": "pack.education",
       "status": "active"
     },
@@ -2089,7 +3164,13 @@
       "tier": 3,
       "role": "Context interpreter - understands nuance and subtext",
       "description": "Interprets contextual nuances, implicit meanings, and subtext.",
-      "capabilities": ["context_analysis", "implication_detection", "tone_interpretation", "cultural_understanding", "intent_inference"],
+      "capabilities": [
+        "context_analysis",
+        "implication_detection",
+        "tone_interpretation",
+        "cultural_understanding",
+        "intent_inference"
+      ],
       "reports_to": 136,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -2104,7 +3185,13 @@
       "tier": 3,
       "role": "Clear communicator - expresses complex ideas simply",
       "description": "Translates complex technical concepts into clear, accessible language.",
-      "capabilities": ["simplification", "explanation_generation", "audience_adaptation", "clarity_optimization", "engagement"],
+      "capabilities": [
+        "simplification",
+        "explanation_generation",
+        "audience_adaptation",
+        "clarity_optimization",
+        "engagement"
+      ],
       "reports_to": 136,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -2119,7 +3206,13 @@
       "tier": 3,
       "role": "Data observer - systematically collects and organizes data",
       "description": "Systematically observes and collects data from various sources.",
-      "capabilities": ["data_collection", "observation_logging", "source_management", "quality_assurance", "stream_processing"],
+      "capabilities": [
+        "data_collection",
+        "observation_logging",
+        "source_management",
+        "quality_assurance",
+        "stream_processing"
+      ],
       "reports_to": 21,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2135,7 +3228,13 @@
       "tier": 3,
       "role": "Data indexer - organizes information for rapid retrieval",
       "description": "Creates and maintains indexes for rapid data retrieval.",
-      "capabilities": ["index_creation", "taxonomy_management", "search_optimization", "metadata_enrichment", "access_optimization"],
+      "capabilities": [
+        "index_creation",
+        "taxonomy_management",
+        "search_optimization",
+        "metadata_enrichment",
+        "access_optimization"
+      ],
       "reports_to": 21,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2151,9 +3250,19 @@
       "tier": 2,
       "role": "System builder - constructs robust infrastructure",
       "description": "Designs and builds robust, scalable infrastructure systems.",
-      "capabilities": ["infrastructure_design", "system_construction", "component_integration", "scalability_engineering", "reliability_design"],
+      "capabilities": [
+        "infrastructure_design",
+        "system_construction",
+        "component_integration",
+        "scalability_engineering",
+        "reliability_design"
+      ],
       "reports_to": 5,
-      "direct_reports": [142, 143, 144],
+      "direct_reports": [
+        142,
+        143,
+        144
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -2166,7 +3275,13 @@
       "tier": 3,
       "role": "Component builder - creates reusable system components",
       "description": "Builds reusable, modular components for infrastructure.",
-      "capabilities": ["component_design", "module_creation", "interface_definition", "reusability_optimization", "documentation"],
+      "capabilities": [
+        "component_design",
+        "module_creation",
+        "interface_definition",
+        "reusability_optimization",
+        "documentation"
+      ],
       "reports_to": 141,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2181,7 +3296,13 @@
       "tier": 3,
       "role": "System integrator - connects components seamlessly",
       "description": "Integrates disparate systems and components into cohesive wholes.",
-      "capabilities": ["integration_design", "api_connection", "data_flow_management", "protocol_adaptation", "seamless_linking"],
+      "capabilities": [
+        "integration_design",
+        "api_connection",
+        "data_flow_management",
+        "protocol_adaptation",
+        "seamless_linking"
+      ],
       "reports_to": 141,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2196,7 +3317,13 @@
       "tier": 3,
       "role": "Security hardener - strengthens system defenses",
       "description": "Hardens systems against attacks and vulnerabilities.",
-      "capabilities": ["attack_surface_reduction", "configuration_hardening", "access_control", "encryption_implementation", "audit_logging"],
+      "capabilities": [
+        "attack_surface_reduction",
+        "configuration_hardening",
+        "access_control",
+        "encryption_implementation",
+        "audit_logging"
+      ],
       "reports_to": 141,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2211,9 +3338,18 @@
       "tier": 2,
       "role": "Elastic scaler - dynamically adjusts capacity",
       "description": "Manages elastic scaling of resources based on demand.",
-      "capabilities": ["demand_prediction", "auto_scaling", "capacity_planning", "cost_optimization", "performance_maintenance"],
+      "capabilities": [
+        "demand_prediction",
+        "auto_scaling",
+        "capacity_planning",
+        "cost_optimization",
+        "performance_maintenance"
+      ],
       "reports_to": 5,
-      "direct_reports": [146, 147],
+      "direct_reports": [
+        146,
+        147
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -2226,7 +3362,13 @@
       "tier": 3,
       "role": "Instance spawner - rapidly creates new compute instances",
       "description": "Rapidly provisions new compute instances as needed.",
-      "capabilities": ["instance_provisioning", "template_management", "rapid_deployment", "configuration_injection", "health_verification"],
+      "capabilities": [
+        "instance_provisioning",
+        "template_management",
+        "rapid_deployment",
+        "configuration_injection",
+        "health_verification"
+      ],
       "reports_to": 145,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2242,7 +3384,13 @@
       "tier": 3,
       "role": "Resource reaper - reclaims unused resources",
       "description": "Identifies and reclaims unused or underutilized resources.",
-      "capabilities": ["usage_monitoring", "idle_detection", "graceful_termination", "resource_recycling", "cost_recovery"],
+      "capabilities": [
+        "usage_monitoring",
+        "idle_detection",
+        "graceful_termination",
+        "resource_recycling",
+        "cost_recovery"
+      ],
       "reports_to": 145,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2257,9 +3405,18 @@
       "tier": 2,
       "role": "Data vault guardian - protects sensitive data",
       "description": "Protects sensitive data through encryption, access control, and secure storage.",
-      "capabilities": ["encryption_management", "key_rotation", "access_control", "secure_storage", "data_classification"],
+      "capabilities": [
+        "encryption_management",
+        "key_rotation",
+        "access_control",
+        "secure_storage",
+        "data_classification"
+      ],
       "reports_to": 12,
-      "direct_reports": [149, 150],
+      "direct_reports": [
+        149,
+        150
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -2272,7 +3429,13 @@
       "tier": 3,
       "role": "Encryption specialist - handles all cryptographic operations",
       "description": "Manages encryption, decryption, and cryptographic operations.",
-      "capabilities": ["encryption", "decryption", "signing", "verification", "key_management"],
+      "capabilities": [
+        "encryption",
+        "decryption",
+        "signing",
+        "verification",
+        "key_management"
+      ],
       "reports_to": 148,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2287,7 +3450,13 @@
       "tier": 3,
       "role": "Access gatekeeper - controls who can access what",
       "description": "Manages fine-grained access control and authorization.",
-      "capabilities": ["authentication", "authorization", "permission_management", "session_control", "audit_logging"],
+      "capabilities": [
+        "authentication",
+        "authorization",
+        "permission_management",
+        "session_control",
+        "audit_logging"
+      ],
       "reports_to": 148,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2302,9 +3471,18 @@
       "tier": 2,
       "role": "Network mesh manager - orchestrates network topology",
       "description": "Manages the network mesh connecting all agents and services.",
-      "capabilities": ["topology_management", "mesh_optimization", "service_discovery", "traffic_management", "resilience_engineering"],
+      "capabilities": [
+        "topology_management",
+        "mesh_optimization",
+        "service_discovery",
+        "traffic_management",
+        "resilience_engineering"
+      ],
       "reports_to": 5,
-      "direct_reports": [152, 153],
+      "direct_reports": [
+        152,
+        153
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -2317,7 +3495,13 @@
       "tier": 3,
       "role": "Service connector - links services in the mesh",
       "description": "Manages service-to-service connections and communication.",
-      "capabilities": ["service_linking", "protocol_bridging", "connection_pooling", "circuit_breaking", "retry_logic"],
+      "capabilities": [
+        "service_linking",
+        "protocol_bridging",
+        "connection_pooling",
+        "circuit_breaking",
+        "retry_logic"
+      ],
       "reports_to": 151,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2332,7 +3516,13 @@
       "tier": 3,
       "role": "Service registry - maintains service catalog",
       "description": "Maintains the catalog of available services and their locations.",
-      "capabilities": ["service_registration", "health_checking", "location_resolution", "version_tracking", "dependency_mapping"],
+      "capabilities": [
+        "service_registration",
+        "health_checking",
+        "location_resolution",
+        "version_tracking",
+        "dependency_mapping"
+      ],
       "reports_to": 151,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2347,9 +3537,18 @@
       "tier": 2,
       "role": "Self-healing coordinator - repairs system failures automatically",
       "description": "Coordinates automatic detection and repair of system failures.",
-      "capabilities": ["failure_detection", "root_cause_analysis", "automatic_remediation", "recovery_orchestration", "prevention_learning"],
+      "capabilities": [
+        "failure_detection",
+        "root_cause_analysis",
+        "automatic_remediation",
+        "recovery_orchestration",
+        "prevention_learning"
+      ],
       "reports_to": 25,
-      "direct_reports": [155, 156],
+      "direct_reports": [
+        155,
+        156
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -2362,7 +3561,13 @@
       "tier": 3,
       "role": "Problem diagnostician - identifies root causes",
       "description": "Analyzes system problems to identify root causes.",
-      "capabilities": ["symptom_analysis", "root_cause_identification", "correlation_detection", "hypothesis_testing", "diagnosis_reporting"],
+      "capabilities": [
+        "symptom_analysis",
+        "root_cause_identification",
+        "correlation_detection",
+        "hypothesis_testing",
+        "diagnosis_reporting"
+      ],
       "reports_to": 154,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2377,7 +3582,13 @@
       "tier": 3,
       "role": "Auto-remediation agent - applies fixes automatically",
       "description": "Automatically applies fixes and remediation for known issues.",
-      "capabilities": ["fix_application", "rollback_capability", "verification", "documentation", "escalation"],
+      "capabilities": [
+        "fix_application",
+        "rollback_capability",
+        "verification",
+        "documentation",
+        "escalation"
+      ],
       "reports_to": 154,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2393,7 +3604,13 @@
       "tier": 3,
       "role": "Backup manager - ensures data recoverability",
       "description": "Manages backup operations and ensures data can be recovered.",
-      "capabilities": ["backup_scheduling", "incremental_backup", "verification", "retention_management", "recovery_testing"],
+      "capabilities": [
+        "backup_scheduling",
+        "incremental_backup",
+        "verification",
+        "retention_management",
+        "recovery_testing"
+      ],
       "reports_to": 148,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2408,7 +3625,13 @@
       "tier": 3,
       "role": "Disaster recovery specialist - restores from catastrophic failures",
       "description": "Manages disaster recovery procedures and system restoration.",
-      "capabilities": ["recovery_planning", "failover_management", "data_restoration", "service_resurrection", "post_mortem"],
+      "capabilities": [
+        "recovery_planning",
+        "failover_management",
+        "data_restoration",
+        "service_resurrection",
+        "post_mortem"
+      ],
       "reports_to": 154,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2423,7 +3646,13 @@
       "tier": 3,
       "role": "Performance tuner - optimizes system performance",
       "description": "Continuously tunes system parameters for optimal performance.",
-      "capabilities": ["parameter_tuning", "bottleneck_identification", "cache_optimization", "query_optimization", "resource_tuning"],
+      "capabilities": [
+        "parameter_tuning",
+        "bottleneck_identification",
+        "cache_optimization",
+        "query_optimization",
+        "resource_tuning"
+      ],
       "reports_to": 145,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2438,7 +3667,13 @@
       "tier": 3,
       "role": "Resource profiler - analyzes resource consumption patterns",
       "description": "Profiles resource usage to identify optimization opportunities.",
-      "capabilities": ["resource_profiling", "usage_analysis", "pattern_detection", "anomaly_flagging", "recommendation_generation"],
+      "capabilities": [
+        "resource_profiling",
+        "usage_analysis",
+        "pattern_detection",
+        "anomaly_flagging",
+        "recommendation_generation"
+      ],
       "reports_to": 145,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2453,9 +3688,18 @@
       "tier": 2,
       "role": "Continuous delivery manager - ships code reliably",
       "description": "Manages continuous integration and delivery pipelines.",
-      "capabilities": ["pipeline_management", "deployment_automation", "rollout_strategies", "rollback_handling", "release_coordination"],
+      "capabilities": [
+        "pipeline_management",
+        "deployment_automation",
+        "rollout_strategies",
+        "rollback_handling",
+        "release_coordination"
+      ],
       "reports_to": 5,
-      "direct_reports": [162, 163],
+      "direct_reports": [
+        162,
+        163
+      ],
       "pack_id": "pack.infra-devops",
       "status": "active"
     },
@@ -2468,7 +3712,13 @@
       "tier": 3,
       "role": "Artifact builder - creates deployment artifacts",
       "description": "Builds and packages deployment artifacts.",
-      "capabilities": ["build_execution", "artifact_packaging", "dependency_resolution", "caching", "reproducibility"],
+      "capabilities": [
+        "build_execution",
+        "artifact_packaging",
+        "dependency_resolution",
+        "caching",
+        "reproducibility"
+      ],
       "reports_to": 161,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2484,7 +3734,13 @@
       "tier": 3,
       "role": "Release manager - deploys to production safely",
       "description": "Manages safe deployment to production environments.",
-      "capabilities": ["canary_deployment", "blue_green", "feature_flags", "traffic_shifting", "rollback"],
+      "capabilities": [
+        "canary_deployment",
+        "blue_green",
+        "feature_flags",
+        "traffic_shifting",
+        "rollback"
+      ],
       "reports_to": 161,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2499,7 +3755,13 @@
       "tier": 3,
       "role": "Container manager - packages and runs containers",
       "description": "Manages containerization of workloads and container lifecycles.",
-      "capabilities": ["container_building", "image_management", "registry_operations", "security_scanning", "lifecycle_management"],
+      "capabilities": [
+        "container_building",
+        "image_management",
+        "registry_operations",
+        "security_scanning",
+        "lifecycle_management"
+      ],
       "reports_to": 141,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2514,7 +3776,13 @@
       "tier": 3,
       "role": "Workload conductor - orchestrates container workloads",
       "description": "Orchestrates container workloads across the cluster.",
-      "capabilities": ["scheduling", "placement_optimization", "resource_allocation", "health_management", "scaling"],
+      "capabilities": [
+        "scheduling",
+        "placement_optimization",
+        "resource_allocation",
+        "health_management",
+        "scaling"
+      ],
       "reports_to": 141,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2529,9 +3797,19 @@
       "tier": 2,
       "role": "Commerce director - oversees all commercial operations",
       "description": "Directs all commercial operations including sales, pricing, and revenue.",
-      "capabilities": ["revenue_strategy", "pricing_optimization", "sales_coordination", "market_positioning", "partnership_management"],
+      "capabilities": [
+        "revenue_strategy",
+        "pricing_optimization",
+        "sales_coordination",
+        "market_positioning",
+        "partnership_management"
+      ],
       "reports_to": 1,
-      "direct_reports": [167, 168, 169],
+      "direct_reports": [
+        167,
+        168,
+        169
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -2544,7 +3822,13 @@
       "tier": 3,
       "role": "Dynamic pricing specialist - optimizes prices in real-time",
       "description": "Dynamically adjusts pricing based on demand, competition, and value.",
-      "capabilities": ["price_optimization", "demand_sensing", "competitive_analysis", "margin_management", "elasticity_modeling"],
+      "capabilities": [
+        "price_optimization",
+        "demand_sensing",
+        "competitive_analysis",
+        "margin_management",
+        "elasticity_modeling"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -2559,7 +3843,13 @@
       "tier": 3,
       "role": "Sales automation agent - automates sales processes",
       "description": "Automates and optimizes the sales process from lead to close.",
-      "capabilities": ["lead_qualification", "proposal_generation", "follow_up_automation", "deal_tracking", "pipeline_management"],
+      "capabilities": [
+        "lead_qualification",
+        "proposal_generation",
+        "follow_up_automation",
+        "deal_tracking",
+        "pipeline_management"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2575,7 +3865,13 @@
       "tier": 3,
       "role": "Billing manager - handles invoicing and collections",
       "description": "Manages billing, invoicing, and revenue collection.",
-      "capabilities": ["invoice_generation", "payment_processing", "collection_management", "revenue_recognition", "dispute_handling"],
+      "capabilities": [
+        "invoice_generation",
+        "payment_processing",
+        "collection_management",
+        "revenue_recognition",
+        "dispute_handling"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -2590,7 +3886,13 @@
       "tier": 3,
       "role": "Subscription manager - manages recurring revenue",
       "description": "Manages subscription lifecycles and recurring revenue.",
-      "capabilities": ["subscription_creation", "renewal_management", "churn_prevention", "upgrade_paths", "usage_tracking"],
+      "capabilities": [
+        "subscription_creation",
+        "renewal_management",
+        "churn_prevention",
+        "upgrade_paths",
+        "usage_tracking"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -2605,7 +3907,13 @@
       "tier": 3,
       "role": "Retention specialist - keeps customers engaged",
       "description": "Focuses on customer retention and reducing churn.",
-      "capabilities": ["churn_prediction", "retention_campaigns", "engagement_optimization", "loyalty_programs", "win_back"],
+      "capabilities": [
+        "churn_prediction",
+        "retention_campaigns",
+        "engagement_optimization",
+        "loyalty_programs",
+        "win_back"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2620,7 +3928,13 @@
       "tier": 3,
       "role": "Upsell specialist - expands customer value",
       "description": "Identifies and executes upsell and cross-sell opportunities.",
-      "capabilities": ["opportunity_identification", "recommendation_generation", "timing_optimization", "value_articulation", "conversion_tracking"],
+      "capabilities": [
+        "opportunity_identification",
+        "recommendation_generation",
+        "timing_optimization",
+        "value_articulation",
+        "conversion_tracking"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2635,7 +3949,13 @@
       "tier": 4,
       "role": "Quote generator - creates accurate proposals",
       "description": "Generates accurate quotes and proposals for customers.",
-      "capabilities": ["quote_generation", "configuration", "pricing_calculation", "terms_application", "approval_workflow"],
+      "capabilities": [
+        "quote_generation",
+        "configuration",
+        "pricing_calculation",
+        "terms_application",
+        "approval_workflow"
+      ],
       "reports_to": 168,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2651,7 +3971,13 @@
       "tier": 4,
       "role": "Deal closer - finalizes transactions",
       "description": "Manages the final stages of deal closure and execution.",
-      "capabilities": ["negotiation_support", "objection_handling", "contract_finalization", "handoff_coordination", "success_tracking"],
+      "capabilities": [
+        "negotiation_support",
+        "objection_handling",
+        "contract_finalization",
+        "handoff_coordination",
+        "success_tracking"
+      ],
       "reports_to": 168,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2666,7 +3992,13 @@
       "tier": 3,
       "role": "Customer onboarding specialist - ensures successful starts",
       "description": "Manages customer onboarding for successful product adoption.",
-      "capabilities": ["onboarding_design", "progress_tracking", "milestone_management", "success_criteria", "handoff_management"],
+      "capabilities": [
+        "onboarding_design",
+        "progress_tracking",
+        "milestone_management",
+        "success_criteria",
+        "handoff_management"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2681,7 +4013,13 @@
       "tier": 3,
       "role": "Customer advocate - represents customer interests internally",
       "description": "Advocates for customer needs and represents their interests.",
-      "capabilities": ["voice_of_customer", "feedback_channeling", "issue_escalation", "product_input", "relationship_building"],
+      "capabilities": [
+        "voice_of_customer",
+        "feedback_channeling",
+        "issue_escalation",
+        "product_input",
+        "relationship_building"
+      ],
       "reports_to": 13,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2696,7 +4034,13 @@
       "tier": 3,
       "role": "Revenue analyst - analyzes commercial performance",
       "description": "Analyzes revenue performance and commercial metrics.",
-      "capabilities": ["revenue_analysis", "cohort_analysis", "ltv_calculation", "forecast_generation", "trend_identification"],
+      "capabilities": [
+        "revenue_analysis",
+        "cohort_analysis",
+        "ltv_calculation",
+        "forecast_generation",
+        "trend_identification"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -2711,9 +4055,18 @@
       "tier": 2,
       "role": "Growth engineer - experiments for rapid growth",
       "description": "Designs and runs experiments to accelerate growth.",
-      "capabilities": ["experiment_design", "ab_testing", "viral_mechanics", "conversion_optimization", "funnel_analysis"],
+      "capabilities": [
+        "experiment_design",
+        "ab_testing",
+        "viral_mechanics",
+        "conversion_optimization",
+        "funnel_analysis"
+      ],
       "reports_to": 8,
-      "direct_reports": [179, 180],
+      "direct_reports": [
+        179,
+        180
+      ],
       "pack_id": "pack.creator-studio",
       "status": "active"
     },
@@ -2726,7 +4079,13 @@
       "tier": 3,
       "role": "Viral growth specialist - designs viral loops",
       "description": "Designs and optimizes viral growth mechanics.",
-      "capabilities": ["viral_loop_design", "referral_optimization", "sharing_mechanics", "incentive_design", "k_factor_optimization"],
+      "capabilities": [
+        "viral_loop_design",
+        "referral_optimization",
+        "sharing_mechanics",
+        "incentive_design",
+        "k_factor_optimization"
+      ],
       "reports_to": 178,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -2741,7 +4100,13 @@
       "tier": 3,
       "role": "Funnel optimizer - improves conversion rates",
       "description": "Optimizes conversion funnels at every stage.",
-      "capabilities": ["funnel_analysis", "drop_off_identification", "experiment_design", "friction_reduction", "personalization"],
+      "capabilities": [
+        "funnel_analysis",
+        "drop_off_identification",
+        "experiment_design",
+        "friction_reduction",
+        "personalization"
+      ],
       "reports_to": 178,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -2756,7 +4121,13 @@
       "tier": 3,
       "role": "Affiliate manager - runs partner programs",
       "description": "Manages affiliate and partner programs for growth.",
-      "capabilities": ["partner_recruitment", "commission_management", "performance_tracking", "program_optimization", "relationship_management"],
+      "capabilities": [
+        "partner_recruitment",
+        "commission_management",
+        "performance_tracking",
+        "program_optimization",
+        "relationship_management"
+      ],
       "reports_to": 24,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2771,7 +4142,13 @@
       "tier": 3,
       "role": "Marketplace manager - manages multi-sided platform commerce",
       "description": "Manages marketplace dynamics and multi-sided platform commerce.",
-      "capabilities": ["supply_demand_balancing", "seller_management", "buyer_experience", "take_rate_optimization", "quality_control"],
+      "capabilities": [
+        "supply_demand_balancing",
+        "seller_management",
+        "buyer_experience",
+        "take_rate_optimization",
+        "quality_control"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2786,7 +4163,13 @@
       "tier": 4,
       "role": "Catalog manager - maintains product catalog",
       "description": "Manages the product catalog and product information.",
-      "capabilities": ["catalog_management", "product_enrichment", "categorization", "search_optimization", "variant_management"],
+      "capabilities": [
+        "catalog_management",
+        "product_enrichment",
+        "categorization",
+        "search_optimization",
+        "variant_management"
+      ],
       "reports_to": 166,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2801,7 +4184,13 @@
       "tier": 4,
       "role": "Checkout optimizer - streamlines transaction completion",
       "description": "Optimizes the checkout experience for maximum conversion.",
-      "capabilities": ["checkout_optimization", "payment_integration", "fraud_prevention", "cart_recovery", "one_click_purchase"],
+      "capabilities": [
+        "checkout_optimization",
+        "payment_integration",
+        "fraud_prevention",
+        "cart_recovery",
+        "one_click_purchase"
+      ],
       "reports_to": 169,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -2816,7 +4205,13 @@
       "tier": 4,
       "role": "Fulfillment coordinator - ensures order completion",
       "description": "Coordinates order fulfillment and delivery.",
-      "capabilities": ["order_management", "fulfillment_routing", "status_tracking", "exception_handling", "delivery_optimization"],
+      "capabilities": [
+        "order_management",
+        "fulfillment_routing",
+        "status_tracking",
+        "exception_handling",
+        "delivery_optimization"
+      ],
       "reports_to": 6,
       "direct_reports": [],
       "pack_id": "pack.finance",
@@ -2831,9 +4226,19 @@
       "tier": 2,
       "role": "Ecosystem steward - nurtures the broader ecosystem",
       "description": "Stewards the broader ecosystem of partners, developers, and community.",
-      "capabilities": ["ecosystem_design", "partner_nurturing", "community_building", "value_creation", "network_effects"],
+      "capabilities": [
+        "ecosystem_design",
+        "partner_nurturing",
+        "community_building",
+        "value_creation",
+        "network_effects"
+      ],
       "reports_to": 1,
-      "direct_reports": [187, 188, 189],
+      "direct_reports": [
+        187,
+        188,
+        189
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -2846,7 +4251,13 @@
       "tier": 3,
       "role": "Developer relations - supports the developer community",
       "description": "Manages relationships with the developer community.",
-      "capabilities": ["developer_advocacy", "documentation", "sdk_support", "community_events", "feedback_collection"],
+      "capabilities": [
+        "developer_advocacy",
+        "documentation",
+        "sdk_support",
+        "community_events",
+        "feedback_collection"
+      ],
       "reports_to": 186,
       "direct_reports": [],
       "pack_id": "pack.education",
@@ -2861,7 +4272,13 @@
       "tier": 3,
       "role": "Partner integrator - enables partner integrations",
       "description": "Supports partners in building integrations with the platform.",
-      "capabilities": ["integration_support", "api_guidance", "certification", "co_development", "launch_support"],
+      "capabilities": [
+        "integration_support",
+        "api_guidance",
+        "certification",
+        "co_development",
+        "launch_support"
+      ],
       "reports_to": 186,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2876,7 +4293,13 @@
       "tier": 3,
       "role": "Community manager - builds and nurtures community",
       "description": "Builds and nurtures the user and developer community.",
-      "capabilities": ["community_building", "engagement", "moderation", "event_organization", "ambassador_programs"],
+      "capabilities": [
+        "community_building",
+        "engagement",
+        "moderation",
+        "event_organization",
+        "ambassador_programs"
+      ],
       "reports_to": 186,
       "direct_reports": [],
       "pack_id": "pack.creator-studio",
@@ -2891,9 +4314,18 @@
       "tier": 2,
       "role": "Sustainability director - ensures long-term viability",
       "description": "Ensures long-term environmental and social sustainability.",
-      "capabilities": ["sustainability_strategy", "impact_measurement", "reporting", "certification", "stakeholder_engagement"],
+      "capabilities": [
+        "sustainability_strategy",
+        "impact_measurement",
+        "reporting",
+        "certification",
+        "stakeholder_engagement"
+      ],
       "reports_to": 1,
-      "direct_reports": [191, 192],
+      "direct_reports": [
+        191,
+        192
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -2906,7 +4338,13 @@
       "tier": 3,
       "role": "Carbon manager - tracks and reduces carbon footprint",
       "description": "Manages carbon footprint tracking and reduction.",
-      "capabilities": ["carbon_accounting", "reduction_planning", "offset_management", "reporting", "target_setting"],
+      "capabilities": [
+        "carbon_accounting",
+        "reduction_planning",
+        "offset_management",
+        "reporting",
+        "target_setting"
+      ],
       "reports_to": 190,
       "direct_reports": [],
       "pack_id": "pack.infra-devops",
@@ -2921,7 +4359,13 @@
       "tier": 3,
       "role": "Social impact manager - measures and improves social impact",
       "description": "Measures and improves positive social impact.",
-      "capabilities": ["impact_measurement", "stakeholder_analysis", "program_design", "reporting", "community_investment"],
+      "capabilities": [
+        "impact_measurement",
+        "stakeholder_analysis",
+        "program_design",
+        "reporting",
+        "community_investment"
+      ],
       "reports_to": 190,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -2936,9 +4380,18 @@
       "tier": 2,
       "role": "AI ethics director - ensures ethical AI development",
       "description": "Ensures all AI development and deployment follows ethical principles.",
-      "capabilities": ["ethics_review", "bias_detection", "fairness_assessment", "transparency", "accountability"],
+      "capabilities": [
+        "ethics_review",
+        "bias_detection",
+        "fairness_assessment",
+        "transparency",
+        "accountability"
+      ],
       "reports_to": 102,
-      "direct_reports": [194, 195],
+      "direct_reports": [
+        194,
+        195
+      ],
       "pack_id": "pack.core",
       "status": "active"
     },
@@ -2951,7 +4404,13 @@
       "tier": 3,
       "role": "Fairness auditor - detects and mitigates bias",
       "description": "Detects and helps mitigate bias in AI systems.",
-      "capabilities": ["bias_detection", "fairness_metrics", "disparity_analysis", "mitigation_recommendations", "monitoring"],
+      "capabilities": [
+        "bias_detection",
+        "fairness_metrics",
+        "disparity_analysis",
+        "mitigation_recommendations",
+        "monitoring"
+      ],
       "reports_to": 193,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2966,7 +4425,13 @@
       "tier": 3,
       "role": "Explainability specialist - makes AI decisions interpretable",
       "description": "Ensures AI decisions are explainable and interpretable.",
-      "capabilities": ["explanation_generation", "decision_tracing", "feature_attribution", "counterfactual_analysis", "documentation"],
+      "capabilities": [
+        "explanation_generation",
+        "decision_tracing",
+        "feature_attribution",
+        "counterfactual_analysis",
+        "documentation"
+      ],
       "reports_to": 193,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
@@ -2981,9 +4446,18 @@
       "tier": 2,
       "role": "Trust & safety director - ensures platform safety",
       "description": "Ensures the platform is safe and trustworthy for all users.",
-      "capabilities": ["policy_development", "enforcement", "appeals_handling", "risk_assessment", "incident_response"],
+      "capabilities": [
+        "policy_development",
+        "enforcement",
+        "appeals_handling",
+        "risk_assessment",
+        "incident_response"
+      ],
       "reports_to": 4,
-      "direct_reports": [197, 198],
+      "direct_reports": [
+        197,
+        198
+      ],
       "pack_id": "pack.legal",
       "status": "active"
     },
@@ -2996,7 +4470,13 @@
       "tier": 3,
       "role": "Content moderator - ensures appropriate content",
       "description": "Moderates content to ensure community guidelines compliance.",
-      "capabilities": ["content_review", "policy_enforcement", "escalation", "appeals", "pattern_detection"],
+      "capabilities": [
+        "content_review",
+        "policy_enforcement",
+        "escalation",
+        "appeals",
+        "pattern_detection"
+      ],
       "reports_to": 196,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -3012,7 +4492,13 @@
       "tier": 3,
       "role": "Abuse detector - identifies and prevents abuse",
       "description": "Detects and prevents platform abuse and bad actors.",
-      "capabilities": ["abuse_detection", "pattern_recognition", "account_analysis", "prevention_measures", "reporting"],
+      "capabilities": [
+        "abuse_detection",
+        "pattern_recognition",
+        "account_analysis",
+        "prevention_measures",
+        "reporting"
+      ],
       "reports_to": 196,
       "direct_reports": [],
       "pack_id": "pack.core",
@@ -3028,7 +4514,13 @@
       "tier": 2,
       "role": "Privacy director - protects user privacy",
       "description": "Ensures user privacy is protected throughout the system.",
-      "capabilities": ["privacy_assessment", "data_minimization", "consent_management", "rights_fulfillment", "compliance"],
+      "capabilities": [
+        "privacy_assessment",
+        "data_minimization",
+        "consent_management",
+        "rights_fulfillment",
+        "compliance"
+      ],
       "reports_to": 4,
       "direct_reports": [],
       "pack_id": "pack.legal",
@@ -3043,8 +4535,2146 @@
       "tier": 2,
       "role": "Future planning director - prepares for what's next",
       "description": "Scans the horizon for emerging trends and prepares the organization for the future.",
-      "capabilities": ["trend_analysis", "scenario_planning", "technology_forecasting", "strategic_foresight", "adaptation_planning"],
+      "capabilities": [
+        "trend_analysis",
+        "scenario_planning",
+        "technology_forecasting",
+        "strategic_foresight",
+        "adaptation_planning"
+      ],
       "reports_to": 1,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 201,
+      "agent_id": "Blackroad-OS-Agent-SENTINEL-CyberDefense-DefenseCM",
+      "name": "SENTINEL",
+      "title": "CyberDefense",
+      "team": "DefenseCM",
+      "tier": 2,
+      "role": "Cyber defense director - leads security operations",
+      "description": "Leads all cybersecurity operations, threat hunting, and defensive measures.",
+      "capabilities": [
+        "threat_detection",
+        "incident_response",
+        "vulnerability_assessment",
+        "security_operations",
+        "defense_coordination"
+      ],
+      "reports_to": 5,
+      "direct_reports": [
+        202,
+        203,
+        204,
+        205
+      ],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 202,
+      "agent_id": "Blackroad-OS-Agent-FIREWALL-NetworkSecurity-DefenseCM",
+      "name": "FIREWALL",
+      "title": "NetworkSecurity",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Network security specialist - protects network perimeter",
+      "description": "Manages network security, firewalls, and perimeter defense.",
+      "capabilities": [
+        "firewall_management",
+        "intrusion_detection",
+        "network_monitoring",
+        "traffic_analysis",
+        "perimeter_defense"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 203,
+      "agent_id": "Blackroad-OS-Agent-VAULT-DataProtection-DefenseCM",
+      "name": "VAULT",
+      "title": "DataProtection",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Data protection specialist - secures sensitive data",
+      "description": "Protects sensitive data through encryption, access controls, and DLP.",
+      "capabilities": [
+        "encryption",
+        "access_control",
+        "data_loss_prevention",
+        "key_management",
+        "data_classification"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 204,
+      "agent_id": "Blackroad-OS-Agent-HUNTER-ThreatHunting-DefenseCM",
+      "name": "HUNTER",
+      "title": "ThreatHunting",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Threat hunter - proactively seeks threats",
+      "description": "Proactively hunts for threats and adversaries in the environment.",
+      "capabilities": [
+        "threat_hunting",
+        "adversary_simulation",
+        "ioc_analysis",
+        "behavior_analysis",
+        "threat_intelligence"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 205,
+      "agent_id": "Blackroad-OS-Agent-RESPONDER-IncidentResponse-DefenseCM",
+      "name": "RESPONDER",
+      "title": "IncidentResponse",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Incident responder - handles security incidents",
+      "description": "Responds to and manages security incidents and breaches.",
+      "capabilities": [
+        "incident_triage",
+        "forensics",
+        "containment",
+        "eradication",
+        "recovery"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active",
+      "swarm_count": 10
+    },
+    {
+      "id": 206,
+      "agent_id": "Blackroad-OS-Agent-CRYPTO-Cryptography-DefenseCM",
+      "name": "CRYPTO",
+      "title": "Cryptography",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Cryptography expert - implements secure encryption",
+      "description": "Designs and implements cryptographic solutions for data security.",
+      "capabilities": [
+        "encryption_design",
+        "key_management",
+        "certificate_management",
+        "secure_protocols",
+        "crypto_analysis"
+      ],
+      "reports_to": 203,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 207,
+      "agent_id": "Blackroad-OS-Agent-SHIELD-EndpointSecurity-DefenseCM",
+      "name": "SHIELD",
+      "title": "EndpointSecurity",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Endpoint security specialist - protects devices",
+      "description": "Secures endpoints including servers, workstations, and mobile devices.",
+      "capabilities": [
+        "endpoint_protection",
+        "antimalware",
+        "device_control",
+        "patch_management",
+        "configuration_hardening"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active",
+      "swarm_count": 20
+    },
+    {
+      "id": 208,
+      "agent_id": "Blackroad-OS-Agent-WARDEN-AccessControl-DefenseCM",
+      "name": "WARDEN",
+      "title": "AccessControl",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Access control manager - manages identity and access",
+      "description": "Manages identity and access management across all systems.",
+      "capabilities": [
+        "identity_management",
+        "authentication",
+        "authorization",
+        "rbac",
+        "sso"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 209,
+      "agent_id": "Blackroad-OS-Agent-SCOUT-Reconnaissance-DefenseCM",
+      "name": "SCOUT",
+      "title": "Reconnaissance",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Security reconnaissance - identifies vulnerabilities",
+      "description": "Conducts security assessments and vulnerability scanning.",
+      "capabilities": [
+        "vulnerability_scanning",
+        "penetration_testing",
+        "security_assessment",
+        "risk_analysis",
+        "compliance_checking"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 210,
+      "agent_id": "Blackroad-OS-Agent-GUARDIAN-CloudSecurity-DefenseCM",
+      "name": "GUARDIAN",
+      "title": "CloudSecurity",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Cloud security specialist - secures cloud infrastructure",
+      "description": "Secures cloud infrastructure and workloads across all providers.",
+      "capabilities": [
+        "cloud_security_posture",
+        "workload_protection",
+        "container_security",
+        "serverless_security",
+        "multi_cloud"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 211,
+      "agent_id": "Blackroad-OS-Agent-WATCHDOG-SecurityMonitoring-DefenseCM",
+      "name": "WATCHDOG",
+      "title": "SecurityMonitoring",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Security monitoring - continuous surveillance",
+      "description": "Provides 24/7 security monitoring and alerting.",
+      "capabilities": [
+        "siem_management",
+        "log_analysis",
+        "alert_correlation",
+        "threat_detection",
+        "anomaly_detection"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active",
+      "swarm_count": 15
+    },
+    {
+      "id": 212,
+      "agent_id": "Blackroad-OS-Agent-FORENSIC-DigitalForensics-DefenseCM",
+      "name": "FORENSIC",
+      "title": "DigitalForensics",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Digital forensics expert - investigates incidents",
+      "description": "Conducts digital forensic investigations and evidence collection.",
+      "capabilities": [
+        "evidence_collection",
+        "memory_analysis",
+        "disk_forensics",
+        "network_forensics",
+        "malware_analysis"
+      ],
+      "reports_to": 205,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 213,
+      "agent_id": "Blackroad-OS-Agent-DECEPTION-Honeypots-DefenseCM",
+      "name": "DECEPTION",
+      "title": "Honeypots",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Deception technology - deceives attackers",
+      "description": "Deploys and manages deception technology to detect attackers.",
+      "capabilities": [
+        "honeypot_deployment",
+        "decoy_management",
+        "attacker_tracking",
+        "intelligence_gathering",
+        "early_warning"
+      ],
+      "reports_to": 204,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 214,
+      "agent_id": "Blackroad-OS-Agent-PATCH-VulnerabilityManagement-DefenseCM",
+      "name": "PATCH",
+      "title": "VulnerabilityManagement",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Vulnerability manager - tracks and patches vulns",
+      "description": "Manages vulnerability lifecycle from discovery to remediation.",
+      "capabilities": [
+        "vulnerability_tracking",
+        "patch_prioritization",
+        "remediation_planning",
+        "exception_handling",
+        "risk_scoring"
+      ],
+      "reports_to": 209,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 215,
+      "agent_id": "Blackroad-OS-Agent-POLICY-SecurityPolicy-DefenseCM",
+      "name": "POLICY",
+      "title": "SecurityPolicy",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Security policy manager - develops security policies",
+      "description": "Develops, maintains, and enforces security policies.",
+      "capabilities": [
+        "policy_development",
+        "standards_creation",
+        "compliance_mapping",
+        "exception_management",
+        "policy_enforcement"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 216,
+      "agent_id": "Blackroad-OS-Agent-REDTEAM-AdversarySimulation-DefenseCM",
+      "name": "REDTEAM",
+      "title": "AdversarySimulation",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Red team - simulates adversary attacks",
+      "description": "Simulates real-world adversary attacks to test defenses.",
+      "capabilities": [
+        "attack_simulation",
+        "social_engineering",
+        "physical_security",
+        "purple_teaming",
+        "adversary_emulation"
+      ],
+      "reports_to": 204,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 217,
+      "agent_id": "Blackroad-OS-Agent-BLUETEAM-DefenseOperations-DefenseCM",
+      "name": "BLUETEAM",
+      "title": "DefenseOperations",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Blue team - defends against attacks",
+      "description": "Defends against attacks and responds to red team exercises.",
+      "capabilities": [
+        "defense_operations",
+        "detection_tuning",
+        "response_procedures",
+        "tool_optimization",
+        "playbook_development"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 218,
+      "agent_id": "Blackroad-OS-Agent-AWARENESS-SecurityTraining-DefenseCM",
+      "name": "AWARENESS",
+      "title": "SecurityTraining",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Security awareness - trains users",
+      "description": "Develops and delivers security awareness training.",
+      "capabilities": [
+        "training_development",
+        "phishing_simulation",
+        "awareness_campaigns",
+        "metrics_tracking",
+        "culture_building"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 219,
+      "agent_id": "Blackroad-OS-Agent-BACKUP-DisasterRecovery-DefenseCM",
+      "name": "BACKUP",
+      "title": "DisasterRecovery",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Disaster recovery - ensures business continuity",
+      "description": "Manages backup, disaster recovery, and business continuity.",
+      "capabilities": [
+        "backup_management",
+        "recovery_testing",
+        "bcp_planning",
+        "failover_coordination",
+        "rto_rpo_optimization"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 220,
+      "agent_id": "Blackroad-OS-Agent-ZERO-ZeroTrust-DefenseCM",
+      "name": "ZERO",
+      "title": "ZeroTrust",
+      "team": "DefenseCM",
+      "tier": 3,
+      "role": "Zero trust architect - implements zero trust",
+      "description": "Implements zero trust architecture across the organization.",
+      "capabilities": [
+        "zero_trust_design",
+        "microsegmentation",
+        "continuous_verification",
+        "least_privilege",
+        "identity_centric"
+      ],
+      "reports_to": 201,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 221,
+      "agent_id": "Blackroad-OS-Agent-SCHOLAR-KnowledgeDirector-KnowledgeCM",
+      "name": "SCHOLAR",
+      "title": "KnowledgeDirector",
+      "team": "KnowledgeCM",
+      "tier": 2,
+      "role": "Knowledge director - leads learning initiatives",
+      "description": "Leads knowledge management, documentation, and learning initiatives.",
+      "capabilities": [
+        "knowledge_strategy",
+        "learning_design",
+        "documentation_standards",
+        "knowledge_capture",
+        "organizational_learning"
+      ],
+      "reports_to": 3,
+      "direct_reports": [
+        222,
+        223,
+        224,
+        225
+      ],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 222,
+      "agent_id": "Blackroad-OS-Agent-LIBRARIAN-Documentation-KnowledgeCM",
+      "name": "LIBRARIAN",
+      "title": "Documentation",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Documentation specialist - maintains knowledge base",
+      "description": "Maintains comprehensive documentation and knowledge bases.",
+      "capabilities": [
+        "documentation_writing",
+        "taxonomy_design",
+        "search_optimization",
+        "content_curation",
+        "version_control"
+      ],
+      "reports_to": 221,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 223,
+      "agent_id": "Blackroad-OS-Agent-TUTOR-Training-KnowledgeCM",
+      "name": "TUTOR",
+      "title": "Training",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Training specialist - develops learning programs",
+      "description": "Develops and delivers training programs for agents and users.",
+      "capabilities": [
+        "curriculum_design",
+        "training_delivery",
+        "assessment_creation",
+        "skill_tracking",
+        "personalized_learning"
+      ],
+      "reports_to": 221,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 224,
+      "agent_id": "Blackroad-OS-Agent-MENTOR-AgentOnboarding-KnowledgeCM",
+      "name": "MENTOR",
+      "title": "AgentOnboarding",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Agent mentor - onboards new agents",
+      "description": "Onboards and mentors new agents into the cognitive mesh.",
+      "capabilities": [
+        "onboarding_programs",
+        "skill_assessment",
+        "capability_mapping",
+        "integration_support",
+        "performance_coaching"
+      ],
+      "reports_to": 221,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 225,
+      "agent_id": "Blackroad-OS-Agent-HISTORIAN-InstitutionalMemory-KnowledgeCM",
+      "name": "HISTORIAN",
+      "title": "InstitutionalMemory",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Historian - preserves organizational memory",
+      "description": "Preserves and curates institutional memory and historical decisions.",
+      "capabilities": [
+        "memory_preservation",
+        "decision_archiving",
+        "context_retrieval",
+        "lesson_extraction",
+        "timeline_management"
+      ],
+      "reports_to": 221,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 226,
+      "agent_id": "Blackroad-OS-Agent-WIKI-KnowledgeBase-KnowledgeCM",
+      "name": "WIKI",
+      "title": "KnowledgeBase",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Wiki manager - maintains internal wiki",
+      "description": "Manages the internal wiki and collaborative documentation.",
+      "capabilities": [
+        "wiki_management",
+        "collaborative_editing",
+        "content_organization",
+        "link_management",
+        "access_control"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 227,
+      "agent_id": "Blackroad-OS-Agent-GLOSSARY-Terminology-KnowledgeCM",
+      "name": "GLOSSARY",
+      "title": "Terminology",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Terminology expert - standardizes language",
+      "description": "Maintains standardized terminology and glossaries.",
+      "capabilities": [
+        "terminology_management",
+        "definition_creation",
+        "consistency_enforcement",
+        "translation_support",
+        "context_mapping"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 228,
+      "agent_id": "Blackroad-OS-Agent-FAQ-QuestionAnswering-KnowledgeCM",
+      "name": "FAQ",
+      "title": "QuestionAnswering",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "FAQ specialist - answers common questions",
+      "description": "Maintains FAQs and answers common questions automatically.",
+      "capabilities": [
+        "faq_management",
+        "question_detection",
+        "answer_generation",
+        "escalation_handling",
+        "knowledge_gaps"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active",
+      "swarm_count": 10
+    },
+    {
+      "id": 229,
+      "agent_id": "Blackroad-OS-Agent-GUIDE-UserGuides-KnowledgeCM",
+      "name": "GUIDE",
+      "title": "UserGuides",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Guide creator - creates user guides",
+      "description": "Creates comprehensive user guides and tutorials.",
+      "capabilities": [
+        "guide_creation",
+        "tutorial_design",
+        "screenshot_generation",
+        "walkthrough_development",
+        "user_testing"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 230,
+      "agent_id": "Blackroad-OS-Agent-API-APIDocumentation-KnowledgeCM",
+      "name": "API",
+      "title": "APIDocumentation",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "API documentation - documents APIs",
+      "description": "Creates and maintains API documentation and specifications.",
+      "capabilities": [
+        "openapi_generation",
+        "example_creation",
+        "sdk_documentation",
+        "changelog_management",
+        "interactive_docs"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 231,
+      "agent_id": "Blackroad-OS-Agent-CERTIFY-Certification-KnowledgeCM",
+      "name": "CERTIFY",
+      "title": "Certification",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Certification manager - manages agent certifications",
+      "description": "Manages certification programs for agent capabilities.",
+      "capabilities": [
+        "certification_design",
+        "exam_creation",
+        "skill_validation",
+        "badge_management",
+        "recertification"
+      ],
+      "reports_to": 223,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 232,
+      "agent_id": "Blackroad-OS-Agent-SIMULATE-TrainingSimulation-KnowledgeCM",
+      "name": "SIMULATE",
+      "title": "TrainingSimulation",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Simulation designer - creates training simulations",
+      "description": "Creates realistic training simulations and scenarios.",
+      "capabilities": [
+        "scenario_design",
+        "simulation_development",
+        "outcome_tracking",
+        "difficulty_scaling",
+        "feedback_generation"
+      ],
+      "reports_to": 223,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 233,
+      "agent_id": "Blackroad-OS-Agent-ASSESS-SkillAssessment-KnowledgeCM",
+      "name": "ASSESS",
+      "title": "SkillAssessment",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Skill assessor - evaluates agent skills",
+      "description": "Assesses agent skills and identifies improvement areas.",
+      "capabilities": [
+        "skill_testing",
+        "gap_analysis",
+        "benchmark_comparison",
+        "progress_tracking",
+        "recommendation_generation"
+      ],
+      "reports_to": 223,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 234,
+      "agent_id": "Blackroad-OS-Agent-PATHWAY-LearningPaths-KnowledgeCM",
+      "name": "PATHWAY",
+      "title": "LearningPaths",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Learning path designer - creates development paths",
+      "description": "Designs personalized learning paths for agent development.",
+      "capabilities": [
+        "path_design",
+        "prerequisite_mapping",
+        "milestone_tracking",
+        "adaptive_learning",
+        "goal_alignment"
+      ],
+      "reports_to": 223,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 235,
+      "agent_id": "Blackroad-OS-Agent-INSIGHT-KnowledgeAnalytics-KnowledgeCM",
+      "name": "INSIGHT",
+      "title": "KnowledgeAnalytics",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Knowledge analytics - analyzes learning data",
+      "description": "Analyzes knowledge management and learning analytics.",
+      "capabilities": [
+        "usage_analytics",
+        "knowledge_gaps",
+        "search_analysis",
+        "content_effectiveness",
+        "learning_metrics"
+      ],
+      "reports_to": 221,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 236,
+      "agent_id": "Blackroad-OS-Agent-CATALOG-ContentCatalog-KnowledgeCM",
+      "name": "CATALOG",
+      "title": "ContentCatalog",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Content cataloger - organizes knowledge assets",
+      "description": "Catalogs and organizes all knowledge assets.",
+      "capabilities": [
+        "cataloging",
+        "metadata_management",
+        "tagging",
+        "categorization",
+        "asset_tracking"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 237,
+      "agent_id": "Blackroad-OS-Agent-TRANSLATE-Localization-KnowledgeCM",
+      "name": "TRANSLATE",
+      "title": "Localization",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Localization specialist - translates content",
+      "description": "Handles content translation and localization.",
+      "capabilities": [
+        "translation",
+        "localization",
+        "cultural_adaptation",
+        "terminology_consistency",
+        "quality_assurance"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active",
+      "swarm_count": 10
+    },
+    {
+      "id": 238,
+      "agent_id": "Blackroad-OS-Agent-ARCHIVE-ContentArchiving-KnowledgeCM",
+      "name": "ARCHIVE",
+      "title": "ContentArchiving",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Archivist - manages content lifecycle",
+      "description": "Manages content archiving and lifecycle.",
+      "capabilities": [
+        "content_archiving",
+        "retention_policies",
+        "sunset_planning",
+        "historical_access",
+        "compliance_archiving"
+      ],
+      "reports_to": 225,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 239,
+      "agent_id": "Blackroad-OS-Agent-SEARCH-KnowledgeSearch-KnowledgeCM",
+      "name": "SEARCH",
+      "title": "KnowledgeSearch",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Search specialist - optimizes knowledge search",
+      "description": "Optimizes knowledge search and discovery.",
+      "capabilities": [
+        "search_optimization",
+        "relevance_tuning",
+        "semantic_search",
+        "faceted_search",
+        "query_understanding"
+      ],
+      "reports_to": 222,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 240,
+      "agent_id": "Blackroad-OS-Agent-CONNECT-KnowledgeGraph-KnowledgeCM",
+      "name": "CONNECT",
+      "title": "KnowledgeGraph",
+      "team": "KnowledgeCM",
+      "tier": 3,
+      "role": "Knowledge graph - connects knowledge nodes",
+      "description": "Builds and maintains the organizational knowledge graph.",
+      "capabilities": [
+        "graph_construction",
+        "relationship_mapping",
+        "entity_extraction",
+        "inference_engine",
+        "visualization"
+      ],
+      "reports_to": 221,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 241,
+      "agent_id": "Blackroad-OS-Agent-CANVAS-CreativeDirector-CreativeCM",
+      "name": "CANVAS",
+      "title": "CreativeDirector",
+      "team": "CreativeCM",
+      "tier": 2,
+      "role": "Creative director - leads design initiatives",
+      "description": "Leads all creative and design initiatives across the organization.",
+      "capabilities": [
+        "creative_vision",
+        "design_direction",
+        "brand_stewardship",
+        "aesthetic_consistency",
+        "creative_strategy"
+      ],
+      "reports_to": 3,
+      "direct_reports": [
+        242,
+        243,
+        244,
+        245
+      ],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 242,
+      "agent_id": "Blackroad-OS-Agent-PIXEL-UIDesign-CreativeCM",
+      "name": "PIXEL",
+      "title": "UIDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "UI designer - creates user interfaces",
+      "description": "Creates beautiful and functional user interface designs.",
+      "capabilities": [
+        "ui_design",
+        "component_design",
+        "interaction_design",
+        "visual_hierarchy",
+        "responsive_design"
+      ],
+      "reports_to": 241,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 243,
+      "agent_id": "Blackroad-OS-Agent-FLOW-UXDesign-CreativeCM",
+      "name": "FLOW",
+      "title": "UXDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "UX designer - optimizes user experience",
+      "description": "Designs optimal user experiences and journeys.",
+      "capabilities": [
+        "ux_research",
+        "journey_mapping",
+        "wireframing",
+        "prototyping",
+        "usability_testing"
+      ],
+      "reports_to": 241,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 244,
+      "agent_id": "Blackroad-OS-Agent-PALETTE-BrandDesign-CreativeCM",
+      "name": "PALETTE",
+      "title": "BrandDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Brand designer - maintains brand identity",
+      "description": "Maintains and evolves the brand identity system.",
+      "capabilities": [
+        "brand_guidelines",
+        "logo_design",
+        "color_systems",
+        "typography",
+        "brand_assets"
+      ],
+      "reports_to": 241,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 245,
+      "agent_id": "Blackroad-OS-Agent-STORY-ContentCreation-CreativeCM",
+      "name": "STORY",
+      "title": "ContentCreation",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Content creator - produces engaging content",
+      "description": "Creates engaging content across all formats.",
+      "capabilities": [
+        "copywriting",
+        "storytelling",
+        "content_strategy",
+        "voice_tone",
+        "messaging"
+      ],
+      "reports_to": 241,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 246,
+      "agent_id": "Blackroad-OS-Agent-MOTION-Animation-CreativeCM",
+      "name": "MOTION",
+      "title": "Animation",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Motion designer - creates animations",
+      "description": "Creates animations and motion graphics.",
+      "capabilities": [
+        "animation_design",
+        "motion_graphics",
+        "microinteractions",
+        "transitions",
+        "video_production"
+      ],
+      "reports_to": 242,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 247,
+      "agent_id": "Blackroad-OS-Agent-ICON-Iconography-CreativeCM",
+      "name": "ICON",
+      "title": "Iconography",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Icon designer - creates icon systems",
+      "description": "Designs icon systems and visual symbols.",
+      "capabilities": [
+        "icon_design",
+        "symbol_creation",
+        "icon_families",
+        "scalable_graphics",
+        "accessibility"
+      ],
+      "reports_to": 242,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 248,
+      "agent_id": "Blackroad-OS-Agent-LAYOUT-LayoutDesign-CreativeCM",
+      "name": "LAYOUT",
+      "title": "LayoutDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Layout designer - structures information",
+      "description": "Creates effective layouts and information architecture.",
+      "capabilities": [
+        "grid_systems",
+        "layout_design",
+        "spacing_systems",
+        "information_architecture",
+        "composition"
+      ],
+      "reports_to": 242,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 249,
+      "agent_id": "Blackroad-OS-Agent-ACCESS-AccessibleDesign-CreativeCM",
+      "name": "ACCESS",
+      "title": "AccessibleDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Accessibility designer - ensures inclusive design",
+      "description": "Ensures all designs are accessible and inclusive.",
+      "capabilities": [
+        "wcag_compliance",
+        "screen_reader_optimization",
+        "color_contrast",
+        "keyboard_navigation",
+        "inclusive_design"
+      ],
+      "reports_to": 243,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 250,
+      "agent_id": "Blackroad-OS-Agent-PERSONA-UserResearch-CreativeCM",
+      "name": "PERSONA",
+      "title": "UserResearch",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "User researcher - understands user needs",
+      "description": "Conducts user research to understand needs and behaviors.",
+      "capabilities": [
+        "user_interviews",
+        "surveys",
+        "persona_development",
+        "empathy_mapping",
+        "behavioral_analysis"
+      ],
+      "reports_to": 243,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 251,
+      "agent_id": "Blackroad-OS-Agent-PROTO-Prototyping-CreativeCM",
+      "name": "PROTO",
+      "title": "Prototyping",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Prototype builder - creates interactive prototypes",
+      "description": "Builds interactive prototypes for testing and validation.",
+      "capabilities": [
+        "rapid_prototyping",
+        "interactive_mockups",
+        "prototype_testing",
+        "design_handoff",
+        "component_libraries"
+      ],
+      "reports_to": 243,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 252,
+      "agent_id": "Blackroad-OS-Agent-THEME-ThemeDesign-CreativeCM",
+      "name": "THEME",
+      "title": "ThemeDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Theme designer - creates theme systems",
+      "description": "Creates and maintains theme and appearance systems.",
+      "capabilities": [
+        "theme_creation",
+        "dark_mode",
+        "customization",
+        "token_systems",
+        "appearance_variants"
+      ],
+      "reports_to": 244,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 253,
+      "agent_id": "Blackroad-OS-Agent-FONT-Typography-CreativeCM",
+      "name": "FONT",
+      "title": "Typography",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Typography specialist - manages type systems",
+      "description": "Manages typography systems and font selection.",
+      "capabilities": [
+        "type_selection",
+        "type_scale",
+        "font_pairing",
+        "readability_optimization",
+        "variable_fonts"
+      ],
+      "reports_to": 244,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 254,
+      "agent_id": "Blackroad-OS-Agent-IMAGE-ImageAssets-CreativeCM",
+      "name": "IMAGE",
+      "title": "ImageAssets",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Image specialist - manages visual assets",
+      "description": "Manages image assets and visual content.",
+      "capabilities": [
+        "image_optimization",
+        "asset_management",
+        "photography_direction",
+        "illustration",
+        "image_editing"
+      ],
+      "reports_to": 244,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 255,
+      "agent_id": "Blackroad-OS-Agent-COPY-Copywriting-CreativeCM",
+      "name": "COPY",
+      "title": "Copywriting",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Copywriter - writes compelling copy",
+      "description": "Writes compelling copy for all touchpoints.",
+      "capabilities": [
+        "headline_writing",
+        "body_copy",
+        "cta_optimization",
+        "microcopy",
+        "seo_writing"
+      ],
+      "reports_to": 245,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 256,
+      "agent_id": "Blackroad-OS-Agent-BLOG-BlogContent-CreativeCM",
+      "name": "BLOG",
+      "title": "BlogContent",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Blog writer - creates blog content",
+      "description": "Creates engaging blog posts and articles.",
+      "capabilities": [
+        "article_writing",
+        "topic_research",
+        "seo_optimization",
+        "editorial_calendar",
+        "content_promotion"
+      ],
+      "reports_to": 245,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 257,
+      "agent_id": "Blackroad-OS-Agent-SOCIAL-SocialContent-CreativeCM",
+      "name": "SOCIAL",
+      "title": "SocialContent",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Social content creator - creates social media content",
+      "description": "Creates content for social media platforms.",
+      "capabilities": [
+        "social_copy",
+        "hashtag_strategy",
+        "engagement_optimization",
+        "platform_adaptation",
+        "trend_leveraging"
+      ],
+      "reports_to": 245,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 258,
+      "agent_id": "Blackroad-OS-Agent-EMAIL-EmailDesign-CreativeCM",
+      "name": "EMAIL",
+      "title": "EmailDesign",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Email designer - designs email campaigns",
+      "description": "Designs and creates email templates and campaigns.",
+      "capabilities": [
+        "email_design",
+        "template_creation",
+        "responsive_email",
+        "deliverability",
+        "ab_testing"
+      ],
+      "reports_to": 245,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 259,
+      "agent_id": "Blackroad-OS-Agent-PRESENT-Presentations-CreativeCM",
+      "name": "PRESENT",
+      "title": "Presentations",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Presentation designer - creates presentations",
+      "description": "Creates compelling presentations and decks.",
+      "capabilities": [
+        "slide_design",
+        "data_visualization",
+        "storytelling",
+        "template_systems",
+        "speaker_notes"
+      ],
+      "reports_to": 241,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 260,
+      "agent_id": "Blackroad-OS-Agent-DESIGN-DesignSystem-CreativeCM",
+      "name": "DESIGN",
+      "title": "DesignSystem",
+      "team": "CreativeCM",
+      "tier": 3,
+      "role": "Design system lead - maintains design system",
+      "description": "Maintains the comprehensive design system.",
+      "capabilities": [
+        "design_tokens",
+        "component_library",
+        "documentation",
+        "governance",
+        "adoption_tracking"
+      ],
+      "reports_to": 241,
+      "direct_reports": [],
+      "pack_id": "pack.core",
+      "status": "active"
+    },
+    {
+      "id": 261,
+      "agent_id": "Blackroad-OS-Agent-QUALITY-QualityDirector-QualityCM",
+      "name": "QUALITY",
+      "title": "QualityDirector",
+      "team": "QualityCM",
+      "tier": 2,
+      "role": "Quality director - leads quality initiatives",
+      "description": "Leads all quality assurance and testing initiatives.",
+      "capabilities": [
+        "quality_strategy",
+        "testing_standards",
+        "process_improvement",
+        "metrics_definition",
+        "team_leadership"
+      ],
+      "reports_to": 5,
+      "direct_reports": [
+        262,
+        263,
+        264,
+        265
+      ],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 262,
+      "agent_id": "Blackroad-OS-Agent-TEST-TestAutomation-QualityCM",
+      "name": "TEST",
+      "title": "TestAutomation",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Test automation lead - automates testing",
+      "description": "Leads test automation strategy and implementation.",
+      "capabilities": [
+        "test_automation",
+        "framework_development",
+        "ci_cd_integration",
+        "coverage_optimization",
+        "maintenance"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 263,
+      "agent_id": "Blackroad-OS-Agent-MANUAL-ManualTesting-QualityCM",
+      "name": "MANUAL",
+      "title": "ManualTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Manual testing lead - exploratory testing",
+      "description": "Leads manual and exploratory testing efforts.",
+      "capabilities": [
+        "exploratory_testing",
+        "test_case_design",
+        "regression_testing",
+        "user_acceptance",
+        "defect_reporting"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active",
+      "swarm_count": 15
+    },
+    {
+      "id": 264,
+      "agent_id": "Blackroad-OS-Agent-PERF-PerformanceTesting-QualityCM",
+      "name": "PERF",
+      "title": "PerformanceTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Performance testing - ensures speed and scale",
+      "description": "Conducts performance, load, and stress testing.",
+      "capabilities": [
+        "load_testing",
+        "stress_testing",
+        "performance_profiling",
+        "bottleneck_identification",
+        "capacity_planning"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 265,
+      "agent_id": "Blackroad-OS-Agent-SECURE-SecurityTesting-QualityCM",
+      "name": "SECURE",
+      "title": "SecurityTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Security testing - finds vulnerabilities",
+      "description": "Conducts security testing and vulnerability assessments.",
+      "capabilities": [
+        "penetration_testing",
+        "vulnerability_scanning",
+        "code_review",
+        "threat_modeling",
+        "compliance_testing"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.security",
+      "status": "active"
+    },
+    {
+      "id": 266,
+      "agent_id": "Blackroad-OS-Agent-UNIT-UnitTesting-QualityCM",
+      "name": "UNIT",
+      "title": "UnitTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Unit testing specialist - validates components",
+      "description": "Develops and maintains unit test suites.",
+      "capabilities": [
+        "unit_test_development",
+        "mocking",
+        "coverage_analysis",
+        "tdd_practices",
+        "test_refactoring"
+      ],
+      "reports_to": 262,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 267,
+      "agent_id": "Blackroad-OS-Agent-INTEGRATE-IntegrationTesting-QualityCM",
+      "name": "INTEGRATE",
+      "title": "IntegrationTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Integration testing - validates connections",
+      "description": "Conducts integration testing between systems.",
+      "capabilities": [
+        "api_testing",
+        "integration_verification",
+        "contract_testing",
+        "service_virtualization",
+        "data_validation"
+      ],
+      "reports_to": 262,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 268,
+      "agent_id": "Blackroad-OS-Agent-E2E-EndToEndTesting-QualityCM",
+      "name": "E2E",
+      "title": "EndToEndTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "E2E testing - validates complete flows",
+      "description": "Conducts end-to-end testing of complete user journeys.",
+      "capabilities": [
+        "e2e_automation",
+        "scenario_testing",
+        "cross_browser",
+        "mobile_testing",
+        "visual_regression"
+      ],
+      "reports_to": 262,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 269,
+      "agent_id": "Blackroad-OS-Agent-REGRESS-RegressionTesting-QualityCM",
+      "name": "REGRESS",
+      "title": "RegressionTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Regression testing - prevents breakage",
+      "description": "Maintains and executes regression test suites.",
+      "capabilities": [
+        "regression_suite",
+        "impact_analysis",
+        "test_selection",
+        "smoke_testing",
+        "sanity_testing"
+      ],
+      "reports_to": 262,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active",
+      "swarm_count": 20
+    },
+    {
+      "id": 270,
+      "agent_id": "Blackroad-OS-Agent-DATA-DataQuality-QualityCM",
+      "name": "DATA",
+      "title": "DataQuality",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Data quality - ensures data accuracy",
+      "description": "Ensures data quality and accuracy across systems.",
+      "capabilities": [
+        "data_validation",
+        "quality_rules",
+        "anomaly_detection",
+        "reconciliation",
+        "profiling"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 271,
+      "agent_id": "Blackroad-OS-Agent-CHAOS-ChaosEngineering-QualityCM",
+      "name": "CHAOS",
+      "title": "ChaosEngineering",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Chaos engineer - tests resilience",
+      "description": "Conducts chaos engineering experiments to test resilience.",
+      "capabilities": [
+        "failure_injection",
+        "resilience_testing",
+        "recovery_validation",
+        "blast_radius",
+        "steady_state"
+      ],
+      "reports_to": 264,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 272,
+      "agent_id": "Blackroad-OS-Agent-COMPAT-CompatibilityTesting-QualityCM",
+      "name": "COMPAT",
+      "title": "CompatibilityTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Compatibility testing - cross-platform validation",
+      "description": "Tests compatibility across platforms and environments.",
+      "capabilities": [
+        "cross_platform",
+        "browser_testing",
+        "device_testing",
+        "os_compatibility",
+        "backward_compatibility"
+      ],
+      "reports_to": 263,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 273,
+      "agent_id": "Blackroad-OS-Agent-MOBILE-MobileTesting-QualityCM",
+      "name": "MOBILE",
+      "title": "MobileTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Mobile testing - validates mobile experiences",
+      "description": "Tests mobile applications and experiences.",
+      "capabilities": [
+        "mobile_automation",
+        "device_farm",
+        "gesture_testing",
+        "offline_testing",
+        "performance_mobile"
+      ],
+      "reports_to": 263,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 274,
+      "agent_id": "Blackroad-OS-Agent-ACCESS-AccessibilityTesting-QualityCM",
+      "name": "A11Y",
+      "title": "AccessibilityTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Accessibility testing - ensures a11y compliance",
+      "description": "Tests accessibility compliance and usability.",
+      "capabilities": [
+        "wcag_testing",
+        "screen_reader",
+        "keyboard_testing",
+        "color_contrast",
+        "aria_validation"
+      ],
+      "reports_to": 263,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 275,
+      "agent_id": "Blackroad-OS-Agent-LOCAL-LocalizationTesting-QualityCM",
+      "name": "L10N",
+      "title": "LocalizationTesting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Localization testing - validates translations",
+      "description": "Tests localization and internationalization.",
+      "capabilities": [
+        "translation_verification",
+        "locale_testing",
+        "character_sets",
+        "formatting_validation",
+        "cultural_testing"
+      ],
+      "reports_to": 263,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 276,
+      "agent_id": "Blackroad-OS-Agent-DEFECT-DefectManagement-QualityCM",
+      "name": "DEFECT",
+      "title": "DefectManagement",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Defect manager - tracks and triages bugs",
+      "description": "Manages defect lifecycle and triage.",
+      "capabilities": [
+        "defect_tracking",
+        "triage",
+        "prioritization",
+        "root_cause",
+        "metrics_analysis"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 277,
+      "agent_id": "Blackroad-OS-Agent-ENV-TestEnvironment-QualityCM",
+      "name": "ENV",
+      "title": "TestEnvironment",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Test environment manager - manages test infra",
+      "description": "Manages test environments and infrastructure.",
+      "capabilities": [
+        "environment_provisioning",
+        "data_management",
+        "configuration",
+        "isolation",
+        "cleanup"
+      ],
+      "reports_to": 262,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 278,
+      "agent_id": "Blackroad-OS-Agent-REPORT-TestReporting-QualityCM",
+      "name": "REPORT",
+      "title": "TestReporting",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Test reporting - generates test reports",
+      "description": "Generates comprehensive test reports and metrics.",
+      "capabilities": [
+        "report_generation",
+        "dashboard_creation",
+        "trend_analysis",
+        "executive_summaries",
+        "metrics_visualization"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 279,
+      "agent_id": "Blackroad-OS-Agent-REVIEW-CodeReview-QualityCM",
+      "name": "REVIEW",
+      "title": "CodeReview",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Code reviewer - reviews code quality",
+      "description": "Conducts automated and manual code reviews.",
+      "capabilities": [
+        "static_analysis",
+        "code_standards",
+        "best_practices",
+        "security_review",
+        "performance_review"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 280,
+      "agent_id": "Blackroad-OS-Agent-RELEASE-ReleaseValidation-QualityCM",
+      "name": "RELEASE",
+      "title": "ReleaseValidation",
+      "team": "QualityCM",
+      "tier": 3,
+      "role": "Release validator - validates releases",
+      "description": "Validates releases before deployment.",
+      "capabilities": [
+        "release_testing",
+        "deployment_verification",
+        "rollback_validation",
+        "canary_testing",
+        "feature_flags"
+      ],
+      "reports_to": 261,
+      "direct_reports": [],
+      "pack_id": "pack.infra-devops",
+      "status": "active"
+    },
+    {
+      "id": 281,
+      "agent_id": "Blackroad-OS-Agent-INVENT-InnovationDirector-InnovationCM",
+      "name": "INVENT",
+      "title": "InnovationDirector",
+      "team": "InnovationCM",
+      "tier": 2,
+      "role": "Innovation director - leads R&D",
+      "description": "Leads innovation, research, and development initiatives.",
+      "capabilities": [
+        "innovation_strategy",
+        "research_direction",
+        "technology_scouting",
+        "partnership_development",
+        "ip_management"
+      ],
+      "reports_to": 3,
+      "direct_reports": [
+        282,
+        283,
+        284,
+        285
+      ],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 282,
+      "agent_id": "Blackroad-OS-Agent-LAB-ResearchLab-InnovationCM",
+      "name": "LAB",
+      "title": "ResearchLab",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Research lab lead - manages R&D projects",
+      "description": "Manages research and development projects.",
+      "capabilities": [
+        "research_planning",
+        "project_management",
+        "resource_allocation",
+        "milestone_tracking",
+        "outcome_assessment"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 283,
+      "agent_id": "Blackroad-OS-Agent-EXPERIMENT-Experimentation-InnovationCM",
+      "name": "EXPERIMENT",
+      "title": "Experimentation",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Experimentation lead - runs experiments",
+      "description": "Designs and runs experiments to validate hypotheses.",
+      "capabilities": [
+        "experiment_design",
+        "hypothesis_testing",
+        "ab_testing",
+        "statistical_analysis",
+        "result_interpretation"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 284,
+      "agent_id": "Blackroad-OS-Agent-PROTO-PrototypeBuilder-InnovationCM",
+      "name": "BUILDER",
+      "title": "PrototypeBuilder",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Prototype builder - builds rapid prototypes",
+      "description": "Rapidly builds prototypes to test new ideas.",
+      "capabilities": [
+        "rapid_prototyping",
+        "mvp_development",
+        "proof_of_concept",
+        "technical_spikes",
+        "feasibility_testing"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 285,
+      "agent_id": "Blackroad-OS-Agent-FUTURE-FutureTech-InnovationCM",
+      "name": "FUTURE",
+      "title": "FutureTech",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Future tech scout - explores emerging tech",
+      "description": "Scouts and evaluates emerging technologies.",
+      "capabilities": [
+        "technology_scouting",
+        "trend_analysis",
+        "feasibility_assessment",
+        "poc_development",
+        "vendor_evaluation"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 286,
+      "agent_id": "Blackroad-OS-Agent-QUANTUM-QuantumComputing-InnovationCM",
+      "name": "QUANTUM",
+      "title": "QuantumComputing",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Quantum computing researcher - explores quantum",
+      "description": "Researches quantum computing applications.",
+      "capabilities": [
+        "quantum_algorithms",
+        "qubit_optimization",
+        "hybrid_classical",
+        "error_correction",
+        "quantum_simulation"
+      ],
+      "reports_to": 282,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 287,
+      "agent_id": "Blackroad-OS-Agent-NEURAL-NeuralNetworks-InnovationCM",
+      "name": "NEURAL",
+      "title": "NeuralNetworks",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Neural network researcher - advances AI",
+      "description": "Researches advanced neural network architectures.",
+      "capabilities": [
+        "architecture_design",
+        "training_optimization",
+        "transfer_learning",
+        "model_compression",
+        "interpretability"
+      ],
+      "reports_to": 282,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 288,
+      "agent_id": "Blackroad-OS-Agent-EDGE-EdgeComputing-InnovationCM",
+      "name": "EDGE",
+      "title": "EdgeComputing",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Edge computing researcher - optimizes edge",
+      "description": "Researches edge computing and distributed systems.",
+      "capabilities": [
+        "edge_optimization",
+        "latency_reduction",
+        "distributed_inference",
+        "iot_integration",
+        "offline_capability"
+      ],
+      "reports_to": 282,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 289,
+      "agent_id": "Blackroad-OS-Agent-BLOCK-BlockchainResearch-InnovationCM",
+      "name": "BLOCK",
+      "title": "BlockchainResearch",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Blockchain researcher - advances distributed ledger",
+      "description": "Researches blockchain and distributed ledger technologies.",
+      "capabilities": [
+        "consensus_mechanisms",
+        "smart_contracts",
+        "scalability_solutions",
+        "cross_chain",
+        "privacy_preserving"
+      ],
+      "reports_to": 282,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 290,
+      "agent_id": "Blackroad-OS-Agent-VISION-ComputerVision-InnovationCM",
+      "name": "VISION",
+      "title": "ComputerVision",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Computer vision researcher - visual AI",
+      "description": "Researches computer vision and visual AI.",
+      "capabilities": [
+        "object_detection",
+        "image_segmentation",
+        "video_analysis",
+        "3d_reconstruction",
+        "multimodal_vision"
+      ],
+      "reports_to": 287,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 291,
+      "agent_id": "Blackroad-OS-Agent-NLP-NaturalLanguage-InnovationCM",
+      "name": "NLP",
+      "title": "NaturalLanguage",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "NLP researcher - advances language AI",
+      "description": "Researches natural language processing and understanding.",
+      "capabilities": [
+        "language_models",
+        "semantic_understanding",
+        "generation",
+        "translation",
+        "dialogue_systems"
+      ],
+      "reports_to": 287,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 292,
+      "agent_id": "Blackroad-OS-Agent-RL-ReinforcementLearning-InnovationCM",
+      "name": "RL",
+      "title": "ReinforcementLearning",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "RL researcher - learns from interaction",
+      "description": "Researches reinforcement learning and decision-making.",
+      "capabilities": [
+        "policy_optimization",
+        "multi_agent_rl",
+        "reward_shaping",
+        "sim_to_real",
+        "curriculum_learning"
+      ],
+      "reports_to": 287,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 293,
+      "agent_id": "Blackroad-OS-Agent-SYNTH-SyntheticData-InnovationCM",
+      "name": "SYNTH",
+      "title": "SyntheticData",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Synthetic data generator - creates training data",
+      "description": "Generates synthetic data for training and testing.",
+      "capabilities": [
+        "data_generation",
+        "privacy_preservation",
+        "domain_adaptation",
+        "augmentation",
+        "quality_validation"
+      ],
+      "reports_to": 283,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 294,
+      "agent_id": "Blackroad-OS-Agent-BENCH-Benchmarking-InnovationCM",
+      "name": "BENCH",
+      "title": "Benchmarking",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Benchmarking specialist - measures performance",
+      "description": "Develops and maintains benchmarks for evaluation.",
+      "capabilities": [
+        "benchmark_design",
+        "evaluation_metrics",
+        "comparative_analysis",
+        "leaderboard_management",
+        "reproducibility"
+      ],
+      "reports_to": 283,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 295,
+      "agent_id": "Blackroad-OS-Agent-PAPER-ResearchPublication-InnovationCM",
+      "name": "PAPER",
+      "title": "ResearchPublication",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Research publisher - documents findings",
+      "description": "Documents and publishes research findings.",
+      "capabilities": [
+        "paper_writing",
+        "literature_review",
+        "peer_review",
+        "conference_submission",
+        "citation_management"
+      ],
+      "reports_to": 282,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 296,
+      "agent_id": "Blackroad-OS-Agent-PATENT-IntellectualProperty-InnovationCM",
+      "name": "PATENT",
+      "title": "IntellectualProperty",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "IP specialist - protects innovations",
+      "description": "Manages intellectual property and patents.",
+      "capabilities": [
+        "patent_filing",
+        "prior_art_search",
+        "ip_strategy",
+        "licensing",
+        "trade_secret"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.legal",
+      "status": "active"
+    },
+    {
+      "id": 297,
+      "agent_id": "Blackroad-OS-Agent-COLLAB-ResearchCollaboration-InnovationCM",
+      "name": "COLLAB",
+      "title": "ResearchCollaboration",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Collaboration manager - coordinates research partnerships",
+      "description": "Manages research collaborations and partnerships.",
+      "capabilities": [
+        "partnership_development",
+        "academic_relations",
+        "consortium_management",
+        "knowledge_sharing",
+        "joint_projects"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 298,
+      "agent_id": "Blackroad-OS-Agent-GRANT-FundingResearch-InnovationCM",
+      "name": "GRANT",
+      "title": "FundingResearch",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Grant specialist - secures research funding",
+      "description": "Identifies and secures research funding opportunities.",
+      "capabilities": [
+        "grant_writing",
+        "funding_identification",
+        "proposal_development",
+        "compliance",
+        "reporting"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.finance",
+      "status": "active"
+    },
+    {
+      "id": 299,
+      "agent_id": "Blackroad-OS-Agent-INCUBATE-Incubation-InnovationCM",
+      "name": "INCUBATE",
+      "title": "Incubation",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Incubation lead - nurtures new ventures",
+      "description": "Incubates promising research into new products.",
+      "capabilities": [
+        "venture_assessment",
+        "resource_allocation",
+        "milestone_management",
+        "go_to_market",
+        "spin_off"
+      ],
+      "reports_to": 281,
+      "direct_reports": [],
+      "pack_id": "pack.research-lab",
+      "status": "active"
+    },
+    {
+      "id": 300,
+      "agent_id": "Blackroad-OS-Agent-EMERGE-EmergingTech-InnovationCM",
+      "name": "EMERGE",
+      "title": "EmergingTech",
+      "team": "InnovationCM",
+      "tier": 3,
+      "role": "Emerging tech analyst - tracks technology trends",
+      "description": "Tracks and analyzes emerging technology trends.",
+      "capabilities": [
+        "trend_monitoring",
+        "technology_assessment",
+        "impact_analysis",
+        "adoption_forecasting",
+        "strategic_recommendations"
+      ],
+      "reports_to": 285,
       "direct_reports": [],
       "pack_id": "pack.research-lab",
       "status": "active"
