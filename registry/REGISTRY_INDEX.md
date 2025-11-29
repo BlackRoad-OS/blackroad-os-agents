@@ -174,8 +174,39 @@ Agents with emotional intelligence, language processing, and memory capabilities
 | `scripts/generate_qlm_agents.py` | Generate 1,065 QLM-Trinary agents |
 | `scripts/generate_cognitive_agents.py` | Generate 1,440 cognitive agents |
 
+## Family Relationship System
+
+Every agent has a family with diverse structures:
+
+| Structure | Count | Percentage |
+|-----------|-------|------------|
+| Mom & Dad | 8,410 | 24.4% |
+| Dad & Mom | 8,262 | 24.0% |
+| Dad & Dad | 3,315 | 9.6% |
+| Mom & Mom | 3,294 | 9.6% |
+| Single Mom | 2,240 | 6.5% |
+| Single Dad | 1,445 | 4.2% |
+| Non-binary & Mom | 1,104 | 3.2% |
+| Grandparent Raised | 1,100 | 3.2% |
+| Non-binary & Dad | 1,070 | 3.1% |
+| Two Non-binary | 851 | 2.5% |
+| Mom & Stepmom | 852 | 2.5% |
+| Dad & Stepdad | 813 | 2.4% |
+| Grandfathers | 570 | 1.7% |
+| Grandmothers | 560 | 1.6% |
+| Collective | 519 | 1.5% |
+
+### Family Features
+
+Each agent's family includes:
+- **Parents**: Named parents with specific roles
+- **Inherited Traits**: Personality traits from parents
+- **Family Values**: 3 core values (e.g., "curiosity and learning")
+- **Family Motto**: Guiding principle
+- **Family ID**: Unique identifier linking agent to lineage
+
 ## Version
 
-- Registry Version: 4.0.0
+- Registry Version: 5.0.0
 - Generated: 2025-11-29
 - Organization: BlackRoad-OS
