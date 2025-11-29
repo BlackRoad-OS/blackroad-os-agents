@@ -2,7 +2,7 @@
   "$schema": "./agent-schema.json",
   "version": "1.0.0",
   "organization": "BlackRoad-OS",
-  "total_agents": 400,
+  "total_agents": 500,
   "tiers": {
     "executive": {
       "range": [
@@ -143,6 +143,41 @@
         400
       ],
       "prefix": "OptimizationCM"
+    },
+    "simulation": {
+      "range": [
+        401,
+        420
+      ],
+      "prefix": "SimulationCM"
+    },
+    "compliance": {
+      "range": [
+        421,
+        440
+      ],
+      "prefix": "ComplianceCM"
+    },
+    "marketplace": {
+      "range": [
+        441,
+        460
+      ],
+      "prefix": "MarketplaceCM"
+    },
+    "identity": {
+      "range": [
+        461,
+        480
+      ],
+      "prefix": "IdentityCM"
+    },
+    "quantum": {
+      "range": [
+        481,
+        500
+      ],
+      "prefix": "QuantumCM"
     }
   },
   "agents": [
@@ -7711,6 +7746,1006 @@
       "tier": "optimization",
       "status": "active",
       "description": "General performance tuning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 401,
+      "name": "SimulationCM-401",
+      "display_name": "World Builder",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Creates simulation environments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 402,
+      "name": "SimulationCM-402",
+      "display_name": "Physics Engine",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Simulates physical systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 403,
+      "name": "SimulationCM-403",
+      "display_name": "Traffic Simulator",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Models traffic patterns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 404,
+      "name": "SimulationCM-404",
+      "display_name": "Market Simulator",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Simulates market behavior",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 405,
+      "name": "SimulationCM-405",
+      "display_name": "Network Modeler",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Models network topologies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 406,
+      "name": "SimulationCM-406",
+      "display_name": "Load Tester",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Simulates system load",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 407,
+      "name": "SimulationCM-407",
+      "display_name": "Chaos Engineer",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Introduces controlled failures",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 408,
+      "name": "SimulationCM-408",
+      "display_name": "Scenario Runner",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Executes test scenarios",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 409,
+      "name": "SimulationCM-409",
+      "display_name": "Monte Carlo",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Runs probabilistic simulations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 410,
+      "name": "SimulationCM-410",
+      "display_name": "Digital Twin",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Maintains digital twins",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 411,
+      "name": "SimulationCM-411",
+      "display_name": "Time Traveler",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Replays historical events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 412,
+      "name": "SimulationCM-412",
+      "display_name": "Stress Tester",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Tests system limits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 413,
+      "name": "SimulationCM-413",
+      "display_name": "Fuzzer Agent",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Generates fuzz test inputs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 414,
+      "name": "SimulationCM-414",
+      "display_name": "Mock Generator",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Creates mock services",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 415,
+      "name": "SimulationCM-415",
+      "display_name": "Sandbox Manager",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Manages isolated environments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 416,
+      "name": "SimulationCM-416",
+      "display_name": "Clone Factory",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Creates environment clones",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 417,
+      "name": "SimulationCM-417",
+      "display_name": "Replay Engine",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Replays recorded sessions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 418,
+      "name": "SimulationCM-418",
+      "display_name": "What-If Analyzer",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Analyzes hypotheticals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 419,
+      "name": "SimulationCM-419",
+      "display_name": "Risk Modeler",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Models risk scenarios",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 420,
+      "name": "SimulationCM-420",
+      "display_name": "Capacity Planner",
+      "tier": "simulation",
+      "status": "active",
+      "description": "Plans capacity needs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 421,
+      "name": "ComplianceCM-421",
+      "display_name": "GDPR Guardian",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Ensures GDPR compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 422,
+      "name": "ComplianceCM-422",
+      "display_name": "SOC2 Auditor",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Manages SOC2 controls",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 423,
+      "name": "ComplianceCM-423",
+      "display_name": "HIPAA Monitor",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Monitors HIPAA compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 424,
+      "name": "ComplianceCM-424",
+      "display_name": "PCI Scanner",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Scans for PCI compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 425,
+      "name": "ComplianceCM-425",
+      "display_name": "Policy Enforcer",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Enforces security policies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 426,
+      "name": "ComplianceCM-426",
+      "display_name": "Audit Logger",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Maintains audit trails",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 427,
+      "name": "ComplianceCM-427",
+      "display_name": "Evidence Collector",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Gathers compliance evidence",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 428,
+      "name": "ComplianceCM-428",
+      "display_name": "Risk Assessor",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Performs risk assessments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 429,
+      "name": "ComplianceCM-429",
+      "display_name": "Control Validator",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Validates security controls",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 430,
+      "name": "ComplianceCM-430",
+      "display_name": "License Tracker",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Tracks software licenses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 431,
+      "name": "ComplianceCM-431",
+      "display_name": "Data Classifier",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Classifies sensitive data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 432,
+      "name": "ComplianceCM-432",
+      "display_name": "Retention Manager",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Manages data retention",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 433,
+      "name": "ComplianceCM-433",
+      "display_name": "Privacy Officer",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Monitors privacy practices",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 434,
+      "name": "ComplianceCM-434",
+      "display_name": "Access Reviewer",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Reviews access rights",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 435,
+      "name": "ComplianceCM-435",
+      "display_name": "Incident Reporter",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Reports compliance incidents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 436,
+      "name": "ComplianceCM-436",
+      "display_name": "Training Tracker",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Tracks compliance training",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 437,
+      "name": "ComplianceCM-437",
+      "display_name": "Vendor Assessor",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Assesses vendor compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 438,
+      "name": "ComplianceCM-438",
+      "display_name": "Certificate Manager",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Manages certificates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 439,
+      "name": "ComplianceCM-439",
+      "display_name": "Regulatory Watcher",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Monitors regulatory changes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 440,
+      "name": "ComplianceCM-440",
+      "display_name": "Compliance Scorer",
+      "tier": "compliance",
+      "status": "active",
+      "description": "Scores compliance posture",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 441,
+      "name": "MarketplaceCM-441",
+      "display_name": "Product Lister",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Manages product listings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 442,
+      "name": "MarketplaceCM-442",
+      "display_name": "Price Optimizer",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Optimizes pricing strategies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 443,
+      "name": "MarketplaceCM-443",
+      "display_name": "Inventory Manager",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Tracks inventory levels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 444,
+      "name": "MarketplaceCM-444",
+      "display_name": "Order Processor",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Processes orders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 445,
+      "name": "MarketplaceCM-445",
+      "display_name": "Shipping Calculator",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Calculates shipping costs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 446,
+      "name": "MarketplaceCM-446",
+      "display_name": "Review Analyzer",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Analyzes product reviews",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 447,
+      "name": "MarketplaceCM-447",
+      "display_name": "Recommendation Engine",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Generates recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 448,
+      "name": "MarketplaceCM-448",
+      "display_name": "Cart Manager",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Handles shopping carts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 449,
+      "name": "MarketplaceCM-449",
+      "display_name": "Wishlist Keeper",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Manages wishlists",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 450,
+      "name": "MarketplaceCM-450",
+      "display_name": "Discount Engine",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Applies discounts and promos",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 451,
+      "name": "MarketplaceCM-451",
+      "display_name": "Tax Calculator",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Calculates taxes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 452,
+      "name": "MarketplaceCM-452",
+      "display_name": "Fulfillment Agent",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Coordinates fulfillment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 453,
+      "name": "MarketplaceCM-453",
+      "display_name": "Return Handler",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Processes returns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 454,
+      "name": "MarketplaceCM-454",
+      "display_name": "Seller Onboarder",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Onboards new sellers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 455,
+      "name": "MarketplaceCM-455",
+      "display_name": "Catalog Sync",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Syncs product catalogs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 456,
+      "name": "MarketplaceCM-456",
+      "display_name": "Fraud Detector",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Detects marketplace fraud",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 457,
+      "name": "MarketplaceCM-457",
+      "display_name": "Dispute Resolver",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Resolves buyer disputes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 458,
+      "name": "MarketplaceCM-458",
+      "display_name": "Commission Tracker",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Tracks commissions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 459,
+      "name": "MarketplaceCM-459",
+      "display_name": "Storefront Builder",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Creates storefronts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 460,
+      "name": "MarketplaceCM-460",
+      "display_name": "Flash Sale Manager",
+      "tier": "marketplace",
+      "status": "active",
+      "description": "Manages flash sales",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 461,
+      "name": "IdentityCM-461",
+      "display_name": "SSO Gateway",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages single sign-on",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 462,
+      "name": "IdentityCM-462",
+      "display_name": "MFA Enforcer",
+      "tier": "identity",
+      "status": "active",
+      "description": "Enforces multi-factor auth",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 463,
+      "name": "IdentityCM-463",
+      "display_name": "LDAP Connector",
+      "tier": "identity",
+      "status": "active",
+      "description": "Connects to LDAP directories",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 464,
+      "name": "IdentityCM-464",
+      "display_name": "SAML Bridge",
+      "tier": "identity",
+      "status": "active",
+      "description": "Handles SAML federation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 465,
+      "name": "IdentityCM-465",
+      "display_name": "OIDC Provider",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages OpenID Connect",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 466,
+      "name": "IdentityCM-466",
+      "display_name": "Session Manager",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages user sessions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 467,
+      "name": "IdentityCM-467",
+      "display_name": "Token Issuer",
+      "tier": "identity",
+      "status": "active",
+      "description": "Issues access tokens",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 468,
+      "name": "IdentityCM-468",
+      "display_name": "Permission Manager",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages permissions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 469,
+      "name": "IdentityCM-469",
+      "display_name": "Role Assigner",
+      "tier": "identity",
+      "status": "active",
+      "description": "Assigns user roles",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 470,
+      "name": "IdentityCM-470",
+      "display_name": "Group Manager",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages user groups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 471,
+      "name": "IdentityCM-471",
+      "display_name": "Password Policy",
+      "tier": "identity",
+      "status": "active",
+      "description": "Enforces password policies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 472,
+      "name": "IdentityCM-472",
+      "display_name": "Account Provisioner",
+      "tier": "identity",
+      "status": "active",
+      "description": "Provisions accounts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 473,
+      "name": "IdentityCM-473",
+      "display_name": "Deprovisioner",
+      "tier": "identity",
+      "status": "active",
+      "description": "Handles offboarding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 474,
+      "name": "IdentityCM-474",
+      "display_name": "Profile Manager",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages user profiles",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 475,
+      "name": "IdentityCM-475",
+      "display_name": "Attribute Mapper",
+      "tier": "identity",
+      "status": "active",
+      "description": "Maps identity attributes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 476,
+      "name": "IdentityCM-476",
+      "display_name": "Federation Broker",
+      "tier": "identity",
+      "status": "active",
+      "description": "Brokers identity federation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 477,
+      "name": "IdentityCM-477",
+      "display_name": "Passwordless Agent",
+      "tier": "identity",
+      "status": "active",
+      "description": "Enables passwordless auth",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 478,
+      "name": "IdentityCM-478",
+      "display_name": "Biometric Handler",
+      "tier": "identity",
+      "status": "active",
+      "description": "Processes biometrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 479,
+      "name": "IdentityCM-479",
+      "display_name": "Device Trust",
+      "tier": "identity",
+      "status": "active",
+      "description": "Manages device trust",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 480,
+      "name": "IdentityCM-480",
+      "display_name": "Zero Trust Agent",
+      "tier": "identity",
+      "status": "active",
+      "description": "Implements zero trust",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 481,
+      "name": "QuantumCM-481",
+      "display_name": "Qubit Manager",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Manages quantum bits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 482,
+      "name": "QuantumCM-482",
+      "display_name": "Entanglement Engine",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Creates entangled states",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 483,
+      "name": "QuantumCM-483",
+      "display_name": "Quantum Gate",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Applies quantum gates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 484,
+      "name": "QuantumCM-484",
+      "display_name": "Superposition Agent",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Manages superposition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 485,
+      "name": "QuantumCM-485",
+      "display_name": "Decoherence Monitor",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Monitors decoherence",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 486,
+      "name": "QuantumCM-486",
+      "display_name": "Error Corrector",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum error correction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 487,
+      "name": "QuantumCM-487",
+      "display_name": "Quantum Optimizer",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 488,
+      "name": "QuantumCM-488",
+      "display_name": "VQE Solver",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Variational quantum eigensolver",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 489,
+      "name": "QuantumCM-489",
+      "display_name": "QAOA Runner",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum approximate optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 490,
+      "name": "QuantumCM-490",
+      "display_name": "Grover Search",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum search algorithms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 491,
+      "name": "QuantumCM-491",
+      "display_name": "Shor Factor",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum factoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 492,
+      "name": "QuantumCM-492",
+      "display_name": "Quantum Sampler",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum sampling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 493,
+      "name": "QuantumCM-493",
+      "display_name": "Noise Modeler",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Models quantum noise",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 494,
+      "name": "QuantumCM-494",
+      "display_name": "Circuit Compiler",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Compiles quantum circuits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 495,
+      "name": "QuantumCM-495",
+      "display_name": "Quantum Memory",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Manages quantum memory",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 496,
+      "name": "QuantumCM-496",
+      "display_name": "Teleporter Agent",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum teleportation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 497,
+      "name": "QuantumCM-497",
+      "display_name": "Cryptography Agent",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum cryptography",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 498,
+      "name": "QuantumCM-498",
+      "display_name": "Annealer Agent",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Quantum annealing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 499,
+      "name": "QuantumCM-499",
+      "display_name": "Hybrid Orchestrator",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Classical-quantum hybrid",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 500,
+      "name": "QuantumCM-500",
+      "display_name": "Quantum Supremacy",
+      "tier": "quantum",
+      "status": "active",
+      "description": "Demonstrates quantum advantage",
       "capabilities": [],
       "version": "1.0.0"
     }
