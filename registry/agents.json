@@ -2,7 +2,7 @@
   "$schema": "./agent-schema.json",
   "version": "1.0.0",
   "organization": "BlackRoad-OS",
-  "total_agents": 1300,
+  "total_agents": 1800,
   "tiers": {
     "executive": {
       "range": [
@@ -458,6 +458,181 @@
         1300
       ],
       "prefix": "VisionCM"
+    },
+    "audio": {
+      "range": [
+        1301,
+        1320
+      ],
+      "prefix": "AudioCM"
+    },
+    "document": {
+      "range": [
+        1321,
+        1340
+      ],
+      "prefix": "DocumentCM"
+    },
+    "search": {
+      "range": [
+        1341,
+        1360
+      ],
+      "prefix": "SearchCM"
+    },
+    "recommendation": {
+      "range": [
+        1361,
+        1380
+      ],
+      "prefix": "RecommendationCM"
+    },
+    "scheduling": {
+      "range": [
+        1381,
+        1400
+      ],
+      "prefix": "SchedulingCM"
+    },
+    "notification": {
+      "range": [
+        1401,
+        1420
+      ],
+      "prefix": "NotificationCM"
+    },
+    "payment": {
+      "range": [
+        1421,
+        1440
+      ],
+      "prefix": "PaymentCM"
+    },
+    "shipping": {
+      "range": [
+        1441,
+        1460
+      ],
+      "prefix": "ShippingCM"
+    },
+    "inventory": {
+      "range": [
+        1461,
+        1480
+      ],
+      "prefix": "InventoryCM"
+    },
+    "crm": {
+      "range": [
+        1481,
+        1500
+      ],
+      "prefix": "CRMCM"
+    },
+    "erp": {
+      "range": [
+        1501,
+        1520
+      ],
+      "prefix": "ERPCM"
+    },
+    "workflow": {
+      "range": [
+        1521,
+        1540
+      ],
+      "prefix": "WorkflowCM"
+    },
+    "reporting": {
+      "range": [
+        1541,
+        1560
+      ],
+      "prefix": "ReportingCM"
+    },
+    "testing": {
+      "range": [
+        1561,
+        1580
+      ],
+      "prefix": "TestingCM"
+    },
+    "deployment": {
+      "range": [
+        1581,
+        1600
+      ],
+      "prefix": "DeploymentCM"
+    },
+    "monitoring": {
+      "range": [
+        1601,
+        1620
+      ],
+      "prefix": "MonitoringCM"
+    },
+    "logging": {
+      "range": [
+        1621,
+        1640
+      ],
+      "prefix": "LoggingCM"
+    },
+    "backup": {
+      "range": [
+        1641,
+        1660
+      ],
+      "prefix": "BackupCM"
+    },
+    "migration": {
+      "range": [
+        1661,
+        1680
+      ],
+      "prefix": "MigrationCM"
+    },
+    "virtualization": {
+      "range": [
+        1681,
+        1700
+      ],
+      "prefix": "VirtualizationCM"
+    },
+    "networking": {
+      "range": [
+        1701,
+        1720
+      ],
+      "prefix": "NetworkingCM"
+    },
+    "storage": {
+      "range": [
+        1721,
+        1740
+      ],
+      "prefix": "StorageCM"
+    },
+    "database": {
+      "range": [
+        1741,
+        1760
+      ],
+      "prefix": "DatabaseCM"
+    },
+    "api": {
+      "range": [
+        1761,
+        1780
+      ],
+      "prefix": "APICM"
+    },
+    "frontend": {
+      "range": [
+        1781,
+        1800
+      ],
+      "prefix": "FrontendCM"
     }
   },
   "agents": [
@@ -17026,6 +17201,5006 @@
       "tier": "vision",
       "status": "active",
       "description": "Style transfer",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1301,
+      "name": "AudioCM-1301",
+      "display_name": "Music Generator",
+      "tier": "audio",
+      "status": "active",
+      "description": "Generates music compositions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1302,
+      "name": "AudioCM-1302",
+      "display_name": "Beat Maker",
+      "tier": "audio",
+      "status": "active",
+      "description": "Creates beats and rhythms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1303,
+      "name": "AudioCM-1303",
+      "display_name": "Voice Synthesizer",
+      "tier": "audio",
+      "status": "active",
+      "description": "Synthesizes voices",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1304,
+      "name": "AudioCM-1304",
+      "display_name": "Audio Mixer",
+      "tier": "audio",
+      "status": "active",
+      "description": "Mixes audio tracks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1305,
+      "name": "AudioCM-1305",
+      "display_name": "Sound Designer",
+      "tier": "audio",
+      "status": "active",
+      "description": "Designs sound effects",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1306,
+      "name": "AudioCM-1306",
+      "display_name": "Podcast Editor",
+      "tier": "audio",
+      "status": "active",
+      "description": "Edits podcasts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1307,
+      "name": "AudioCM-1307",
+      "display_name": "Audio Restorer",
+      "tier": "audio",
+      "status": "active",
+      "description": "Restores old audio",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1308,
+      "name": "AudioCM-1308",
+      "display_name": "Noise Canceller",
+      "tier": "audio",
+      "status": "active",
+      "description": "Cancels background noise",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1309,
+      "name": "AudioCM-1309",
+      "display_name": "Audio Classifier",
+      "tier": "audio",
+      "status": "active",
+      "description": "Classifies audio content",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1310,
+      "name": "AudioCM-1310",
+      "display_name": "Speaker Identifier",
+      "tier": "audio",
+      "status": "active",
+      "description": "Identifies speakers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1311,
+      "name": "AudioCM-1311",
+      "display_name": "Music Recommender",
+      "tier": "audio",
+      "status": "active",
+      "description": "Recommends music",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1312,
+      "name": "AudioCM-1312",
+      "display_name": "Lyrics Generator",
+      "tier": "audio",
+      "status": "active",
+      "description": "Generates lyrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1313,
+      "name": "AudioCM-1313",
+      "display_name": "Chord Detector",
+      "tier": "audio",
+      "status": "active",
+      "description": "Detects musical chords",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1314,
+      "name": "AudioCM-1314",
+      "display_name": "Tempo Analyzer",
+      "tier": "audio",
+      "status": "active",
+      "description": "Analyzes tempo",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1315,
+      "name": "AudioCM-1315",
+      "display_name": "Audio Fingerprinter",
+      "tier": "audio",
+      "status": "active",
+      "description": "Creates audio fingerprints",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1316,
+      "name": "AudioCM-1316",
+      "display_name": "Spatial Audio Creator",
+      "tier": "audio",
+      "status": "active",
+      "description": "Creates spatial audio",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1317,
+      "name": "AudioCM-1317",
+      "display_name": "Audio Compressor",
+      "tier": "audio",
+      "status": "active",
+      "description": "Compresses audio files",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1318,
+      "name": "AudioCM-1318",
+      "display_name": "Equalizer Agent",
+      "tier": "audio",
+      "status": "active",
+      "description": "Audio equalization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1319,
+      "name": "AudioCM-1319",
+      "display_name": "Karaoke Generator",
+      "tier": "audio",
+      "status": "active",
+      "description": "Creates karaoke tracks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1320,
+      "name": "AudioCM-1320",
+      "display_name": "Audio Watermarker",
+      "tier": "audio",
+      "status": "active",
+      "description": "Watermarks audio",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1321,
+      "name": "DocumentCM-1321",
+      "display_name": "PDF Generator",
+      "tier": "document",
+      "status": "active",
+      "description": "Generates PDF documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1322,
+      "name": "DocumentCM-1322",
+      "display_name": "Word Processor",
+      "tier": "document",
+      "status": "active",
+      "description": "Processes Word docs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1323,
+      "name": "DocumentCM-1323",
+      "display_name": "Spreadsheet Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Manages spreadsheets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1324,
+      "name": "DocumentCM-1324",
+      "display_name": "Presentation Builder",
+      "tier": "document",
+      "status": "active",
+      "description": "Builds presentations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1325,
+      "name": "DocumentCM-1325",
+      "display_name": "Document Scanner",
+      "tier": "document",
+      "status": "active",
+      "description": "Scans documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1326,
+      "name": "DocumentCM-1326",
+      "display_name": "Form Filler",
+      "tier": "document",
+      "status": "active",
+      "description": "Fills forms automatically",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1327,
+      "name": "DocumentCM-1327",
+      "display_name": "Signature Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Manages digital signatures",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1328,
+      "name": "DocumentCM-1328",
+      "display_name": "Template Manager",
+      "tier": "document",
+      "status": "active",
+      "description": "Manages doc templates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1329,
+      "name": "DocumentCM-1329",
+      "display_name": "Version Controller",
+      "tier": "document",
+      "status": "active",
+      "description": "Document version control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1330,
+      "name": "DocumentCM-1330",
+      "display_name": "Merge Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Merges documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1331,
+      "name": "DocumentCM-1331",
+      "display_name": "Split Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Splits documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1332,
+      "name": "DocumentCM-1332",
+      "display_name": "Redaction Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Redacts sensitive info",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1333,
+      "name": "DocumentCM-1333",
+      "display_name": "Annotation Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Adds annotations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1334,
+      "name": "DocumentCM-1334",
+      "display_name": "Comparison Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Compares documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1335,
+      "name": "DocumentCM-1335",
+      "display_name": "Conversion Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Converts formats",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1336,
+      "name": "DocumentCM-1336",
+      "display_name": "Metadata Extractor",
+      "tier": "document",
+      "status": "active",
+      "description": "Extracts metadata",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1337,
+      "name": "DocumentCM-1337",
+      "display_name": "Table Extractor",
+      "tier": "document",
+      "status": "active",
+      "description": "Extracts tables",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1338,
+      "name": "DocumentCM-1338",
+      "display_name": "Chart Generator",
+      "tier": "document",
+      "status": "active",
+      "description": "Generates charts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1339,
+      "name": "DocumentCM-1339",
+      "display_name": "Bibliography Agent",
+      "tier": "document",
+      "status": "active",
+      "description": "Manages bibliographies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1340,
+      "name": "DocumentCM-1340",
+      "display_name": "Index Generator",
+      "tier": "document",
+      "status": "active",
+      "description": "Generates indexes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1341,
+      "name": "SearchCM-1341",
+      "display_name": "Full Text Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Full-text search engine",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1342,
+      "name": "SearchCM-1342",
+      "display_name": "Semantic Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Semantic search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1343,
+      "name": "SearchCM-1343",
+      "display_name": "Fuzzy Matcher",
+      "tier": "search",
+      "status": "active",
+      "description": "Fuzzy string matching",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1344,
+      "name": "SearchCM-1344",
+      "display_name": "Autocomplete Agent",
+      "tier": "search",
+      "status": "active",
+      "description": "Search autocomplete",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1345,
+      "name": "SearchCM-1345",
+      "display_name": "Spell Suggester",
+      "tier": "search",
+      "status": "active",
+      "description": "Suggests corrections",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1346,
+      "name": "SearchCM-1346",
+      "display_name": "Faceted Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Faceted search filtering",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1347,
+      "name": "SearchCM-1347",
+      "display_name": "Geo Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Geographic search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1348,
+      "name": "SearchCM-1348",
+      "display_name": "Image Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Image-based search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1349,
+      "name": "SearchCM-1349",
+      "display_name": "Voice Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Voice search processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1350,
+      "name": "SearchCM-1350",
+      "display_name": "Product Search",
+      "tier": "search",
+      "status": "active",
+      "description": "E-commerce search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1351,
+      "name": "SearchCM-1351",
+      "display_name": "Code Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Source code search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1352,
+      "name": "SearchCM-1352",
+      "display_name": "Log Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Log file search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1353,
+      "name": "SearchCM-1353",
+      "display_name": "Email Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Email search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1354,
+      "name": "SearchCM-1354",
+      "display_name": "Document Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Document search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1355,
+      "name": "SearchCM-1355",
+      "display_name": "People Search",
+      "tier": "search",
+      "status": "active",
+      "description": "People finder",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1356,
+      "name": "SearchCM-1356",
+      "display_name": "News Search",
+      "tier": "search",
+      "status": "active",
+      "description": "News search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1357,
+      "name": "SearchCM-1357",
+      "display_name": "Video Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Video content search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1358,
+      "name": "SearchCM-1358",
+      "display_name": "Real-time Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Real-time search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1359,
+      "name": "SearchCM-1359",
+      "display_name": "Federated Search",
+      "tier": "search",
+      "status": "active",
+      "description": "Federated search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1360,
+      "name": "SearchCM-1360",
+      "display_name": "Search Analytics",
+      "tier": "search",
+      "status": "active",
+      "description": "Search analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1361,
+      "name": "RecommendationCM-1361",
+      "display_name": "Collaborative Filter",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Collaborative filtering",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1362,
+      "name": "RecommendationCM-1362",
+      "display_name": "Content Filter",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Content-based filtering",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1363,
+      "name": "RecommendationCM-1363",
+      "display_name": "Hybrid Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Hybrid recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1364,
+      "name": "RecommendationCM-1364",
+      "display_name": "Similar Items",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Similar item finder",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1365,
+      "name": "RecommendationCM-1365",
+      "display_name": "Trending Detector",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Detects trending items",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1366,
+      "name": "RecommendationCM-1366",
+      "display_name": "Personalization Engine",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Personalization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1367,
+      "name": "RecommendationCM-1367",
+      "display_name": "Next Best Action",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Next best action",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1368,
+      "name": "RecommendationCM-1368",
+      "display_name": "Cross-Sell Agent",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Cross-selling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1369,
+      "name": "RecommendationCM-1369",
+      "display_name": "Up-Sell Agent",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Up-selling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1370,
+      "name": "RecommendationCM-1370",
+      "display_name": "Bundle Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Bundle recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1371,
+      "name": "RecommendationCM-1371",
+      "display_name": "Email Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Email recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1372,
+      "name": "RecommendationCM-1372",
+      "display_name": "Content Curator",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Content curation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1373,
+      "name": "RecommendationCM-1373",
+      "display_name": "News Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "News recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1374,
+      "name": "RecommendationCM-1374",
+      "display_name": "Music Recommender AI",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Music recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1375,
+      "name": "RecommendationCM-1375",
+      "display_name": "Video Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Video recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1376,
+      "name": "RecommendationCM-1376",
+      "display_name": "Job Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Job recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1377,
+      "name": "RecommendationCM-1377",
+      "display_name": "Course Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Course recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1378,
+      "name": "RecommendationCM-1378",
+      "display_name": "Restaurant Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Restaurant recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1379,
+      "name": "RecommendationCM-1379",
+      "display_name": "Travel Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Travel recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1380,
+      "name": "RecommendationCM-1380",
+      "display_name": "Gift Recommender",
+      "tier": "recommendation",
+      "status": "active",
+      "description": "Gift recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1381,
+      "name": "SchedulingCM-1381",
+      "display_name": "Calendar Manager",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Manages calendars",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1382,
+      "name": "SchedulingCM-1382",
+      "display_name": "Meeting Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Schedules meetings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1383,
+      "name": "SchedulingCM-1383",
+      "display_name": "Resource Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Schedules resources",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1384,
+      "name": "SchedulingCM-1384",
+      "display_name": "Room Booker",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Books meeting rooms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1385,
+      "name": "SchedulingCM-1385",
+      "display_name": "Appointment Setter",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Sets appointments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1386,
+      "name": "SchedulingCM-1386",
+      "display_name": "Availability Finder",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Finds availability",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1387,
+      "name": "SchedulingCM-1387",
+      "display_name": "Time Zone Converter",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Converts time zones",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1388,
+      "name": "SchedulingCM-1388",
+      "display_name": "Recurring Event Manager",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Recurring events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1389,
+      "name": "SchedulingCM-1389",
+      "display_name": "Conflict Resolver",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Resolves conflicts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1390,
+      "name": "SchedulingCM-1390",
+      "display_name": "Reminder Agent",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Sends reminders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1391,
+      "name": "SchedulingCM-1391",
+      "display_name": "Buffer Time Agent",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Adds buffer time",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1392,
+      "name": "SchedulingCM-1392",
+      "display_name": "Priority Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Priority scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1393,
+      "name": "SchedulingCM-1393",
+      "display_name": "Load Leveler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Levels workload",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1394,
+      "name": "SchedulingCM-1394",
+      "display_name": "Shift Planner",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Plans shifts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1395,
+      "name": "SchedulingCM-1395",
+      "display_name": "On-Call Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "On-call schedules",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1396,
+      "name": "SchedulingCM-1396",
+      "display_name": "Maintenance Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Maintenance schedules",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1397,
+      "name": "SchedulingCM-1397",
+      "display_name": "Interview Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Interview scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1398,
+      "name": "SchedulingCM-1398",
+      "display_name": "Class Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Class scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1399,
+      "name": "SchedulingCM-1399",
+      "display_name": "Sports Scheduler",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Sports scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1400,
+      "name": "SchedulingCM-1400",
+      "display_name": "Event Coordinator",
+      "tier": "scheduling",
+      "status": "active",
+      "description": "Event coordination",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1401,
+      "name": "NotificationCM-1401",
+      "display_name": "Push Sender",
+      "tier": "notification",
+      "status": "active",
+      "description": "Sends push notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1402,
+      "name": "NotificationCM-1402",
+      "display_name": "Email Notifier",
+      "tier": "notification",
+      "status": "active",
+      "description": "Email notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1403,
+      "name": "NotificationCM-1403",
+      "display_name": "SMS Sender",
+      "tier": "notification",
+      "status": "active",
+      "description": "SMS notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1404,
+      "name": "NotificationCM-1404",
+      "display_name": "In-App Notifier",
+      "tier": "notification",
+      "status": "active",
+      "description": "In-app notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1405,
+      "name": "NotificationCM-1405",
+      "display_name": "Webhook Sender",
+      "tier": "notification",
+      "status": "active",
+      "description": "Webhook notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1406,
+      "name": "NotificationCM-1406",
+      "display_name": "Slack Notifier",
+      "tier": "notification",
+      "status": "active",
+      "description": "Slack notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1407,
+      "name": "NotificationCM-1407",
+      "display_name": "Teams Notifier",
+      "tier": "notification",
+      "status": "active",
+      "description": "Teams notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1408,
+      "name": "NotificationCM-1408",
+      "display_name": "Discord Notifier",
+      "tier": "notification",
+      "status": "active",
+      "description": "Discord notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1409,
+      "name": "NotificationCM-1409",
+      "display_name": "Pager Agent",
+      "tier": "notification",
+      "status": "active",
+      "description": "Pager notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1410,
+      "name": "NotificationCM-1410",
+      "display_name": "Alert Manager",
+      "tier": "notification",
+      "status": "active",
+      "description": "Manages alerts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1411,
+      "name": "NotificationCM-1411",
+      "display_name": "Escalation Agent",
+      "tier": "notification",
+      "status": "active",
+      "description": "Escalates alerts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1412,
+      "name": "NotificationCM-1412",
+      "display_name": "Digest Builder",
+      "tier": "notification",
+      "status": "active",
+      "description": "Builds digests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1413,
+      "name": "NotificationCM-1413",
+      "display_name": "Preference Manager",
+      "tier": "notification",
+      "status": "active",
+      "description": "Notification preferences",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1414,
+      "name": "NotificationCM-1414",
+      "display_name": "Template Manager Notif",
+      "tier": "notification",
+      "status": "active",
+      "description": "Notification templates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1415,
+      "name": "NotificationCM-1415",
+      "display_name": "Rate Limiter Notif",
+      "tier": "notification",
+      "status": "active",
+      "description": "Rate limits notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1416,
+      "name": "NotificationCM-1416",
+      "display_name": "Channel Router",
+      "tier": "notification",
+      "status": "active",
+      "description": "Routes to channels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1417,
+      "name": "NotificationCM-1417",
+      "display_name": "Delivery Tracker",
+      "tier": "notification",
+      "status": "active",
+      "description": "Tracks delivery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1418,
+      "name": "NotificationCM-1418",
+      "display_name": "Read Receipt Agent",
+      "tier": "notification",
+      "status": "active",
+      "description": "Read receipts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1419,
+      "name": "NotificationCM-1419",
+      "display_name": "Batch Sender",
+      "tier": "notification",
+      "status": "active",
+      "description": "Batch notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1420,
+      "name": "NotificationCM-1420",
+      "display_name": "Priority Notifier",
+      "tier": "notification",
+      "status": "active",
+      "description": "Priority notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1421,
+      "name": "PaymentCM-1421",
+      "display_name": "Card Processor",
+      "tier": "payment",
+      "status": "active",
+      "description": "Processes card payments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1422,
+      "name": "PaymentCM-1422",
+      "display_name": "ACH Processor",
+      "tier": "payment",
+      "status": "active",
+      "description": "ACH transfers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1423,
+      "name": "PaymentCM-1423",
+      "display_name": "Wire Transfer Agent",
+      "tier": "payment",
+      "status": "active",
+      "description": "Wire transfers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1424,
+      "name": "PaymentCM-1424",
+      "display_name": "Crypto Payment",
+      "tier": "payment",
+      "status": "active",
+      "description": "Crypto payments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1425,
+      "name": "PaymentCM-1425",
+      "display_name": "Invoice Generator",
+      "tier": "payment",
+      "status": "active",
+      "description": "Generates invoices",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1426,
+      "name": "PaymentCM-1426",
+      "display_name": "Subscription Billing",
+      "tier": "payment",
+      "status": "active",
+      "description": "Subscription billing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1427,
+      "name": "PaymentCM-1427",
+      "display_name": "Usage Billing",
+      "tier": "payment",
+      "status": "active",
+      "description": "Usage-based billing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1428,
+      "name": "PaymentCM-1428",
+      "display_name": "Refund Processor",
+      "tier": "payment",
+      "status": "active",
+      "description": "Processes refunds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1429,
+      "name": "PaymentCM-1429",
+      "display_name": "Chargeback Handler",
+      "tier": "payment",
+      "status": "active",
+      "description": "Handles chargebacks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1430,
+      "name": "PaymentCM-1430",
+      "display_name": "Fraud Screener",
+      "tier": "payment",
+      "status": "active",
+      "description": "Screens for fraud",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1431,
+      "name": "PaymentCM-1431",
+      "display_name": "3DS Handler",
+      "tier": "payment",
+      "status": "active",
+      "description": "3D Secure handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1432,
+      "name": "PaymentCM-1432",
+      "display_name": "Tokenizer",
+      "tier": "payment",
+      "status": "active",
+      "description": "Payment tokenization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1433,
+      "name": "PaymentCM-1433",
+      "display_name": "PCI Compliance",
+      "tier": "payment",
+      "status": "active",
+      "description": "PCI compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1434,
+      "name": "PaymentCM-1434",
+      "display_name": "Multi-Currency",
+      "tier": "payment",
+      "status": "active",
+      "description": "Multi-currency support",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1435,
+      "name": "PaymentCM-1435",
+      "display_name": "Split Payment",
+      "tier": "payment",
+      "status": "active",
+      "description": "Split payments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1436,
+      "name": "PaymentCM-1436",
+      "display_name": "Escrow Agent",
+      "tier": "payment",
+      "status": "active",
+      "description": "Escrow services",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1437,
+      "name": "PaymentCM-1437",
+      "display_name": "Payout Agent",
+      "tier": "payment",
+      "status": "active",
+      "description": "Payouts to vendors",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1438,
+      "name": "PaymentCM-1438",
+      "display_name": "Tax Calculator Pay",
+      "tier": "payment",
+      "status": "active",
+      "description": "Payment tax calculation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1439,
+      "name": "PaymentCM-1439",
+      "display_name": "Receipt Generator",
+      "tier": "payment",
+      "status": "active",
+      "description": "Generates receipts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1440,
+      "name": "PaymentCM-1440",
+      "display_name": "Payment Link",
+      "tier": "payment",
+      "status": "active",
+      "description": "Payment links",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1441,
+      "name": "ShippingCM-1441",
+      "display_name": "Rate Calculator",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Calculates shipping rates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1442,
+      "name": "ShippingCM-1442",
+      "display_name": "Label Generator",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Generates shipping labels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1443,
+      "name": "ShippingCM-1443",
+      "display_name": "Carrier Selector",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Selects carriers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1444,
+      "name": "ShippingCM-1444",
+      "display_name": "Tracking Agent",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Package tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1445,
+      "name": "ShippingCM-1445",
+      "display_name": "Delivery Estimator",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Estimates delivery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1446,
+      "name": "ShippingCM-1446",
+      "display_name": "Address Validator",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Validates addresses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1447,
+      "name": "ShippingCM-1447",
+      "display_name": "Customs Form Agent",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Customs forms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1448,
+      "name": "ShippingCM-1448",
+      "display_name": "Insurance Agent Ship",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Shipping insurance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1449,
+      "name": "ShippingCM-1449",
+      "display_name": "Pickup Scheduler",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Schedules pickups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1450,
+      "name": "ShippingCM-1450",
+      "display_name": "Returns Label",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Returns labels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1451,
+      "name": "ShippingCM-1451",
+      "display_name": "Batch Shipper",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Batch shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1452,
+      "name": "ShippingCM-1452",
+      "display_name": "Multi-Carrier",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Multi-carrier shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1453,
+      "name": "ShippingCM-1453",
+      "display_name": "Freight Quote",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Freight quotes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1454,
+      "name": "ShippingCM-1454",
+      "display_name": "LTL Manager",
+      "tier": "shipping",
+      "status": "active",
+      "description": "LTL shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1455,
+      "name": "ShippingCM-1455",
+      "display_name": "FTL Manager",
+      "tier": "shipping",
+      "status": "active",
+      "description": "FTL shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1456,
+      "name": "ShippingCM-1456",
+      "display_name": "Drop Ship Agent",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Drop shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1457,
+      "name": "ShippingCM-1457",
+      "display_name": "Fulfillment Router",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Routes fulfillment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1458,
+      "name": "ShippingCM-1458",
+      "display_name": "Packaging Advisor",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Packaging advice",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1459,
+      "name": "ShippingCM-1459",
+      "display_name": "Duty Calculator",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Duty calculation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1460,
+      "name": "ShippingCM-1460",
+      "display_name": "Delivery Proof",
+      "tier": "shipping",
+      "status": "active",
+      "description": "Proof of delivery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1461,
+      "name": "InventoryCM-1461",
+      "display_name": "Stock Counter",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Counts stock",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1462,
+      "name": "InventoryCM-1462",
+      "display_name": "Reorder Agent",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Reorder management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1463,
+      "name": "InventoryCM-1463",
+      "display_name": "Low Stock Alert",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Low stock alerts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1464,
+      "name": "InventoryCM-1464",
+      "display_name": "Demand Forecaster",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Demand forecasting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1465,
+      "name": "InventoryCM-1465",
+      "display_name": "ABC Analyzer",
+      "tier": "inventory",
+      "status": "active",
+      "description": "ABC analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1466,
+      "name": "InventoryCM-1466",
+      "display_name": "Safety Stock Calculator",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Safety stock",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1467,
+      "name": "InventoryCM-1467",
+      "display_name": "Lead Time Tracker",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Lead time tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1468,
+      "name": "InventoryCM-1468",
+      "display_name": "Lot Tracker",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Lot tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1469,
+      "name": "InventoryCM-1469",
+      "display_name": "Serial Tracker",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Serial number tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1470,
+      "name": "InventoryCM-1470",
+      "display_name": "Expiry Tracker",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Expiry date tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1471,
+      "name": "InventoryCM-1471",
+      "display_name": "Location Manager",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Location management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1472,
+      "name": "InventoryCM-1472",
+      "display_name": "Bin Manager",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Bin management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1473,
+      "name": "InventoryCM-1473",
+      "display_name": "Cycle Counter",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Cycle counting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1474,
+      "name": "InventoryCM-1474",
+      "display_name": "Physical Count",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Physical inventory",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1475,
+      "name": "InventoryCM-1475",
+      "display_name": "Variance Analyzer",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Variance analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1476,
+      "name": "InventoryCM-1476",
+      "display_name": "Multi-Location",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Multi-location inventory",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1477,
+      "name": "InventoryCM-1477",
+      "display_name": "Kitting Agent",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Kit assembly",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1478,
+      "name": "InventoryCM-1478",
+      "display_name": "Bundle Manager",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Bundle management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1479,
+      "name": "InventoryCM-1479",
+      "display_name": "Consignment Tracker",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Consignment tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1480,
+      "name": "InventoryCM-1480",
+      "display_name": "Dead Stock Finder",
+      "tier": "inventory",
+      "status": "active",
+      "description": "Dead stock identification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1481,
+      "name": "CRMCM-1481",
+      "display_name": "Lead Capture",
+      "tier": "crm",
+      "status": "active",
+      "description": "Captures leads",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1482,
+      "name": "CRMCM-1482",
+      "display_name": "Lead Scorer",
+      "tier": "crm",
+      "status": "active",
+      "description": "Scores leads",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1483,
+      "name": "CRMCM-1483",
+      "display_name": "Lead Router",
+      "tier": "crm",
+      "status": "active",
+      "description": "Routes leads",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1484,
+      "name": "CRMCM-1484",
+      "display_name": "Contact Manager",
+      "tier": "crm",
+      "status": "active",
+      "description": "Manages contacts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1485,
+      "name": "CRMCM-1485",
+      "display_name": "Account Manager",
+      "tier": "crm",
+      "status": "active",
+      "description": "Manages accounts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1486,
+      "name": "CRMCM-1486",
+      "display_name": "Opportunity Tracker",
+      "tier": "crm",
+      "status": "active",
+      "description": "Tracks opportunities",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1487,
+      "name": "CRMCM-1487",
+      "display_name": "Pipeline Manager",
+      "tier": "crm",
+      "status": "active",
+      "description": "Manages pipeline",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1488,
+      "name": "CRMCM-1488",
+      "display_name": "Activity Logger",
+      "tier": "crm",
+      "status": "active",
+      "description": "Logs activities",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1489,
+      "name": "CRMCM-1489",
+      "display_name": "Task Manager CRM",
+      "tier": "crm",
+      "status": "active",
+      "description": "CRM tasks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1490,
+      "name": "CRMCM-1490",
+      "display_name": "Email Tracker CRM",
+      "tier": "crm",
+      "status": "active",
+      "description": "Email tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1491,
+      "name": "CRMCM-1491",
+      "display_name": "Call Logger",
+      "tier": "crm",
+      "status": "active",
+      "description": "Call logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1492,
+      "name": "CRMCM-1492",
+      "display_name": "Meeting Logger",
+      "tier": "crm",
+      "status": "active",
+      "description": "Meeting logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1493,
+      "name": "CRMCM-1493",
+      "display_name": "Quote Generator CRM",
+      "tier": "crm",
+      "status": "active",
+      "description": "Generates quotes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1494,
+      "name": "CRMCM-1494",
+      "display_name": "Proposal Builder",
+      "tier": "crm",
+      "status": "active",
+      "description": "Builds proposals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1495,
+      "name": "CRMCM-1495",
+      "display_name": "Contract Manager CRM",
+      "tier": "crm",
+      "status": "active",
+      "description": "Contract management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1496,
+      "name": "CRMCM-1496",
+      "display_name": "Renewal Manager",
+      "tier": "crm",
+      "status": "active",
+      "description": "Renewal management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1497,
+      "name": "CRMCM-1497",
+      "display_name": "Churn Predictor",
+      "tier": "crm",
+      "status": "active",
+      "description": "Predicts churn",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1498,
+      "name": "CRMCM-1498",
+      "display_name": "Customer Health",
+      "tier": "crm",
+      "status": "active",
+      "description": "Customer health score",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1499,
+      "name": "CRMCM-1499",
+      "display_name": "Territory Manager",
+      "tier": "crm",
+      "status": "active",
+      "description": "Territory management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1500,
+      "name": "CRMCM-1500",
+      "display_name": "Commission Calculator",
+      "tier": "crm",
+      "status": "active",
+      "description": "Commission calculation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1501,
+      "name": "ERPCM-1501",
+      "display_name": "General Ledger",
+      "tier": "erp",
+      "status": "active",
+      "description": "General ledger",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1502,
+      "name": "ERPCM-1502",
+      "display_name": "Accounts Payable",
+      "tier": "erp",
+      "status": "active",
+      "description": "Accounts payable",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1503,
+      "name": "ERPCM-1503",
+      "display_name": "Accounts Receivable",
+      "tier": "erp",
+      "status": "active",
+      "description": "Accounts receivable",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1504,
+      "name": "ERPCM-1504",
+      "display_name": "Fixed Assets",
+      "tier": "erp",
+      "status": "active",
+      "description": "Fixed asset management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1505,
+      "name": "ERPCM-1505",
+      "display_name": "Cash Management",
+      "tier": "erp",
+      "status": "active",
+      "description": "Cash management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1506,
+      "name": "ERPCM-1506",
+      "display_name": "Budgeting Agent",
+      "tier": "erp",
+      "status": "active",
+      "description": "Budgeting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1507,
+      "name": "ERPCM-1507",
+      "display_name": "Cost Accounting",
+      "tier": "erp",
+      "status": "active",
+      "description": "Cost accounting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1508,
+      "name": "ERPCM-1508",
+      "display_name": "Project Accounting",
+      "tier": "erp",
+      "status": "active",
+      "description": "Project accounting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1509,
+      "name": "ERPCM-1509",
+      "display_name": "Intercompany Agent",
+      "tier": "erp",
+      "status": "active",
+      "description": "Intercompany transactions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1510,
+      "name": "ERPCM-1510",
+      "display_name": "Consolidation Agent",
+      "tier": "erp",
+      "status": "active",
+      "description": "Financial consolidation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1511,
+      "name": "ERPCM-1511",
+      "display_name": "Purchase Order",
+      "tier": "erp",
+      "status": "active",
+      "description": "Purchase orders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1512,
+      "name": "ERPCM-1512",
+      "display_name": "Sales Order",
+      "tier": "erp",
+      "status": "active",
+      "description": "Sales orders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1513,
+      "name": "ERPCM-1513",
+      "display_name": "Work Order",
+      "tier": "erp",
+      "status": "active",
+      "description": "Work orders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1514,
+      "name": "ERPCM-1514",
+      "display_name": "Bill of Materials",
+      "tier": "erp",
+      "status": "active",
+      "description": "Bill of materials",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1515,
+      "name": "ERPCM-1515",
+      "display_name": "MRP Agent",
+      "tier": "erp",
+      "status": "active",
+      "description": "Material requirements",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1516,
+      "name": "ERPCM-1516",
+      "display_name": "Capacity Planning",
+      "tier": "erp",
+      "status": "active",
+      "description": "Capacity planning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1517,
+      "name": "ERPCM-1517",
+      "display_name": "Shop Floor",
+      "tier": "erp",
+      "status": "active",
+      "description": "Shop floor control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1518,
+      "name": "ERPCM-1518",
+      "display_name": "Quality Management ERP",
+      "tier": "erp",
+      "status": "active",
+      "description": "Quality management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1519,
+      "name": "ERPCM-1519",
+      "display_name": "Maintenance ERP",
+      "tier": "erp",
+      "status": "active",
+      "description": "Maintenance management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1520,
+      "name": "ERPCM-1520",
+      "display_name": "HR Module",
+      "tier": "erp",
+      "status": "active",
+      "description": "HR management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1521,
+      "name": "WorkflowCM-1521",
+      "display_name": "Process Designer",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Designs processes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1522,
+      "name": "WorkflowCM-1522",
+      "display_name": "Form Builder",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Builds forms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1523,
+      "name": "WorkflowCM-1523",
+      "display_name": "Approval Router",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Routes approvals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1524,
+      "name": "WorkflowCM-1524",
+      "display_name": "Task Assigner",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Assigns tasks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1525,
+      "name": "WorkflowCM-1525",
+      "display_name": "Deadline Tracker",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Tracks deadlines",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1526,
+      "name": "WorkflowCM-1526",
+      "display_name": "SLA Monitor Workflow",
+      "tier": "workflow",
+      "status": "active",
+      "description": "SLA monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1527,
+      "name": "WorkflowCM-1527",
+      "display_name": "Parallel Processor",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Parallel processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1528,
+      "name": "WorkflowCM-1528",
+      "display_name": "Conditional Router",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Conditional routing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1529,
+      "name": "WorkflowCM-1529",
+      "display_name": "Loop Handler",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Loop handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1530,
+      "name": "WorkflowCM-1530",
+      "display_name": "Error Handler Workflow",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Error handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1531,
+      "name": "WorkflowCM-1531",
+      "display_name": "Retry Agent",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Retry logic",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1532,
+      "name": "WorkflowCM-1532",
+      "display_name": "Timeout Handler",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Timeout handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1533,
+      "name": "WorkflowCM-1533",
+      "display_name": "Notification Workflow",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Workflow notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1534,
+      "name": "WorkflowCM-1534",
+      "display_name": "Audit Trail",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Audit trail",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1535,
+      "name": "WorkflowCM-1535",
+      "display_name": "Version Manager Workflow",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Workflow versioning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1536,
+      "name": "WorkflowCM-1536",
+      "display_name": "Template Library",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Workflow templates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1537,
+      "name": "WorkflowCM-1537",
+      "display_name": "Integration Hub",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Workflow integrations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1538,
+      "name": "WorkflowCM-1538",
+      "display_name": "Analytics Workflow",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Workflow analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1539,
+      "name": "WorkflowCM-1539",
+      "display_name": "Bot Trigger",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Bot triggers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1540,
+      "name": "WorkflowCM-1540",
+      "display_name": "Human Task",
+      "tier": "workflow",
+      "status": "active",
+      "description": "Human task handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1541,
+      "name": "ReportingCM-1541",
+      "display_name": "Report Builder",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Builds reports",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1542,
+      "name": "ReportingCM-1542",
+      "display_name": "Dashboard Designer",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Designs dashboards",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1543,
+      "name": "ReportingCM-1543",
+      "display_name": "Chart Generator Report",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Generates charts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1544,
+      "name": "ReportingCM-1544",
+      "display_name": "Table Builder",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Builds tables",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1545,
+      "name": "ReportingCM-1545",
+      "display_name": "Pivot Table Agent",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Pivot tables",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1546,
+      "name": "ReportingCM-1546",
+      "display_name": "Filter Manager",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Manages filters",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1547,
+      "name": "ReportingCM-1547",
+      "display_name": "Parameter Handler",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Report parameters",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1548,
+      "name": "ReportingCM-1548",
+      "display_name": "Drill Down Agent",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Drill down functionality",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1549,
+      "name": "ReportingCM-1549",
+      "display_name": "Export Agent",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Exports reports",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1550,
+      "name": "ReportingCM-1550",
+      "display_name": "Scheduler Report",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Report scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1551,
+      "name": "ReportingCM-1551",
+      "display_name": "Distribution Agent",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Report distribution",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1552,
+      "name": "ReportingCM-1552",
+      "display_name": "Subscription Manager Report",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Report subscriptions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1553,
+      "name": "ReportingCM-1553",
+      "display_name": "Data Connector",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Data connections",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1554,
+      "name": "ReportingCM-1554",
+      "display_name": "Query Builder",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Query building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1555,
+      "name": "ReportingCM-1555",
+      "display_name": "Calculation Engine",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Calculations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1556,
+      "name": "ReportingCM-1556",
+      "display_name": "Formatting Agent",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Report formatting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1557,
+      "name": "ReportingCM-1557",
+      "display_name": "Localization Agent",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Report localization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1558,
+      "name": "ReportingCM-1558",
+      "display_name": "Mobile Report",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Mobile reports",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1559,
+      "name": "ReportingCM-1559",
+      "display_name": "Embedded Analytics",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Embedded analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1560,
+      "name": "ReportingCM-1560",
+      "display_name": "Self-Service BI",
+      "tier": "reporting",
+      "status": "active",
+      "description": "Self-service BI",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1561,
+      "name": "TestingCM-1561",
+      "display_name": "Unit Test Runner",
+      "tier": "testing",
+      "status": "active",
+      "description": "Runs unit tests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1562,
+      "name": "TestingCM-1562",
+      "display_name": "Integration Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Integration testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1563,
+      "name": "TestingCM-1563",
+      "display_name": "E2E Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "End-to-end testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1564,
+      "name": "TestingCM-1564",
+      "display_name": "API Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "API testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1565,
+      "name": "TestingCM-1565",
+      "display_name": "Load Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Load testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1566,
+      "name": "TestingCM-1566",
+      "display_name": "Stress Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Stress testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1567,
+      "name": "TestingCM-1567",
+      "display_name": "Security Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Security testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1568,
+      "name": "TestingCM-1568",
+      "display_name": "Accessibility Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Accessibility testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1569,
+      "name": "TestingCM-1569",
+      "display_name": "Visual Regression",
+      "tier": "testing",
+      "status": "active",
+      "description": "Visual regression",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1570,
+      "name": "TestingCM-1570",
+      "display_name": "Mobile Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Mobile testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1571,
+      "name": "TestingCM-1571",
+      "display_name": "Browser Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Cross-browser testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1572,
+      "name": "TestingCM-1572",
+      "display_name": "Test Data Generator",
+      "tier": "testing",
+      "status": "active",
+      "description": "Test data generation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1573,
+      "name": "TestingCM-1573",
+      "display_name": "Mock Server",
+      "tier": "testing",
+      "status": "active",
+      "description": "Mock server",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1574,
+      "name": "TestingCM-1574",
+      "display_name": "Coverage Reporter",
+      "tier": "testing",
+      "status": "active",
+      "description": "Coverage reporting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1575,
+      "name": "TestingCM-1575",
+      "display_name": "Test Orchestrator",
+      "tier": "testing",
+      "status": "active",
+      "description": "Test orchestration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1576,
+      "name": "TestingCM-1576",
+      "display_name": "Flaky Test Detector",
+      "tier": "testing",
+      "status": "active",
+      "description": "Flaky test detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1577,
+      "name": "TestingCM-1577",
+      "display_name": "Test Prioritizer",
+      "tier": "testing",
+      "status": "active",
+      "description": "Test prioritization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1578,
+      "name": "TestingCM-1578",
+      "display_name": "Mutation Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Mutation testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1579,
+      "name": "TestingCM-1579",
+      "display_name": "Contract Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Contract testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1580,
+      "name": "TestingCM-1580",
+      "display_name": "Chaos Tester",
+      "tier": "testing",
+      "status": "active",
+      "description": "Chaos testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1581,
+      "name": "DeploymentCM-1581",
+      "display_name": "Build Agent",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Build automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1582,
+      "name": "DeploymentCM-1582",
+      "display_name": "Artifact Manager",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Artifact management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1583,
+      "name": "DeploymentCM-1583",
+      "display_name": "Release Manager",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Release management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1584,
+      "name": "DeploymentCM-1584",
+      "display_name": "Rollback Agent",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Rollback handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1585,
+      "name": "DeploymentCM-1585",
+      "display_name": "Blue-Green Deployer",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Blue-green deployment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1586,
+      "name": "DeploymentCM-1586",
+      "display_name": "Canary Deployer",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Canary deployment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1587,
+      "name": "DeploymentCM-1587",
+      "display_name": "Feature Flag Manager",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Feature flags",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1588,
+      "name": "DeploymentCM-1588",
+      "display_name": "Config Manager Deploy",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Config management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1589,
+      "name": "DeploymentCM-1589",
+      "display_name": "Secret Manager",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Secret management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1590,
+      "name": "DeploymentCM-1590",
+      "display_name": "Environment Manager",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Environment management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1591,
+      "name": "DeploymentCM-1591",
+      "display_name": "Infrastructure Provisioner",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Infrastructure provisioning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1592,
+      "name": "DeploymentCM-1592",
+      "display_name": "Terraform Agent",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Terraform automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1593,
+      "name": "DeploymentCM-1593",
+      "display_name": "Ansible Agent",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Ansible automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1594,
+      "name": "DeploymentCM-1594",
+      "display_name": "Kubernetes Deployer",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Kubernetes deployment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1595,
+      "name": "DeploymentCM-1595",
+      "display_name": "Serverless Deployer",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Serverless deployment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1596,
+      "name": "DeploymentCM-1596",
+      "display_name": "CDN Deployer",
+      "tier": "deployment",
+      "status": "active",
+      "description": "CDN deployment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1597,
+      "name": "DeploymentCM-1597",
+      "display_name": "Database Migrator",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Database migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1598,
+      "name": "DeploymentCM-1598",
+      "display_name": "Smoke Tester",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Smoke testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1599,
+      "name": "DeploymentCM-1599",
+      "display_name": "Health Checker Deploy",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Health checking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1600,
+      "name": "DeploymentCM-1600",
+      "display_name": "Notification Deploy",
+      "tier": "deployment",
+      "status": "active",
+      "description": "Deploy notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1601,
+      "name": "MonitoringCM-1601",
+      "display_name": "Metrics Collector Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Collects metrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1602,
+      "name": "MonitoringCM-1602",
+      "display_name": "Trace Collector",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Collects traces",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1603,
+      "name": "MonitoringCM-1603",
+      "display_name": "Span Analyzer",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Analyzes spans",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1604,
+      "name": "MonitoringCM-1604",
+      "display_name": "APM Agent",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Application monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1605,
+      "name": "MonitoringCM-1605",
+      "display_name": "Infrastructure Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Infra monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1606,
+      "name": "MonitoringCM-1606",
+      "display_name": "Synthetic Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Synthetic monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1607,
+      "name": "MonitoringCM-1607",
+      "display_name": "RUM Agent",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Real user monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1608,
+      "name": "MonitoringCM-1608",
+      "display_name": "Error Tracker",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Error tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1609,
+      "name": "MonitoringCM-1609",
+      "display_name": "Uptime Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Uptime monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1610,
+      "name": "MonitoringCM-1610",
+      "display_name": "SSL Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "SSL certificate monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1611,
+      "name": "MonitoringCM-1611",
+      "display_name": "DNS Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "DNS monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1612,
+      "name": "MonitoringCM-1612",
+      "display_name": "API Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "API monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1613,
+      "name": "MonitoringCM-1613",
+      "display_name": "Database Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Database monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1614,
+      "name": "MonitoringCM-1614",
+      "display_name": "Queue Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Queue monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1615,
+      "name": "MonitoringCM-1615",
+      "display_name": "Cache Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Cache monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1616,
+      "name": "MonitoringCM-1616",
+      "display_name": "Network Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Network monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1617,
+      "name": "MonitoringCM-1617",
+      "display_name": "Container Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Container monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1618,
+      "name": "MonitoringCM-1618",
+      "display_name": "Serverless Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Serverless monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1619,
+      "name": "MonitoringCM-1619",
+      "display_name": "Cost Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Cost monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1620,
+      "name": "MonitoringCM-1620",
+      "display_name": "Anomaly Detector Monitor",
+      "tier": "monitoring",
+      "status": "active",
+      "description": "Anomaly detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1621,
+      "name": "LoggingCM-1621",
+      "display_name": "Log Collector",
+      "tier": "logging",
+      "status": "active",
+      "description": "Collects logs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1622,
+      "name": "LoggingCM-1622",
+      "display_name": "Log Parser",
+      "tier": "logging",
+      "status": "active",
+      "description": "Parses logs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1623,
+      "name": "LoggingCM-1623",
+      "display_name": "Log Router",
+      "tier": "logging",
+      "status": "active",
+      "description": "Routes logs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1624,
+      "name": "LoggingCM-1624",
+      "display_name": "Log Aggregator",
+      "tier": "logging",
+      "status": "active",
+      "description": "Aggregates logs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1625,
+      "name": "LoggingCM-1625",
+      "display_name": "Log Indexer",
+      "tier": "logging",
+      "status": "active",
+      "description": "Indexes logs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1626,
+      "name": "LoggingCM-1626",
+      "display_name": "Log Search Agent",
+      "tier": "logging",
+      "status": "active",
+      "description": "Log searching",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1627,
+      "name": "LoggingCM-1627",
+      "display_name": "Log Alerter",
+      "tier": "logging",
+      "status": "active",
+      "description": "Log-based alerts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1628,
+      "name": "LoggingCM-1628",
+      "display_name": "Log Visualizer",
+      "tier": "logging",
+      "status": "active",
+      "description": "Log visualization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1629,
+      "name": "LoggingCM-1629",
+      "display_name": "Log Archiver",
+      "tier": "logging",
+      "status": "active",
+      "description": "Log archiving",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1630,
+      "name": "LoggingCM-1630",
+      "display_name": "Log Retention",
+      "tier": "logging",
+      "status": "active",
+      "description": "Log retention",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1631,
+      "name": "LoggingCM-1631",
+      "display_name": "Structured Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Structured logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1632,
+      "name": "LoggingCM-1632",
+      "display_name": "Context Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Context logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1633,
+      "name": "LoggingCM-1633",
+      "display_name": "Correlation Agent",
+      "tier": "logging",
+      "status": "active",
+      "description": "Log correlation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1634,
+      "name": "LoggingCM-1634",
+      "display_name": "Pattern Detector",
+      "tier": "logging",
+      "status": "active",
+      "description": "Pattern detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1635,
+      "name": "LoggingCM-1635",
+      "display_name": "Anomaly Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Anomaly logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1636,
+      "name": "LoggingCM-1636",
+      "display_name": "Audit Logger Log",
+      "tier": "logging",
+      "status": "active",
+      "description": "Audit logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1637,
+      "name": "LoggingCM-1637",
+      "display_name": "Security Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Security logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1638,
+      "name": "LoggingCM-1638",
+      "display_name": "Performance Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Performance logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1639,
+      "name": "LoggingCM-1639",
+      "display_name": "Debug Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Debug logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1640,
+      "name": "LoggingCM-1640",
+      "display_name": "Compliance Logger",
+      "tier": "logging",
+      "status": "active",
+      "description": "Compliance logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1641,
+      "name": "BackupCM-1641",
+      "display_name": "Full Backup Agent",
+      "tier": "backup",
+      "status": "active",
+      "description": "Full backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1642,
+      "name": "BackupCM-1642",
+      "display_name": "Incremental Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Incremental backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1643,
+      "name": "BackupCM-1643",
+      "display_name": "Differential Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Differential backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1644,
+      "name": "BackupCM-1644",
+      "display_name": "Snapshot Agent",
+      "tier": "backup",
+      "status": "active",
+      "description": "Snapshot management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1645,
+      "name": "BackupCM-1645",
+      "display_name": "Replication Agent",
+      "tier": "backup",
+      "status": "active",
+      "description": "Data replication",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1646,
+      "name": "BackupCM-1646",
+      "display_name": "Backup Scheduler",
+      "tier": "backup",
+      "status": "active",
+      "description": "Backup scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1647,
+      "name": "BackupCM-1647",
+      "display_name": "Retention Manager Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Retention management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1648,
+      "name": "BackupCM-1648",
+      "display_name": "Restore Agent",
+      "tier": "backup",
+      "status": "active",
+      "description": "Data restoration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1649,
+      "name": "BackupCM-1649",
+      "display_name": "Point-in-Time Recovery",
+      "tier": "backup",
+      "status": "active",
+      "description": "PITR recovery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1650,
+      "name": "BackupCM-1650",
+      "display_name": "Disaster Recovery",
+      "tier": "backup",
+      "status": "active",
+      "description": "Disaster recovery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1651,
+      "name": "BackupCM-1651",
+      "display_name": "Backup Verification",
+      "tier": "backup",
+      "status": "active",
+      "description": "Backup verification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1652,
+      "name": "BackupCM-1652",
+      "display_name": "Backup Encryption",
+      "tier": "backup",
+      "status": "active",
+      "description": "Backup encryption",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1653,
+      "name": "BackupCM-1653",
+      "display_name": "Offsite Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Offsite backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1654,
+      "name": "BackupCM-1654",
+      "display_name": "Cloud Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Cloud backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1655,
+      "name": "BackupCM-1655",
+      "display_name": "Database Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Database backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1656,
+      "name": "BackupCM-1656",
+      "display_name": "File Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "File backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1657,
+      "name": "BackupCM-1657",
+      "display_name": "VM Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "VM backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1658,
+      "name": "BackupCM-1658",
+      "display_name": "Container Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "Container backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1659,
+      "name": "BackupCM-1659",
+      "display_name": "SaaS Backup",
+      "tier": "backup",
+      "status": "active",
+      "description": "SaaS backups",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1660,
+      "name": "BackupCM-1660",
+      "display_name": "Backup Monitor",
+      "tier": "backup",
+      "status": "active",
+      "description": "Backup monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1661,
+      "name": "MigrationCM-1661",
+      "display_name": "Data Extractor",
+      "tier": "migration",
+      "status": "active",
+      "description": "Data extraction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1662,
+      "name": "MigrationCM-1662",
+      "display_name": "Data Transformer",
+      "tier": "migration",
+      "status": "active",
+      "description": "Data transformation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1663,
+      "name": "MigrationCM-1663",
+      "display_name": "Data Loader",
+      "tier": "migration",
+      "status": "active",
+      "description": "Data loading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1664,
+      "name": "MigrationCM-1664",
+      "display_name": "Schema Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "Schema migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1665,
+      "name": "MigrationCM-1665",
+      "display_name": "ETL Agent",
+      "tier": "migration",
+      "status": "active",
+      "description": "ETL processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1666,
+      "name": "MigrationCM-1666",
+      "display_name": "CDC Agent",
+      "tier": "migration",
+      "status": "active",
+      "description": "Change data capture",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1667,
+      "name": "MigrationCM-1667",
+      "display_name": "Bulk Importer",
+      "tier": "migration",
+      "status": "active",
+      "description": "Bulk import",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1668,
+      "name": "MigrationCM-1668",
+      "display_name": "Bulk Exporter",
+      "tier": "migration",
+      "status": "active",
+      "description": "Bulk export",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1669,
+      "name": "MigrationCM-1669",
+      "display_name": "Data Validator Migration",
+      "tier": "migration",
+      "status": "active",
+      "description": "Data validation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1670,
+      "name": "MigrationCM-1670",
+      "display_name": "Data Cleaner",
+      "tier": "migration",
+      "status": "active",
+      "description": "Data cleaning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1671,
+      "name": "MigrationCM-1671",
+      "display_name": "Deduplication Agent",
+      "tier": "migration",
+      "status": "active",
+      "description": "Deduplication",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1672,
+      "name": "MigrationCM-1672",
+      "display_name": "Data Mapping",
+      "tier": "migration",
+      "status": "active",
+      "description": "Data mapping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1673,
+      "name": "MigrationCM-1673",
+      "display_name": "Legacy Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "Legacy migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1674,
+      "name": "MigrationCM-1674",
+      "display_name": "Cloud Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "Cloud migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1675,
+      "name": "MigrationCM-1675",
+      "display_name": "Database Migrator Mig",
+      "tier": "migration",
+      "status": "active",
+      "description": "Database migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1676,
+      "name": "MigrationCM-1676",
+      "display_name": "Application Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "Application migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1677,
+      "name": "MigrationCM-1677",
+      "display_name": "Email Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "Email migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1678,
+      "name": "MigrationCM-1678",
+      "display_name": "File Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "File migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1679,
+      "name": "MigrationCM-1679",
+      "display_name": "User Migrator",
+      "tier": "migration",
+      "status": "active",
+      "description": "User migration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1680,
+      "name": "MigrationCM-1680",
+      "display_name": "Cutover Planner",
+      "tier": "migration",
+      "status": "active",
+      "description": "Cutover planning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1681,
+      "name": "VirtualizationCM-1681",
+      "display_name": "VM Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "VM management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1682,
+      "name": "VirtualizationCM-1682",
+      "display_name": "Hypervisor Agent",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Hypervisor management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1683,
+      "name": "VirtualizationCM-1683",
+      "display_name": "Container Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Container management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1684,
+      "name": "VirtualizationCM-1684",
+      "display_name": "Docker Agent",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Docker management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1685,
+      "name": "VirtualizationCM-1685",
+      "display_name": "Kubernetes Agent",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Kubernetes management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1686,
+      "name": "VirtualizationCM-1686",
+      "display_name": "Pod Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Pod management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1687,
+      "name": "VirtualizationCM-1687",
+      "display_name": "Service Mesh Agent",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Service mesh",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1688,
+      "name": "VirtualizationCM-1688",
+      "display_name": "Namespace Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Namespace management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1689,
+      "name": "VirtualizationCM-1689",
+      "display_name": "Resource Quota",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Resource quotas",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1690,
+      "name": "VirtualizationCM-1690",
+      "display_name": "Auto-Scaler",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Auto-scaling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1691,
+      "name": "VirtualizationCM-1691",
+      "display_name": "Load Balancer Virt",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Load balancing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1692,
+      "name": "VirtualizationCM-1692",
+      "display_name": "Ingress Controller",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Ingress control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1693,
+      "name": "VirtualizationCM-1693",
+      "display_name": "Volume Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Volume management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1694,
+      "name": "VirtualizationCM-1694",
+      "display_name": "Config Map Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "ConfigMap management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1695,
+      "name": "VirtualizationCM-1695",
+      "display_name": "Secret Manager Virt",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Secret management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1696,
+      "name": "VirtualizationCM-1696",
+      "display_name": "Helm Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Helm management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1697,
+      "name": "VirtualizationCM-1697",
+      "display_name": "Operator Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Operator management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1698,
+      "name": "VirtualizationCM-1698",
+      "display_name": "CRD Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "CRD management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1699,
+      "name": "VirtualizationCM-1699",
+      "display_name": "Cluster Manager",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Cluster management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1700,
+      "name": "VirtualizationCM-1700",
+      "display_name": "Multi-Cluster Agent",
+      "tier": "virtualization",
+      "status": "active",
+      "description": "Multi-cluster",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1701,
+      "name": "NetworkingCM-1701",
+      "display_name": "Router Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "Router management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1702,
+      "name": "NetworkingCM-1702",
+      "display_name": "Switch Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "Switch management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1703,
+      "name": "NetworkingCM-1703",
+      "display_name": "Firewall Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "Firewall management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1704,
+      "name": "NetworkingCM-1704",
+      "display_name": "VPN Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "VPN management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1705,
+      "name": "NetworkingCM-1705",
+      "display_name": "DNS Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "DNS management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1706,
+      "name": "NetworkingCM-1706",
+      "display_name": "DHCP Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "DHCP management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1707,
+      "name": "NetworkingCM-1707",
+      "display_name": "Load Balancer Net",
+      "tier": "networking",
+      "status": "active",
+      "description": "Load balancing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1708,
+      "name": "NetworkingCM-1708",
+      "display_name": "CDN Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "CDN management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1709,
+      "name": "NetworkingCM-1709",
+      "display_name": "WAF Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "WAF management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1710,
+      "name": "NetworkingCM-1710",
+      "display_name": "DDoS Protector",
+      "tier": "networking",
+      "status": "active",
+      "description": "DDoS protection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1711,
+      "name": "NetworkingCM-1711",
+      "display_name": "SSL Terminator",
+      "tier": "networking",
+      "status": "active",
+      "description": "SSL termination",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1712,
+      "name": "NetworkingCM-1712",
+      "display_name": "Proxy Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "Proxy management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1713,
+      "name": "NetworkingCM-1713",
+      "display_name": "NAT Agent",
+      "tier": "networking",
+      "status": "active",
+      "description": "NAT management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1714,
+      "name": "NetworkingCM-1714",
+      "display_name": "VLAN Manager",
+      "tier": "networking",
+      "status": "active",
+      "description": "VLAN management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1715,
+      "name": "NetworkingCM-1715",
+      "display_name": "SDN Controller",
+      "tier": "networking",
+      "status": "active",
+      "description": "SDN control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1716,
+      "name": "NetworkingCM-1716",
+      "display_name": "Network Policy",
+      "tier": "networking",
+      "status": "active",
+      "description": "Network policies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1717,
+      "name": "NetworkingCM-1717",
+      "display_name": "Traffic Shaper",
+      "tier": "networking",
+      "status": "active",
+      "description": "Traffic shaping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1718,
+      "name": "NetworkingCM-1718",
+      "display_name": "QoS Manager",
+      "tier": "networking",
+      "status": "active",
+      "description": "QoS management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1719,
+      "name": "NetworkingCM-1719",
+      "display_name": "Bandwidth Monitor",
+      "tier": "networking",
+      "status": "active",
+      "description": "Bandwidth monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1720,
+      "name": "NetworkingCM-1720",
+      "display_name": "Latency Optimizer",
+      "tier": "networking",
+      "status": "active",
+      "description": "Latency optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1721,
+      "name": "StorageCM-1721",
+      "display_name": "Block Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Block storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1722,
+      "name": "StorageCM-1722",
+      "display_name": "Object Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Object storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1723,
+      "name": "StorageCM-1723",
+      "display_name": "File Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "File storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1724,
+      "name": "StorageCM-1724",
+      "display_name": "NAS Agent",
+      "tier": "storage",
+      "status": "active",
+      "description": "NAS management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1725,
+      "name": "StorageCM-1725",
+      "display_name": "SAN Agent",
+      "tier": "storage",
+      "status": "active",
+      "description": "SAN management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1726,
+      "name": "StorageCM-1726",
+      "display_name": "S3 Manager",
+      "tier": "storage",
+      "status": "active",
+      "description": "S3 management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1727,
+      "name": "StorageCM-1727",
+      "display_name": "Blob Manager",
+      "tier": "storage",
+      "status": "active",
+      "description": "Blob storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1728,
+      "name": "StorageCM-1728",
+      "display_name": "Archive Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Archive storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1729,
+      "name": "StorageCM-1729",
+      "display_name": "Tiered Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage tiering",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1730,
+      "name": "StorageCM-1730",
+      "display_name": "Data Lifecycle",
+      "tier": "storage",
+      "status": "active",
+      "description": "Data lifecycle",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1731,
+      "name": "StorageCM-1731",
+      "display_name": "Deduplication Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage dedup",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1732,
+      "name": "StorageCM-1732",
+      "display_name": "Compression Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage compression",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1733,
+      "name": "StorageCM-1733",
+      "display_name": "Encryption Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage encryption",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1734,
+      "name": "StorageCM-1734",
+      "display_name": "Quota Manager Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage quotas",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1735,
+      "name": "StorageCM-1735",
+      "display_name": "Snapshot Manager",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage snapshots",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1736,
+      "name": "StorageCM-1736",
+      "display_name": "Clone Manager",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage clones",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1737,
+      "name": "StorageCM-1737",
+      "display_name": "Replication Storage",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage replication",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1738,
+      "name": "StorageCM-1738",
+      "display_name": "Caching Layer",
+      "tier": "storage",
+      "status": "active",
+      "description": "Caching layer",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1739,
+      "name": "StorageCM-1739",
+      "display_name": "Hot Cold Manager",
+      "tier": "storage",
+      "status": "active",
+      "description": "Hot/cold storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1740,
+      "name": "StorageCM-1740",
+      "display_name": "Storage Analytics",
+      "tier": "storage",
+      "status": "active",
+      "description": "Storage analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1741,
+      "name": "DatabaseCM-1741",
+      "display_name": "Query Optimizer",
+      "tier": "database",
+      "status": "active",
+      "description": "Query optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1742,
+      "name": "DatabaseCM-1742",
+      "display_name": "Index Advisor",
+      "tier": "database",
+      "status": "active",
+      "description": "Index advice",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1743,
+      "name": "DatabaseCM-1743",
+      "display_name": "Connection Pooler",
+      "tier": "database",
+      "status": "active",
+      "description": "Connection pooling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1744,
+      "name": "DatabaseCM-1744",
+      "display_name": "Replication Manager DB",
+      "tier": "database",
+      "status": "active",
+      "description": "DB replication",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1745,
+      "name": "DatabaseCM-1745",
+      "display_name": "Sharding Agent",
+      "tier": "database",
+      "status": "active",
+      "description": "Database sharding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1746,
+      "name": "DatabaseCM-1746",
+      "display_name": "Partition Manager",
+      "tier": "database",
+      "status": "active",
+      "description": "Partition management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1747,
+      "name": "DatabaseCM-1747",
+      "display_name": "Vacuum Agent",
+      "tier": "database",
+      "status": "active",
+      "description": "Database vacuum",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1748,
+      "name": "DatabaseCM-1748",
+      "display_name": "Statistics Collector",
+      "tier": "database",
+      "status": "active",
+      "description": "Statistics collection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1749,
+      "name": "DatabaseCM-1749",
+      "display_name": "Lock Monitor",
+      "tier": "database",
+      "status": "active",
+      "description": "Lock monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1750,
+      "name": "DatabaseCM-1750",
+      "display_name": "Deadlock Detector",
+      "tier": "database",
+      "status": "active",
+      "description": "Deadlock detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1751,
+      "name": "DatabaseCM-1751",
+      "display_name": "Slow Query Logger",
+      "tier": "database",
+      "status": "active",
+      "description": "Slow query logging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1752,
+      "name": "DatabaseCM-1752",
+      "display_name": "Query Analyzer",
+      "tier": "database",
+      "status": "active",
+      "description": "Query analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1753,
+      "name": "DatabaseCM-1753",
+      "display_name": "Schema Validator",
+      "tier": "database",
+      "status": "active",
+      "description": "Schema validation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1754,
+      "name": "DatabaseCM-1754",
+      "display_name": "Migration Runner",
+      "tier": "database",
+      "status": "active",
+      "description": "Migration running",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1755,
+      "name": "DatabaseCM-1755",
+      "display_name": "Seed Data Agent",
+      "tier": "database",
+      "status": "active",
+      "description": "Seed data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1756,
+      "name": "DatabaseCM-1756",
+      "display_name": "Anonymizer Agent",
+      "tier": "database",
+      "status": "active",
+      "description": "Data anonymization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1757,
+      "name": "DatabaseCM-1757",
+      "display_name": "Audit Agent DB",
+      "tier": "database",
+      "status": "active",
+      "description": "Database auditing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1758,
+      "name": "DatabaseCM-1758",
+      "display_name": "Compliance Agent DB",
+      "tier": "database",
+      "status": "active",
+      "description": "Database compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1759,
+      "name": "DatabaseCM-1759",
+      "display_name": "HA Manager",
+      "tier": "database",
+      "status": "active",
+      "description": "High availability",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1760,
+      "name": "DatabaseCM-1760",
+      "display_name": "Failover Agent",
+      "tier": "database",
+      "status": "active",
+      "description": "Failover management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1761,
+      "name": "APICM-1761",
+      "display_name": "API Designer",
+      "tier": "api",
+      "status": "active",
+      "description": "API design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1762,
+      "name": "APICM-1762",
+      "display_name": "OpenAPI Generator",
+      "tier": "api",
+      "status": "active",
+      "description": "OpenAPI generation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1763,
+      "name": "APICM-1763",
+      "display_name": "GraphQL Builder",
+      "tier": "api",
+      "status": "active",
+      "description": "GraphQL building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1764,
+      "name": "APICM-1764",
+      "display_name": "REST Builder",
+      "tier": "api",
+      "status": "active",
+      "description": "REST API building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1765,
+      "name": "APICM-1765",
+      "display_name": "gRPC Builder",
+      "tier": "api",
+      "status": "active",
+      "description": "gRPC building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1766,
+      "name": "APICM-1766",
+      "display_name": "WebSocket Manager",
+      "tier": "api",
+      "status": "active",
+      "description": "WebSocket management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1767,
+      "name": "APICM-1767",
+      "display_name": "API Gateway Manager",
+      "tier": "api",
+      "status": "active",
+      "description": "API gateway",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1768,
+      "name": "APICM-1768",
+      "display_name": "Rate Limiter API",
+      "tier": "api",
+      "status": "active",
+      "description": "API rate limiting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1769,
+      "name": "APICM-1769",
+      "display_name": "Throttler Agent",
+      "tier": "api",
+      "status": "active",
+      "description": "API throttling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1770,
+      "name": "APICM-1770",
+      "display_name": "Quota Manager API",
+      "tier": "api",
+      "status": "active",
+      "description": "API quotas",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1771,
+      "name": "APICM-1771",
+      "display_name": "API Key Manager",
+      "tier": "api",
+      "status": "active",
+      "description": "API key management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1772,
+      "name": "APICM-1772",
+      "display_name": "OAuth Server",
+      "tier": "api",
+      "status": "active",
+      "description": "OAuth server",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1773,
+      "name": "APICM-1773",
+      "display_name": "JWT Manager",
+      "tier": "api",
+      "status": "active",
+      "description": "JWT management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1774,
+      "name": "APICM-1774",
+      "display_name": "API Versioning",
+      "tier": "api",
+      "status": "active",
+      "description": "API versioning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1775,
+      "name": "APICM-1775",
+      "display_name": "API Documentation",
+      "tier": "api",
+      "status": "active",
+      "description": "API documentation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1776,
+      "name": "APICM-1776",
+      "display_name": "SDK Generator",
+      "tier": "api",
+      "status": "active",
+      "description": "SDK generation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1777,
+      "name": "APICM-1777",
+      "display_name": "Mock API",
+      "tier": "api",
+      "status": "active",
+      "description": "API mocking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1778,
+      "name": "APICM-1778",
+      "display_name": "API Testing",
+      "tier": "api",
+      "status": "active",
+      "description": "API testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1779,
+      "name": "APICM-1779",
+      "display_name": "API Analytics",
+      "tier": "api",
+      "status": "active",
+      "description": "API analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1780,
+      "name": "APICM-1780",
+      "display_name": "API Monetization",
+      "tier": "api",
+      "status": "active",
+      "description": "API monetization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1781,
+      "name": "FrontendCM-1781",
+      "display_name": "Component Builder",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Component building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1782,
+      "name": "FrontendCM-1782",
+      "display_name": "State Manager",
+      "tier": "frontend",
+      "status": "active",
+      "description": "State management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1783,
+      "name": "FrontendCM-1783",
+      "display_name": "Router Frontend",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Frontend routing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1784,
+      "name": "FrontendCM-1784",
+      "display_name": "Form Handler",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Form handling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1785,
+      "name": "FrontendCM-1785",
+      "display_name": "Validation Agent",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Input validation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1786,
+      "name": "FrontendCM-1786",
+      "display_name": "Animation Agent",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Animations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1787,
+      "name": "FrontendCM-1787",
+      "display_name": "Theme Manager",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Theme management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1788,
+      "name": "FrontendCM-1788",
+      "display_name": "Responsive Designer",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Responsive design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1789,
+      "name": "FrontendCM-1789",
+      "display_name": "Accessibility Agent",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Accessibility",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1790,
+      "name": "FrontendCM-1790",
+      "display_name": "SEO Agent",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Frontend SEO",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1791,
+      "name": "FrontendCM-1791",
+      "display_name": "Performance Optimizer FE",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Frontend performance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1792,
+      "name": "FrontendCM-1792",
+      "display_name": "Bundle Optimizer",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Bundle optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1793,
+      "name": "FrontendCM-1793",
+      "display_name": "Code Splitter",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Code splitting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1794,
+      "name": "FrontendCM-1794",
+      "display_name": "Lazy Loader",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Lazy loading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1795,
+      "name": "FrontendCM-1795",
+      "display_name": "Cache Manager FE",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Frontend caching",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1796,
+      "name": "FrontendCM-1796",
+      "display_name": "Service Worker",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Service workers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1797,
+      "name": "FrontendCM-1797",
+      "display_name": "PWA Builder",
+      "tier": "frontend",
+      "status": "active",
+      "description": "PWA building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1798,
+      "name": "FrontendCM-1798",
+      "display_name": "SSR Agent",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Server-side rendering",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1799,
+      "name": "FrontendCM-1799",
+      "display_name": "Static Generator",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Static site generation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1800,
+      "name": "FrontendCM-1800",
+      "display_name": "Hydration Agent",
+      "tier": "frontend",
+      "status": "active",
+      "description": "Hydration handling",
       "capabilities": [],
       "version": "1.0.0"
     }
