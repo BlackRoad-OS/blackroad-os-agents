@@ -16,4 +16,15 @@
   },
   "include": ["src/**/*.ts", "scripts/**/*.ts", "registry/**/*.json"],
   "exclude": ["node_modules", "dist"]
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["scripts/**/*", "agents/**/*", "tests/**/*"]
 }
