@@ -2,7 +2,7 @@
 
 ## Overview
 
-This registry contains **31,916 agents** organized across multiple tiers, domains, and specializations.
+This registry contains **32,981 agents** organized across multiple tiers, domains, and specializations.
 
 ## Registry Files
 
@@ -10,6 +10,7 @@ This registry contains **31,916 agents** organized across multiple tiers, domain
 |------|-------|-------------|
 | `agents-30k.json` | 30,000 | General-purpose agents across 75 domains |
 | `math-agents.json` | 1,900 | Specialized mathematical research agents |
+| `qlm-agents.json` | 1,065 | QLM-Trinary quantum reasoning agents |
 | `core-personalities.json` | 16 | Named AI personalities with full profiles |
 | `agents.json` | varies | Legacy agent manifest |
 
@@ -115,15 +116,41 @@ Agents integrate with the Research Lab pack at:
 
 See `packs.yml` for pack definitions and module mappings.
 
+## QLM-Trinary Quantum Reasoning Agents (1,065 agents)
+
+Specialized agents with quantum-inspired reasoning capabilities:
+
+| Category | Count | Capabilities |
+|----------|-------|--------------|
+| Superposition Reasoning | 105 | Maintain hypotheses in superposition |
+| Hilbert Analysis | 115 | Context-sensitive truth evaluation |
+| Emergence Detection | 150 | QI novelty and pattern detection |
+| Interference Specialists | 115 | Reasoning path combination |
+| Collapse Coordination | 100 | Final decision making |
+| Trinary Logic | 95 | Three-valued reasoning (-1/0/+1) |
+| Quantum Operators | 110 | Superpose, doubt, reflect, strengthen |
+| Entanglement Management | 85 | Hypothesis correlation tracking |
+| Trace Analysis | 100 | Reasoning trace storage/analysis |
+| Domain Integration | 90 | Domain-specific QLM integration |
+
+### QLM Features
+
+- **Trinary Logic**: AFFIRM (+1), UNKNOWN (0), DENY (-1)
+- **Superposition**: Hold multiple hypotheses with quantum-like amplitudes
+- **Hilbert Spaces**: Context-sensitive truth via density matrices
+- **Interference**: Reasoning paths amplify or cancel
+- **Emergence Detection**: Novel insights, self-correction, meta-reasoning
+
 ## Generation Scripts
 
 | Script | Purpose |
 |--------|---------|
 | `scripts/generate_30k_agents.py` | Generate 30,000 general agents |
 | `scripts/generate_math_agents.py` | Generate 1,900 math research agents |
+| `scripts/generate_qlm_agents.py` | Generate 1,065 QLM-Trinary agents |
 
 ## Version
 
-- Registry Version: 2.0.0
-- Generated: 2024-11-28
+- Registry Version: 3.0.0
+- Generated: 2025-11-29
 - Organization: BlackRoad-OS
