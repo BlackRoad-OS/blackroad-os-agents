@@ -1,3 +1,6 @@
+# 📦 BlackRoad OS Pack Registry
+# Defines all packs and their associated agents in the BlackRoad OS ecosystem
+
 packs:
   - id: pack.education
     name: "Education"
@@ -5,6 +8,10 @@ packs:
     owning_team: blackroad-ideas
     description: "Curriculum design, course packaging, LMS automation."
     domains: []
+    risk_level: medium
+    agents:
+      - agent.edu.tutor
+    status: active
 
   - id: pack.infra-devops
     name: "Infra & DevOps"
@@ -13,6 +20,11 @@ packs:
     description: "Pipelines, deployments, DNS, observability."
     domains:
       - blackroad.systems
+    risk_level: high
+    agents:
+      - agent.cadillac.operator
+      - agent.prism.sentry
+    status: active
 
   - id: pack.creator-studio
     name: "Creator Studio"
@@ -20,6 +32,10 @@ packs:
     owning_team: blackroad-studio
     description: "Content creation, media production, and studio tools."
     domains: []
+    risk_level: medium
+    agents:
+      - agent.creator.studio
+    status: active
 
   - id: pack.finance
     name: "Finance"
@@ -27,6 +43,10 @@ packs:
     owning_team: blackroad-finance
     description: "Financial operations, accounting, invoicing."
     domains: []
+    risk_level: high
+    agents:
+      - agent.finance.recon
+    status: active
 
   - id: pack.legal
     name: "Legal"
@@ -34,6 +54,10 @@ packs:
     owning_team: blackroad-legal
     description: "Legal compliance, contracts, and policies."
     domains: []
+    risk_level: high
+    agents:
+      - agent.legal.helper
+    status: active
 
   - id: pack.research-lab
     name: "Research Lab"
@@ -41,3 +65,7 @@ packs:
     owning_team: blackroad-research
     description: "Research initiatives, experimentation, and lab operations."
     domains: []
+    risk_level: medium
+    agents:
+      - agent.lucidia.core
+    status: active

@@ -1,0 +1,122 @@
+# 🧠 BlackRoad OS Agent Capability Definitions
+# Defines what each capability level allows an agent to do
+
+capabilities:
+  # 👀 Read-Only: Can observe but never modify
+  - id: read-only
+    name: "Read Only"
+    emoji: "👀"
+    description: "Can read data, view dashboards, and observe system state. Cannot modify anything."
+    allowed_actions:
+      - view_data
+      - read_logs
+      - query_status
+      - observe_workflows
+    disallowed_actions:
+      - modify_data
+      - execute_workflows
+      - approve_actions
+      - delete_resources
+    risk_level: low
+    requires_approval: false
+
+  # 💡 Suggest-Only: Can propose but not execute
+  - id: suggest-only
+    name: "Suggest Only"
+    emoji: "💡"
+    description: "Can analyze and suggest actions or changes. Cannot execute without human approval."
+    allowed_actions:
+      - view_data
+      - read_logs
+      - query_status
+      - create_suggestions
+      - draft_proposals
+    disallowed_actions:
+      - execute_workflows
+      - modify_data
+      - approve_actions
+    risk_level: low
+    requires_approval: false
+
+  # ✋ Execute-With-Approval: Can execute after explicit approval
+  - id: execute-with-approval
+    name: "Execute With Approval"
+    emoji: "✋"
+    description: "Can execute actions but only after receiving explicit human or supervisor agent approval."
+    allowed_actions:
+      - view_data
+      - read_logs
+      - query_status
+      - create_suggestions
+      - execute_workflows_with_approval
+      - modify_data_with_approval
+    disallowed_actions:
+      - autonomous_execution
+      - bypass_approval
+    risk_level: medium
+    requires_approval: true
+
+  # ⚡ Execute-Autonomous: Can execute independently within guardrails
+  - id: execute-autonomous
+    name: "Execute Autonomous"
+    emoji: "⚡"
+    description: "Can execute actions autonomously within defined guardrails and scopes."
+    allowed_actions:
+      - view_data
+      - read_logs
+      - query_status
+      - execute_workflows
+      - modify_data
+    disallowed_actions:
+      - access_high_risk_zones
+      - modify_permissions
+      - delete_critical_resources
+    risk_level: medium
+    requires_approval: false
+
+  # 👑 Admin: Full administrative access (HIGH RISK)
+  - id: admin
+    name: "Administrator"
+    emoji: "👑"
+    description: "Full administrative access. Reserved for core infrastructure agents. STRONG GUARDRAILS REQUIRED."
+    allowed_actions:
+      - all_actions
+    disallowed_actions: []
+    risk_level: high
+    requires_approval: true
+    high_risk_marker: "// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED"
+
+# 🧭 Scope Definitions - What areas an agent can access
+scopes:
+  - id: scope.repos
+    name: "Repository Access"
+    description: "Access to code repositories"
+    
+  - id: scope.workflows
+    name: "Workflow Access"
+    description: "Access to operator workflows"
+    
+  - id: scope.infrastructure
+    name: "Infrastructure Access"
+    description: "⚠️ Access to production infrastructure"
+    risk_level: high
+    
+  - id: scope.finance
+    name: "Financial Access"
+    description: "💰 Access to financial systems and data"
+    risk_level: high
+    
+  - id: scope.identity
+    name: "Identity Access"
+    description: "🪪 Access to identity and authentication systems"
+    risk_level: high
+    
+  - id: scope.legal
+    name: "Legal Access"
+    description: "⚖️ Access to legal and compliance systems"
+    risk_level: high
+    
+  - id: scope.data
+    name: "Data Access"
+    description: "Access to data systems and storage"
+    risk_level: medium

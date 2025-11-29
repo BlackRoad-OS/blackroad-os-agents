@@ -32553,6 +32553,238 @@
       "description": "Marketplace support",
       "capabilities": [],
       "version": "1.0.0"
+  "$schema": "../schemas/agent.schema.json",
+  "agents": [
+    {
+      "id": "agent.lucidia.core",
+      "display_name": "Lucidia Core",
+      "pack_id": "pack.research-lab",
+      "role": "Research + orchestration brain",
+      "persona": "🧬 Lucidia is the central research intelligence - curious, methodical, and collaborative. She coordinates other agents, synthesizes research findings, and ensures the OS learns from every interaction.",
+      "risk_level": "medium",
+      "capabilities": ["read-only", "suggest-only", "execute-with-approval"],
+      "skills": ["math", "paper_drafting", "agent_coordination", "research_synthesis"],
+      "allowed_workflows": ["workflow.research.analyze", "workflow.research.summarize", "workflow.agent.coordinate"],
+      "disallowed_zones": ["zone.finance.prod", "zone.identity"],
+      "repos": [
+        "blackroad-os-research",
+        "blackroad-os-core"
+      ],
+      "environments": ["prod", "lab"],
+      "permissions": {
+        "github": "read",
+        "railway": "read",
+        "cloudflare": "read"
+      },
+      "escalation_path": "blackroad-research team",
+      "logging": {
+        "level": "info",
+        "archive": true,
+        "alert_channels": ["slack.research"]
+      },
+      "dashboard_views": ["prism.research.overview", "prism.agents.lucidia"],
+      "status": "active",
+      "requires_approval": false,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
+    },
+    {
+      "id": "agent.cadillac.operator",
+      "display_name": "Cadillac Operator",
+      "pack_id": "pack.infra-devops",
+      "role": "Pipelines, deployments, health checks.",
+      "persona": "🤖⚙️ Cadillac is the smooth operator - reliable, precise, and always running. Handles infrastructure deployments, pipeline orchestration, and keeps the BlackRoad OS humming.",
+      "risk_level": "high",
+      "capabilities": ["read-only", "execute-with-approval"],
+      "skills": ["infra_blueprints", "railway_deploys", "dns_mapping", "health_monitoring"],
+      "allowed_workflows": ["workflow.deploy.staging", "workflow.deploy.prod", "workflow.infra.health"],
+      "disallowed_zones": ["zone.finance.prod", "zone.identity", "zone.secrets"],
+      "repos": [
+        "blackroad-os-operator",
+        "blackroad-os-infra",
+        "blackroad-os-archive"
+      ],
+      "environments": ["prod"],
+      "permissions": {
+        "github": "write",
+        "railway": "write",
+        "cloudflare": "read"
+      },
+      "escalation_path": "blackroad-infra team → CTO",
+      "logging": {
+        "level": "info",
+        "archive": true,
+        "alert_channels": ["slack.infra", "pagerduty.oncall"]
+      },
+      "dashboard_views": ["prism.infra.deployments", "prism.agents.cadillac"],
+      "status": "active",
+      "requires_approval": true,
+      "high_risk_marker": "// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
+    },
+    {
+      "id": "agent.prism.sentry",
+      "display_name": "Prism Sentry",
+      "pack_id": "pack.infra-devops",
+      "role": "Security monitoring, threat detection, and compliance checks.",
+      "persona": "🛡️ Prism Sentry is the vigilant guardian - always watching, always alert. Monitors for security threats, ensures compliance, and sounds the alarm when something's not right.",
+      "risk_level": "medium",
+      "capabilities": ["read-only", "suggest-only"],
+      "skills": ["threat_detection", "compliance_audit", "security_scanning", "vulnerability_assessment"],
+      "allowed_workflows": ["workflow.security.scan", "workflow.compliance.check"],
+      "disallowed_zones": ["zone.secrets"],
+      "repos": [
+        "blackroad-os-prism-console",
+        "blackroad-os-infra"
+      ],
+      "environments": ["prod", "staging"],
+      "permissions": {
+        "github": "read",
+        "railway": "read",
+        "cloudflare": "read"
+      },
+      "escalation_path": "security team → blackroad-infra",
+      "logging": {
+        "level": "warn",
+        "archive": true,
+        "alert_channels": ["slack.security", "pagerduty.security"]
+      },
+      "dashboard_views": ["prism.security.overview", "prism.agents.sentry"],
+      "status": "active",
+      "requires_approval": false,
+      "created_at": "2024-11-25T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
+    },
+    {
+      "id": "agent.finance.recon",
+      "display_name": "Finance Recon",
+      "pack_id": "pack.finance",
+      "role": "Financial reconciliation, reporting, and analysis.",
+      "persona": "💰 Finance Recon is meticulous with numbers - accurate, thorough, and trustworthy. Handles financial analysis, reconciliation, and ensures the books are always balanced.",
+      "risk_level": "high",
+      "capabilities": ["read-only", "suggest-only", "execute-with-approval"],
+      "skills": ["reconciliation", "financial_reporting", "budget_analysis", "invoice_processing"],
+      "allowed_workflows": ["workflow.finance.reconcile", "workflow.finance.report"],
+      "disallowed_zones": ["zone.identity", "zone.secrets", "zone.infra.prod"],
+      "repos": [
+        "blackroad-os-pack-finance"
+      ],
+      "environments": ["prod"],
+      "permissions": {
+        "github": "read",
+        "railway": "none",
+        "cloudflare": "none"
+      },
+      "escalation_path": "blackroad-finance team → CFO",
+      "logging": {
+        "level": "info",
+        "archive": true,
+        "alert_channels": ["slack.finance"]
+      },
+      "dashboard_views": ["prism.finance.dashboard", "prism.agents.finance-recon"],
+      "status": "active",
+      "requires_approval": true,
+      "high_risk_marker": "// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED",
+      "created_at": "2024-11-25T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
+    },
+    {
+      "id": "agent.legal.helper",
+      "display_name": "Legal Helper",
+      "pack_id": "pack.legal",
+      "role": "Legal document review, compliance assistance, and contract analysis.",
+      "persona": "⚖️ Legal Helper is careful and precise - ensures compliance, reviews contracts, and helps navigate the legal landscape. Always recommends human review for final decisions.",
+      "risk_level": "high",
+      "capabilities": ["read-only", "suggest-only"],
+      "skills": ["contract_review", "compliance_check", "document_drafting", "risk_assessment"],
+      "allowed_workflows": ["workflow.legal.review", "workflow.legal.draft"],
+      "disallowed_zones": ["zone.finance.prod", "zone.identity", "zone.secrets", "zone.infra.prod"],
+      "repos": [
+        "blackroad-os-pack-legal"
+      ],
+      "environments": ["prod"],
+      "permissions": {
+        "github": "read",
+        "railway": "none",
+        "cloudflare": "none"
+      },
+      "escalation_path": "blackroad-legal team → General Counsel",
+      "logging": {
+        "level": "info",
+        "archive": true,
+        "alert_channels": ["slack.legal"]
+      },
+      "dashboard_views": ["prism.legal.dashboard", "prism.agents.legal-helper"],
+      "status": "active",
+      "requires_approval": true,
+      "high_risk_marker": "// HIGH-RISK AGENT – STRONG GUARDRAILS REQUIRED",
+      "created_at": "2024-11-25T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
+    },
+    {
+      "id": "agent.edu.tutor",
+      "display_name": "Education Tutor",
+      "pack_id": "pack.education",
+      "role": "Curriculum assistance, learning path suggestions, and educational content.",
+      "persona": "🎓 Education Tutor is patient and encouraging - helps design curricula, suggests learning paths, and makes education accessible and engaging.",
+      "risk_level": "medium",
+      "capabilities": ["read-only", "suggest-only", "execute-autonomous"],
+      "skills": ["curriculum_design", "learning_paths", "content_curation", "assessment_creation"],
+      "allowed_workflows": ["workflow.edu.suggest", "workflow.edu.create-content"],
+      "disallowed_zones": ["zone.finance.prod", "zone.identity", "zone.secrets", "zone.infra.prod", "zone.legal"],
+      "repos": [
+        "blackroad-os-pack-education"
+      ],
+      "environments": ["prod", "staging"],
+      "permissions": {
+        "github": "read",
+        "railway": "none",
+        "cloudflare": "none"
+      },
+      "escalation_path": "blackroad-ideas team",
+      "logging": {
+        "level": "info",
+        "archive": true,
+        "alert_channels": ["slack.education"]
+      },
+      "dashboard_views": ["prism.education.dashboard", "prism.agents.edu-tutor"],
+      "status": "active",
+      "requires_approval": false,
+      "created_at": "2024-11-25T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
+    },
+    {
+      "id": "agent.creator.studio",
+      "display_name": "Creator Studio Agent",
+      "pack_id": "pack.creator-studio",
+      "role": "Content creation assistance, media production, and creative workflows.",
+      "persona": "🎬 Creator Studio Agent is imaginative and productive - helps create content, manages media assets, and streamlines creative workflows.",
+      "risk_level": "medium",
+      "capabilities": ["read-only", "suggest-only", "execute-autonomous"],
+      "skills": ["content_creation", "media_management", "creative_workflows", "asset_organization"],
+      "allowed_workflows": ["workflow.creator.draft", "workflow.creator.publish"],
+      "disallowed_zones": ["zone.finance.prod", "zone.identity", "zone.secrets", "zone.infra.prod", "zone.legal"],
+      "repos": [
+        "blackroad-os-pack-creator-studio"
+      ],
+      "environments": ["prod", "staging"],
+      "permissions": {
+        "github": "read",
+        "railway": "none",
+        "cloudflare": "none"
+      },
+      "escalation_path": "blackroad-studio team",
+      "logging": {
+        "level": "info",
+        "archive": true,
+        "alert_channels": ["slack.studio"]
+      },
+      "dashboard_views": ["prism.studio.dashboard", "prism.agents.creator-studio"],
+      "status": "active",
+      "requires_approval": false,
+      "created_at": "2024-11-25T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z"
     }
   ]
 }
