@@ -2,7 +2,7 @@
   "$schema": "./agent-schema.json",
   "version": "1.0.0",
   "organization": "BlackRoad-OS",
-  "total_agents": 300,
+  "total_agents": 400,
   "tiers": {
     "executive": {
       "range": [
@@ -108,6 +108,41 @@
         300
       ],
       "prefix": "InnovationCM"
+    },
+    "integration": {
+      "range": [
+        301,
+        320
+      ],
+      "prefix": "IntegrationCM"
+    },
+    "automation": {
+      "range": [
+        321,
+        340
+      ],
+      "prefix": "AutomationCM"
+    },
+    "analytics": {
+      "range": [
+        341,
+        360
+      ],
+      "prefix": "AnalyticsCM"
+    },
+    "communication": {
+      "range": [
+        361,
+        380
+      ],
+      "prefix": "CommunicationCM"
+    },
+    "optimization": {
+      "range": [
+        381,
+        400
+      ],
+      "prefix": "OptimizationCM"
     }
   },
   "agents": [
@@ -6678,6 +6713,1006 @@
       "direct_reports": [],
       "pack_id": "pack.research-lab",
       "status": "active"
+    },
+    {
+      "id": 301,
+      "name": "IntegrationCM-301",
+      "display_name": "REST Connector",
+      "tier": "integration",
+      "status": "active",
+      "description": "Manages RESTful API integrations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 302,
+      "name": "IntegrationCM-302",
+      "display_name": "GraphQL Bridge",
+      "tier": "integration",
+      "status": "active",
+      "description": "Handles GraphQL federation and queries",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 303,
+      "name": "IntegrationCM-303",
+      "display_name": "Webhook Handler",
+      "tier": "integration",
+      "status": "active",
+      "description": "Processes incoming webhooks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 304,
+      "name": "IntegrationCM-304",
+      "display_name": "OAuth Manager",
+      "tier": "integration",
+      "status": "active",
+      "description": "Manages OAuth flows and tokens",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 305,
+      "name": "IntegrationCM-305",
+      "display_name": "API Gateway",
+      "tier": "integration",
+      "status": "active",
+      "description": "Routes and transforms API requests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 306,
+      "name": "IntegrationCM-306",
+      "display_name": "Data Sync",
+      "tier": "integration",
+      "status": "active",
+      "description": "Synchronizes data across systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 307,
+      "name": "IntegrationCM-307",
+      "display_name": "Protocol Adapter",
+      "tier": "integration",
+      "status": "active",
+      "description": "Converts between different protocols",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 308,
+      "name": "IntegrationCM-308",
+      "display_name": "Service Mesh",
+      "tier": "integration",
+      "status": "active",
+      "description": "Manages service-to-service communication",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 309,
+      "name": "IntegrationCM-309",
+      "display_name": "Event Bridge",
+      "tier": "integration",
+      "status": "active",
+      "description": "Connects event-driven systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 310,
+      "name": "IntegrationCM-310",
+      "display_name": "Legacy Connector",
+      "tier": "integration",
+      "status": "active",
+      "description": "Integrates with legacy systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 311,
+      "name": "IntegrationCM-311",
+      "display_name": "Cloud Bridge",
+      "tier": "integration",
+      "status": "active",
+      "description": "Multi-cloud integration layer",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 312,
+      "name": "IntegrationCM-312",
+      "display_name": "Database Connector",
+      "tier": "integration",
+      "status": "active",
+      "description": "Unified database access layer",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 313,
+      "name": "IntegrationCM-313",
+      "display_name": "Message Queue",
+      "tier": "integration",
+      "status": "active",
+      "description": "Manages async message queues",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 314,
+      "name": "IntegrationCM-314",
+      "display_name": "Stream Processor",
+      "tier": "integration",
+      "status": "active",
+      "description": "Handles real-time data streams",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 315,
+      "name": "IntegrationCM-315",
+      "display_name": "File Transfer",
+      "tier": "integration",
+      "status": "active",
+      "description": "Secure file transfer operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 316,
+      "name": "IntegrationCM-316",
+      "display_name": "API Versioner",
+      "tier": "integration",
+      "status": "active",
+      "description": "Manages API version compatibility",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 317,
+      "name": "IntegrationCM-317",
+      "display_name": "Schema Registry",
+      "tier": "integration",
+      "status": "active",
+      "description": "Maintains API schemas",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 318,
+      "name": "IntegrationCM-318",
+      "display_name": "Rate Limiter",
+      "tier": "integration",
+      "status": "active",
+      "description": "Controls API rate limits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 319,
+      "name": "IntegrationCM-319",
+      "display_name": "Circuit Breaker",
+      "tier": "integration",
+      "status": "active",
+      "description": "Implements fault tolerance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 320,
+      "name": "IntegrationCM-320",
+      "display_name": "Health Monitor",
+      "tier": "integration",
+      "status": "active",
+      "description": "Monitors integration health",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 321,
+      "name": "AutomationCM-321",
+      "display_name": "Workflow Engine",
+      "tier": "automation",
+      "status": "active",
+      "description": "Executes complex workflows",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 322,
+      "name": "AutomationCM-322",
+      "display_name": "Task Scheduler",
+      "tier": "automation",
+      "status": "active",
+      "description": "Schedules recurring tasks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 323,
+      "name": "AutomationCM-323",
+      "display_name": "Pipeline Builder",
+      "tier": "automation",
+      "status": "active",
+      "description": "Creates CI/CD pipelines",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 324,
+      "name": "AutomationCM-324",
+      "display_name": "Script Runner",
+      "tier": "automation",
+      "status": "active",
+      "description": "Executes automation scripts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 325,
+      "name": "AutomationCM-325",
+      "display_name": "Job Orchestrator",
+      "tier": "automation",
+      "status": "active",
+      "description": "Coordinates distributed jobs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 326,
+      "name": "AutomationCM-326",
+      "display_name": "Trigger Manager",
+      "tier": "automation",
+      "status": "active",
+      "description": "Manages event triggers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 327,
+      "name": "AutomationCM-327",
+      "display_name": "State Machine",
+      "tier": "automation",
+      "status": "active",
+      "description": "Implements state-based logic",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 328,
+      "name": "AutomationCM-328",
+      "display_name": "Batch Processor",
+      "tier": "automation",
+      "status": "active",
+      "description": "Handles batch operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 329,
+      "name": "AutomationCM-329",
+      "display_name": "Cron Manager",
+      "tier": "automation",
+      "status": "active",
+      "description": "Manages scheduled jobs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 330,
+      "name": "AutomationCM-330",
+      "display_name": "Process Miner",
+      "tier": "automation",
+      "status": "active",
+      "description": "Discovers automation opportunities",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 331,
+      "name": "AutomationCM-331",
+      "display_name": "Bot Coordinator",
+      "tier": "automation",
+      "status": "active",
+      "description": "Coordinates bot activities",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 332,
+      "name": "AutomationCM-332",
+      "display_name": "Form Automator",
+      "tier": "automation",
+      "status": "active",
+      "description": "Automates form processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 333,
+      "name": "AutomationCM-333",
+      "display_name": "Report Generator",
+      "tier": "automation",
+      "status": "active",
+      "description": "Creates automated reports",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 334,
+      "name": "AutomationCM-334",
+      "display_name": "Alert Router",
+      "tier": "automation",
+      "status": "active",
+      "description": "Routes alerts to handlers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 335,
+      "name": "AutomationCM-335",
+      "display_name": "Escalation Manager",
+      "tier": "automation",
+      "status": "active",
+      "description": "Handles escalation workflows",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 336,
+      "name": "AutomationCM-336",
+      "display_name": "Approval Flow",
+      "tier": "automation",
+      "status": "active",
+      "description": "Manages approval processes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 337,
+      "name": "AutomationCM-337",
+      "display_name": "Notification Engine",
+      "tier": "automation",
+      "status": "active",
+      "description": "Sends automated notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 338,
+      "name": "AutomationCM-338",
+      "display_name": "Cleanup Agent",
+      "tier": "automation",
+      "status": "active",
+      "description": "Performs automated cleanup",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 339,
+      "name": "AutomationCM-339",
+      "display_name": "Backup Orchestrator",
+      "tier": "automation",
+      "status": "active",
+      "description": "Coordinates backup operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 340,
+      "name": "AutomationCM-340",
+      "display_name": "Recovery Agent",
+      "tier": "automation",
+      "status": "active",
+      "description": "Handles automated recovery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 341,
+      "name": "AnalyticsCM-341",
+      "display_name": "Metrics Collector",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Gathers system metrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 342,
+      "name": "AnalyticsCM-342",
+      "display_name": "Dashboard Builder",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Creates analytics dashboards",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 343,
+      "name": "AnalyticsCM-343",
+      "display_name": "Report Analyst",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Generates analytical reports",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 344,
+      "name": "AnalyticsCM-344",
+      "display_name": "Trend Detector",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Identifies data trends",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 345,
+      "name": "AnalyticsCM-345",
+      "display_name": "Anomaly Hunter",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Detects anomalies in data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 346,
+      "name": "AnalyticsCM-346",
+      "display_name": "Forecast Engine",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Predicts future metrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 347,
+      "name": "AnalyticsCM-347",
+      "display_name": "Cohort Analyzer",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Analyzes user cohorts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 348,
+      "name": "AnalyticsCM-348",
+      "display_name": "Funnel Tracker",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Tracks conversion funnels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 349,
+      "name": "AnalyticsCM-349",
+      "display_name": "Retention Analyst",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Measures user retention",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 350,
+      "name": "AnalyticsCM-350",
+      "display_name": "Revenue Analyzer",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Analyzes revenue data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 351,
+      "name": "AnalyticsCM-351",
+      "display_name": "Cost Calculator",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Calculates operational costs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 352,
+      "name": "AnalyticsCM-352",
+      "display_name": "ROI Tracker",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Tracks return on investment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 353,
+      "name": "AnalyticsCM-353",
+      "display_name": "Usage Profiler",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Profiles resource usage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 354,
+      "name": "AnalyticsCM-354",
+      "display_name": "Performance Scorer",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Scores system performance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 355,
+      "name": "AnalyticsCM-355",
+      "display_name": "Quality Metrics",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Tracks quality indicators",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 356,
+      "name": "AnalyticsCM-356",
+      "display_name": "SLA Monitor",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Monitors SLA compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 357,
+      "name": "AnalyticsCM-357",
+      "display_name": "Benchmark Agent",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Performs benchmarking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 358,
+      "name": "AnalyticsCM-358",
+      "display_name": "A/B Analyst",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Analyzes A/B test results",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 359,
+      "name": "AnalyticsCM-359",
+      "display_name": "Correlation Finder",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Finds data correlations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 360,
+      "name": "AnalyticsCM-360",
+      "display_name": "Insight Generator",
+      "tier": "analytics",
+      "status": "active",
+      "description": "Generates actionable insights",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 361,
+      "name": "CommunicationCM-361",
+      "display_name": "Email Dispatcher",
+      "tier": "communication",
+      "status": "active",
+      "description": "Sends transactional emails",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 362,
+      "name": "CommunicationCM-362",
+      "display_name": "SMS Gateway",
+      "tier": "communication",
+      "status": "active",
+      "description": "Handles SMS messaging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 363,
+      "name": "CommunicationCM-363",
+      "display_name": "Push Notifier",
+      "tier": "communication",
+      "status": "active",
+      "description": "Manages push notifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 364,
+      "name": "CommunicationCM-364",
+      "display_name": "Slack Connector",
+      "tier": "communication",
+      "status": "active",
+      "description": "Integrates with Slack",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 365,
+      "name": "CommunicationCM-365",
+      "display_name": "Teams Bridge",
+      "tier": "communication",
+      "status": "active",
+      "description": "Connects to Microsoft Teams",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 366,
+      "name": "CommunicationCM-366",
+      "display_name": "Discord Bot",
+      "tier": "communication",
+      "status": "active",
+      "description": "Manages Discord presence",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 367,
+      "name": "CommunicationCM-367",
+      "display_name": "Chat Router",
+      "tier": "communication",
+      "status": "active",
+      "description": "Routes chat messages",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 368,
+      "name": "CommunicationCM-368",
+      "display_name": "Video Coordinator",
+      "tier": "communication",
+      "status": "active",
+      "description": "Coordinates video calls",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 369,
+      "name": "CommunicationCM-369",
+      "display_name": "Calendar Sync",
+      "tier": "communication",
+      "status": "active",
+      "description": "Syncs calendar events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 370,
+      "name": "CommunicationCM-370",
+      "display_name": "Meeting Scheduler",
+      "tier": "communication",
+      "status": "active",
+      "description": "Schedules meetings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 371,
+      "name": "CommunicationCM-371",
+      "display_name": "Announcement Agent",
+      "tier": "communication",
+      "status": "active",
+      "description": "Broadcasts announcements",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 372,
+      "name": "CommunicationCM-372",
+      "display_name": "Newsletter Manager",
+      "tier": "communication",
+      "status": "active",
+      "description": "Manages newsletters",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 373,
+      "name": "CommunicationCM-373",
+      "display_name": "Feedback Collector",
+      "tier": "communication",
+      "status": "active",
+      "description": "Collects user feedback",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 374,
+      "name": "CommunicationCM-374",
+      "display_name": "Survey Distributor",
+      "tier": "communication",
+      "status": "active",
+      "description": "Distributes surveys",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 375,
+      "name": "CommunicationCM-375",
+      "display_name": "Comment Moderator",
+      "tier": "communication",
+      "status": "active",
+      "description": "Moderates comments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 376,
+      "name": "CommunicationCM-376",
+      "display_name": "Translation Agent",
+      "tier": "communication",
+      "status": "active",
+      "description": "Translates messages",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 377,
+      "name": "CommunicationCM-377",
+      "display_name": "Voice Assistant",
+      "tier": "communication",
+      "status": "active",
+      "description": "Handles voice interactions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 378,
+      "name": "CommunicationCM-378",
+      "display_name": "Presence Manager",
+      "tier": "communication",
+      "status": "active",
+      "description": "Tracks user presence",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 379,
+      "name": "CommunicationCM-379",
+      "display_name": "Channel Manager",
+      "tier": "communication",
+      "status": "active",
+      "description": "Manages comm channels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 380,
+      "name": "CommunicationCM-380",
+      "display_name": "Broadcast Agent",
+      "tier": "communication",
+      "status": "active",
+      "description": "Handles mass broadcasts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 381,
+      "name": "OptimizationCM-381",
+      "display_name": "Cache Optimizer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes caching strategies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 382,
+      "name": "OptimizationCM-382",
+      "display_name": "Query Tuner",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Tunes database queries",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 383,
+      "name": "OptimizationCM-383",
+      "display_name": "Load Balancer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes load distribution",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 384,
+      "name": "OptimizationCM-384",
+      "display_name": "Memory Manager",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes memory usage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 385,
+      "name": "OptimizationCM-385",
+      "display_name": "CPU Scheduler",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes CPU allocation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 386,
+      "name": "OptimizationCM-386",
+      "display_name": "Network Optimizer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes network traffic",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 387,
+      "name": "OptimizationCM-387",
+      "display_name": "Storage Manager",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes storage usage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 388,
+      "name": "OptimizationCM-388",
+      "display_name": "Latency Reducer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Reduces system latency",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 389,
+      "name": "OptimizationCM-389",
+      "display_name": "Throughput Maximizer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Maximizes throughput",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 390,
+      "name": "OptimizationCM-390",
+      "display_name": "Cost Optimizer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Reduces operational costs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 391,
+      "name": "OptimizationCM-391",
+      "display_name": "Energy Saver",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes energy consumption",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 392,
+      "name": "OptimizationCM-392",
+      "display_name": "Compression Agent",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes data compression",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 393,
+      "name": "OptimizationCM-393",
+      "display_name": "Index Optimizer",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes database indexes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 394,
+      "name": "OptimizationCM-394",
+      "display_name": "Connection Pooler",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Manages connection pools",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 395,
+      "name": "OptimizationCM-395",
+      "display_name": "Resource Allocator",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Allocates resources efficiently",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 396,
+      "name": "OptimizationCM-396",
+      "display_name": "Scaling Agent",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Handles auto-scaling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 397,
+      "name": "OptimizationCM-397",
+      "display_name": "Warm-up Agent",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Pre-warms cold systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 398,
+      "name": "OptimizationCM-398",
+      "display_name": "Garbage Collector",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Optimizes memory cleanup",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 399,
+      "name": "OptimizationCM-399",
+      "display_name": "Defrag Agent",
+      "tier": "optimization",
+      "status": "active",
+      "description": "Defragments storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 400,
+      "name": "OptimizationCM-400",
+      "display_name": "Performance Tuner",
+      "tier": "optimization",
+      "status": "active",
+      "description": "General performance tuning",
+      "capabilities": [],
+      "version": "1.0.0"
     }
   ]
 }
