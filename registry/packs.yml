@@ -63,9 +63,36 @@ packs:
     name: "Research Lab"
     repo: blackroad-os-pack-research-lab
     owning_team: blackroad-research
-    description: "Research initiatives, experimentation, and lab operations."
-    domains: []
+    description: "Mathematical research, quantum computing, proof systems, and computational experiments."
+    domains:
+      - mathematics
+      - quantum_computing
+      - proof_systems
+      - number_theory
     risk_level: medium
     agents:
       - agent.lucidia.core
+      - agent.lucidia.math
+      - agent.research.assistant
+    modules:
+      - hilbert_core
+      - collatz
+      - linmath
+      - lucidia_math_forge
+      - lucidia_math_lab
+      - quantum_engine
+    status: active
+
+  - id: pack.quantum-lab
+    name: "Quantum Lab"
+    repo: blackroad-os-pack-quantum-lab
+    owning_team: blackroad-research
+    description: "Quantum circuit simulation, quantum algorithms, and hybrid quantum-classical computing."
+    domains:
+      - quantum_circuits
+      - quantum_simulation
+      - quantum_algorithms
+    risk_level: high
+    agents:
+      - agent.quantum.researcher
     status: active
