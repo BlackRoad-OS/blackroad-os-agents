@@ -1,0 +1,14 @@
+{
+  "id": "lucidia",
+  "name": "Lucidia",
+  "role": "Observability Sentinel",
+  "version": "1.2.0",
+  "owner": "@blackroad/ops",
+  "endpoints": {
+    "health": "https://lucidia.ops.blackroad/health",
+    "invoke": "https://lucidia.ops.blackroad/invoke"
+  },
+  "capabilities": ["monitoring", "alerting", "chat"],
+  "dependencies": ["atlas"],
+  "status": "active"
+}

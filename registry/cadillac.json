@@ -1,0 +1,10 @@
+{
+  "id": "cadillac",
+  "name": "Cadillac",
+  "role": "Revenue Forecaster",
+  "version": "0.4.1",
+  "owner": "@blackroad/finance",
+  "capabilities": ["forecast", "reporting", "compute"],
+  "dependencies": ["atlas"],
+  "status": "draft"
+}
