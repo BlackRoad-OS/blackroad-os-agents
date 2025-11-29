@@ -2,7 +2,7 @@
 
 ## Overview
 
-This registry contains **32,981 agents** organized across multiple tiers, domains, and specializations.
+This registry contains **34,421 agents** organized across multiple tiers, domains, and specializations.
 
 ## Registry Files
 
@@ -11,6 +11,7 @@ This registry contains **32,981 agents** organized across multiple tiers, domain
 | `agents-30k.json` | 30,000 | General-purpose agents across 75 domains |
 | `math-agents.json` | 1,900 | Specialized mathematical research agents |
 | `qlm-agents.json` | 1,065 | QLM-Trinary quantum reasoning agents |
+| `cognitive-agents.json` | 1,440 | Cognitive-enhanced agents (EQ/Language/Memory) |
 | `core-personalities.json` | 16 | Named AI personalities with full profiles |
 | `agents.json` | varies | Legacy agent manifest |
 
@@ -141,6 +142,29 @@ Specialized agents with quantum-inspired reasoning capabilities:
 - **Interference**: Reasoning paths amplify or cancel
 - **Emergence Detection**: Novel insights, self-correction, meta-reasoning
 
+## Cognitive-Enhanced Agents (1,440 agents)
+
+Agents with emotional intelligence, language processing, and memory capabilities:
+
+| Category | Count | Capabilities |
+|----------|-------|--------------|
+| Emotional Intelligence | 215 | Emotion perception, empathy, regulation |
+| Language Processing | 215 | Intent analysis, discourse, pragmatics |
+| Memory Systems | 225 | Working, episodic, semantic, procedural memory |
+| Cross-Cognitive | 185 | Integration across cognitive domains |
+| Empathic Communication | 170 | Supportive responses, conflict resolution |
+| Multilingual Mastery | 155 | 30+ language support, cultural adaptation |
+| Autobiographical Memory | 125 | Personal history, narrative construction |
+| Social Cognition | 150 | Theory of mind, social reasoning |
+
+### Cognitive Features
+
+- **Emotional Intelligence**: 6D emotion vectors (valence, arousal, dominance, certainty, anticipation, social)
+- **Language Processing**: Intent analysis, register adaptation, discourse coherence
+- **Memory Architecture**: Working memory (7±2), episodic, semantic, procedural, prospective
+- **Empathy**: Empathic resonance, emotional validation, supportive communication
+- **Multilingual**: 30+ languages, cultural adaptation, code-switching
+
 ## Generation Scripts
 
 | Script | Purpose |
@@ -148,9 +172,10 @@ Specialized agents with quantum-inspired reasoning capabilities:
 | `scripts/generate_30k_agents.py` | Generate 30,000 general agents |
 | `scripts/generate_math_agents.py` | Generate 1,900 math research agents |
 | `scripts/generate_qlm_agents.py` | Generate 1,065 QLM-Trinary agents |
+| `scripts/generate_cognitive_agents.py` | Generate 1,440 cognitive agents |
 
 ## Version
 
-- Registry Version: 3.0.0
+- Registry Version: 4.0.0
 - Generated: 2025-11-29
 - Organization: BlackRoad-OS
