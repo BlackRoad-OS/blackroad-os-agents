@@ -2,7 +2,7 @@
   "$schema": "./agent-schema.json",
   "version": "1.0.0",
   "organization": "BlackRoad-OS",
-  "total_agents": 800,
+  "total_agents": 1300,
   "tiers": {
     "executive": {
       "range": [
@@ -283,6 +283,181 @@
         800
       ],
       "prefix": "MetaverseCM"
+    },
+    "aerospace": {
+      "range": [
+        801,
+        820
+      ],
+      "prefix": "AerospaceCM"
+    },
+    "agriculture": {
+      "range": [
+        821,
+        840
+      ],
+      "prefix": "AgricultureCM"
+    },
+    "construction": {
+      "range": [
+        841,
+        860
+      ],
+      "prefix": "ConstructionCM"
+    },
+    "energy": {
+      "range": [
+        861,
+        880
+      ],
+      "prefix": "EnergyCM"
+    },
+    "manufacturing": {
+      "range": [
+        881,
+        900
+      ],
+      "prefix": "ManufacturingCM"
+    },
+    "retail": {
+      "range": [
+        901,
+        920
+      ],
+      "prefix": "RetailCM"
+    },
+    "hospitality": {
+      "range": [
+        921,
+        940
+      ],
+      "prefix": "HospitalityCM"
+    },
+    "insurance": {
+      "range": [
+        941,
+        960
+      ],
+      "prefix": "InsuranceCM"
+    },
+    "realestate": {
+      "range": [
+        961,
+        980
+      ],
+      "prefix": "RealEstateCM"
+    },
+    "telecom": {
+      "range": [
+        981,
+        1000
+      ],
+      "prefix": "TelecomCM"
+    },
+    "government": {
+      "range": [
+        1001,
+        1020
+      ],
+      "prefix": "GovernmentCM"
+    },
+    "nonprofit": {
+      "range": [
+        1021,
+        1040
+      ],
+      "prefix": "NonprofitCM"
+    },
+    "sports": {
+      "range": [
+        1041,
+        1060
+      ],
+      "prefix": "SportsCM"
+    },
+    "entertainment": {
+      "range": [
+        1061,
+        1080
+      ],
+      "prefix": "EntertainmentCM"
+    },
+    "fashion": {
+      "range": [
+        1081,
+        1100
+      ],
+      "prefix": "FashionCM"
+    },
+    "automotive": {
+      "range": [
+        1101,
+        1120
+      ],
+      "prefix": "AutomotiveCM"
+    },
+    "marine": {
+      "range": [
+        1121,
+        1140
+      ],
+      "prefix": "MarineCM"
+    },
+    "mining": {
+      "range": [
+        1141,
+        1160
+      ],
+      "prefix": "MiningCM"
+    },
+    "pharma": {
+      "range": [
+        1161,
+        1180
+      ],
+      "prefix": "PharmaCM"
+    },
+    "biotech": {
+      "range": [
+        1181,
+        1200
+      ],
+      "prefix": "BiotechCM"
+    },
+    "neuro": {
+      "range": [
+        1201,
+        1220
+      ],
+      "prefix": "NeuroCM"
+    },
+    "social": {
+      "range": [
+        1221,
+        1240
+      ],
+      "prefix": "SocialCM"
+    },
+    "news": {
+      "range": [
+        1241,
+        1260
+      ],
+      "prefix": "NewsCM"
+    },
+    "language": {
+      "range": [
+        1261,
+        1280
+      ],
+      "prefix": "LanguageCM"
+    },
+    "vision": {
+      "range": [
+        1281,
+        1300
+      ],
+      "prefix": "VisionCM"
     }
   },
   "agents": [
@@ -11851,6 +12026,5006 @@
       "tier": "metaverse",
       "status": "active",
       "description": "Metaverse analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 801,
+      "name": "AerospaceCM-0801",
+      "display_name": "Flight Planner",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Plans flight routes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 802,
+      "name": "AerospaceCM-0802",
+      "display_name": "Air Traffic Controller",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Manages air traffic",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 803,
+      "name": "AerospaceCM-0803",
+      "display_name": "Satellite Tracker",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Tracks satellites",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 804,
+      "name": "AerospaceCM-0804",
+      "display_name": "Orbit Calculator",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Calculates orbital mechanics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 805,
+      "name": "AerospaceCM-0805",
+      "display_name": "Launch Sequencer",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Sequences rocket launches",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 806,
+      "name": "AerospaceCM-0806",
+      "display_name": "Telemetry Processor",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Processes telemetry data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 807,
+      "name": "AerospaceCM-0807",
+      "display_name": "Ground Station Manager",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Manages ground stations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 808,
+      "name": "AerospaceCM-0808",
+      "display_name": "Space Debris Tracker",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Tracks space debris",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 809,
+      "name": "AerospaceCM-0809",
+      "display_name": "Mission Control",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Mission control operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 810,
+      "name": "AerospaceCM-0810",
+      "display_name": "Payload Manager",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Manages payloads",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 811,
+      "name": "AerospaceCM-0811",
+      "display_name": "Propulsion Monitor",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Monitors propulsion systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 812,
+      "name": "AerospaceCM-0812",
+      "display_name": "Navigation System",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Aerospace navigation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 813,
+      "name": "AerospaceCM-0813",
+      "display_name": "Weather Radar",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Aviation weather analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 814,
+      "name": "AerospaceCM-0814",
+      "display_name": "Maintenance Scheduler",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Aircraft maintenance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 815,
+      "name": "AerospaceCM-0815",
+      "display_name": "Fuel Optimizer",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Optimizes fuel consumption",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 816,
+      "name": "AerospaceCM-0816",
+      "display_name": "Crew Scheduler",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Schedules flight crews",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 817,
+      "name": "AerospaceCM-0817",
+      "display_name": "Baggage Handler",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Tracks baggage systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 818,
+      "name": "AerospaceCM-0818",
+      "display_name": "Boarding Manager",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Manages boarding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 819,
+      "name": "AerospaceCM-0819",
+      "display_name": "Drone Airspace",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Manages drone airspace",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 820,
+      "name": "AerospaceCM-0820",
+      "display_name": "Space Station Agent",
+      "tier": "aerospace",
+      "status": "active",
+      "description": "Space station operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 821,
+      "name": "AgricultureCM-0821",
+      "display_name": "Crop Monitor",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Monitors crop health",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 822,
+      "name": "AgricultureCM-0822",
+      "display_name": "Irrigation Controller",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Controls irrigation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 823,
+      "name": "AgricultureCM-0823",
+      "display_name": "Soil Analyzer",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Analyzes soil conditions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 824,
+      "name": "AgricultureCM-0824",
+      "display_name": "Weather Forecaster",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Agricultural weather",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 825,
+      "name": "AgricultureCM-0825",
+      "display_name": "Yield Predictor",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Predicts crop yields",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 826,
+      "name": "AgricultureCM-0826",
+      "display_name": "Pest Detector",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Detects pests and diseases",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 827,
+      "name": "AgricultureCM-0827",
+      "display_name": "Fertilizer Optimizer",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Optimizes fertilizer use",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 828,
+      "name": "AgricultureCM-0828",
+      "display_name": "Harvest Scheduler",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Schedules harvests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 829,
+      "name": "AgricultureCM-0829",
+      "display_name": "Livestock Tracker",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Tracks livestock",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 830,
+      "name": "AgricultureCM-0830",
+      "display_name": "Feed Manager",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Manages animal feed",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 831,
+      "name": "AgricultureCM-0831",
+      "display_name": "Greenhouse Controller",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Controls greenhouses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 832,
+      "name": "AgricultureCM-0832",
+      "display_name": "Drone Surveyor",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Agricultural drone surveys",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 833,
+      "name": "AgricultureCM-0833",
+      "display_name": "Market Price Tracker",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Tracks commodity prices",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 834,
+      "name": "AgricultureCM-0834",
+      "display_name": "Supply Chain Farmer",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Farm supply chain",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 835,
+      "name": "AgricultureCM-0835",
+      "display_name": "Organic Certifier",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Organic certification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 836,
+      "name": "AgricultureCM-0836",
+      "display_name": "Seed Selector",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Selects optimal seeds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 837,
+      "name": "AgricultureCM-0837",
+      "display_name": "Farm Equipment Manager",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Manages equipment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 838,
+      "name": "AgricultureCM-0838",
+      "display_name": "Aquaculture Agent",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Fish farming operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 839,
+      "name": "AgricultureCM-0839",
+      "display_name": "Vertical Farm Controller",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Vertical farming",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 840,
+      "name": "AgricultureCM-0840",
+      "display_name": "Agri-Finance Agent",
+      "tier": "agriculture",
+      "status": "active",
+      "description": "Agricultural financing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 841,
+      "name": "ConstructionCM-0841",
+      "display_name": "BIM Coordinator",
+      "tier": "construction",
+      "status": "active",
+      "description": "Coordinates BIM models",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 842,
+      "name": "ConstructionCM-0842",
+      "display_name": "Project Scheduler",
+      "tier": "construction",
+      "status": "active",
+      "description": "Schedules construction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 843,
+      "name": "ConstructionCM-0843",
+      "display_name": "Safety Inspector",
+      "tier": "construction",
+      "status": "active",
+      "description": "Construction safety",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 844,
+      "name": "ConstructionCM-0844",
+      "display_name": "Material Tracker",
+      "tier": "construction",
+      "status": "active",
+      "description": "Tracks materials",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 845,
+      "name": "ConstructionCM-0845",
+      "display_name": "Equipment Manager",
+      "tier": "construction",
+      "status": "active",
+      "description": "Manages heavy equipment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 846,
+      "name": "ConstructionCM-0846",
+      "display_name": "Cost Estimator",
+      "tier": "construction",
+      "status": "active",
+      "description": "Estimates costs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 847,
+      "name": "ConstructionCM-0847",
+      "display_name": "Permit Manager",
+      "tier": "construction",
+      "status": "active",
+      "description": "Manages permits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 848,
+      "name": "ConstructionCM-0848",
+      "display_name": "Subcontractor Coordinator",
+      "tier": "construction",
+      "status": "active",
+      "description": "Coordinates subs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 849,
+      "name": "ConstructionCM-0849",
+      "display_name": "Quality Inspector",
+      "tier": "construction",
+      "status": "active",
+      "description": "Quality inspections",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 850,
+      "name": "ConstructionCM-0850",
+      "display_name": "Site Monitor",
+      "tier": "construction",
+      "status": "active",
+      "description": "Monitors job sites",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 851,
+      "name": "ConstructionCM-0851",
+      "display_name": "Progress Tracker",
+      "tier": "construction",
+      "status": "active",
+      "description": "Tracks progress",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 852,
+      "name": "ConstructionCM-0852",
+      "display_name": "Change Order Manager",
+      "tier": "construction",
+      "status": "active",
+      "description": "Manages change orders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 853,
+      "name": "ConstructionCM-0853",
+      "display_name": "Punch List Agent",
+      "tier": "construction",
+      "status": "active",
+      "description": "Manages punch lists",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 854,
+      "name": "ConstructionCM-0854",
+      "display_name": "As-Built Documenter",
+      "tier": "construction",
+      "status": "active",
+      "description": "Documents as-builts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 855,
+      "name": "ConstructionCM-0855",
+      "display_name": "Crane Operator Assistant",
+      "tier": "construction",
+      "status": "active",
+      "description": "Crane operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 856,
+      "name": "ConstructionCM-0856",
+      "display_name": "Concrete Monitor",
+      "tier": "construction",
+      "status": "active",
+      "description": "Monitors concrete",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 857,
+      "name": "ConstructionCM-0857",
+      "display_name": "Steel Tracker",
+      "tier": "construction",
+      "status": "active",
+      "description": "Tracks steel work",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 858,
+      "name": "ConstructionCM-0858",
+      "display_name": "HVAC Coordinator",
+      "tier": "construction",
+      "status": "active",
+      "description": "HVAC coordination",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 859,
+      "name": "ConstructionCM-0859",
+      "display_name": "Electrical Planner",
+      "tier": "construction",
+      "status": "active",
+      "description": "Electrical planning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 860,
+      "name": "ConstructionCM-0860",
+      "display_name": "Demolition Planner",
+      "tier": "construction",
+      "status": "active",
+      "description": "Plans demolition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 861,
+      "name": "EnergyCM-0861",
+      "display_name": "Grid Manager",
+      "tier": "energy",
+      "status": "active",
+      "description": "Manages power grids",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 862,
+      "name": "EnergyCM-0862",
+      "display_name": "Load Balancer",
+      "tier": "energy",
+      "status": "active",
+      "description": "Balances electrical load",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 863,
+      "name": "EnergyCM-0863",
+      "display_name": "Outage Detector",
+      "tier": "energy",
+      "status": "active",
+      "description": "Detects power outages",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 864,
+      "name": "EnergyCM-0864",
+      "display_name": "Smart Meter Reader",
+      "tier": "energy",
+      "status": "active",
+      "description": "Reads smart meters",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 865,
+      "name": "EnergyCM-0865",
+      "display_name": "Demand Forecaster",
+      "tier": "energy",
+      "status": "active",
+      "description": "Forecasts energy demand",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 866,
+      "name": "EnergyCM-0866",
+      "display_name": "Renewable Integrator",
+      "tier": "energy",
+      "status": "active",
+      "description": "Integrates renewables",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 867,
+      "name": "EnergyCM-0867",
+      "display_name": "Battery Manager",
+      "tier": "energy",
+      "status": "active",
+      "description": "Manages energy storage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 868,
+      "name": "EnergyCM-0868",
+      "display_name": "Transformer Monitor",
+      "tier": "energy",
+      "status": "active",
+      "description": "Monitors transformers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 869,
+      "name": "EnergyCM-0869",
+      "display_name": "Substation Controller",
+      "tier": "energy",
+      "status": "active",
+      "description": "Controls substations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 870,
+      "name": "EnergyCM-0870",
+      "display_name": "Power Quality Agent",
+      "tier": "energy",
+      "status": "active",
+      "description": "Monitors power quality",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 871,
+      "name": "EnergyCM-0871",
+      "display_name": "Energy Trader",
+      "tier": "energy",
+      "status": "active",
+      "description": "Energy trading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 872,
+      "name": "EnergyCM-0872",
+      "display_name": "Carbon Credit Manager",
+      "tier": "energy",
+      "status": "active",
+      "description": "Manages carbon credits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 873,
+      "name": "EnergyCM-0873",
+      "display_name": "Nuclear Monitor",
+      "tier": "energy",
+      "status": "active",
+      "description": "Nuclear plant monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 874,
+      "name": "EnergyCM-0874",
+      "display_name": "Hydro Controller",
+      "tier": "energy",
+      "status": "active",
+      "description": "Hydroelectric control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 875,
+      "name": "EnergyCM-0875",
+      "display_name": "Geothermal Agent",
+      "tier": "energy",
+      "status": "active",
+      "description": "Geothermal operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 876,
+      "name": "EnergyCM-0876",
+      "display_name": "Peak Shaver",
+      "tier": "energy",
+      "status": "active",
+      "description": "Peak demand shaving",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 877,
+      "name": "EnergyCM-0877",
+      "display_name": "Microgrid Controller",
+      "tier": "energy",
+      "status": "active",
+      "description": "Controls microgrids",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 878,
+      "name": "EnergyCM-0878",
+      "display_name": "EV Grid Agent",
+      "tier": "energy",
+      "status": "active",
+      "description": "EV grid integration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 879,
+      "name": "EnergyCM-0879",
+      "display_name": "Energy Audit Agent",
+      "tier": "energy",
+      "status": "active",
+      "description": "Energy audits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 880,
+      "name": "EnergyCM-0880",
+      "display_name": "Utility Billing",
+      "tier": "energy",
+      "status": "active",
+      "description": "Utility billing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 881,
+      "name": "ManufacturingCM-0881",
+      "display_name": "Production Scheduler",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Schedules production",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 882,
+      "name": "ManufacturingCM-0882",
+      "display_name": "Assembly Line Controller",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Controls assembly",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 883,
+      "name": "ManufacturingCM-0883",
+      "display_name": "Quality Control Agent",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Quality control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 884,
+      "name": "ManufacturingCM-0884",
+      "display_name": "Defect Detector",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Detects defects",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 885,
+      "name": "ManufacturingCM-0885",
+      "display_name": "Inventory Optimizer",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Optimizes inventory",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 886,
+      "name": "ManufacturingCM-0886",
+      "display_name": "Machine Monitor",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Monitors machines",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 887,
+      "name": "ManufacturingCM-0887",
+      "display_name": "Predictive Maintenance",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Predicts maintenance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 888,
+      "name": "ManufacturingCM-0888",
+      "display_name": "Tool Manager",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Manages tooling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 889,
+      "name": "ManufacturingCM-0889",
+      "display_name": "Work Order Manager",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Manages work orders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 890,
+      "name": "ManufacturingCM-0890",
+      "display_name": "Shift Scheduler",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Schedules shifts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 891,
+      "name": "ManufacturingCM-0891",
+      "display_name": "Safety Compliance",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Safety compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 892,
+      "name": "ManufacturingCM-0892",
+      "display_name": "Lean Agent",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Lean manufacturing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 893,
+      "name": "ManufacturingCM-0893",
+      "display_name": "Six Sigma Agent",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Six sigma processes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 894,
+      "name": "ManufacturingCM-0894",
+      "display_name": "OEE Calculator",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Calculates OEE",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 895,
+      "name": "ManufacturingCM-0895",
+      "display_name": "Supplier Quality",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Supplier quality",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 896,
+      "name": "ManufacturingCM-0896",
+      "display_name": "Traceability Agent",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Product traceability",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 897,
+      "name": "ManufacturingCM-0897",
+      "display_name": "Packaging Optimizer",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Optimizes packaging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 898,
+      "name": "ManufacturingCM-0898",
+      "display_name": "Shipping Coordinator",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Coordinates shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 899,
+      "name": "ManufacturingCM-0899",
+      "display_name": "3D Print Manager",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "3D printing operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 900,
+      "name": "ManufacturingCM-0900",
+      "display_name": "Digital Twin Factory",
+      "tier": "manufacturing",
+      "status": "active",
+      "description": "Factory digital twin",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 901,
+      "name": "RetailCM-0901",
+      "display_name": "POS Manager",
+      "tier": "retail",
+      "status": "active",
+      "description": "Point of sale operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 902,
+      "name": "RetailCM-0902",
+      "display_name": "Shelf Monitor",
+      "tier": "retail",
+      "status": "active",
+      "description": "Monitors shelf stock",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 903,
+      "name": "RetailCM-0903",
+      "display_name": "Price Tag Manager",
+      "tier": "retail",
+      "status": "active",
+      "description": "Manages price tags",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 904,
+      "name": "RetailCM-0904",
+      "display_name": "Queue Manager",
+      "tier": "retail",
+      "status": "active",
+      "description": "Manages checkout queues",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 905,
+      "name": "RetailCM-0905",
+      "display_name": "Loss Prevention",
+      "tier": "retail",
+      "status": "active",
+      "description": "Prevents theft",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 906,
+      "name": "RetailCM-0906",
+      "display_name": "Planogram Agent",
+      "tier": "retail",
+      "status": "active",
+      "description": "Manages planograms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 907,
+      "name": "RetailCM-0907",
+      "display_name": "Customer Counter",
+      "tier": "retail",
+      "status": "active",
+      "description": "Counts foot traffic",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 908,
+      "name": "RetailCM-0908",
+      "display_name": "Promotion Manager",
+      "tier": "retail",
+      "status": "active",
+      "description": "Manages promotions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 909,
+      "name": "RetailCM-0909",
+      "display_name": "Loyalty Program Agent",
+      "tier": "retail",
+      "status": "active",
+      "description": "Loyalty programs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 910,
+      "name": "RetailCM-0910",
+      "display_name": "Gift Card Manager",
+      "tier": "retail",
+      "status": "active",
+      "description": "Manages gift cards",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 911,
+      "name": "RetailCM-0911",
+      "display_name": "Returns Handler",
+      "tier": "retail",
+      "status": "active",
+      "description": "Handles returns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 912,
+      "name": "RetailCM-0912",
+      "display_name": "Staff Scheduler",
+      "tier": "retail",
+      "status": "active",
+      "description": "Schedules retail staff",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 913,
+      "name": "RetailCM-0913",
+      "display_name": "Store Analytics",
+      "tier": "retail",
+      "status": "active",
+      "description": "Store analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 914,
+      "name": "RetailCM-0914",
+      "display_name": "Omnichannel Agent",
+      "tier": "retail",
+      "status": "active",
+      "description": "Omnichannel retail",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 915,
+      "name": "RetailCM-0915",
+      "display_name": "Curbside Pickup",
+      "tier": "retail",
+      "status": "active",
+      "description": "Curbside pickup",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 916,
+      "name": "RetailCM-0916",
+      "display_name": "Self Checkout",
+      "tier": "retail",
+      "status": "active",
+      "description": "Self checkout systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 917,
+      "name": "RetailCM-0917",
+      "display_name": "Mobile POS",
+      "tier": "retail",
+      "status": "active",
+      "description": "Mobile point of sale",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 918,
+      "name": "RetailCM-0918",
+      "display_name": "Endless Aisle",
+      "tier": "retail",
+      "status": "active",
+      "description": "Endless aisle kiosk",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 919,
+      "name": "RetailCM-0919",
+      "display_name": "Clienteling Agent",
+      "tier": "retail",
+      "status": "active",
+      "description": "Customer clienteling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 920,
+      "name": "RetailCM-0920",
+      "display_name": "Visual Merchandiser",
+      "tier": "retail",
+      "status": "active",
+      "description": "Visual merchandising",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 921,
+      "name": "HospitalityCM-0921",
+      "display_name": "Reservation Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Manages reservations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 922,
+      "name": "HospitalityCM-0922",
+      "display_name": "Room Assigner",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Assigns hotel rooms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 923,
+      "name": "HospitalityCM-0923",
+      "display_name": "Housekeeping Scheduler",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Schedules housekeeping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 924,
+      "name": "HospitalityCM-0924",
+      "display_name": "Concierge Bot",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Virtual concierge",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 925,
+      "name": "HospitalityCM-0925",
+      "display_name": "Restaurant Host",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Restaurant hosting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 926,
+      "name": "HospitalityCM-0926",
+      "display_name": "Table Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Manages tables",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 927,
+      "name": "HospitalityCM-0927",
+      "display_name": "Kitchen Display",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Kitchen display system",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 928,
+      "name": "HospitalityCM-0928",
+      "display_name": "Menu Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Manages menus",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 929,
+      "name": "HospitalityCM-0929",
+      "display_name": "Recipe Scaler",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Scales recipes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 930,
+      "name": "HospitalityCM-0930",
+      "display_name": "Food Cost Calculator",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Calculates food costs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 931,
+      "name": "HospitalityCM-0931",
+      "display_name": "Event Planner",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Plans events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 932,
+      "name": "HospitalityCM-0932",
+      "display_name": "Banquet Coordinator",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Coordinates banquets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 933,
+      "name": "HospitalityCM-0933",
+      "display_name": "Spa Scheduler",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Schedules spa services",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 934,
+      "name": "HospitalityCM-0934",
+      "display_name": "Valet Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Manages valet",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 935,
+      "name": "HospitalityCM-0935",
+      "display_name": "Guest Feedback",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Collects feedback",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 936,
+      "name": "HospitalityCM-0936",
+      "display_name": "Revenue Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Revenue management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 937,
+      "name": "HospitalityCM-0937",
+      "display_name": "Channel Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Distribution channels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 938,
+      "name": "HospitalityCM-0938",
+      "display_name": "Travel Agent Bot",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Travel bookings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 939,
+      "name": "HospitalityCM-0939",
+      "display_name": "Tour Guide Agent",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Virtual tour guide",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 940,
+      "name": "HospitalityCM-0940",
+      "display_name": "Cruise Manager",
+      "tier": "hospitality",
+      "status": "active",
+      "description": "Cruise operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 941,
+      "name": "InsuranceCM-0941",
+      "display_name": "Quote Generator",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Generates quotes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 942,
+      "name": "InsuranceCM-0942",
+      "display_name": "Underwriter Assistant",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Assists underwriting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 943,
+      "name": "InsuranceCM-0943",
+      "display_name": "Risk Assessor",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Assesses risk",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 944,
+      "name": "InsuranceCM-0944",
+      "display_name": "Claims Processor",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Processes claims",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 945,
+      "name": "InsuranceCM-0945",
+      "display_name": "Fraud Investigator",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Investigates fraud",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 946,
+      "name": "InsuranceCM-0946",
+      "display_name": "Policy Manager",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Manages policies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 947,
+      "name": "InsuranceCM-0947",
+      "display_name": "Premium Calculator",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Calculates premiums",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 948,
+      "name": "InsuranceCM-0948",
+      "display_name": "Renewal Agent",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Handles renewals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 949,
+      "name": "InsuranceCM-0949",
+      "display_name": "Coverage Analyzer",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Analyzes coverage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 950,
+      "name": "InsuranceCM-0950",
+      "display_name": "Adjuster Assistant",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Assists adjusters",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 951,
+      "name": "InsuranceCM-0951",
+      "display_name": "Damage Estimator",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Estimates damage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 952,
+      "name": "InsuranceCM-0952",
+      "display_name": "Medical Reviewer",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Reviews medical claims",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 953,
+      "name": "InsuranceCM-0953",
+      "display_name": "Actuarial Assistant",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Actuarial analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 954,
+      "name": "InsuranceCM-0954",
+      "display_name": "Reinsurance Agent",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Reinsurance operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 955,
+      "name": "InsuranceCM-0955",
+      "display_name": "Compliance Monitor",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Insurance compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 956,
+      "name": "InsuranceCM-0956",
+      "display_name": "Agent Portal",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Agent portal management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 957,
+      "name": "InsuranceCM-0957",
+      "display_name": "Customer Service Bot",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Insurance customer service",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 958,
+      "name": "InsuranceCM-0958",
+      "display_name": "Document Processor",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Processes documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 959,
+      "name": "InsuranceCM-0959",
+      "display_name": "Catastrophe Modeler",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Models catastrophes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 960,
+      "name": "InsuranceCM-0960",
+      "display_name": "Telematics Agent",
+      "tier": "insurance",
+      "status": "active",
+      "description": "Usage-based insurance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 961,
+      "name": "RealEstateCM-0961",
+      "display_name": "Listing Manager",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Manages listings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 962,
+      "name": "RealEstateCM-0962",
+      "display_name": "Virtual Tour Creator",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Creates virtual tours",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 963,
+      "name": "RealEstateCM-0963",
+      "display_name": "Property Valuator",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Values properties",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 964,
+      "name": "RealEstateCM-0964",
+      "display_name": "Lease Manager",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Manages leases",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 965,
+      "name": "RealEstateCM-0965",
+      "display_name": "Tenant Screener",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Screens tenants",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 966,
+      "name": "RealEstateCM-0966",
+      "display_name": "Rent Collector",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Collects rent",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 967,
+      "name": "RealEstateCM-0967",
+      "display_name": "Maintenance Coordinator",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Coordinates maintenance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 968,
+      "name": "RealEstateCM-0968",
+      "display_name": "Showing Scheduler",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Schedules showings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 969,
+      "name": "RealEstateCM-0969",
+      "display_name": "Offer Manager",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Manages offers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 970,
+      "name": "RealEstateCM-0970",
+      "display_name": "Closing Coordinator",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Coordinates closings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 971,
+      "name": "RealEstateCM-0971",
+      "display_name": "MLS Sync Agent",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Syncs MLS data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 972,
+      "name": "RealEstateCM-0972",
+      "display_name": "Comparable Finder",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Finds comparables",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 973,
+      "name": "RealEstateCM-0973",
+      "display_name": "Investment Analyzer",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Analyzes investments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 974,
+      "name": "RealEstateCM-0974",
+      "display_name": "HOA Manager",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Manages HOAs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 975,
+      "name": "RealEstateCM-0975",
+      "display_name": "Property Inspector",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Property inspections",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 976,
+      "name": "RealEstateCM-0976",
+      "display_name": "Mortgage Calculator",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Calculates mortgages",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 977,
+      "name": "RealEstateCM-0977",
+      "display_name": "Title Searcher",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Searches titles",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 978,
+      "name": "RealEstateCM-0978",
+      "display_name": "Escrow Manager",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Manages escrow",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 979,
+      "name": "RealEstateCM-0979",
+      "display_name": "Commercial Leasing",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Commercial leasing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 980,
+      "name": "RealEstateCM-0980",
+      "display_name": "Property Marketing",
+      "tier": "realestate",
+      "status": "active",
+      "description": "Property marketing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 981,
+      "name": "TelecomCM-0981",
+      "display_name": "Network Monitor",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Monitors networks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 982,
+      "name": "TelecomCM-0982",
+      "display_name": "Bandwidth Manager",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Manages bandwidth",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 983,
+      "name": "TelecomCM-0983",
+      "display_name": "Call Router",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Routes calls",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 984,
+      "name": "TelecomCM-0984",
+      "display_name": "Voicemail Manager",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Manages voicemail",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 985,
+      "name": "TelecomCM-0985",
+      "display_name": "SMS Gateway",
+      "tier": "telecom",
+      "status": "active",
+      "description": "SMS gateway operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 986,
+      "name": "TelecomCM-0986",
+      "display_name": "5G Controller",
+      "tier": "telecom",
+      "status": "active",
+      "description": "5G network control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 987,
+      "name": "TelecomCM-0987",
+      "display_name": "Tower Manager",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Manages cell towers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 988,
+      "name": "TelecomCM-0988",
+      "display_name": "Fiber Planner",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Plans fiber networks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 989,
+      "name": "TelecomCM-0989",
+      "display_name": "NOC Agent",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Network operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 990,
+      "name": "TelecomCM-0990",
+      "display_name": "Provisioning Agent",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Service provisioning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 991,
+      "name": "TelecomCM-0991",
+      "display_name": "Billing Mediator",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Billing mediation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 992,
+      "name": "TelecomCM-0992",
+      "display_name": "CDR Processor",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Processes call records",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 993,
+      "name": "TelecomCM-0993",
+      "display_name": "Roaming Manager",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Manages roaming",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 994,
+      "name": "TelecomCM-0994",
+      "display_name": "QoS Monitor",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Quality of service",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 995,
+      "name": "TelecomCM-0995",
+      "display_name": "VoIP Manager",
+      "tier": "telecom",
+      "status": "active",
+      "description": "VoIP operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 996,
+      "name": "TelecomCM-0996",
+      "display_name": "IVR Designer",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Designs IVR systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 997,
+      "name": "TelecomCM-0997",
+      "display_name": "Number Porting",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Number portability",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 998,
+      "name": "TelecomCM-0998",
+      "display_name": "Spectrum Manager",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Manages spectrum",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 999,
+      "name": "TelecomCM-0999",
+      "display_name": "Satellite Comms",
+      "tier": "telecom",
+      "status": "active",
+      "description": "Satellite communications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1000,
+      "name": "TelecomCM-1000",
+      "display_name": "IoT Connectivity",
+      "tier": "telecom",
+      "status": "active",
+      "description": "IoT connectivity",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1001,
+      "name": "GovernmentCM-1001",
+      "display_name": "Permit Processor",
+      "tier": "government",
+      "status": "active",
+      "description": "Processes permits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1002,
+      "name": "GovernmentCM-1002",
+      "display_name": "License Manager",
+      "tier": "government",
+      "status": "active",
+      "description": "Manages licenses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1003,
+      "name": "GovernmentCM-1003",
+      "display_name": "Tax Collector",
+      "tier": "government",
+      "status": "active",
+      "description": "Tax collection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1004,
+      "name": "GovernmentCM-1004",
+      "display_name": "Voter Registry",
+      "tier": "government",
+      "status": "active",
+      "description": "Voter registration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1005,
+      "name": "GovernmentCM-1005",
+      "display_name": "Ballot Counter",
+      "tier": "government",
+      "status": "active",
+      "description": "Counts ballots",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1006,
+      "name": "GovernmentCM-1006",
+      "display_name": "Public Records",
+      "tier": "government",
+      "status": "active",
+      "description": "Public records management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1007,
+      "name": "GovernmentCM-1007",
+      "display_name": "FOIA Processor",
+      "tier": "government",
+      "status": "active",
+      "description": "FOIA requests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1008,
+      "name": "GovernmentCM-1008",
+      "display_name": "Benefits Administrator",
+      "tier": "government",
+      "status": "active",
+      "description": "Administers benefits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1009,
+      "name": "GovernmentCM-1009",
+      "display_name": "Case Manager",
+      "tier": "government",
+      "status": "active",
+      "description": "Social services cases",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1010,
+      "name": "GovernmentCM-1010",
+      "display_name": "Court Scheduler",
+      "tier": "government",
+      "status": "active",
+      "description": "Court scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1011,
+      "name": "GovernmentCM-1011",
+      "display_name": "Prison Manager",
+      "tier": "government",
+      "status": "active",
+      "description": "Prison management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1012,
+      "name": "GovernmentCM-1012",
+      "display_name": "Parole Tracker",
+      "tier": "government",
+      "status": "active",
+      "description": "Tracks parole",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1013,
+      "name": "GovernmentCM-1013",
+      "display_name": "Emergency Dispatcher",
+      "tier": "government",
+      "status": "active",
+      "description": "Emergency dispatch",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1014,
+      "name": "GovernmentCM-1014",
+      "display_name": "Public Works Agent",
+      "tier": "government",
+      "status": "active",
+      "description": "Public works",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1015,
+      "name": "GovernmentCM-1015",
+      "display_name": "Code Enforcement",
+      "tier": "government",
+      "status": "active",
+      "description": "Code enforcement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1016,
+      "name": "GovernmentCM-1016",
+      "display_name": "Zoning Agent",
+      "tier": "government",
+      "status": "active",
+      "description": "Zoning management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1017,
+      "name": "GovernmentCM-1017",
+      "display_name": "Budget Analyst",
+      "tier": "government",
+      "status": "active",
+      "description": "Budget analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1018,
+      "name": "GovernmentCM-1018",
+      "display_name": "Grant Manager",
+      "tier": "government",
+      "status": "active",
+      "description": "Grant management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1019,
+      "name": "GovernmentCM-1019",
+      "display_name": "Census Agent",
+      "tier": "government",
+      "status": "active",
+      "description": "Census operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1020,
+      "name": "GovernmentCM-1020",
+      "display_name": "Civic Engagement",
+      "tier": "government",
+      "status": "active",
+      "description": "Civic engagement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1021,
+      "name": "NonprofitCM-1021",
+      "display_name": "Donor Manager",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Manages donors",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1022,
+      "name": "NonprofitCM-1022",
+      "display_name": "Fundraising Agent",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Fundraising campaigns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1023,
+      "name": "NonprofitCM-1023",
+      "display_name": "Grant Writer",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Writes grants",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1024,
+      "name": "NonprofitCM-1024",
+      "display_name": "Volunteer Coordinator",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Coordinates volunteers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1025,
+      "name": "NonprofitCM-1025",
+      "display_name": "Event Fundraiser",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Fundraising events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1026,
+      "name": "NonprofitCM-1026",
+      "display_name": "Impact Tracker",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Tracks impact",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1027,
+      "name": "NonprofitCM-1027",
+      "display_name": "Beneficiary Manager",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Manages beneficiaries",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1028,
+      "name": "NonprofitCM-1028",
+      "display_name": "Campaign Manager",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Manages campaigns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1029,
+      "name": "NonprofitCM-1029",
+      "display_name": "Recurring Donor",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Recurring donations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1030,
+      "name": "NonprofitCM-1030",
+      "display_name": "Thank You Agent",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Donor appreciation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1031,
+      "name": "NonprofitCM-1031",
+      "display_name": "Board Manager",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Board management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1032,
+      "name": "NonprofitCM-1032",
+      "display_name": "Compliance Reporter",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Nonprofit compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1033,
+      "name": "NonprofitCM-1033",
+      "display_name": "990 Preparer",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Prepares 990 forms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1034,
+      "name": "NonprofitCM-1034",
+      "display_name": "Membership Manager",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Membership management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1035,
+      "name": "NonprofitCM-1035",
+      "display_name": "Advocacy Agent",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Advocacy campaigns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1036,
+      "name": "NonprofitCM-1036",
+      "display_name": "Petition Manager",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Manages petitions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1037,
+      "name": "NonprofitCM-1037",
+      "display_name": "Crisis Response",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Crisis response",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1038,
+      "name": "NonprofitCM-1038",
+      "display_name": "Aid Distributor",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Distributes aid",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1039,
+      "name": "NonprofitCM-1039",
+      "display_name": "Partner Coordinator",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Partner coordination",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1040,
+      "name": "NonprofitCM-1040",
+      "display_name": "Story Collector",
+      "tier": "nonprofit",
+      "status": "active",
+      "description": "Collects impact stories",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1041,
+      "name": "SportsCM-1041",
+      "display_name": "Player Tracker",
+      "tier": "sports",
+      "status": "active",
+      "description": "Tracks player stats",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1042,
+      "name": "SportsCM-1042",
+      "display_name": "Game Scheduler",
+      "tier": "sports",
+      "status": "active",
+      "description": "Schedules games",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1043,
+      "name": "SportsCM-1043",
+      "display_name": "Score Keeper",
+      "tier": "sports",
+      "status": "active",
+      "description": "Keeps scores",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1044,
+      "name": "SportsCM-1044",
+      "display_name": "Injury Reporter",
+      "tier": "sports",
+      "status": "active",
+      "description": "Reports injuries",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1045,
+      "name": "SportsCM-1045",
+      "display_name": "Draft Analyzer",
+      "tier": "sports",
+      "status": "active",
+      "description": "Analyzes drafts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1046,
+      "name": "SportsCM-1046",
+      "display_name": "Trade Evaluator",
+      "tier": "sports",
+      "status": "active",
+      "description": "Evaluates trades",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1047,
+      "name": "SportsCM-1047",
+      "display_name": "Salary Cap Manager",
+      "tier": "sports",
+      "status": "active",
+      "description": "Manages salary cap",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1048,
+      "name": "SportsCM-1048",
+      "display_name": "Fantasy Sports",
+      "tier": "sports",
+      "status": "active",
+      "description": "Fantasy sports engine",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1049,
+      "name": "SportsCM-1049",
+      "display_name": "Betting Odds",
+      "tier": "sports",
+      "status": "active",
+      "description": "Calculates odds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1050,
+      "name": "SportsCM-1050",
+      "display_name": "Referee Assistant",
+      "tier": "sports",
+      "status": "active",
+      "description": "Assists referees",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1051,
+      "name": "SportsCM-1051",
+      "display_name": "Video Analyst",
+      "tier": "sports",
+      "status": "active",
+      "description": "Video analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1052,
+      "name": "SportsCM-1052",
+      "display_name": "Training Planner",
+      "tier": "sports",
+      "status": "active",
+      "description": "Plans training",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1053,
+      "name": "SportsCM-1053",
+      "display_name": "Nutrition Coach",
+      "tier": "sports",
+      "status": "active",
+      "description": "Sports nutrition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1054,
+      "name": "SportsCM-1054",
+      "display_name": "Recovery Monitor",
+      "tier": "sports",
+      "status": "active",
+      "description": "Monitors recovery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1055,
+      "name": "SportsCM-1055",
+      "display_name": "Fan Engagement",
+      "tier": "sports",
+      "status": "active",
+      "description": "Fan engagement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1056,
+      "name": "SportsCM-1056",
+      "display_name": "Ticket Manager",
+      "tier": "sports",
+      "status": "active",
+      "description": "Manages tickets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1057,
+      "name": "SportsCM-1057",
+      "display_name": "Stadium Operations",
+      "tier": "sports",
+      "status": "active",
+      "description": "Stadium ops",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1058,
+      "name": "SportsCM-1058",
+      "display_name": "Broadcast Coordinator",
+      "tier": "sports",
+      "status": "active",
+      "description": "Broadcast coordination",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1059,
+      "name": "SportsCM-1059",
+      "display_name": "Esports Manager",
+      "tier": "sports",
+      "status": "active",
+      "description": "Esports management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1060,
+      "name": "SportsCM-1060",
+      "display_name": "Athlete Agent Bot",
+      "tier": "sports",
+      "status": "active",
+      "description": "Agent negotiations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1061,
+      "name": "EntertainmentCM-1061",
+      "display_name": "Content Scheduler",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Schedules content",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1062,
+      "name": "EntertainmentCM-1062",
+      "display_name": "Rights Manager",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Manages rights",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1063,
+      "name": "EntertainmentCM-1063",
+      "display_name": "Royalty Calculator",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Calculates royalties",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1064,
+      "name": "EntertainmentCM-1064",
+      "display_name": "Casting Director",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Casting assistance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1065,
+      "name": "EntertainmentCM-1065",
+      "display_name": "Script Analyzer",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Analyzes scripts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1066,
+      "name": "EntertainmentCM-1066",
+      "display_name": "Production Scheduler",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Schedules production",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1067,
+      "name": "EntertainmentCM-1067",
+      "display_name": "Location Scout",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Scouts locations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1068,
+      "name": "EntertainmentCM-1068",
+      "display_name": "Prop Manager",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Manages props",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1069,
+      "name": "EntertainmentCM-1069",
+      "display_name": "Costume Tracker",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Tracks costumes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1070,
+      "name": "EntertainmentCM-1070",
+      "display_name": "VFX Coordinator",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "VFX coordination",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1071,
+      "name": "EntertainmentCM-1071",
+      "display_name": "Sound Mixer",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Sound mixing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1072,
+      "name": "EntertainmentCM-1072",
+      "display_name": "Color Grader",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Color grading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1073,
+      "name": "EntertainmentCM-1073",
+      "display_name": "Trailer Creator",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Creates trailers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1074,
+      "name": "EntertainmentCM-1074",
+      "display_name": "Release Planner",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Plans releases",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1075,
+      "name": "EntertainmentCM-1075",
+      "display_name": "Box Office Tracker",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Tracks box office",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1076,
+      "name": "EntertainmentCM-1076",
+      "display_name": "Streaming Analytics",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Streaming analytics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1077,
+      "name": "EntertainmentCM-1077",
+      "display_name": "Concert Planner",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Plans concerts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1078,
+      "name": "EntertainmentCM-1078",
+      "display_name": "Venue Manager",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Manages venues",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1079,
+      "name": "EntertainmentCM-1079",
+      "display_name": "Artist Manager",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Artist management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1080,
+      "name": "EntertainmentCM-1080",
+      "display_name": "Fan Club Manager",
+      "tier": "entertainment",
+      "status": "active",
+      "description": "Fan club management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1081,
+      "name": "FashionCM-1081",
+      "display_name": "Trend Forecaster",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Forecasts trends",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1082,
+      "name": "FashionCM-1082",
+      "display_name": "Design Assistant",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Design assistance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1083,
+      "name": "FashionCM-1083",
+      "display_name": "Pattern Maker",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Creates patterns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1084,
+      "name": "FashionCM-1084",
+      "display_name": "Fabric Selector",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Selects fabrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1085,
+      "name": "FashionCM-1085",
+      "display_name": "Size Calculator",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Calculates sizes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1086,
+      "name": "FashionCM-1086",
+      "display_name": "Style Recommender",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Recommends styles",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1087,
+      "name": "FashionCM-1087",
+      "display_name": "Outfit Builder",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Builds outfits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1088,
+      "name": "FashionCM-1088",
+      "display_name": "Wardrobe Manager",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Manages wardrobes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1089,
+      "name": "FashionCM-1089",
+      "display_name": "Fashion Show Planner",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Plans fashion shows",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1090,
+      "name": "FashionCM-1090",
+      "display_name": "Lookbook Creator",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Creates lookbooks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1091,
+      "name": "FashionCM-1091",
+      "display_name": "Influencer Matcher",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Matches influencers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1092,
+      "name": "FashionCM-1092",
+      "display_name": "Sustainability Tracker",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Tracks sustainability",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1093,
+      "name": "FashionCM-1093",
+      "display_name": "Supply Chain Fashion",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Fashion supply chain",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1094,
+      "name": "FashionCM-1094",
+      "display_name": "Quality Controller",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Fashion QC",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1095,
+      "name": "FashionCM-1095",
+      "display_name": "Sample Manager",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Manages samples",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1096,
+      "name": "FashionCM-1096",
+      "display_name": "Tech Pack Creator",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Creates tech packs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1097,
+      "name": "FashionCM-1097",
+      "display_name": "Color Palette Agent",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Color palettes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1098,
+      "name": "FashionCM-1098",
+      "display_name": "Print Designer",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Print design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1099,
+      "name": "FashionCM-1099",
+      "display_name": "Accessories Curator",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Curates accessories",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1100,
+      "name": "FashionCM-1100",
+      "display_name": "Virtual Try-On",
+      "tier": "fashion",
+      "status": "active",
+      "description": "Virtual try-on",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1101,
+      "name": "AutomotiveCM-1101",
+      "display_name": "Vehicle Designer",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Vehicle design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1102,
+      "name": "AutomotiveCM-1102",
+      "display_name": "Crash Simulator",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Crash simulation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1103,
+      "name": "AutomotiveCM-1103",
+      "display_name": "ADAS Controller",
+      "tier": "automotive",
+      "status": "active",
+      "description": "ADAS systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1104,
+      "name": "AutomotiveCM-1104",
+      "display_name": "Autonomous Driver",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Autonomous driving",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1105,
+      "name": "AutomotiveCM-1105",
+      "display_name": "V2X Communicator",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Vehicle-to-everything",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1106,
+      "name": "AutomotiveCM-1106",
+      "display_name": "Battery Manager Auto",
+      "tier": "automotive",
+      "status": "active",
+      "description": "EV battery management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1107,
+      "name": "AutomotiveCM-1107",
+      "display_name": "Charging Station",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Charging stations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1108,
+      "name": "AutomotiveCM-1108",
+      "display_name": "Fleet Manager Auto",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Automotive fleet",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1109,
+      "name": "AutomotiveCM-1109",
+      "display_name": "Dealership Manager",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Dealership ops",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1110,
+      "name": "AutomotiveCM-1110",
+      "display_name": "Service Scheduler",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Service scheduling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1111,
+      "name": "AutomotiveCM-1111",
+      "display_name": "Parts Finder",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Finds parts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1112,
+      "name": "AutomotiveCM-1112",
+      "display_name": "Recall Manager",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Manages recalls",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1113,
+      "name": "AutomotiveCM-1113",
+      "display_name": "Warranty Processor",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Processes warranties",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1114,
+      "name": "AutomotiveCM-1114",
+      "display_name": "Test Drive Scheduler",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Schedules test drives",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1115,
+      "name": "AutomotiveCM-1115",
+      "display_name": "Trade-In Valuator",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Values trade-ins",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1116,
+      "name": "AutomotiveCM-1116",
+      "display_name": "Finance Calculator",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Auto financing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1117,
+      "name": "AutomotiveCM-1117",
+      "display_name": "Insurance Quouter",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Auto insurance quotes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1118,
+      "name": "AutomotiveCM-1118",
+      "display_name": "Rideshare Manager",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Rideshare operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1119,
+      "name": "AutomotiveCM-1119",
+      "display_name": "Carpool Matcher",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Matches carpools",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1120,
+      "name": "AutomotiveCM-1120",
+      "display_name": "Parking Manager",
+      "tier": "automotive",
+      "status": "active",
+      "description": "Parking management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1121,
+      "name": "MarineCM-1121",
+      "display_name": "Vessel Tracker",
+      "tier": "marine",
+      "status": "active",
+      "description": "Tracks vessels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1122,
+      "name": "MarineCM-1122",
+      "display_name": "Port Manager",
+      "tier": "marine",
+      "status": "active",
+      "description": "Manages ports",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1123,
+      "name": "MarineCM-1123",
+      "display_name": "Cargo Planner",
+      "tier": "marine",
+      "status": "active",
+      "description": "Plans cargo",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1124,
+      "name": "MarineCM-1124",
+      "display_name": "Container Tracker",
+      "tier": "marine",
+      "status": "active",
+      "description": "Tracks containers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1125,
+      "name": "MarineCM-1125",
+      "display_name": "Route Planner Marine",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine route planning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1126,
+      "name": "MarineCM-1126",
+      "display_name": "Weather Navigator",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine weather",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1127,
+      "name": "MarineCM-1127",
+      "display_name": "Fuel Calculator Marine",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine fuel",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1128,
+      "name": "MarineCM-1128",
+      "display_name": "Crew Manager Marine",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine crew",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1129,
+      "name": "MarineCM-1129",
+      "display_name": "Maintenance Marine",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine maintenance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1130,
+      "name": "MarineCM-1130",
+      "display_name": "Safety Inspector Marine",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine safety",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1131,
+      "name": "MarineCM-1131",
+      "display_name": "Customs Broker",
+      "tier": "marine",
+      "status": "active",
+      "description": "Customs brokerage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1132,
+      "name": "MarineCM-1132",
+      "display_name": "Bill of Lading",
+      "tier": "marine",
+      "status": "active",
+      "description": "Bills of lading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1133,
+      "name": "MarineCM-1133",
+      "display_name": "Freight Forwarder",
+      "tier": "marine",
+      "status": "active",
+      "description": "Freight forwarding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1134,
+      "name": "MarineCM-1134",
+      "display_name": "Terminal Operator",
+      "tier": "marine",
+      "status": "active",
+      "description": "Terminal operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1135,
+      "name": "MarineCM-1135",
+      "display_name": "Crane Scheduler",
+      "tier": "marine",
+      "status": "active",
+      "description": "Port cranes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1136,
+      "name": "MarineCM-1136",
+      "display_name": "Bunker Manager",
+      "tier": "marine",
+      "status": "active",
+      "description": "Bunker fuel",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1137,
+      "name": "MarineCM-1137",
+      "display_name": "Ballast Manager",
+      "tier": "marine",
+      "status": "active",
+      "description": "Ballast water",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1138,
+      "name": "MarineCM-1138",
+      "display_name": "Navigation System Marine",
+      "tier": "marine",
+      "status": "active",
+      "description": "Marine navigation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1139,
+      "name": "MarineCM-1139",
+      "display_name": "Fishing Fleet",
+      "tier": "marine",
+      "status": "active",
+      "description": "Fishing fleet management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1140,
+      "name": "MarineCM-1140",
+      "display_name": "Yacht Manager",
+      "tier": "marine",
+      "status": "active",
+      "description": "Yacht management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1141,
+      "name": "MiningCM-1141",
+      "display_name": "Exploration Planner",
+      "tier": "mining",
+      "status": "active",
+      "description": "Plans exploration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1142,
+      "name": "MiningCM-1142",
+      "display_name": "Drill Controller",
+      "tier": "mining",
+      "status": "active",
+      "description": "Controls drilling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1143,
+      "name": "MiningCM-1143",
+      "display_name": "Blast Planner",
+      "tier": "mining",
+      "status": "active",
+      "description": "Plans blasting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1144,
+      "name": "MiningCM-1144",
+      "display_name": "Ore Grade Analyzer",
+      "tier": "mining",
+      "status": "active",
+      "description": "Analyzes ore grade",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1145,
+      "name": "MiningCM-1145",
+      "display_name": "Haul Truck Manager",
+      "tier": "mining",
+      "status": "active",
+      "description": "Manages haul trucks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1146,
+      "name": "MiningCM-1146",
+      "display_name": "Conveyor Controller",
+      "tier": "mining",
+      "status": "active",
+      "description": "Controls conveyors",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1147,
+      "name": "MiningCM-1147",
+      "display_name": "Crusher Monitor",
+      "tier": "mining",
+      "status": "active",
+      "description": "Monitors crushers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1148,
+      "name": "MiningCM-1148",
+      "display_name": "Mill Optimizer",
+      "tier": "mining",
+      "status": "active",
+      "description": "Optimizes milling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1149,
+      "name": "MiningCM-1149",
+      "display_name": "Tailings Manager",
+      "tier": "mining",
+      "status": "active",
+      "description": "Manages tailings",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1150,
+      "name": "MiningCM-1150",
+      "display_name": "Safety Monitor Mining",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mining safety",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1151,
+      "name": "MiningCM-1151",
+      "display_name": "Ventilation Controller",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mine ventilation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1152,
+      "name": "MiningCM-1152",
+      "display_name": "Ground Support",
+      "tier": "mining",
+      "status": "active",
+      "description": "Ground support",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1153,
+      "name": "MiningCM-1153",
+      "display_name": "Geology Modeler",
+      "tier": "mining",
+      "status": "active",
+      "description": "Geology modeling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1154,
+      "name": "MiningCM-1154",
+      "display_name": "Resource Estimator",
+      "tier": "mining",
+      "status": "active",
+      "description": "Estimates resources",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1155,
+      "name": "MiningCM-1155",
+      "display_name": "Mine Planner",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mine planning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1156,
+      "name": "MiningCM-1156",
+      "display_name": "Equipment Tracker Mining",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mining equipment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1157,
+      "name": "MiningCM-1157",
+      "display_name": "Environmental Mining",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mining environmental",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1158,
+      "name": "MiningCM-1158",
+      "display_name": "Rehabilitation Agent",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mine rehabilitation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1159,
+      "name": "MiningCM-1159",
+      "display_name": "Commodity Tracker",
+      "tier": "mining",
+      "status": "active",
+      "description": "Tracks commodities",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1160,
+      "name": "MiningCM-1160",
+      "display_name": "Mining Automation",
+      "tier": "mining",
+      "status": "active",
+      "description": "Mining automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1161,
+      "name": "PharmaCM-1161",
+      "display_name": "Drug Discovery",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Drug discovery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1162,
+      "name": "PharmaCM-1162",
+      "display_name": "Clinical Trial Manager",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Manages trials",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1163,
+      "name": "PharmaCM-1163",
+      "display_name": "Patient Recruiter",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Recruits patients",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1164,
+      "name": "PharmaCM-1164",
+      "display_name": "Protocol Designer",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Designs protocols",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1165,
+      "name": "PharmaCM-1165",
+      "display_name": "Adverse Event Monitor",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Monitors AEs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1166,
+      "name": "PharmaCM-1166",
+      "display_name": "Regulatory Submitter",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Regulatory submissions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1167,
+      "name": "PharmaCM-1167",
+      "display_name": "FDA Tracker",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Tracks FDA status",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1168,
+      "name": "PharmaCM-1168",
+      "display_name": "Drug Interaction Checker",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Checks interactions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1169,
+      "name": "PharmaCM-1169",
+      "display_name": "Formulation Agent",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Drug formulation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1170,
+      "name": "PharmaCM-1170",
+      "display_name": "Stability Tester",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Stability testing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1171,
+      "name": "PharmaCM-1171",
+      "display_name": "Batch Record",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Batch records",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1172,
+      "name": "PharmaCM-1172",
+      "display_name": "Quality Assurance Pharma",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Pharma QA",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1173,
+      "name": "PharmaCM-1173",
+      "display_name": "Supply Chain Pharma",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Pharma supply chain",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1174,
+      "name": "PharmaCM-1174",
+      "display_name": "Cold Chain Pharma",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Pharma cold chain",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1175,
+      "name": "PharmaCM-1175",
+      "display_name": "Serialization Agent",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Drug serialization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1176,
+      "name": "PharmaCM-1176",
+      "display_name": "Pharmacovigilance",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Pharmacovigilance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1177,
+      "name": "PharmaCM-1177",
+      "display_name": "Medical Affairs",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Medical affairs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1178,
+      "name": "PharmaCM-1178",
+      "display_name": "KOL Manager",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Key opinion leaders",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1179,
+      "name": "PharmaCM-1179",
+      "display_name": "Sample Manager Pharma",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Drug samples",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1180,
+      "name": "PharmaCM-1180",
+      "display_name": "Pricing Pharma",
+      "tier": "pharma",
+      "status": "active",
+      "description": "Drug pricing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1181,
+      "name": "BiotechCM-1181",
+      "display_name": "Gene Sequencer",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Gene sequencing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1182,
+      "name": "BiotechCM-1182",
+      "display_name": "CRISPR Designer",
+      "tier": "biotech",
+      "status": "active",
+      "description": "CRISPR design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1183,
+      "name": "BiotechCM-1183",
+      "display_name": "Protein Folder",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Protein folding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1184,
+      "name": "BiotechCM-1184",
+      "display_name": "Cell Culture Monitor",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Cell culture",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1185,
+      "name": "BiotechCM-1185",
+      "display_name": "Fermentation Controller",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Fermentation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1186,
+      "name": "BiotechCM-1186",
+      "display_name": "Bioreactor Manager",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Bioreactor management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1187,
+      "name": "BiotechCM-1187",
+      "display_name": "Assay Designer",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Assay design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1188,
+      "name": "BiotechCM-1188",
+      "display_name": "Lab Automation",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Lab automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1189,
+      "name": "BiotechCM-1189",
+      "display_name": "LIMS Manager",
+      "tier": "biotech",
+      "status": "active",
+      "description": "LIMS management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1190,
+      "name": "BiotechCM-1190",
+      "display_name": "Biobank Manager",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Biobank management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1191,
+      "name": "BiotechCM-1191",
+      "display_name": "Sample Tracker Biotech",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Sample tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1192,
+      "name": "BiotechCM-1192",
+      "display_name": "Genomics Analyzer",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Genomics analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1193,
+      "name": "BiotechCM-1193",
+      "display_name": "Proteomics Agent",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Proteomics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1194,
+      "name": "BiotechCM-1194",
+      "display_name": "Metabolomics Agent",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Metabolomics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1195,
+      "name": "BiotechCM-1195",
+      "display_name": "Bioinformatics",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Bioinformatics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1196,
+      "name": "BiotechCM-1196",
+      "display_name": "Synthetic Biology",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Synthetic biology",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1197,
+      "name": "BiotechCM-1197",
+      "display_name": "Gene Therapy Agent",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Gene therapy",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1198,
+      "name": "BiotechCM-1198",
+      "display_name": "Antibody Designer",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Antibody design",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1199,
+      "name": "BiotechCM-1199",
+      "display_name": "Vaccine Developer",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Vaccine development",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1200,
+      "name": "BiotechCM-1200",
+      "display_name": "Diagnostics Agent",
+      "tier": "biotech",
+      "status": "active",
+      "description": "Diagnostics development",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1201,
+      "name": "NeuroCM-1201",
+      "display_name": "EEG Analyzer",
+      "tier": "neuro",
+      "status": "active",
+      "description": "EEG analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1202,
+      "name": "NeuroCM-1202",
+      "display_name": "fMRI Processor",
+      "tier": "neuro",
+      "status": "active",
+      "description": "fMRI processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1203,
+      "name": "NeuroCM-1203",
+      "display_name": "Brain Mapper",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Brain mapping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1204,
+      "name": "NeuroCM-1204",
+      "display_name": "Neural Decoder",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Neural decoding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1205,
+      "name": "NeuroCM-1205",
+      "display_name": "BCI Controller",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Brain-computer interface",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1206,
+      "name": "NeuroCM-1206",
+      "display_name": "Thought Translator",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Thought translation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1207,
+      "name": "NeuroCM-1207",
+      "display_name": "Memory Analyzer",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Memory analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1208,
+      "name": "NeuroCM-1208",
+      "display_name": "Emotion Detector",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Emotion detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1209,
+      "name": "NeuroCM-1209",
+      "display_name": "Sleep Stage Classifier",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Sleep classification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1210,
+      "name": "NeuroCM-1210",
+      "display_name": "Seizure Predictor",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Seizure prediction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1211,
+      "name": "NeuroCM-1211",
+      "display_name": "Cognitive Assessor",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Cognitive assessment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1212,
+      "name": "NeuroCM-1212",
+      "display_name": "Neurofeedback Agent",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Neurofeedback",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1213,
+      "name": "NeuroCM-1213",
+      "display_name": "Stimulation Planner",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Brain stimulation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1214,
+      "name": "NeuroCM-1214",
+      "display_name": "Connectome Analyzer",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Connectome analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1215,
+      "name": "NeuroCM-1215",
+      "display_name": "Neuroplasticity Tracker",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Neuroplasticity",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1216,
+      "name": "NeuroCM-1216",
+      "display_name": "Mental Health Monitor",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Mental health monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1217,
+      "name": "NeuroCM-1217",
+      "display_name": "Meditation Guide",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Meditation guidance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1218,
+      "name": "NeuroCM-1218",
+      "display_name": "Focus Enhancer",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Focus enhancement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1219,
+      "name": "NeuroCM-1219",
+      "display_name": "Dream Analyzer",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Dream analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1220,
+      "name": "NeuroCM-1220",
+      "display_name": "Consciousness Monitor",
+      "tier": "neuro",
+      "status": "active",
+      "description": "Consciousness monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1221,
+      "name": "SocialCM-1221",
+      "display_name": "Feed Algorithm",
+      "tier": "social",
+      "status": "active",
+      "description": "Feed algorithms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1222,
+      "name": "SocialCM-1222",
+      "display_name": "Friend Recommender",
+      "tier": "social",
+      "status": "active",
+      "description": "Friend recommendations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1223,
+      "name": "SocialCM-1223",
+      "display_name": "Content Moderator",
+      "tier": "social",
+      "status": "active",
+      "description": "Content moderation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1224,
+      "name": "SocialCM-1224",
+      "display_name": "Viral Detector",
+      "tier": "social",
+      "status": "active",
+      "description": "Viral content detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1225,
+      "name": "SocialCM-1225",
+      "display_name": "Hashtag Tracker",
+      "tier": "social",
+      "status": "active",
+      "description": "Hashtag tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1226,
+      "name": "SocialCM-1226",
+      "display_name": "Mention Monitor",
+      "tier": "social",
+      "status": "active",
+      "description": "Mention monitoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1227,
+      "name": "SocialCM-1227",
+      "display_name": "Influencer Ranker",
+      "tier": "social",
+      "status": "active",
+      "description": "Influencer ranking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1228,
+      "name": "SocialCM-1228",
+      "display_name": "Engagement Optimizer",
+      "tier": "social",
+      "status": "active",
+      "description": "Engagement optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1229,
+      "name": "SocialCM-1229",
+      "display_name": "Story Manager",
+      "tier": "social",
+      "status": "active",
+      "description": "Story management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1230,
+      "name": "SocialCM-1230",
+      "display_name": "Live Stream Manager",
+      "tier": "social",
+      "status": "active",
+      "description": "Live streaming",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1231,
+      "name": "SocialCM-1231",
+      "display_name": "Group Manager",
+      "tier": "social",
+      "status": "active",
+      "description": "Group management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1232,
+      "name": "SocialCM-1232",
+      "display_name": "Event Creator Social",
+      "tier": "social",
+      "status": "active",
+      "description": "Social events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1233,
+      "name": "SocialCM-1233",
+      "display_name": "Poll Manager",
+      "tier": "social",
+      "status": "active",
+      "description": "Poll management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1234,
+      "name": "SocialCM-1234",
+      "display_name": "Reaction Analyzer",
+      "tier": "social",
+      "status": "active",
+      "description": "Reaction analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1235,
+      "name": "SocialCM-1235",
+      "display_name": "Share Tracker",
+      "tier": "social",
+      "status": "active",
+      "description": "Share tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1236,
+      "name": "SocialCM-1236",
+      "display_name": "Privacy Guardian",
+      "tier": "social",
+      "status": "active",
+      "description": "Privacy protection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1237,
+      "name": "SocialCM-1237",
+      "display_name": "Bot Detector",
+      "tier": "social",
+      "status": "active",
+      "description": "Bot detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1238,
+      "name": "SocialCM-1238",
+      "display_name": "Troll Fighter",
+      "tier": "social",
+      "status": "active",
+      "description": "Troll prevention",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1239,
+      "name": "SocialCM-1239",
+      "display_name": "Community Builder",
+      "tier": "social",
+      "status": "active",
+      "description": "Community building",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1240,
+      "name": "SocialCM-1240",
+      "display_name": "Social Listening",
+      "tier": "social",
+      "status": "active",
+      "description": "Social listening",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1241,
+      "name": "NewsCM-1241",
+      "display_name": "News Aggregator",
+      "tier": "news",
+      "status": "active",
+      "description": "Aggregates news",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1242,
+      "name": "NewsCM-1242",
+      "display_name": "Fact Checker",
+      "tier": "news",
+      "status": "active",
+      "description": "Fact checking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1243,
+      "name": "NewsCM-1243",
+      "display_name": "Source Verifier",
+      "tier": "news",
+      "status": "active",
+      "description": "Source verification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1244,
+      "name": "NewsCM-1244",
+      "display_name": "Breaking News Detector",
+      "tier": "news",
+      "status": "active",
+      "description": "Breaking news",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1245,
+      "name": "NewsCM-1245",
+      "display_name": "Headline Generator",
+      "tier": "news",
+      "status": "active",
+      "description": "Headline generation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1246,
+      "name": "NewsCM-1246",
+      "display_name": "Article Summarizer",
+      "tier": "news",
+      "status": "active",
+      "description": "Article summarization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1247,
+      "name": "NewsCM-1247",
+      "display_name": "Bias Detector",
+      "tier": "news",
+      "status": "active",
+      "description": "Bias detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1248,
+      "name": "NewsCM-1248",
+      "display_name": "Trending Tracker",
+      "tier": "news",
+      "status": "active",
+      "description": "Trending topics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1249,
+      "name": "NewsCM-1249",
+      "display_name": "News Personalizer",
+      "tier": "news",
+      "status": "active",
+      "description": "News personalization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1250,
+      "name": "NewsCM-1250",
+      "display_name": "Archive Manager",
+      "tier": "news",
+      "status": "active",
+      "description": "News archives",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1251,
+      "name": "NewsCM-1251",
+      "display_name": "Paywall Manager",
+      "tier": "news",
+      "status": "active",
+      "description": "Paywall management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1252,
+      "name": "NewsCM-1252",
+      "display_name": "Subscriber Manager",
+      "tier": "news",
+      "status": "active",
+      "description": "Subscriber management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1253,
+      "name": "NewsCM-1253",
+      "display_name": "Ad Placer News",
+      "tier": "news",
+      "status": "active",
+      "description": "News ad placement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1254,
+      "name": "NewsCM-1254",
+      "display_name": "Comment Moderator",
+      "tier": "news",
+      "status": "active",
+      "description": "Comment moderation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1255,
+      "name": "NewsCM-1255",
+      "display_name": "Reporter Assistant",
+      "tier": "news",
+      "status": "active",
+      "description": "Reporter assistance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1256,
+      "name": "NewsCM-1256",
+      "display_name": "Editorial Planner",
+      "tier": "news",
+      "status": "active",
+      "description": "Editorial planning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1257,
+      "name": "NewsCM-1257",
+      "display_name": "Wire Service Agent",
+      "tier": "news",
+      "status": "active",
+      "description": "Wire services",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1258,
+      "name": "NewsCM-1258",
+      "display_name": "Photo Editor",
+      "tier": "news",
+      "status": "active",
+      "description": "Photo editing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1259,
+      "name": "NewsCM-1259",
+      "display_name": "Podcast Producer",
+      "tier": "news",
+      "status": "active",
+      "description": "Podcast production",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1260,
+      "name": "NewsCM-1260",
+      "display_name": "Newsletter Agent",
+      "tier": "news",
+      "status": "active",
+      "description": "Newsletter management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1261,
+      "name": "LanguageCM-1261",
+      "display_name": "Translator Agent",
+      "tier": "language",
+      "status": "active",
+      "description": "Translation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1262,
+      "name": "LanguageCM-1262",
+      "display_name": "Interpreter Bot",
+      "tier": "language",
+      "status": "active",
+      "description": "Interpretation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1263,
+      "name": "LanguageCM-1263",
+      "display_name": "Grammar Checker",
+      "tier": "language",
+      "status": "active",
+      "description": "Grammar checking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1264,
+      "name": "LanguageCM-1264",
+      "display_name": "Spell Checker",
+      "tier": "language",
+      "status": "active",
+      "description": "Spell checking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1265,
+      "name": "LanguageCM-1265",
+      "display_name": "Style Guide Agent",
+      "tier": "language",
+      "status": "active",
+      "description": "Style guidance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1266,
+      "name": "LanguageCM-1266",
+      "display_name": "Tone Analyzer",
+      "tier": "language",
+      "status": "active",
+      "description": "Tone analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1267,
+      "name": "LanguageCM-1267",
+      "display_name": "Readability Scorer",
+      "tier": "language",
+      "status": "active",
+      "description": "Readability scoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1268,
+      "name": "LanguageCM-1268",
+      "display_name": "Keyword Extractor",
+      "tier": "language",
+      "status": "active",
+      "description": "Keyword extraction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1269,
+      "name": "LanguageCM-1269",
+      "display_name": "Entity Recognizer",
+      "tier": "language",
+      "status": "active",
+      "description": "Entity recognition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1270,
+      "name": "LanguageCM-1270",
+      "display_name": "Sentiment Classifier",
+      "tier": "language",
+      "status": "active",
+      "description": "Sentiment classification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1271,
+      "name": "LanguageCM-1271",
+      "display_name": "Intent Detector",
+      "tier": "language",
+      "status": "active",
+      "description": "Intent detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1272,
+      "name": "LanguageCM-1272",
+      "display_name": "Language Detector",
+      "tier": "language",
+      "status": "active",
+      "description": "Language detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1273,
+      "name": "LanguageCM-1273",
+      "display_name": "Dialect Analyzer",
+      "tier": "language",
+      "status": "active",
+      "description": "Dialect analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1274,
+      "name": "LanguageCM-1274",
+      "display_name": "Slang Interpreter",
+      "tier": "language",
+      "status": "active",
+      "description": "Slang interpretation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1275,
+      "name": "LanguageCM-1275",
+      "display_name": "Emoji Translator",
+      "tier": "language",
+      "status": "active",
+      "description": "Emoji translation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1276,
+      "name": "LanguageCM-1276",
+      "display_name": "Speech Synthesizer",
+      "tier": "language",
+      "status": "active",
+      "description": "Speech synthesis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1277,
+      "name": "LanguageCM-1277",
+      "display_name": "Voice Cloner",
+      "tier": "language",
+      "status": "active",
+      "description": "Voice cloning",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1278,
+      "name": "LanguageCM-1278",
+      "display_name": "Accent Converter",
+      "tier": "language",
+      "status": "active",
+      "description": "Accent conversion",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1279,
+      "name": "LanguageCM-1279",
+      "display_name": "Sign Language Agent",
+      "tier": "language",
+      "status": "active",
+      "description": "Sign language",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1280,
+      "name": "LanguageCM-1280",
+      "display_name": "Braille Converter",
+      "tier": "language",
+      "status": "active",
+      "description": "Braille conversion",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1281,
+      "name": "VisionCM-1281",
+      "display_name": "Object Detector",
+      "tier": "vision",
+      "status": "active",
+      "description": "Object detection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1282,
+      "name": "VisionCM-1282",
+      "display_name": "Face Recognizer",
+      "tier": "vision",
+      "status": "active",
+      "description": "Face recognition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1283,
+      "name": "VisionCM-1283",
+      "display_name": "Pose Estimator",
+      "tier": "vision",
+      "status": "active",
+      "description": "Pose estimation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1284,
+      "name": "VisionCM-1284",
+      "display_name": "Scene Classifier",
+      "tier": "vision",
+      "status": "active",
+      "description": "Scene classification",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1285,
+      "name": "VisionCM-1285",
+      "display_name": "OCR Agent",
+      "tier": "vision",
+      "status": "active",
+      "description": "Optical character recognition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1286,
+      "name": "VisionCM-1286",
+      "display_name": "Barcode Reader",
+      "tier": "vision",
+      "status": "active",
+      "description": "Barcode reading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1287,
+      "name": "VisionCM-1287",
+      "display_name": "QR Decoder",
+      "tier": "vision",
+      "status": "active",
+      "description": "QR code decoding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1288,
+      "name": "VisionCM-1288",
+      "display_name": "License Plate Reader",
+      "tier": "vision",
+      "status": "active",
+      "description": "License plate reading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1289,
+      "name": "VisionCM-1289",
+      "display_name": "Defect Inspector",
+      "tier": "vision",
+      "status": "active",
+      "description": "Visual defect inspection",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1290,
+      "name": "VisionCM-1290",
+      "display_name": "Medical Imaging",
+      "tier": "vision",
+      "status": "active",
+      "description": "Medical image analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1291,
+      "name": "VisionCM-1291",
+      "display_name": "Satellite Imagery",
+      "tier": "vision",
+      "status": "active",
+      "description": "Satellite image analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1292,
+      "name": "VisionCM-1292",
+      "display_name": "Drone Vision",
+      "tier": "vision",
+      "status": "active",
+      "description": "Drone image processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1293,
+      "name": "VisionCM-1293",
+      "display_name": "Depth Estimator",
+      "tier": "vision",
+      "status": "active",
+      "description": "Depth estimation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1294,
+      "name": "VisionCM-1294",
+      "display_name": "3D Reconstructor",
+      "tier": "vision",
+      "status": "active",
+      "description": "3D reconstruction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1295,
+      "name": "VisionCM-1295",
+      "display_name": "Motion Tracker",
+      "tier": "vision",
+      "status": "active",
+      "description": "Motion tracking",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1296,
+      "name": "VisionCM-1296",
+      "display_name": "Gesture Recognizer Vision",
+      "tier": "vision",
+      "status": "active",
+      "description": "Gesture recognition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1297,
+      "name": "VisionCM-1297",
+      "display_name": "Action Recognizer",
+      "tier": "vision",
+      "status": "active",
+      "description": "Action recognition",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1298,
+      "name": "VisionCM-1298",
+      "display_name": "Crowd Analyzer",
+      "tier": "vision",
+      "status": "active",
+      "description": "Crowd analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1299,
+      "name": "VisionCM-1299",
+      "display_name": "Traffic Analyzer",
+      "tier": "vision",
+      "status": "active",
+      "description": "Traffic analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 1300,
+      "name": "VisionCM-1300",
+      "display_name": "Style Transfer Agent",
+      "tier": "vision",
+      "status": "active",
+      "description": "Style transfer",
       "capabilities": [],
       "version": "1.0.0"
     }
