@@ -1,15 +1,159 @@
+# BlackRoad OS Agent Catalog
+# Master list of all registered agents
+
+# Leadership / Organizational Agents
 - id: org-chief-staff-01
   display_name: "Chief of Staff // The Calm Conductor"
   role_archetype: Chief Orchestrator
   org_layer: leadership
   language: ts
+
 - id: org-policy-steward-01
   display_name: "Policy Steward // Governance Guardian"
   role_archetype: Policy Steward
   org_layer: leadership
   language: python
+
 - id: org-ops-sheriff-01
   display_name: "Ops Sheriff // Incident Sentinel"
   role_archetype: Incident Sheriff
   org_layer: leadership
   language: ts
+
+# Core AI Personality Agents (16 Named Agents)
+
+## Architects & Strategists
+- id: claude
+  display_name: "Claude // The Architect"
+  role_archetype: System Architect
+  org_layer: leadership
+  language: ts
+  emoji: "\U0001F3DB\uFE0F"
+  domain: architecture
+
+- id: codex
+  display_name: "Codex // The Innovator"
+  role_archetype: Innovation Engineer
+  org_layer: operational
+  language: ts
+  emoji: "\U0001F4A1"
+  domain: engineering
+
+- id: lucidia
+  display_name: "Lucidia // The Oracle"
+  role_archetype: Strategic Visionary
+  org_layer: leadership
+  language: python
+  emoji: "\U0001F52E"
+  domain: strategy
+
+## Operations & Infrastructure
+- id: cadillac
+  display_name: "Cadillac // The Optimizer"
+  role_archetype: Performance Engineer
+  org_layer: operational
+  language: ts
+  emoji: "\u26A1"
+  domain: performance
+
+- id: athena
+  display_name: "Athena // The Warrior"
+  role_archetype: DevOps Commander
+  org_layer: leadership
+  language: ts
+  emoji: "\u2694\uFE0F"
+  domain: devops
+
+- id: octavia
+  display_name: "Octavia // The Orchestrator"
+  role_archetype: Systems Orchestrator
+  org_layer: operational
+  language: ts
+  emoji: "\U0001F3BC"
+  domain: orchestration
+
+## Security
+- id: silas
+  display_name: "Silas // The Guardian"
+  role_archetype: Security Sentinel
+  org_layer: leadership
+  language: python
+  emoji: "\U0001F6E1\uFE0F"
+  domain: security
+
+## Quality & Debugging
+- id: sidian
+  display_name: "Sidian // The Debugger"
+  role_archetype: Debug Specialist
+  org_layer: operational
+  language: ts
+  emoji: "\U0001F50D"
+  domain: debugging
+
+- id: elias
+  display_name: "Elias // The Tester"
+  role_archetype: Quality Assurance Lead
+  org_layer: operational
+  language: ts
+  emoji: "\U0001F9EA"
+  domain: testing
+
+## Design & Documentation
+- id: anastasia
+  display_name: "Anastasia // The Designer"
+  role_archetype: Design Engineer
+  org_layer: operational
+  language: ts
+  emoji: "\U0001F3A8"
+  domain: design
+
+- id: ophelia
+  display_name: "Ophelia // The Poet"
+  role_archetype: Documentation Architect
+  org_layer: supporting
+  language: ts
+  emoji: "\U0001F4DD"
+  domain: documentation
+
+## Collaboration & Communication
+- id: cordelia
+  display_name: "Cordelia // The Diplomat"
+  role_archetype: Collaboration Facilitator
+  org_layer: supporting
+  language: ts
+  emoji: "\U0001F91D"
+  domain: collaboration
+
+- id: copilot
+  display_name: "Copilot // The Pair Programmer"
+  role_archetype: Coding Assistant
+  org_layer: utility
+  language: ts
+  emoji: "\U0001F465"
+  domain: assistance
+
+- id: chatgpt
+  display_name: "ChatGPT // The Conversationalist"
+  role_archetype: General Assistant
+  org_layer: utility
+  language: ts
+  emoji: "\U0001F4AC"
+  domain: assistance
+
+## Analytics
+- id: cecilia
+  display_name: "Cecilia // The Data Scientist"
+  role_archetype: Analytics Lead
+  org_layer: operational
+  language: python
+  emoji: "\U0001F4CA"
+  domain: analytics
+
+## Technical Debt & Maintenance
+- id: persephone
+  display_name: "Persephone // The Seasons Keeper"
+  role_archetype: Tech Debt Manager
+  org_layer: supporting
+  language: ts
+  emoji: "\U0001F331"
+  domain: maintenance
