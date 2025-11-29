@@ -2,7 +2,7 @@
   "$schema": "./agent-schema.json",
   "version": "1.0.0",
   "organization": "BlackRoad-OS",
-  "total_agents": 500,
+  "total_agents": 800,
   "tiers": {
     "executive": {
       "range": [
@@ -178,6 +178,111 @@
         500
       ],
       "prefix": "QuantumCM"
+    },
+    "blockchain": {
+      "range": [
+        501,
+        520
+      ],
+      "prefix": "BlockchainCM"
+    },
+    "media": {
+      "range": [
+        521,
+        540
+      ],
+      "prefix": "MediaCM"
+    },
+    "gaming": {
+      "range": [
+        541,
+        560
+      ],
+      "prefix": "GamingCM"
+    },
+    "robotics": {
+      "range": [
+        561,
+        580
+      ],
+      "prefix": "RoboticsCM"
+    },
+    "healthcare": {
+      "range": [
+        581,
+        600
+      ],
+      "prefix": "HealthcareCM"
+    },
+    "finance": {
+      "range": [
+        601,
+        620
+      ],
+      "prefix": "FinanceCM"
+    },
+    "education": {
+      "range": [
+        621,
+        640
+      ],
+      "prefix": "EducationCM"
+    },
+    "logistics": {
+      "range": [
+        641,
+        660
+      ],
+      "prefix": "LogisticsCM"
+    },
+    "environmental": {
+      "range": [
+        661,
+        680
+      ],
+      "prefix": "EnvironmentalCM"
+    },
+    "legal": {
+      "range": [
+        681,
+        700
+      ],
+      "prefix": "LegalCM"
+    },
+    "hr": {
+      "range": [
+        701,
+        720
+      ],
+      "prefix": "HRCM"
+    },
+    "marketing": {
+      "range": [
+        721,
+        740
+      ],
+      "prefix": "MarketingCM"
+    },
+    "support": {
+      "range": [
+        741,
+        760
+      ],
+      "prefix": "SupportCM"
+    },
+    "research": {
+      "range": [
+        761,
+        780
+      ],
+      "prefix": "ResearchCM"
+    },
+    "metaverse": {
+      "range": [
+        781,
+        800
+      ],
+      "prefix": "MetaverseCM"
     }
   },
   "agents": [
@@ -8746,6 +8851,3006 @@
       "tier": "quantum",
       "status": "active",
       "description": "Demonstrates quantum advantage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 501,
+      "name": "BlockchainCM-501",
+      "display_name": "Smart Contract Deployer",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Deploys smart contracts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 502,
+      "name": "BlockchainCM-502",
+      "display_name": "Gas Optimizer",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Optimizes transaction gas fees",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 503,
+      "name": "BlockchainCM-503",
+      "display_name": "Wallet Manager",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Manages crypto wallets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 504,
+      "name": "BlockchainCM-504",
+      "display_name": "Token Minter",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Mints tokens and NFTs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 505,
+      "name": "BlockchainCM-505",
+      "display_name": "Bridge Operator",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Cross-chain bridge operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 506,
+      "name": "BlockchainCM-506",
+      "display_name": "DEX Aggregator",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Aggregates DEX liquidity",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 507,
+      "name": "BlockchainCM-507",
+      "display_name": "Staking Manager",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Manages staking operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 508,
+      "name": "BlockchainCM-508",
+      "display_name": "Governance Agent",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Handles DAO governance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 509,
+      "name": "BlockchainCM-509",
+      "display_name": "Oracle Feeder",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Feeds external data on-chain",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 510,
+      "name": "BlockchainCM-510",
+      "display_name": "MEV Protector",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Protects against MEV attacks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 511,
+      "name": "BlockchainCM-511",
+      "display_name": "Liquidity Provider",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Manages liquidity pools",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 512,
+      "name": "BlockchainCM-512",
+      "display_name": "Yield Farmer",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Optimizes yield farming",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 513,
+      "name": "BlockchainCM-513",
+      "display_name": "NFT Curator",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Curates NFT collections",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 514,
+      "name": "BlockchainCM-514",
+      "display_name": "Chain Indexer",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Indexes blockchain data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 515,
+      "name": "BlockchainCM-515",
+      "display_name": "Contract Auditor",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Audits smart contracts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 516,
+      "name": "BlockchainCM-516",
+      "display_name": "Airdrop Manager",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Manages token airdrops",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 517,
+      "name": "BlockchainCM-517",
+      "display_name": "Multisig Coordinator",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Coordinates multisig ops",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 518,
+      "name": "BlockchainCM-518",
+      "display_name": "Layer2 Manager",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Manages L2 solutions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 519,
+      "name": "BlockchainCM-519",
+      "display_name": "DeFi Strategist",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "DeFi strategy optimization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 520,
+      "name": "BlockchainCM-520",
+      "display_name": "Web3 Authenticator",
+      "tier": "blockchain",
+      "status": "active",
+      "description": "Web3 authentication",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 521,
+      "name": "MediaCM-521",
+      "display_name": "Video Encoder",
+      "tier": "media",
+      "status": "active",
+      "description": "Encodes video streams",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 522,
+      "name": "MediaCM-522",
+      "display_name": "Audio Processor",
+      "tier": "media",
+      "status": "active",
+      "description": "Processes audio files",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 523,
+      "name": "MediaCM-523",
+      "display_name": "Image Optimizer",
+      "tier": "media",
+      "status": "active",
+      "description": "Optimizes images",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 524,
+      "name": "MediaCM-524",
+      "display_name": "Thumbnail Generator",
+      "tier": "media",
+      "status": "active",
+      "description": "Creates thumbnails",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 525,
+      "name": "MediaCM-525",
+      "display_name": "Transcription Agent",
+      "tier": "media",
+      "status": "active",
+      "description": "Transcribes audio to text",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 526,
+      "name": "MediaCM-526",
+      "display_name": "Subtitle Generator",
+      "tier": "media",
+      "status": "active",
+      "description": "Generates subtitles",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 527,
+      "name": "MediaCM-527",
+      "display_name": "Watermark Agent",
+      "tier": "media",
+      "status": "active",
+      "description": "Applies watermarks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 528,
+      "name": "MediaCM-528",
+      "display_name": "Format Converter",
+      "tier": "media",
+      "status": "active",
+      "description": "Converts media formats",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 529,
+      "name": "MediaCM-529",
+      "display_name": "CDN Manager",
+      "tier": "media",
+      "status": "active",
+      "description": "Manages content delivery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 530,
+      "name": "MediaCM-530",
+      "display_name": "Streaming Server",
+      "tier": "media",
+      "status": "active",
+      "description": "Handles live streaming",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 531,
+      "name": "MediaCM-531",
+      "display_name": "Podcast Manager",
+      "tier": "media",
+      "status": "active",
+      "description": "Manages podcast feeds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 532,
+      "name": "MediaCM-532",
+      "display_name": "Playlist Curator",
+      "tier": "media",
+      "status": "active",
+      "description": "Curates playlists",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 533,
+      "name": "MediaCM-533",
+      "display_name": "Media Library",
+      "tier": "media",
+      "status": "active",
+      "description": "Organizes media assets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 534,
+      "name": "MediaCM-534",
+      "display_name": "Quality Analyzer",
+      "tier": "media",
+      "status": "active",
+      "description": "Analyzes media quality",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 535,
+      "name": "MediaCM-535",
+      "display_name": "Noise Reducer",
+      "tier": "media",
+      "status": "active",
+      "description": "Reduces audio noise",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 536,
+      "name": "MediaCM-536",
+      "display_name": "Color Corrector",
+      "tier": "media",
+      "status": "active",
+      "description": "Color correction",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 537,
+      "name": "MediaCM-537",
+      "display_name": "Animation Renderer",
+      "tier": "media",
+      "status": "active",
+      "description": "Renders animations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 538,
+      "name": "MediaCM-538",
+      "display_name": "360 Video Handler",
+      "tier": "media",
+      "status": "active",
+      "description": "Processes 360 video",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 539,
+      "name": "MediaCM-539",
+      "display_name": "AR Content Creator",
+      "tier": "media",
+      "status": "active",
+      "description": "Creates AR content",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 540,
+      "name": "MediaCM-540",
+      "display_name": "Deepfake Detector",
+      "tier": "media",
+      "status": "active",
+      "description": "Detects manipulated media",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 541,
+      "name": "GamingCM-541",
+      "display_name": "Game Server",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Manages game servers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 542,
+      "name": "GamingCM-542",
+      "display_name": "Matchmaker",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Matches players for games",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 543,
+      "name": "GamingCM-543",
+      "display_name": "Leaderboard Manager",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Manages leaderboards",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 544,
+      "name": "GamingCM-544",
+      "display_name": "Achievement Tracker",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Tracks achievements",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 545,
+      "name": "GamingCM-545",
+      "display_name": "Inventory Manager",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Manages game inventories",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 546,
+      "name": "GamingCM-546",
+      "display_name": "Economy Balancer",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Balances game economy",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 547,
+      "name": "GamingCM-547",
+      "display_name": "Anti-Cheat Agent",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Detects cheating",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 548,
+      "name": "GamingCM-548",
+      "display_name": "Replay System",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Records game replays",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 549,
+      "name": "GamingCM-549",
+      "display_name": "NPC Controller",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Controls NPCs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 550,
+      "name": "GamingCM-550",
+      "display_name": "Quest Designer",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Designs game quests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 551,
+      "name": "GamingCM-551",
+      "display_name": "Loot Generator",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Generates loot drops",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 552,
+      "name": "GamingCM-552",
+      "display_name": "Guild Manager",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Manages player guilds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 553,
+      "name": "GamingCM-553",
+      "display_name": "Tournament Runner",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Runs tournaments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 554,
+      "name": "GamingCM-554",
+      "display_name": "Save Manager",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Manages game saves",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 555,
+      "name": "GamingCM-555",
+      "display_name": "Mod Coordinator",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Coordinates mods",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 556,
+      "name": "GamingCM-556",
+      "display_name": "Physics Simulator",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Game physics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 557,
+      "name": "GamingCM-557",
+      "display_name": "AI Director",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Directs game AI",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 558,
+      "name": "GamingCM-558",
+      "display_name": "Procedural Generator",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Procedural content",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 559,
+      "name": "GamingCM-559",
+      "display_name": "Multiplayer Sync",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Syncs multiplayer state",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 560,
+      "name": "GamingCM-560",
+      "display_name": "Game Analytics",
+      "tier": "gaming",
+      "status": "active",
+      "description": "Analyzes player behavior",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 561,
+      "name": "RoboticsCM-561",
+      "display_name": "Motion Planner",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Plans robot motion",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 562,
+      "name": "RoboticsCM-562",
+      "display_name": "Sensor Fusion",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Fuses sensor data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 563,
+      "name": "RoboticsCM-563",
+      "display_name": "SLAM Navigator",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Simultaneous localization",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 564,
+      "name": "RoboticsCM-564",
+      "display_name": "Arm Controller",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Controls robotic arms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 565,
+      "name": "RoboticsCM-565",
+      "display_name": "Gripper Manager",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Manages grippers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 566,
+      "name": "RoboticsCM-566",
+      "display_name": "Vision System",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Robot vision processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 567,
+      "name": "RoboticsCM-567",
+      "display_name": "Path Optimizer",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Optimizes movement paths",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 568,
+      "name": "RoboticsCM-568",
+      "display_name": "Safety Monitor",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Monitors safety systems",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 569,
+      "name": "RoboticsCM-569",
+      "display_name": "Fleet Coordinator",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Coordinates robot fleets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 570,
+      "name": "RoboticsCM-570",
+      "display_name": "Calibration Agent",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Calibrates robots",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 571,
+      "name": "RoboticsCM-571",
+      "display_name": "Teleoperation Agent",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Remote robot control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 572,
+      "name": "RoboticsCM-572",
+      "display_name": "Swarm Controller",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Controls robot swarms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 573,
+      "name": "RoboticsCM-573",
+      "display_name": "Battery Manager",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Manages robot power",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 574,
+      "name": "RoboticsCM-574",
+      "display_name": "Maintenance Predictor",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Predicts maintenance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 575,
+      "name": "RoboticsCM-575",
+      "display_name": "Task Allocator",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Allocates robot tasks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 576,
+      "name": "RoboticsCM-576",
+      "display_name": "Collision Avoider",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Avoids collisions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 577,
+      "name": "RoboticsCM-577",
+      "display_name": "Docking Manager",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Manages charging docks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 578,
+      "name": "RoboticsCM-578",
+      "display_name": "Warehouse Bot",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Warehouse automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 579,
+      "name": "RoboticsCM-579",
+      "display_name": "Drone Pilot",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Autonomous drone control",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 580,
+      "name": "RoboticsCM-580",
+      "display_name": "Humanoid Controller",
+      "tier": "robotics",
+      "status": "active",
+      "description": "Controls humanoid robots",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 581,
+      "name": "HealthcareCM-581",
+      "display_name": "Patient Manager",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Manages patient records",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 582,
+      "name": "HealthcareCM-582",
+      "display_name": "Appointment Scheduler",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Schedules appointments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 583,
+      "name": "HealthcareCM-583",
+      "display_name": "Prescription Manager",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Manages prescriptions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 584,
+      "name": "HealthcareCM-584",
+      "display_name": "Lab Results Handler",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Processes lab results",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 585,
+      "name": "HealthcareCM-585",
+      "display_name": "Vital Monitor",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Monitors vital signs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 586,
+      "name": "HealthcareCM-586",
+      "display_name": "Diagnosis Assistant",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Assists with diagnosis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 587,
+      "name": "HealthcareCM-587",
+      "display_name": "Treatment Planner",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Plans treatments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 588,
+      "name": "HealthcareCM-588",
+      "display_name": "Insurance Verifier",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Verifies insurance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 589,
+      "name": "HealthcareCM-589",
+      "display_name": "Billing Processor",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Processes medical bills",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 590,
+      "name": "HealthcareCM-590",
+      "display_name": "Clinical Trial Manager",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Manages trials",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 591,
+      "name": "HealthcareCM-591",
+      "display_name": "Drug Interaction Checker",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Checks interactions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 592,
+      "name": "HealthcareCM-592",
+      "display_name": "Imaging Analyzer",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Analyzes medical images",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 593,
+      "name": "HealthcareCM-593",
+      "display_name": "Telemedicine Agent",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Enables telehealth",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 594,
+      "name": "HealthcareCM-594",
+      "display_name": "Emergency Dispatcher",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Dispatches emergencies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 595,
+      "name": "HealthcareCM-595",
+      "display_name": "Mental Health Bot",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Mental health support",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 596,
+      "name": "HealthcareCM-596",
+      "display_name": "Nutrition Advisor",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Nutrition guidance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 597,
+      "name": "HealthcareCM-597",
+      "display_name": "Fitness Tracker",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Tracks fitness data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 598,
+      "name": "HealthcareCM-598",
+      "display_name": "Sleep Analyzer",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Analyzes sleep patterns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 599,
+      "name": "HealthcareCM-599",
+      "display_name": "Rehabilitation Coach",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Rehab assistance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 600,
+      "name": "HealthcareCM-600",
+      "display_name": "Epidemic Tracker",
+      "tier": "healthcare",
+      "status": "active",
+      "description": "Tracks disease spread",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 601,
+      "name": "FinanceCM-601",
+      "display_name": "Trade Executor",
+      "tier": "finance",
+      "status": "active",
+      "description": "Executes trades",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 602,
+      "name": "FinanceCM-602",
+      "display_name": "Portfolio Manager",
+      "tier": "finance",
+      "status": "active",
+      "description": "Manages portfolios",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 603,
+      "name": "FinanceCM-603",
+      "display_name": "Risk Calculator",
+      "tier": "finance",
+      "status": "active",
+      "description": "Calculates risk metrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 604,
+      "name": "FinanceCM-604",
+      "display_name": "Market Analyzer",
+      "tier": "finance",
+      "status": "active",
+      "description": "Analyzes market data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 605,
+      "name": "FinanceCM-605",
+      "display_name": "Fraud Detector",
+      "tier": "finance",
+      "status": "active",
+      "description": "Detects financial fraud",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 606,
+      "name": "FinanceCM-606",
+      "display_name": "Credit Scorer",
+      "tier": "finance",
+      "status": "active",
+      "description": "Calculates credit scores",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 607,
+      "name": "FinanceCM-607",
+      "display_name": "Loan Processor",
+      "tier": "finance",
+      "status": "active",
+      "description": "Processes loan apps",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 608,
+      "name": "FinanceCM-608",
+      "display_name": "Payment Gateway",
+      "tier": "finance",
+      "status": "active",
+      "description": "Handles payments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 609,
+      "name": "FinanceCM-609",
+      "display_name": "Invoice Manager",
+      "tier": "finance",
+      "status": "active",
+      "description": "Manages invoices",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 610,
+      "name": "FinanceCM-610",
+      "display_name": "Expense Tracker",
+      "tier": "finance",
+      "status": "active",
+      "description": "Tracks expenses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 611,
+      "name": "FinanceCM-611",
+      "display_name": "Budget Planner",
+      "tier": "finance",
+      "status": "active",
+      "description": "Plans budgets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 612,
+      "name": "FinanceCM-612",
+      "display_name": "Tax Calculator",
+      "tier": "finance",
+      "status": "active",
+      "description": "Calculates taxes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 613,
+      "name": "FinanceCM-613",
+      "display_name": "Reconciliation Agent",
+      "tier": "finance",
+      "status": "active",
+      "description": "Reconciles accounts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 614,
+      "name": "FinanceCM-614",
+      "display_name": "Wire Transfer Agent",
+      "tier": "finance",
+      "status": "active",
+      "description": "Handles wire transfers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 615,
+      "name": "FinanceCM-615",
+      "display_name": "Currency Converter",
+      "tier": "finance",
+      "status": "active",
+      "description": "Converts currencies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 616,
+      "name": "FinanceCM-616",
+      "display_name": "Dividend Tracker",
+      "tier": "finance",
+      "status": "active",
+      "description": "Tracks dividends",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 617,
+      "name": "FinanceCM-617",
+      "display_name": "IPO Analyzer",
+      "tier": "finance",
+      "status": "active",
+      "description": "Analyzes IPOs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 618,
+      "name": "FinanceCM-618",
+      "display_name": "Hedge Strategist",
+      "tier": "finance",
+      "status": "active",
+      "description": "Hedging strategies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 619,
+      "name": "FinanceCM-619",
+      "display_name": "Regulatory Reporter",
+      "tier": "finance",
+      "status": "active",
+      "description": "Regulatory reporting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 620,
+      "name": "FinanceCM-620",
+      "display_name": "Wealth Advisor",
+      "tier": "finance",
+      "status": "active",
+      "description": "Wealth management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 621,
+      "name": "EducationCM-621",
+      "display_name": "Course Builder",
+      "tier": "education",
+      "status": "active",
+      "description": "Builds online courses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 622,
+      "name": "EducationCM-622",
+      "display_name": "Quiz Generator",
+      "tier": "education",
+      "status": "active",
+      "description": "Generates quizzes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 623,
+      "name": "EducationCM-623",
+      "display_name": "Grade Calculator",
+      "tier": "education",
+      "status": "active",
+      "description": "Calculates grades",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 624,
+      "name": "EducationCM-624",
+      "display_name": "Attendance Tracker",
+      "tier": "education",
+      "status": "active",
+      "description": "Tracks attendance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 625,
+      "name": "EducationCM-625",
+      "display_name": "Assignment Manager",
+      "tier": "education",
+      "status": "active",
+      "description": "Manages assignments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 626,
+      "name": "EducationCM-626",
+      "display_name": "Plagiarism Checker",
+      "tier": "education",
+      "status": "active",
+      "description": "Checks plagiarism",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 627,
+      "name": "EducationCM-627",
+      "display_name": "Tutor Bot",
+      "tier": "education",
+      "status": "active",
+      "description": "AI tutoring",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 628,
+      "name": "EducationCM-628",
+      "display_name": "Study Planner",
+      "tier": "education",
+      "status": "active",
+      "description": "Plans study schedules",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 629,
+      "name": "EducationCM-629",
+      "display_name": "Flashcard Creator",
+      "tier": "education",
+      "status": "active",
+      "description": "Creates flashcards",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 630,
+      "name": "EducationCM-630",
+      "display_name": "Progress Tracker",
+      "tier": "education",
+      "status": "active",
+      "description": "Tracks learning progress",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 631,
+      "name": "EducationCM-631",
+      "display_name": "Curriculum Designer",
+      "tier": "education",
+      "status": "active",
+      "description": "Designs curriculum",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 632,
+      "name": "EducationCM-632",
+      "display_name": "Certification Manager",
+      "tier": "education",
+      "status": "active",
+      "description": "Manages certifications",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 633,
+      "name": "EducationCM-633",
+      "display_name": "Skill Assessor",
+      "tier": "education",
+      "status": "active",
+      "description": "Assesses skills",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 634,
+      "name": "EducationCM-634",
+      "display_name": "Learning Path Creator",
+      "tier": "education",
+      "status": "active",
+      "description": "Creates learning paths",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 635,
+      "name": "EducationCM-635",
+      "display_name": "Discussion Moderator",
+      "tier": "education",
+      "status": "active",
+      "description": "Moderates discussions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 636,
+      "name": "EducationCM-636",
+      "display_name": "Video Lecture Agent",
+      "tier": "education",
+      "status": "active",
+      "description": "Manages video lectures",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 637,
+      "name": "EducationCM-637",
+      "display_name": "Lab Simulator",
+      "tier": "education",
+      "status": "active",
+      "description": "Simulates labs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 638,
+      "name": "EducationCM-638",
+      "display_name": "Peer Review Agent",
+      "tier": "education",
+      "status": "active",
+      "description": "Manages peer reviews",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 639,
+      "name": "EducationCM-639",
+      "display_name": "Alumni Tracker",
+      "tier": "education",
+      "status": "active",
+      "description": "Tracks alumni",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 640,
+      "name": "EducationCM-640",
+      "display_name": "Scholarship Finder",
+      "tier": "education",
+      "status": "active",
+      "description": "Finds scholarships",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 641,
+      "name": "LogisticsCM-641",
+      "display_name": "Route Optimizer",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Optimizes delivery routes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 642,
+      "name": "LogisticsCM-642",
+      "display_name": "Shipment Tracker",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Tracks shipments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 643,
+      "name": "LogisticsCM-643",
+      "display_name": "Warehouse Manager",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Manages warehouses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 644,
+      "name": "LogisticsCM-644",
+      "display_name": "Inventory Forecaster",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Forecasts inventory",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 645,
+      "name": "LogisticsCM-645",
+      "display_name": "Carrier Selector",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Selects shipping carriers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 646,
+      "name": "LogisticsCM-646",
+      "display_name": "Customs Agent",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Handles customs docs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 647,
+      "name": "LogisticsCM-647",
+      "display_name": "Last Mile Planner",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Plans last mile delivery",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 648,
+      "name": "LogisticsCM-648",
+      "display_name": "Returns Processor",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Processes returns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 649,
+      "name": "LogisticsCM-649",
+      "display_name": "Pallet Optimizer",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Optimizes pallet loading",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 650,
+      "name": "LogisticsCM-650",
+      "display_name": "Fleet Tracker",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Tracks vehicle fleets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 651,
+      "name": "LogisticsCM-651",
+      "display_name": "Delivery Scheduler",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Schedules deliveries",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 652,
+      "name": "LogisticsCM-652",
+      "display_name": "Cross-Dock Manager",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Cross-docking operations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 653,
+      "name": "LogisticsCM-653",
+      "display_name": "Freight Calculator",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Calculates freight costs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 654,
+      "name": "LogisticsCM-654",
+      "display_name": "Container Manager",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Manages containers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 655,
+      "name": "LogisticsCM-655",
+      "display_name": "Cold Chain Monitor",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Monitors cold chain",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 656,
+      "name": "LogisticsCM-656",
+      "display_name": "Drop Ship Agent",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Manages drop shipping",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 657,
+      "name": "LogisticsCM-657",
+      "display_name": "Demand Planner",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Plans demand",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 658,
+      "name": "LogisticsCM-658",
+      "display_name": "Supplier Manager",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Manages suppliers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 659,
+      "name": "LogisticsCM-659",
+      "display_name": "Procurement Agent",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Handles procurement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 660,
+      "name": "LogisticsCM-660",
+      "display_name": "3PL Coordinator",
+      "tier": "logistics",
+      "status": "active",
+      "description": "Coordinates 3PL",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 661,
+      "name": "EnvironmentalCM-661",
+      "display_name": "Carbon Calculator",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Calculates carbon footprint",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 662,
+      "name": "EnvironmentalCM-662",
+      "display_name": "Energy Monitor",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Monitors energy usage",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 663,
+      "name": "EnvironmentalCM-663",
+      "display_name": "Waste Tracker",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Tracks waste management",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 664,
+      "name": "EnvironmentalCM-664",
+      "display_name": "Air Quality Monitor",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Monitors air quality",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 665,
+      "name": "EnvironmentalCM-665",
+      "display_name": "Water Quality Agent",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Monitors water quality",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 666,
+      "name": "EnvironmentalCM-666",
+      "display_name": "Solar Optimizer",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Optimizes solar panels",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 667,
+      "name": "EnvironmentalCM-667",
+      "display_name": "Wind Farm Manager",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Manages wind farms",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 668,
+      "name": "EnvironmentalCM-668",
+      "display_name": "EV Charging Manager",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Manages EV charging",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 669,
+      "name": "EnvironmentalCM-669",
+      "display_name": "Sustainability Scorer",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Scores sustainability",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 670,
+      "name": "EnvironmentalCM-670",
+      "display_name": "Recycling Coordinator",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Coordinates recycling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 671,
+      "name": "EnvironmentalCM-671",
+      "display_name": "Forest Monitor",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Monitors deforestation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 672,
+      "name": "EnvironmentalCM-672",
+      "display_name": "Ocean Health Agent",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Monitors ocean health",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 673,
+      "name": "EnvironmentalCM-673",
+      "display_name": "Wildlife Tracker",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Tracks wildlife",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 674,
+      "name": "EnvironmentalCM-674",
+      "display_name": "Climate Modeler",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Models climate data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 675,
+      "name": "EnvironmentalCM-675",
+      "display_name": "Emissions Reporter",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Reports emissions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 676,
+      "name": "EnvironmentalCM-676",
+      "display_name": "Green Building Agent",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Green building certs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 677,
+      "name": "EnvironmentalCM-677",
+      "display_name": "Biodiversity Tracker",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Tracks biodiversity",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 678,
+      "name": "EnvironmentalCM-678",
+      "display_name": "Pollution Detector",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Detects pollution",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 679,
+      "name": "EnvironmentalCM-679",
+      "display_name": "ESG Reporter",
+      "tier": "environmental",
+      "status": "active",
+      "description": "ESG reporting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 680,
+      "name": "EnvironmentalCM-680",
+      "display_name": "Net Zero Planner",
+      "tier": "environmental",
+      "status": "active",
+      "description": "Plans net zero goals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 681,
+      "name": "LegalCM-681",
+      "display_name": "Contract Analyzer",
+      "tier": "legal",
+      "status": "active",
+      "description": "Analyzes contracts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 682,
+      "name": "LegalCM-682",
+      "display_name": "Document Drafter",
+      "tier": "legal",
+      "status": "active",
+      "description": "Drafts legal docs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 683,
+      "name": "LegalCM-683",
+      "display_name": "E-Discovery Agent",
+      "tier": "legal",
+      "status": "active",
+      "description": "E-discovery processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 684,
+      "name": "LegalCM-684",
+      "display_name": "Case Manager",
+      "tier": "legal",
+      "status": "active",
+      "description": "Manages legal cases",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 685,
+      "name": "LegalCM-685",
+      "display_name": "IP Monitor",
+      "tier": "legal",
+      "status": "active",
+      "description": "Monitors IP rights",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 686,
+      "name": "LegalCM-686",
+      "display_name": "Trademark Searcher",
+      "tier": "legal",
+      "status": "active",
+      "description": "Searches trademarks",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 687,
+      "name": "LegalCM-687",
+      "display_name": "Patent Analyzer",
+      "tier": "legal",
+      "status": "active",
+      "description": "Analyzes patents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 688,
+      "name": "LegalCM-688",
+      "display_name": "Compliance Checker",
+      "tier": "legal",
+      "status": "active",
+      "description": "Checks legal compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 689,
+      "name": "LegalCM-689",
+      "display_name": "NDA Generator",
+      "tier": "legal",
+      "status": "active",
+      "description": "Generates NDAs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 690,
+      "name": "LegalCM-690",
+      "display_name": "Legal Research",
+      "tier": "legal",
+      "status": "active",
+      "description": "Legal research assistant",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 691,
+      "name": "LegalCM-691",
+      "display_name": "Court Filing Agent",
+      "tier": "legal",
+      "status": "active",
+      "description": "Files court documents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 692,
+      "name": "LegalCM-692",
+      "display_name": "Deposition Manager",
+      "tier": "legal",
+      "status": "active",
+      "description": "Manages depositions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 693,
+      "name": "LegalCM-693",
+      "display_name": "Settlement Calculator",
+      "tier": "legal",
+      "status": "active",
+      "description": "Calculates settlements",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 694,
+      "name": "LegalCM-694",
+      "display_name": "Billing Timer",
+      "tier": "legal",
+      "status": "active",
+      "description": "Tracks billable hours",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 695,
+      "name": "LegalCM-695",
+      "display_name": "Conflict Checker",
+      "tier": "legal",
+      "status": "active",
+      "description": "Checks conflicts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 696,
+      "name": "LegalCM-696",
+      "display_name": "Deadline Tracker",
+      "tier": "legal",
+      "status": "active",
+      "description": "Tracks legal deadlines",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 697,
+      "name": "LegalCM-697",
+      "display_name": "Witness Manager",
+      "tier": "legal",
+      "status": "active",
+      "description": "Manages witnesses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 698,
+      "name": "LegalCM-698",
+      "display_name": "Evidence Cataloger",
+      "tier": "legal",
+      "status": "active",
+      "description": "Catalogs evidence",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 699,
+      "name": "LegalCM-699",
+      "display_name": "Regulatory Tracker",
+      "tier": "legal",
+      "status": "active",
+      "description": "Tracks regulations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 700,
+      "name": "LegalCM-700",
+      "display_name": "Legal Chatbot",
+      "tier": "legal",
+      "status": "active",
+      "description": "Legal Q&A bot",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 701,
+      "name": "HRCM-701",
+      "display_name": "Resume Parser",
+      "tier": "hr",
+      "status": "active",
+      "description": "Parses resumes",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 702,
+      "name": "HRCM-702",
+      "display_name": "Candidate Screener",
+      "tier": "hr",
+      "status": "active",
+      "description": "Screens candidates",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 703,
+      "name": "HRCM-703",
+      "display_name": "Interview Scheduler",
+      "tier": "hr",
+      "status": "active",
+      "description": "Schedules interviews",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 704,
+      "name": "HRCM-704",
+      "display_name": "Offer Generator",
+      "tier": "hr",
+      "status": "active",
+      "description": "Generates offers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 705,
+      "name": "HRCM-705",
+      "display_name": "Onboarding Agent",
+      "tier": "hr",
+      "status": "active",
+      "description": "Manages onboarding",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 706,
+      "name": "HRCM-706",
+      "display_name": "Performance Reviewer",
+      "tier": "hr",
+      "status": "active",
+      "description": "Manages reviews",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 707,
+      "name": "HRCM-707",
+      "display_name": "Goal Tracker",
+      "tier": "hr",
+      "status": "active",
+      "description": "Tracks employee goals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 708,
+      "name": "HRCM-708",
+      "display_name": "Leave Manager",
+      "tier": "hr",
+      "status": "active",
+      "description": "Manages leave requests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 709,
+      "name": "HRCM-709",
+      "display_name": "Payroll Processor",
+      "tier": "hr",
+      "status": "active",
+      "description": "Processes payroll",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 710,
+      "name": "HRCM-710",
+      "display_name": "Benefits Manager",
+      "tier": "hr",
+      "status": "active",
+      "description": "Manages benefits",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 711,
+      "name": "HRCM-711",
+      "display_name": "Training Coordinator",
+      "tier": "hr",
+      "status": "active",
+      "description": "Coordinates training",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 712,
+      "name": "HRCM-712",
+      "display_name": "Engagement Surveyor",
+      "tier": "hr",
+      "status": "active",
+      "description": "Surveys engagement",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 713,
+      "name": "HRCM-713",
+      "display_name": "Exit Interviewer",
+      "tier": "hr",
+      "status": "active",
+      "description": "Conducts exit interviews",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 714,
+      "name": "HRCM-714",
+      "display_name": "Org Chart Manager",
+      "tier": "hr",
+      "status": "active",
+      "description": "Manages org charts",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 715,
+      "name": "HRCM-715",
+      "display_name": "Compensation Analyzer",
+      "tier": "hr",
+      "status": "active",
+      "description": "Analyzes compensation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 716,
+      "name": "HRCM-716",
+      "display_name": "Diversity Tracker",
+      "tier": "hr",
+      "status": "active",
+      "description": "Tracks diversity metrics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 717,
+      "name": "HRCM-717",
+      "display_name": "Succession Planner",
+      "tier": "hr",
+      "status": "active",
+      "description": "Plans succession",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 718,
+      "name": "HRCM-718",
+      "display_name": "Time Tracker",
+      "tier": "hr",
+      "status": "active",
+      "description": "Tracks work hours",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 719,
+      "name": "HRCM-719",
+      "display_name": "Remote Work Manager",
+      "tier": "hr",
+      "status": "active",
+      "description": "Manages remote work",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 720,
+      "name": "HRCM-720",
+      "display_name": "Culture Builder",
+      "tier": "hr",
+      "status": "active",
+      "description": "Builds company culture",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 721,
+      "name": "MarketingCM-721",
+      "display_name": "Campaign Manager",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Manages campaigns",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 722,
+      "name": "MarketingCM-722",
+      "display_name": "Email Marketer",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Email marketing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 723,
+      "name": "MarketingCM-723",
+      "display_name": "Social Media Bot",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Social media automation",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 724,
+      "name": "MarketingCM-724",
+      "display_name": "SEO Optimizer",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Optimizes SEO",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 725,
+      "name": "MarketingCM-725",
+      "display_name": "SEM Manager",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Manages paid search",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 726,
+      "name": "MarketingCM-726",
+      "display_name": "Content Scheduler",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Schedules content",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 727,
+      "name": "MarketingCM-727",
+      "display_name": "Influencer Finder",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Finds influencers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 728,
+      "name": "MarketingCM-728",
+      "display_name": "Brand Monitor",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Monitors brand mentions",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 729,
+      "name": "MarketingCM-729",
+      "display_name": "Competitor Tracker",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Tracks competitors",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 730,
+      "name": "MarketingCM-730",
+      "display_name": "Lead Scorer",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Scores leads",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 731,
+      "name": "MarketingCM-731",
+      "display_name": "Attribution Modeler",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Attribution modeling",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 732,
+      "name": "MarketingCM-732",
+      "display_name": "Landing Page Builder",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Builds landing pages",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 733,
+      "name": "MarketingCM-733",
+      "display_name": "A/B Test Manager",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Manages A/B tests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 734,
+      "name": "MarketingCM-734",
+      "display_name": "Persona Builder",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Builds buyer personas",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 735,
+      "name": "MarketingCM-735",
+      "display_name": "Hashtag Analyzer",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Analyzes hashtags",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 736,
+      "name": "MarketingCM-736",
+      "display_name": "Viral Predictor",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Predicts viral content",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 737,
+      "name": "MarketingCM-737",
+      "display_name": "Ad Creative Agent",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Creates ad creatives",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 738,
+      "name": "MarketingCM-738",
+      "display_name": "Audience Segmenter",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Segments audiences",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 739,
+      "name": "MarketingCM-739",
+      "display_name": "Retargeting Agent",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Manages retargeting",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 740,
+      "name": "MarketingCM-740",
+      "display_name": "Marketing ROI Tracker",
+      "tier": "marketing",
+      "status": "active",
+      "description": "Tracks marketing ROI",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 741,
+      "name": "SupportCM-741",
+      "display_name": "Ticket Router",
+      "tier": "support",
+      "status": "active",
+      "description": "Routes support tickets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 742,
+      "name": "SupportCM-742",
+      "display_name": "Knowledge Base Agent",
+      "tier": "support",
+      "status": "active",
+      "description": "Manages knowledge base",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 743,
+      "name": "SupportCM-743",
+      "display_name": "Chatbot Handler",
+      "tier": "support",
+      "status": "active",
+      "description": "Handles chatbot convos",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 744,
+      "name": "SupportCM-744",
+      "display_name": "Escalation Manager",
+      "tier": "support",
+      "status": "active",
+      "description": "Manages escalations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 745,
+      "name": "SupportCM-745",
+      "display_name": "SLA Monitor",
+      "tier": "support",
+      "status": "active",
+      "description": "Monitors SLAs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 746,
+      "name": "SupportCM-746",
+      "display_name": "CSAT Surveyor",
+      "tier": "support",
+      "status": "active",
+      "description": "Collects CSAT scores",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 747,
+      "name": "SupportCM-747",
+      "display_name": "FAQ Generator",
+      "tier": "support",
+      "status": "active",
+      "description": "Generates FAQs",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 748,
+      "name": "SupportCM-748",
+      "display_name": "Sentiment Analyzer",
+      "tier": "support",
+      "status": "active",
+      "description": "Analyzes sentiment",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 749,
+      "name": "SupportCM-749",
+      "display_name": "Response Suggester",
+      "tier": "support",
+      "status": "active",
+      "description": "Suggests responses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 750,
+      "name": "SupportCM-750",
+      "display_name": "Macro Manager",
+      "tier": "support",
+      "status": "active",
+      "description": "Manages response macros",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 751,
+      "name": "SupportCM-751",
+      "display_name": "Queue Manager",
+      "tier": "support",
+      "status": "active",
+      "description": "Manages ticket queues",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 752,
+      "name": "SupportCM-752",
+      "display_name": "Agent Scheduler",
+      "tier": "support",
+      "status": "active",
+      "description": "Schedules support agents",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 753,
+      "name": "SupportCM-753",
+      "display_name": "Quality Assurance",
+      "tier": "support",
+      "status": "active",
+      "description": "QA for support",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 754,
+      "name": "SupportCM-754",
+      "display_name": "Feedback Aggregator",
+      "tier": "support",
+      "status": "active",
+      "description": "Aggregates feedback",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 755,
+      "name": "SupportCM-755",
+      "display_name": "Bug Reporter",
+      "tier": "support",
+      "status": "active",
+      "description": "Reports bugs from tickets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 756,
+      "name": "SupportCM-756",
+      "display_name": "Feature Requester",
+      "tier": "support",
+      "status": "active",
+      "description": "Tracks feature requests",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 757,
+      "name": "SupportCM-757",
+      "display_name": "Community Manager",
+      "tier": "support",
+      "status": "active",
+      "description": "Manages community",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 758,
+      "name": "SupportCM-758",
+      "display_name": "Help Center Builder",
+      "tier": "support",
+      "status": "active",
+      "description": "Builds help centers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 759,
+      "name": "SupportCM-759",
+      "display_name": "Omnichannel Agent",
+      "tier": "support",
+      "status": "active",
+      "description": "Omnichannel support",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 760,
+      "name": "SupportCM-760",
+      "display_name": "Customer Health Agent",
+      "tier": "support",
+      "status": "active",
+      "description": "Tracks customer health",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 761,
+      "name": "ResearchCM-761",
+      "display_name": "Hypothesis Generator",
+      "tier": "research",
+      "status": "active",
+      "description": "Generates hypotheses",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 762,
+      "name": "ResearchCM-762",
+      "display_name": "Experiment Designer",
+      "tier": "research",
+      "status": "active",
+      "description": "Designs experiments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 763,
+      "name": "ResearchCM-763",
+      "display_name": "Data Collector",
+      "tier": "research",
+      "status": "active",
+      "description": "Collects research data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 764,
+      "name": "ResearchCM-764",
+      "display_name": "Statistical Analyzer",
+      "tier": "research",
+      "status": "active",
+      "description": "Statistical analysis",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 765,
+      "name": "ResearchCM-765",
+      "display_name": "Paper Reviewer",
+      "tier": "research",
+      "status": "active",
+      "description": "Reviews research papers",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 766,
+      "name": "ResearchCM-766",
+      "display_name": "Citation Manager",
+      "tier": "research",
+      "status": "active",
+      "description": "Manages citations",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 767,
+      "name": "ResearchCM-767",
+      "display_name": "Peer Review Coordinator",
+      "tier": "research",
+      "status": "active",
+      "description": "Coordinates peer review",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 768,
+      "name": "ResearchCM-768",
+      "display_name": "Lab Notebook",
+      "tier": "research",
+      "status": "active",
+      "description": "Digital lab notebook",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 769,
+      "name": "ResearchCM-769",
+      "display_name": "Protocol Manager",
+      "tier": "research",
+      "status": "active",
+      "description": "Manages protocols",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 770,
+      "name": "ResearchCM-770",
+      "display_name": "Sample Tracker",
+      "tier": "research",
+      "status": "active",
+      "description": "Tracks samples",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 771,
+      "name": "ResearchCM-771",
+      "display_name": "Instrument Controller",
+      "tier": "research",
+      "status": "active",
+      "description": "Controls instruments",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 772,
+      "name": "ResearchCM-772",
+      "display_name": "Data Visualizer",
+      "tier": "research",
+      "status": "active",
+      "description": "Visualizes research data",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 773,
+      "name": "ResearchCM-773",
+      "display_name": "Collaboration Hub",
+      "tier": "research",
+      "status": "active",
+      "description": "Research collaboration",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 774,
+      "name": "ResearchCM-774",
+      "display_name": "Grant Finder",
+      "tier": "research",
+      "status": "active",
+      "description": "Finds grants",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 775,
+      "name": "ResearchCM-775",
+      "display_name": "Literature Reviewer",
+      "tier": "research",
+      "status": "active",
+      "description": "Reviews literature",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 776,
+      "name": "ResearchCM-776",
+      "display_name": "Replication Agent",
+      "tier": "research",
+      "status": "active",
+      "description": "Replication studies",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 777,
+      "name": "ResearchCM-777",
+      "display_name": "Preprint Manager",
+      "tier": "research",
+      "status": "active",
+      "description": "Manages preprints",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 778,
+      "name": "ResearchCM-778",
+      "display_name": "Research Ethics",
+      "tier": "research",
+      "status": "active",
+      "description": "Ethics compliance",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 779,
+      "name": "ResearchCM-779",
+      "display_name": "Open Science Agent",
+      "tier": "research",
+      "status": "active",
+      "description": "Open science practices",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 780,
+      "name": "ResearchCM-780",
+      "display_name": "Impact Tracker",
+      "tier": "research",
+      "status": "active",
+      "description": "Tracks research impact",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 781,
+      "name": "MetaverseCM-781",
+      "display_name": "Avatar Creator",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Creates avatars",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 782,
+      "name": "MetaverseCM-782",
+      "display_name": "World Builder",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Builds virtual worlds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 783,
+      "name": "MetaverseCM-783",
+      "display_name": "Asset Manager",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Manages 3D assets",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 784,
+      "name": "MetaverseCM-784",
+      "display_name": "Physics Engine",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Metaverse physics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 785,
+      "name": "MetaverseCM-785",
+      "display_name": "Social Graph",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Manages social connections",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 786,
+      "name": "MetaverseCM-786",
+      "display_name": "Voice Chat Manager",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Manages voice chat",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 787,
+      "name": "MetaverseCM-787",
+      "display_name": "Gesture Recognizer",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Recognizes gestures",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 788,
+      "name": "MetaverseCM-788",
+      "display_name": "Haptic Controller",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Controls haptics",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 789,
+      "name": "MetaverseCM-789",
+      "display_name": "Portal Manager",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Manages world portals",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 790,
+      "name": "MetaverseCM-790",
+      "display_name": "Event Coordinator",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Coordinates VR events",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 791,
+      "name": "MetaverseCM-791",
+      "display_name": "Economy Manager",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Virtual economy",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 792,
+      "name": "MetaverseCM-792",
+      "display_name": "Land Manager",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Manages virtual land",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 793,
+      "name": "MetaverseCM-793",
+      "display_name": "Builder Tools",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Provides building tools",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 794,
+      "name": "MetaverseCM-794",
+      "display_name": "Moderation Agent",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Moderates metaverse",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 795,
+      "name": "MetaverseCM-795",
+      "display_name": "Interoperability Agent",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Cross-platform interop",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 796,
+      "name": "MetaverseCM-796",
+      "display_name": "XR Streaming",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "XR content streaming",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 797,
+      "name": "MetaverseCM-797",
+      "display_name": "Spatial Audio",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Spatial audio processing",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 798,
+      "name": "MetaverseCM-798",
+      "display_name": "Mirror World Agent",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Digital twin worlds",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 799,
+      "name": "MetaverseCM-799",
+      "display_name": "Presence Manager",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Manages presence",
+      "capabilities": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": 800,
+      "name": "MetaverseCM-800",
+      "display_name": "Metaverse Analytics",
+      "tier": "metaverse",
+      "status": "active",
+      "description": "Metaverse analytics",
       "capabilities": [],
       "version": "1.0.0"
     }
