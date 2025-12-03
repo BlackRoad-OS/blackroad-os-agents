@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ES2020",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "dist",
     "rootDir": ".",
     "strict": true,
@@ -12,19 +12,19 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "skipLibCheck": true
-  },
-  "include": ["src/**/*.ts", "scripts/**/*.ts", "registry/**/*.json"],
-  "exclude": ["node_modules", "dist"]
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "isolatedModules": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
+    "isolatedModules": true,
     "types": ["node", "jest"]
   },
-  "include": ["scripts/**/*", "agents/**/*", "tests/**/*"]
+  "include": [
+    "src/**/*",
+    "scripts/**/*",
+    "agents/**/*",
+    "tests/**/*",
+    "registry/**/*.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
