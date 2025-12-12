@@ -1,0 +1,26 @@
+{
+  "repo": "BlackRoad-OS/blackroad-os-agents",
+  "products": [
+    {
+      "name": "blackroad-os-agents - Basic",
+      "price": 900,
+      "interval": "month"
+    },
+    {
+      "name": "blackroad-os-agents - Pro",
+      "price": 2900,
+      "interval": "month"
+    },
+    {
+      "name": "blackroad-os-agents - Enterprise",
+      "price": 9900,
+      "interval": "month"
+    }
+  ],
+  "webhooks": [
+    "checkout.session.completed",
+    "customer.subscription.created",
+    "customer.subscription.updated",
+    "invoice.paid"
+  ]
+}
