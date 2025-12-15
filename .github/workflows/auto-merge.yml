@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
 
     # Trusted actors - auto-merge their PRs
+    
+    # Only run for trusted actors
+    # Alexa, Codex, and trusted bots
     if: |
       github.actor == 'blackboxprogramming' ||
       github.actor == 'codex-bot' ||
@@ -29,6 +32,7 @@ jobs:
       github.actor == 'claude-code[bot]' ||
       contains(github.event.pull_request.labels.*.name, 'auto-merge')
 
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
