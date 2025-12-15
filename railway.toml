@@ -1,3 +1,6 @@
+# Railway Configuration for BlackRoad OS Agents
+# https://docs.railway.app/reference/config-as-code
+
 [build]
 builder = "NIXPACKS"
 
@@ -7,6 +10,16 @@ healthcheckPath = "/health"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+numReplicas = 1
+startCommand = "node dist/server.js"
+healthcheckPath = "/healthz"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
 
 [[services]]
 name = "blackroad-os-agents"
@@ -16,3 +29,31 @@ PORT = "8080"
 NODE_ENV = "production"
 REPO_NAME = "blackroad-os-agents"
 ORG_NAME = "BlackRoad-OS"
+HOST = "0.0.0.0"
+LOG_LEVEL = "info"
+
+# Platform integrations are configured via Railway secrets:
+# - RAILWAY_TOKEN (auto-injected)
+# - RAILWAY_PROJECT_ID (auto-injected)
+# - CLOUDFLARE_API_TOKEN
+# - CLOUDFLARE_ACCOUNT_ID
+# - GITHUB_TOKEN
+# - VERCEL_TOKEN
+# - VERCEL_ORG_ID
+# - DIGITALOCEAN_TOKEN
+# - PI_HOSTS (comma-separated list of Raspberry Pi IPs)
+# - PI_SSH_KEY
+# - ASANA_TOKEN
+# - NOTION_TOKEN
+# - CLERK_SECRET_KEY
+# - CLERK_PUBLISHABLE_KEY
+# - STRIPE_SECRET_KEY
+# - STRIPE_WEBHOOK_SECRET
+# - HUGGINGFACE_TOKEN
+# - CLOUDFLARE_TUNNEL_TOKEN
+# - NGROK_AUTH_TOKEN
+# - LLM_MODELS_DIR
+
+[experimental]
+# Enable experimental features
+privateNetworking = true
