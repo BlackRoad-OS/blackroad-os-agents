@@ -24,12 +24,14 @@ jobs:
     runs-on: ubuntu-latest
     
     # Only run for trusted actors
-    # Add your GitHub username, Codex bot, any other trusted sources
+    # Alexa, Codex, and trusted bots
     if: |
-      github.actor == 'YOUR_GITHUB_USERNAME' ||
+      github.actor == 'blackboxprogramming' ||
       github.actor == 'codex-bot' ||
       github.actor == 'dependabot[bot]' ||
-      github.actor == 'github-actions[bot]'
+      github.actor == 'github-actions[bot]' ||
+      github.actor == 'claude-code[bot]' ||
+      contains(github.event.pull_request.labels.*.name, 'auto-merge')
     
     steps:
       - name: Checkout
