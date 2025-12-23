@@ -34646,6 +34646,8 @@
       "description": "Marketplace support",
       "capabilities": [],
       "version": "1.0.0"
+    }
+  ],
   "$schema": "../schemas/agent.schema.json",
   "agents": [
     {

@@ -97,18 +97,18 @@ jobs:
             node -e "JSON.parse(require('fs').readFileSync('railway.json'))" || {
               echo "Invalid railway.json detected"
               # Create basic valid config
-              cat > railway.json << 'RAILWAYCONFIG'
-{
-  "$schema": "https://railway.app/railway.schema.json",
-  "build": {
-    "builder": "NIXPACKS"
-  },
-  "deploy": {
-    "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10
-  }
-}
-RAILWAYCONFIG
+              cat > railway.json << 'EOF'
+              {
+                "$schema": "https://railway.app/railway.schema.json",
+                "build": {
+                  "builder": "NIXPACKS"
+                },
+                "deploy": {
+                  "restartPolicyType": "ON_FAILURE",
+                  "restartPolicyMaxRetries": 10
+                }
+              }
+              EOF
               git config user.name "BlackRoad Auto-Fix Bot"
               git config user.email "bot@blackroad.systems"
               git add railway.json

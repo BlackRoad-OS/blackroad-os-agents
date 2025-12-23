@@ -14,13 +14,22 @@ async function readAgentFile(filePath: string): Promise<Agent> {
   return agentSchema.parse(parsed);
 }
 
+async function tryReadAgentFile(filePath: string): Promise<Agent | null> {
+  try {
+    return await readAgentFile(filePath);
+  } catch {
+    return null;
+  }
+}
+
 export async function loadAllAgents(): Promise<Agent[]> {
   const files = await fs.readdir(REGISTRY_DIR);
   const manifests: Agent[] = [];
 
   for (const file of files) {
     if (!file.endsWith('.json')) continue;
-    const manifest = await readAgentFile(path.join(REGISTRY_DIR, file));
+    const manifest = await tryReadAgentFile(path.join(REGISTRY_DIR, file));
+    if (!manifest) continue;
     manifests.push(manifest);
   }
 
