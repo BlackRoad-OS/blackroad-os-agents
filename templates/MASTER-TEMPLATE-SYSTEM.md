@@ -2,6 +2,8 @@
 
 **Copy-Paste-Ready Templates for EVERYTHING Across ALL Platforms**
 
+🚦 **Powered by the Light Trinity System** (🟢 GreenLight · 🟡 YellowLight · 🔴 RedLight)
+
 ---
 
 ## 📋 Template Philosophy
@@ -13,6 +15,56 @@
 3. **Machine-teachable** - AI learns from the patterns
 4. **Error-proof** - No typing mistakes
 5. **Teaching by doing** - Learn while it works
+6. **Trinity-compliant** - All templates follow GreenLight, YellowLight, RedLight standards
+
+---
+
+## 🚦 Light Trinity Integration
+
+This template system is fully integrated with **The Light Trinity** - BlackRoad OS's unified intelligence, templating, and infrastructure system:
+
+### 🟢 GreenLight - Project Management Templates
+- Task tracking and workflow templates
+- State management for project lifecycle
+- NATS event bus integration for real-time updates
+- 103 template functions for logging and coordination
+
+### 🟡 YellowLight - Infrastructure Templates  
+- Deployment automation templates
+- Platform configurations (Railway, Cloudflare, DigitalOcean)
+- CI/CD pipeline templates
+- BlackRoad Codex integration for accessing 8,789+ reusable components
+
+### 🔴 RedLight - Visual & Brand Templates
+- 18 HTML brand templates for landing pages and 3D experiences
+- Design system following golden ratio (φ = 1.618)
+- Brand gradient: Amber → Hot Pink → Violet → Electric Blue
+- Performance-optimized (>60 FPS, <1s load time)
+
+**See:** `.trinity/README.md` for complete Trinity documentation
+
+---
+
+## 🛣️ BlackRoad Codex Integration
+
+All templates are registered in the **BlackRoad Codex** - our verification and memory system:
+
+- **Codex Database**: `~/.blackroad/codex/codex.db`
+- **Trinity Standards**: Automated compliance checking via `trinity_standards` table
+- **Template Validation**: Each template tested against GreenLight, YellowLight, RedLight gates
+- **Usage Tracking**: Template usage logged to PS-SHA∞ memory system
+
+**Setup Codex Integration:**
+```bash
+# Initialize Codex integration
+source .trinity/yellowlight/scripts/trinity-codex-integration.sh
+
+# Check template compliance
+~/trinity-check-compliance.sh "my-template"
+
+# Record test results  
+~/trinity-record-test.sh "my-template" "redlight" "Brand Colors" 1 "Gradient validated"
+```
 
 ---
 
@@ -562,3 +614,12 @@ See `TEMPLATE-INDEX.md` for complete catalog of all 200+ templates with:
 ---
 
 **Remember**: A perfect template is one you never have to think about. It just works. ✨
+
+---
+
+## 🚦 See Also
+
+- **Trinity Integration Guide**: `TRINITY-INTEGRATION-GUIDE.md` - Complete guide on using GreenLight, YellowLight, and RedLight with templates
+- **Trinity System**: `.trinity/README.md` - Full Light Trinity documentation
+- **Template Index**: `TEMPLATE-INDEX.md` - Complete template catalog
+- **Copy-Paste Library**: `COPY-PASTE-COMMANDS-LIBRARY.md` - Command reference

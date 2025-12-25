@@ -2,7 +2,42 @@
 
 **Copy-Paste-Ready Templates for Everything**
 
+🚦 **Powered by the Light Trinity System** (🟢 GreenLight · 🟡 YellowLight · 🔴 RedLight)
+
 This directory contains templates that make development, deployment, and documentation effortless. Every template follows the **copy-paste-and-learn** philosophy: perfect commands that work immediately and teach by doing.
+
+**Trinity Compliance**: All templates are validated against GreenLight (project management), YellowLight (infrastructure), and RedLight (brand/design) standards. See `.trinity/README.md` for details.
+
+**BlackRoad Codex**: Template usage and compliance tracked via `~/.blackroad/codex/codex.db`
+
+---
+
+## 🚦 Light Trinity Integration
+
+### 🟢 GreenLight Templates
+Project management and workflow coordination templates:
+- Task tracking and state management
+- Event logging and NATS publishing  
+- Multi-agent coordination patterns
+- See: `.trinity/greenlight/scripts/memory-greenlight-templates.sh`
+
+### 🟡 YellowLight Templates  
+Infrastructure and deployment automation:
+- Railway, Cloudflare, DigitalOcean configs
+- CI/CD pipeline templates
+- Health checks and monitoring
+- See: `.trinity/yellowlight/scripts/memory-yellowlight-templates.sh`
+
+### 🔴 RedLight Templates
+Visual and brand templates:
+- Landing pages and 3D experiences
+- Design system and brand colors
+- Performance-optimized HTML templates
+- See: `.trinity/redlight/templates/` (18 brand templates)
+
+**Full Trinity Documentation**: `.trinity/README.md`
+
+**Trinity Integration Guide**: `templates/TRINITY-INTEGRATION-GUIDE.md` - Complete guide on using GreenLight, YellowLight, and RedLight with templates
 
 ---
 
