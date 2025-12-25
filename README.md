@@ -59,6 +59,8 @@ source .trinity/yellowlight/scripts/trinity-codex-integration.sh
 
 **Templates:** See `templates/` directory for 200+ Trinity-compliant templates
 
+**Quick Start Guide:** `TRINITY-CODEX-QUICK-START.md` - Fast track to using Trinity & Codex (3 minutes)
+
 ---
 
 ## Structure
