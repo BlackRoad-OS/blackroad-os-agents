@@ -2,13 +2,28 @@
 
 **Complete Catalog of 200+ Copy-Paste-Ready Templates**
 
+🚦 **Light Trinity Compliant** (🟢 GreenLight · 🟡 YellowLight · 🔴 RedLight)
+
 ---
 
 ## 🎯 Template Philosophy
 
 **The Revolutionary Pattern**: Copy-Paste-And-Learn
 
-Every template follows the 127-emoji language system (see `EMOJI-REFERENCE.md`)
+Every template follows:
+- The 127-emoji language system (see `EMOJI-REFERENCE.md`)
+- Light Trinity compliance standards (see `.trinity/README.md`)
+- BlackRoad Codex verification system
+
+### 🚦 Trinity Compliance
+
+All templates in this index are validated against the Light Trinity gates:
+
+- **🔴 RedLight**: Brand consistency, performance targets, accessibility (WCAG 2.1 AA)
+- **🟡 YellowLight**: Infrastructure standards, deployment readiness, security
+- **🟢 GreenLight**: Project tracking, state management, memory logging
+
+**Compliance Workflow:** `.github/workflows/trinity-compliance.yml`
 
 ---
 

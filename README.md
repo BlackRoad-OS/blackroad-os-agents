@@ -17,12 +17,60 @@ import { loadAllAgents } from '@blackroad/agent-sdk';
 const agents = await loadAllAgents();
 ```
 
+## 🚦 Light Trinity & BlackRoad Codex Integration
+
+This repository is **fully integrated** with the Light Trinity system and BlackRoad Codex:
+
+### 🌈 Light Trinity System
+The `.trinity/` directory contains three interconnected intelligence systems:
+
+- **🟢 GreenLight** - Project management, task tracking, workflow coordination
+  - 103 template functions for logging and state management
+  - NATS event bus integration for real-time updates
+  - See: `.trinity/greenlight/` for docs and scripts
+
+- **🟡 YellowLight** - Infrastructure automation, deployment workflows  
+  - Platform templates (Railway, Cloudflare, DigitalOcean)
+  - BlackRoad Codex integration for 8,789+ reusable components
+  - See: `.trinity/yellowlight/` for infrastructure docs
+
+- **🔴 RedLight** - Visual templates, brand system, design patterns
+  - 18 HTML brand templates for landing pages and 3D experiences
+  - Golden ratio design system (φ = 1.618)
+  - See: `.trinity/redlight/` for template gallery
+
+**Full Documentation:** `.trinity/README.md`
+
+### 🛣️ BlackRoad Codex
+Our verification and memory system tracks:
+- Template compliance across all three lights
+- Usage analytics and performance metrics  
+- Agent coordination and learning history
+- Automated quality gates via `trinity-compliance.yml` workflow
+
+**Setup:**
+```bash
+# Initialize Codex integration
+source .trinity/yellowlight/scripts/trinity-codex-integration.sh
+
+# Check compliance
+.trinity/system/trinity-check-compliance.sh "blackroad-os-agents"
+```
+
+**Templates:** See `templates/` directory for 200+ Trinity-compliant templates
+
+**Quick Start Guide:** `TRINITY-CODEX-QUICK-START.md` - Fast track to using Trinity & Codex (3 minutes)
+
+---
+
 ## Structure
 
 - `/registry` — one JSON manifest per agent (validated against `agent.schema.ts`).
 - `/src` — SDK source: schema, loader utilities, CLI.
 - `/scripts/postbuild.ts` — writes `public/sig.beacon.json` after build.
 - `/public` — build artifacts exposed by the package.
+- `/.trinity/` — Light Trinity system (GreenLight, YellowLight, RedLight)
+- `/templates/` — 200+ Trinity-compliant templates for all platforms
 
 ## CLI
 
