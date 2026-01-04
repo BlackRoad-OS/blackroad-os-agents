@@ -127,7 +127,7 @@ cc: @${context.repo.owner}`;
                   repo: context.repo.repo,
                   title: '🔒 Security: Vulnerable Dependencies Detected',
                   body: `**Vulnerable dependencies found:**\n\n${outdatedWarnings.join('\n')}\n\nPlease update to secure versions.`,
-                  labels: ['security', 'dependencies']
+                  labels: ['security']
                 });
               }
             }
