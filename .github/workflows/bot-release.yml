@@ -38,6 +38,7 @@ jobs:
             // Check for package.json
             if (!fs.existsSync('package.json')) {
               console.log('No package.json, skipping release');
+              core.setOutput('should_release', 'false');
               return { shouldRelease: false };
             }
 
