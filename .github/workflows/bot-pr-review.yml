@@ -31,7 +31,7 @@ jobs:
               labels.push('enhancement');
             }
             if (title.startsWith('fix:') || title.startsWith('bugfix:')) {
-              labels.push('bugfix');
+              labels.push('bug');
             }
             if (title.startsWith('docs:')) {
               labels.push('documentation');
