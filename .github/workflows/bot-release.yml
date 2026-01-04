@@ -172,9 +172,14 @@ jobs:
             execSync(`git add package.json`);
             execSync(`git commit -m "🤖 chore: Bump version to ${newVersion}"`);
 
+            // Determine current branch from workflow context
+            const branch = context.ref.startsWith('refs/heads/')
+              ? context.ref.substring('refs/heads/'.length)
+              : context.ref;
+
             // Create tag
             execSync(`git tag -a v${newVersion} -m "Release v${newVersion}"`);
-            execSync(`git push origin main --tags`);
+            execSync(`git push origin ${branch} --tags`);
 
             // Create GitHub release
             await github.rest.repos.createRelease({
