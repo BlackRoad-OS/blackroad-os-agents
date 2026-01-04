@@ -135,7 +135,7 @@ cc: @${context.repo.owner}`;
       - name: CodeQL Analysis
         uses: github/codeql-action/init@v3
         with:
-          languages: javascript, python, typescript
+          languages: [javascript, python, typescript]
         continue-on-error: true
 
       - name: Run CodeQL
