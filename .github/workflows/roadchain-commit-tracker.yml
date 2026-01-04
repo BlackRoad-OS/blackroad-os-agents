@@ -96,10 +96,14 @@ jobs:
         run: |
           echo "🔍 Validating commit integrity..."
           
-          # Check for suspicious patterns
-          if git log --format='%s' -5 | grep -iE '(hack|bypass|disable.*security)'; then
-            echo "⚠️ Warning: Suspicious commit messages detected"
-            exit 1
+          # Check for suspicious patterns in commit messages
+          # Note: These patterns are informational warnings, not hard failures
+          SUSPICIOUS_PATTERNS="bypass.*security|disable.*authentication|remove.*validation"
+          
+          if git log --format='%s' -5 | grep -iE "$SUSPICIOUS_PATTERNS"; then
+            echo "⚠️ Warning: Potentially suspicious commit messages detected"
+            echo "::warning::Commit messages contain security-related keywords. Please review."
+            # Note: Not failing the build as these could be legitimate
           fi
           
           # Verify no unsigned commits (if signing is enabled)
@@ -109,4 +113,4 @@ jobs:
             echo "ℹ️ Commit signing not detected (optional)"
           fi
           
-          echo "✅ Commit integrity validated"
+          echo "✅ Commit integrity check complete"

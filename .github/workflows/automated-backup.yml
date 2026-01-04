@@ -133,9 +133,15 @@ jobs:
           echo "✅ Checksums generated"
       
       - name: Upload backup artifacts
+        id: backup_date
+        run: |
+          BACKUP_DATE=$(date +%Y%m%d)
+          echo "backup_date=$BACKUP_DATE" >> $GITHUB_OUTPUT
+      
+      - name: Upload backup files
         uses: actions/upload-artifact@v4
         with:
-          name: repository-backup-${{ github.sha }}-$(date +%Y%m%d)
+          name: repository-backup-${{ github.sha }}-${{ steps.backup_date.outputs.backup_date }}
           path: .backups/
           retention-days: 90
       

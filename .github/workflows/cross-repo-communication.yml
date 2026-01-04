@@ -115,14 +115,20 @@ jobs:
             for repo in $REPOS; do
               echo "  → BlackRoad-OS/$repo"
               
-              # Send repository dispatch event (would need appropriate token with wider scope)
+              # Send repository dispatch event
+              # Note: This requires a token with broader repository access scope
+              # For now, logging the intended dispatch for visibility
+              echo "Would dispatch to: BlackRoad-OS/$repo"
+              
+              # Uncomment when token with appropriate scope is available:
               # gh api repos/BlackRoad-OS/$repo/dispatches \
               #   -f event_type="cross-repo-message" \
-              #   -F "client_payload=$(cat .communication/message.json)" || true
+              #   -F "client_payload=$(cat .communication/message.json)" 2>&1 || \
+              #   echo "  ⚠️ Could not reach $repo (may not exist or insufficient permissions)"
             done
           fi
           
-          echo "✅ Broadcast complete"
+          echo "✅ Broadcast complete (mock mode - see comments for production setup)"
       
       - name: Log communication event
         run: |
