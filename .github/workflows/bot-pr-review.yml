@@ -43,7 +43,7 @@ jobs:
               labels.push('testing');
             }
             if (title.startsWith('chore:')) {
-              labels.push('chore');
+              labels.push('maintenance');
             }
 
             // Size labels
