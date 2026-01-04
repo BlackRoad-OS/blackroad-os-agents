@@ -37,7 +37,7 @@ jobs:
               labels.push('documentation');
             }
             if (title.startsWith('refactor:')) {
-              labels.push('refactoring');
+              labels.push('refactor');
             }
             if (title.startsWith('test:')) {
               labels.push('testing');
