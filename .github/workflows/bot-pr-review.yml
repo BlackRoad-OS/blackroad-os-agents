@@ -108,8 +108,11 @@ A detailed description helps reviewers understand your changes.`
             const hasTests = files.some(f => f.filename.includes('test') || f.filename.includes('spec'));
             const hasDocs = files.some(f => f.filename.endsWith('.md'));
             const hasConfig = files.some(f => f.filename.includes('config') || f.filename.endsWith('.json') || f.filename.endsWith('.yml'));
+            const hasCodeChanges = files.some(f =>
+              /\.(js|jsx|ts|tsx|py|rb|go|java|cs|php|rs|cpp|c|cc|h|hpp|swift|kt|m|mm)$/.test(f.filename)
+            );
 
-            if (!hasTests && files.length > 3) {
+            if (!hasTests && hasCodeChanges) {
               insights.push('⚠️ No test files detected. Consider adding tests for your changes.');
             }
 
