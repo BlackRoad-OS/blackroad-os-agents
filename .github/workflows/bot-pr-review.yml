@@ -28,7 +28,7 @@ jobs:
 
             // Detect PR type from title
             if (title.startsWith('feat:') || title.startsWith('feature:')) {
-              labels.push('feature');
+              labels.push('enhancement');
             }
             if (title.startsWith('fix:') || title.startsWith('bugfix:')) {
               labels.push('bugfix');
