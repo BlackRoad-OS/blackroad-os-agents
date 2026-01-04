@@ -188,7 +188,7 @@ This PR includes automated documentation updates:
 
 cc: @${context.repo.owner}`,
                 head: branchName,
-                base: 'main'
+                base: context.payload.repository.default_branch
               });
             }
 
