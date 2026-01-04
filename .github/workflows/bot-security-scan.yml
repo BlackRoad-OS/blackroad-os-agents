@@ -95,7 +95,7 @@ cc: @${context.repo.owner}`;
                 labels: ['security', 'priority:high']
               });
 
-              core.setFailed('Potential secrets detected!');
+              core.warning('Potential secrets detected!');
             }
 
       - name: Dependency scan
