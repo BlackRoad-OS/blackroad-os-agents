@@ -1,27 +1,189 @@
-name: Auto-Merge Everything
+name: Auto-Merge with Safety Checks
+
+# Enhanced auto-merge workflow with branch-specific rules and safety checks
+# Ensures code quality before automatic merging
+
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened, labeled]
   push:
-    branches: [main, master]
+    branches: [main, master, staging, develop]
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
 
 jobs:
-  auto-merge:
+  pre-merge-checks:
+    name: Pre-Merge Safety Checks
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    outputs:
+      can_merge: ${{ steps.evaluate.outputs.can_merge }}
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
-      - name: Auto-merge PRs
-        if: github.event_name == 'pull_request'
+      - name: Check branch rules
+        id: branch_check
         run: |
+          echo "🔍 Checking branch-specific merge rules"
+          
+          BASE_BRANCH="${{ github.base_ref }}"
+          HEAD_BRANCH="${{ github.head_ref }}"
+          
+          # Define branch protection rules
+          case "$BASE_BRANCH" in
+            main|master)
+              echo "target=production" >> $GITHUB_OUTPUT
+              echo "requires_review=true" >> $GITHUB_OUTPUT
+              echo "requires_tests=true" >> $GITHUB_OUTPUT
+              ;;
+            staging)
+              echo "target=staging" >> $GITHUB_OUTPUT
+              echo "requires_review=false" >> $GITHUB_OUTPUT
+              echo "requires_tests=true" >> $GITHUB_OUTPUT
+              ;;
+            develop)
+              echo "target=development" >> $GITHUB_OUTPUT
+              echo "requires_review=false" >> $GITHUB_OUTPUT
+              echo "requires_tests=false" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              echo "target=feature" >> $GITHUB_OUTPUT
+              echo "requires_review=false" >> $GITHUB_OUTPUT
+              echo "requires_tests=false" >> $GITHUB_OUTPUT
+              ;;
+          esac
+      
+      - name: Check for auto-merge label
+        id: label_check
+        run: |
+          # Check if PR has auto-merge label
+          if gh pr view ${{ github.event.pull_request.number }} --json labels \
+             | grep -q "auto-merge"; then
+            echo "has_label=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_label=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Check CI status
+        id: ci_check
+        run: |
+          echo "🔍 Checking CI status"
+          
+          # Get CI check status
+          gh pr checks ${{ github.event.pull_request.number }} --json name,status,conclusion > checks.json
+          
+          # Check if all required checks passed
+          if cat checks.json | grep -q '"conclusion":"failure"'; then
+            echo "ci_passed=false" >> $GITHUB_OUTPUT
+            echo "⚠️ Some CI checks failed"
+          else
+            echo "ci_passed=true" >> $GITHUB_OUTPUT
+            echo "✅ All CI checks passed"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+      
+      - name: Check for merge conflicts
+        id: conflict_check
+        run: |
+          # Check if PR is mergeable
+          MERGEABLE=$(gh pr view ${{ github.event.pull_request.number }} --json mergeable -q .mergeable)
+          
+          if [ "$MERGEABLE" = "MERGEABLE" ]; then
+            echo "has_conflicts=false" >> $GITHUB_OUTPUT
+            echo "✅ No merge conflicts"
+          else
+            echo "has_conflicts=true" >> $GITHUB_OUTPUT
+            echo "⚠️ Merge conflicts detected"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Evaluate merge eligibility
+        id: evaluate
+        run: |
+          echo "📊 Evaluating merge eligibility"
+          
+          # Determine if PR can be auto-merged
+          if [ "${{ steps.conflict_check.outputs.has_conflicts }}" = "true" ]; then
+            echo "can_merge=false" >> $GITHUB_OUTPUT
+            echo "reason=merge_conflicts" >> $GITHUB_OUTPUT
+            echo "❌ Cannot merge: conflicts detected"
+          elif [ "${{ steps.branch_check.outputs.target }}" = "production" ] && \
+               [ "${{ steps.ci_check.outputs.ci_passed }}" != "true" ]; then
+            echo "can_merge=false" >> $GITHUB_OUTPUT
+            echo "reason=ci_failed" >> $GITHUB_OUTPUT
+            echo "❌ Cannot merge: CI checks required for production"
+          else
+            echo "can_merge=true" >> $GITHUB_OUTPUT
+            echo "✅ PR is eligible for auto-merge"
+          fi
+      
+      - name: Report check results
+        run: |
+          echo "### 🔍 Pre-Merge Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Target Branch:** ${{ steps.branch_check.outputs.target }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Requires Review:** ${{ steps.branch_check.outputs.requires_review }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Requires Tests:** ${{ steps.branch_check.outputs.requires_tests }}" >> $GITHUB_STEP_SUMMARY
+          echo "**CI Status:** ${{ steps.ci_check.outputs.ci_passed || 'unknown' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Has Conflicts:** ${{ steps.conflict_check.outputs.has_conflicts }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Can Merge:** ${{ steps.evaluate.outputs.can_merge }}" >> $GITHUB_STEP_SUMMARY
+
+  auto-merge:
+    name: Auto-Merge PR
+    runs-on: ubuntu-latest
+    needs: pre-merge-checks
+    if: |
+      github.event_name == 'pull_request' && 
+      needs.pre-merge-checks.outputs.can_merge == 'true'
+    
+    steps:
+      - name: Enable auto-merge
+        run: |
+          echo "🤖 Enabling auto-merge for PR #${{ github.event.pull_request.number }}"
           gh pr merge ${{ github.event.pull_request.number }} --auto --squash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Deploy on push
-        if: github.event_name == 'push'
+      - name: Report merge status
         run: |
-          echo "Deployment triggered by Cloudflare Worker"
+          echo "### 🤖 Auto-Merge Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Auto-merge enabled for PR #${{ github.event.pull_request.number }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The PR will be automatically merged when all checks pass" >> $GITHUB_STEP_SUMMARY
+  
+  deploy:
+    name: Deploy on Push
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    
+    steps:
+      - name: Trigger deployment
+        run: |
+          echo "🚀 Deployment triggered by push to ${{ github.ref_name }}"
+          
+          # Notify deployment dispatcher
           curl -X POST https://blackroad-deploy-dispatcher.amundsonalexa.workers.dev/webhook/github \
             -H "Content-Type: application/json" \
-            -d "{\"ref\":\"${{ github.ref }}\",\"repository\":{\"full_name\":\"${{ github.repository }}\"},\"after\":\"${{ github.sha }}\",\"pusher\":{\"name\":\"${{ github.actor }}\"}}"
+            -d "{\"ref\":\"${{ github.ref }}\",\"repository\":{\"full_name\":\"${{ github.repository }}\"},\"after\":\"${{ github.sha }}\",\"pusher\":{\"name\":\"${{ github.actor }}\"}}" \
+            || echo "⚠️ Deployment notification failed (non-blocking)"
+      
+      - name: Report deployment
+        run: |
+          echo "### 🚀 Deployment Triggered" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Actor:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY

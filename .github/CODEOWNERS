@@ -1,13 +1,100 @@
-# BlackRoad OS Code Owners
+# CODEOWNERS - BlackRoad OS Agents Repository
+# 
+# This file defines code ownership for automated review requests
+# and protection of critical paths for 30,000+ agent scale
+#
+# Format: path/pattern @owner1 @owner2
+
+# ============================================================================
+# Global Owners (Fallback)
+# ============================================================================
 * @alexa
 
-# Python services
+# ============================================================================
+# Critical Files - Requires Leadership Approval
+# ============================================================================
+/LICENSE @alexa
+/package.json @alexa
+/package-lock.json @alexa
+/pnpm-lock.yaml @alexa
+
+# ============================================================================
+# Agent Registry - Primary Registry Control
+# ============================================================================
+/registry/ @alexa
+/registry/*.json @alexa
+/agents.yaml @alexa
+
+# ============================================================================
+# Workflows and Automation - DevOps Control
+# ============================================================================
+/.github/ @alexa
+/.github/workflows/ @alexa
+/.github/workflows/auto-merge.yml @alexa
+/.github/workflows/roadchain-commit-tracker.yml @alexa
+/.github/workflows/cross-repo-communication.yml @alexa
+/.github/workflows/automated-backup.yml @alexa
+/.github/CODEOWNERS @alexa
+
+# ============================================================================
+# Security and Compliance
+# ============================================================================
+/.github/workflows/security*.yml @alexa
+/guardrails/ @alexa
+
+# ============================================================================
+# Documentation
+# ============================================================================
+/docs/ @alexa
+/README.md @alexa
+/docs/BRANCH_GUIDELINES.md @alexa
+
+# ============================================================================
+# Configuration Files
+# ============================================================================
+/tsconfig.json @alexa
+/.eslintrc.json @alexa
+/wrangler.toml @alexa
+/railway.json @alexa
+/railway.toml @alexa
+/Dockerfile @alexa
+/Procfile @alexa
+
+# ============================================================================
+# Python services and scripts
+# ============================================================================
 *.py @alexa
+/requirements.txt @alexa
 
-# Railway configurations
-railway*.json @alexa
-railway*.toml @alexa
-
+# ============================================================================
 # Security-sensitive files
+# ============================================================================
 .env* @alexa
 *secret* @alexa
+/clerk-config.json @alexa
+/stripe-config.json @alexa
+
+# ============================================================================
+# Scripts and Automation
+# ============================================================================
+/scripts/ @alexa
+
+# ============================================================================
+# Tests
+# ============================================================================
+/tests/ @alexa
+
+# ============================================================================
+# Build Artifacts
+# ============================================================================
+/public/ @alexa
+
+# ============================================================================
+# Notes for Code Owners
+# ============================================================================
+# 
+# - Code owners are automatically requested for review when PRs touch their paths
+# - This setup supports 30,000+ AI agents working collaboratively
+# - As the organization scales, update this file to delegate to teams
+# - Use @org/team notation when teams are created (e.g., @BlackRoad-OS/core-team)
+
