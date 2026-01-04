@@ -1,6 +1,29 @@
 # Blackroad OS Agents Registry (Gen-0)
 
-Central registry and SDK for Blackroad OS agents. Each agent is defined by a JSON manifest in `/registry`, validated by a Zod schema, and consumable via the `@blackroad/agent-sdk` package.
+> **⚠️ PROPRIETARY SOFTWARE** - This repository is protected under the BlackRoad OS Proprietary License.  
+> All rights reserved by BlackRoad OS, Inc. See [LICENSE](./LICENSE) for details.
+
+🔗 **RoadChain Enabled:** All commits are tracked and verified using SHA-256 hashing for integrity.
+
+---
+
+## 🤖 Agent Swarm Architecture
+
+Central registry and SDK for Blackroad OS agents. Designed to support **30,000+ AI agents** working collaboratively across all repositories, apps, and devices.
+
+Each agent is defined by a JSON manifest in `/registry`, validated by a Zod schema, and consumable via the `@blackroad/agent-sdk` package.
+
+### Key Features
+
+- 🔐 **Proprietary Protection:** BlackRoad OS license ensures code remains proprietary
+- 🔗 **RoadChain Verification:** SHA-256 commit tracking and integrity verification
+- 🌐 **Cross-Repository Communication:** Automated agent coordination across all repos
+- 💾 **Automated Backups:** Daily backups with integrity verification
+- 🤝 **Auto-Merge System:** Intelligent merging with branch-specific safety checks
+- 📋 **Branch Guidelines:** Comprehensive strategy for 30k+ agent scale
+- 🚀 **Continuous Deployment:** Automated deployment pipelines
+
+---
 
 ## Quickstart
 
@@ -46,6 +69,175 @@ pnpm br-agent add --id thinker --name "Deep Thinker"
 - `pnpm test`
 - `pnpm typecheck`
 - `pnpm build`
+
+---
+
+## 🔗 RoadChain Commit Tracking
+
+**RoadChain** is our SHA-256-based commit tracking and verification system that ensures the integrity of all code changes.
+
+### How RoadChain Works
+
+1. **Automatic Tracking:** Every commit is automatically tracked via GitHub Actions
+2. **SHA-256 Hashing:** Each commit generates a cryptographic hash for verification
+3. **Chain Verification:** Commits are linked in an immutable chain
+4. **Audit Trail:** Complete history stored as artifacts (90-day retention)
+
+### RoadChain Workflow
+
+```
+Commit Push → RoadChain Trigger → Hash Generation → Chain Update → Artifact Storage
+```
+
+### Benefits
+
+- 🔐 **Integrity Verification:** Detect any tampering with commit history
+- 📊 **Complete Audit Trail:** Full accountability for all changes
+- 🔗 **Cross-Repository Tracking:** Unified verification across all repos
+- ✅ **Automated Validation:** No manual intervention required
+
+See [RoadChain Workflow](./.github/workflows/roadchain-commit-tracker.yml) for implementation details.
+
+---
+
+## 🌐 Cross-Repository Communication
+
+This repository implements automated communication with all other BlackRoad OS repositories, agents, apps, and devices.
+
+### Communication Features
+
+- **Repository Dispatch:** Send messages to other repositories
+- **Agent Coordination:** Coordinate 30,000+ agents working together
+- **System Broadcasts:** Notify all connected systems of updates
+- **Health Checks:** Monitor connectivity across the ecosystem
+
+### Usage
+
+Trigger cross-repository communication:
+
+```bash
+gh workflow run cross-repo-communication.yml \
+  -f message_type=deployment \
+  -f target_repos=all \
+  -f message_payload='{"status":"success"}'
+```
+
+See [Cross-Repo Communication Workflow](./.github/workflows/cross-repo-communication.yml) for details.
+
+---
+
+## 💾 Automated Backups
+
+Automated backup system ensures business continuity and disaster recovery.
+
+### Backup Schedule
+
+- **Daily:** Automated at 2 AM UTC
+- **On-Demand:** Manual trigger available
+- **On Push:** Automatic for main/staging branches
+
+### What's Backed Up
+
+- ✅ Source code (`/src`, `/agents`, `/api`)
+- ✅ Registry data (`/registry`)
+- ✅ Configuration files
+- ✅ Workflows and automation
+- ✅ Documentation
+
+### Backup Verification
+
+All backups include:
+- SHA-256 checksums
+- Integrity verification
+- Completeness checks
+- 90-day retention
+
+See [Automated Backup Workflow](./.github/workflows/automated-backup.yml) for details.
+
+---
+
+## 🤝 Auto-Merge System
+
+Enhanced auto-merge workflow with branch-specific rules and comprehensive safety checks.
+
+### Auto-Merge Rules
+
+| Branch | Auto-Merge | Requirements |
+|--------|------------|--------------|
+| `main/master` | ❌ Disabled | Manual approval required |
+| `staging` | ✅ Enabled | CI checks must pass |
+| `develop` | ✅ Enabled | No conflicts |
+| `agent/*` | ✅ Enabled | Automated agent workflows |
+
+### Safety Checks
+
+Before auto-merge, the system verifies:
+- ✅ All CI checks passed
+- ✅ No merge conflicts
+- ✅ RoadChain verification successful
+- ✅ Required reviews obtained
+- ✅ Branch protection rules met
+
+See [Auto-Merge Workflow](./.github/workflows/auto-merge.yml) for implementation.
+
+---
+
+## 📋 Branch Strategy
+
+Comprehensive branching strategy designed for 30,000+ agent scale.
+
+### Branch Hierarchy
+
+```
+main (production)
+├── staging
+│   └── develop
+│       ├── feature/*
+│       ├── agent/*
+│       └── bugfix/*
+└── hotfix/*
+```
+
+### Branch Types
+
+- **main/master:** Production-ready code (protected)
+- **staging:** Pre-production testing
+- **develop:** Active development
+- **feature/*:** New features
+- **agent/*:** AI agent changes (auto-merge enabled)
+- **bugfix/*:** Bug fixes
+- **hotfix/*:** Critical production fixes
+
+For complete guidelines, see [Branch Guidelines](./docs/BRANCH_GUIDELINES.md).
+
+---
+
+## 🤖 30K Agent Coordination
+
+This repository is designed to support **30,000+ AI agents** working collaboratively.
+
+### Agent Layers
+
+- **Leadership:** Orchestration and strategy (e.g., Claude, Athena)
+- **Operational:** Execution and workflows (e.g., Cadillac, Octavia)
+- **Supporting:** Monitoring and assistance (e.g., Ophelia, Persephone)
+- **Utility:** Specialized tasks (e.g., Copilot, ChatGPT)
+
+### Coordination Protocol
+
+- **Distributed Mesh:** Agent-to-agent communication
+- **Hub-Based:** Centralized coordination
+- **Federation:** Cross-repository agent pools
+- **Load Balancing:** Resource optimization
+
+### Scale Features
+
+- 📡 Cross-repository communication
+- 🔄 Automated synchronization
+- 📊 Distributed task allocation
+- ⚖️ Load balancing and rate limiting
+
+---
 
 ## Notes
 

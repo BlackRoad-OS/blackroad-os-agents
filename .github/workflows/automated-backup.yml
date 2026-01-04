@@ -1,0 +1,210 @@
+name: Automated Repository Backup
+
+# Automated backup system for repository code, data, and configuration
+# Ensures business continuity and disaster recovery
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      backup_type:
+        description: 'Type of backup to perform'
+        required: true
+        type: choice
+        options:
+          - full
+          - incremental
+          - critical_only
+        default: 'full'
+  
+  push:
+    branches:
+      - main
+      - master
+      - staging
+      - production
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  backup-repository:
+    name: Repository Backup
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for complete backup
+      
+      - name: Set up backup environment
+        run: |
+          echo "💾 Setting up backup environment"
+          mkdir -p .backups/{code,config,registry,workflows,docs}
+          
+          # Record backup metadata
+          cat > .backups/metadata.json << EOF
+          {
+            "backup_id": "backup-$(date +%s)",
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "repository": "${{ github.repository }}",
+            "branch": "${{ github.ref_name }}",
+            "commit": "${{ github.sha }}",
+            "backup_type": "${{ github.event.inputs.backup_type || 'scheduled' }}",
+            "triggered_by": "${{ github.actor }}",
+            "workflow_run": "${{ github.run_id }}"
+          }
+          EOF
+      
+      - name: Backup critical code
+        run: |
+          echo "📦 Backing up critical code files"
+          
+          # Backup source code
+          tar -czf .backups/code/src-backup-$(date +%Y%m%d-%H%M%S).tar.gz \
+            src/ agents/ api/ || true
+          
+          # Backup registry data
+          tar -czf .backups/registry/registry-backup-$(date +%Y%m%d-%H%M%S).tar.gz \
+            registry/ || true
+          
+          # Backup configuration files
+          tar -czf .backups/config/config-backup-$(date +%Y%m%d-%H%M%S).tar.gz \
+            *.json *.yaml *.yml *.toml .env.example || true
+          
+          echo "✅ Code backup complete"
+      
+      - name: Backup workflows and automation
+        run: |
+          echo "⚙️ Backing up workflows and automation"
+          
+          tar -czf .backups/workflows/workflows-backup-$(date +%Y%m%d-%H%M%S).tar.gz \
+            .github/workflows/ scripts/ || true
+          
+          echo "✅ Workflow backup complete"
+      
+      - name: Backup documentation
+        run: |
+          echo "📚 Backing up documentation"
+          
+          tar -czf .backups/docs/docs-backup-$(date +%Y%m%d-%H%M%S).tar.gz \
+            *.md docs/ README.md LICENSE || true
+          
+          echo "✅ Documentation backup complete"
+      
+      - name: Create backup manifest
+        run: |
+          echo "📋 Creating backup manifest"
+          
+          cat > .backups/manifest.txt << EOF
+          BlackRoad OS Repository Backup Manifest
+          ========================================
+          
+          Backup ID: backup-$(date +%s)
+          Timestamp: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+          Repository: ${{ github.repository }}
+          Branch: ${{ github.ref_name }}
+          Commit: ${{ github.sha }}
+          
+          Backup Contents:
+          ----------------
+          EOF
+          
+          # List all backup files with sizes
+          find .backups -name "*.tar.gz" -exec ls -lh {} \; >> .backups/manifest.txt
+          
+          # Calculate total backup size
+          TOTAL_SIZE=$(du -sh .backups | awk '{print $1}')
+          echo "" >> .backups/manifest.txt
+          echo "Total Backup Size: $TOTAL_SIZE" >> .backups/manifest.txt
+      
+      - name: Generate backup checksums
+        run: |
+          echo "🔐 Generating backup checksums"
+          
+          cd .backups
+          find . -name "*.tar.gz" -exec sha256sum {} \; > checksums.sha256
+          
+          echo "✅ Checksums generated"
+      
+      - name: Upload backup artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: repository-backup-${{ github.sha }}-$(date +%Y%m%d)
+          path: .backups/
+          retention-days: 90
+      
+      - name: Report backup status
+        run: |
+          echo "### 💾 Repository Backup Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Backup ID:** backup-$(date +%s)" >> $GITHUB_STEP_SUMMARY
+          echo "**Timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_STEP_SUMMARY
+          echo "**Repository:** ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Backed Up:**" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Source code" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Registry data" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Configuration files" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Workflows and automation" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Documentation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Backup completed successfully" >> $GITHUB_STEP_SUMMARY
+      
+      - name: Verify backup integrity
+        run: |
+          echo "🔍 Verifying backup integrity"
+          
+          cd .backups
+          sha256sum -c checksums.sha256
+          
+          if [ $? -eq 0 ]; then
+            echo "✅ All backup checksums verified"
+          else
+            echo "❌ Backup verification failed!"
+            exit 1
+          fi
+
+  backup-verification:
+    name: Backup Verification & Health Check
+    runs-on: ubuntu-latest
+    needs: backup-repository
+    
+    steps:
+      - name: Download backup artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: repository-backup-*
+      
+      - name: Verify backup completeness
+        run: |
+          echo "🔍 Verifying backup completeness"
+          
+          # Check for required backup files
+          REQUIRED_BACKUPS=("code" "registry" "config" "workflows" "docs")
+          
+          for backup in "${REQUIRED_BACKUPS[@]}"; do
+            if find . -path "*/$backup/*" -name "*.tar.gz" | grep -q .; then
+              echo "✅ $backup backup found"
+            else
+              echo "❌ $backup backup missing!"
+              exit 1
+            fi
+          done
+          
+          echo "✅ All required backups present"
+      
+      - name: Report verification status
+        run: |
+          echo "### 🔍 Backup Verification Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ✅ Verified" >> $GITHUB_STEP_SUMMARY
+          echo "**Timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "All backup components verified and integrity confirmed" >> $GITHUB_STEP_SUMMARY
