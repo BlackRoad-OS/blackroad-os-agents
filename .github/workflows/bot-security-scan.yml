@@ -33,7 +33,7 @@ jobs:
               { name: 'Token', pattern: /(?:token|auth[_-]?token)[\s:=]+['"]?([a-zA-Z0-9_-]{20,})['"]?/gi },
               { name: 'Private Key', pattern: /-----BEGIN (?:RSA |EC )?PRIVATE KEY-----/gi },
               { name: 'AWS Key', pattern: /AKIA[0-9A-Z]{16}/gi },
-              { name: 'GitHub Token', pattern: /gh[ps]_[a-zA-Z0-9]{36,}/gi }
+              { name: 'GitHub Token', pattern: /(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{36}/g }
             ];
 
             const findings = [];
