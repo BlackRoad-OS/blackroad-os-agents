@@ -239,6 +239,25 @@ This repository is designed to support **30,000+ AI agents** working collaborati
 
 ---
 
+## 📚 Documentation
+
+### Core Documentation
+- **[Branch Guidelines](./docs/BRANCH_GUIDELINES.md)** - Comprehensive branching strategy for 30k+ agents
+- **[Communication API](./docs/COMMUNICATION_API.md)** - Cross-repository communication protocol
+- **[Deployment Tracking](./docs/DEPLOYMENT_TRACKING.md)** - Deployment monitoring and coordination
+
+### Workflows
+- **[RoadChain Tracker](./.github/workflows/roadchain-commit-tracker.yml)** - SHA-256 commit verification
+- **[Cross-Repo Communication](./.github/workflows/cross-repo-communication.yml)** - Repository coordination
+- **[Automated Backup](./.github/workflows/automated-backup.yml)** - Backup and disaster recovery
+- **[Auto-Merge](./.github/workflows/auto-merge.yml)** - Intelligent merge automation
+
+### Configuration
+- **[CODEOWNERS](./.github/CODEOWNERS)** - Code ownership and review assignments
+- **[LICENSE](./LICENSE)** - BlackRoad OS Proprietary License
+
+---
+
 ## Notes
 
 - This is a Gen-0 scaffold. Future iterations will extend graph relationships and runtime spawning (`// TODO(agents-next)`).
