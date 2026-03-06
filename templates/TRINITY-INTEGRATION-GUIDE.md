@@ -221,7 +221,7 @@ ls -1 .trinity/redlight/templates/
 # - blackroad-animation.html (animated experience)
 # - blackroad-motion.html (motion graphics)
 # - blackroad-3d-world.html (3D environments)
-# - [14+ more templates]
+# - [19 more templates — 23 total]
 ```
 
 ### RedLight Standards
