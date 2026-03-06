@@ -23,7 +23,7 @@ jobs:
     name: Mark Stale Issues and PRs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@5bef64f19d7facfed25b746ef59fbe8a3e8fd8a9 # v9
         with:
           # Issue configuration
           stale-issue-message: |

@@ -24,7 +24,7 @@ jobs:
     name: Welcome New Contributors
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/first-interaction@v1
+      - uses: actions/first-interaction@d0eafd67b6ced7b4697f84fd2d8d9474afe6a08a # v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
