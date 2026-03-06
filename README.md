@@ -35,7 +35,7 @@ The `.trinity/` directory contains three interconnected intelligence systems:
   - See: `.trinity/yellowlight/` for infrastructure docs
 
 - **🔴 RedLight** - Visual templates, brand system, design patterns
-  - 18 HTML brand templates for landing pages and 3D experiences
+  - HTML brand templates for landing pages and 3D experiences
   - Golden ratio design system (φ = 1.618)
   - See: `.trinity/redlight/` for template gallery
 
