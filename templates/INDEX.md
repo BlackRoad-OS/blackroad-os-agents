@@ -33,7 +33,7 @@ Visual and brand templates:
 - Landing pages and 3D experiences
 - Design system and brand colors
 - Performance-optimized HTML templates
-- See: `.trinity/redlight/templates/` (18 brand templates)
+- See: `.trinity/redlight/templates/` (23 RedLight HTML templates)
 
 **Full Trinity Documentation**: `.trinity/README.md`
 
