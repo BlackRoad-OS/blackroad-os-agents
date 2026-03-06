@@ -277,7 +277,7 @@ Runs on:
 
 # Expected output:
 # ✅ .trinity/ directory present
-# 🔴 RedLight: 18 templates found
+# 🔴 RedLight: 23 templates found
 # 🟢 GreenLight: 103 template functions
 # 🟡 YellowLight: Infrastructure scripts present
 # 🌈 Trinity compliance check PASSED
